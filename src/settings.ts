@@ -33,6 +33,7 @@ import powerbi from "powerbi-visuals-api";
 export class ExternalLinkVisualSettings extends DataViewObjectsParser {
     public linkGeneralSettings: LinkGeneralSettings = new LinkGeneralSettings();
     public linkImageSettings: LinkImageSettings = new LinkImageSettings();
+    public linkTitleSettings: LinkTitleSettings = new LinkTitleSettings();
     public linkContentSettings: LinkContentSettings = new LinkContentSettings();
     public linkBottomSettings: LinkBottomSettings = new LinkBottomSettings();
 }
@@ -49,12 +50,18 @@ export class LinkImageSettings {
     public imageURL: string = "https://www.w3schools.com/w3css/img_lights.jpg";
 }
 
-export class LinkContentSettings {
+export class LinkTitleSettings {
     public link: string = "";
     public linkTitle: string = "";
+    public linkTitleColor: string = "black";
+    public linkTitleHoverColor: string = "blue";
     public linkHoverTitle: string = "";
-    public showLinkContent: boolean = false;
+}
+
+export class LinkContentSettings {
+    public show: boolean = false;
     public linkContent: string = "";
+    public linkContentColor: string = "black";
 }
 
 export class LinkBottomSettings {

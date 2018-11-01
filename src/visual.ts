@@ -59,6 +59,7 @@ export class ExternalLinkVisual implements IVisual {
 
         let linkGeneralSettings = this.linkVisualSettings.linkGeneralSettings;
         let linkImageSettings = this.linkVisualSettings.linkImageSettings;
+        let linkTitleSettings = this.linkVisualSettings.linkTitleSettings;
         let linkContentSettings = this.linkVisualSettings.linkContentSettings;
         let linkBottomSettings = this.linkVisualSettings.linkBottomSettings;
         let linkTitle = "";
@@ -68,14 +69,14 @@ export class ExternalLinkVisual implements IVisual {
                 this.rootElement.remove();
             }
 
-            if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkContentSettings.linkHoverTitle)) {
-                if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkContentSettings.link)) {
+            if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.linkHoverTitle)) {
+                if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.link)) {
                     linkTitle = "Click here to go to nowhere";
                 } else {
-                    linkTitle = "Click here to go to " + linkContentSettings.link;
+                    linkTitle = "Click here to go to " + linkTitleSettings.link;
                 }
             } else {
-                linkTitle = linkContentSettings.linkHoverTitle;
+                linkTitle = linkTitleSettings.linkHoverTitle;
             }
 
             this.rootElement = select(this.target).append("div")
@@ -102,13 +103,10 @@ export class ExternalLinkVisual implements IVisual {
 
             this.middleContentElement.append("h2")
                 .style("text-align", "start")
-                // .style("padding", "20px")
                 .style("margin", 0)
-                // .style("width", "100%")
-                // .style("left", "0px")
-                .text(linkContentSettings.linkTitle);
+                .text(linkTitleSettings.linkTitle);
 
-            if (linkContentSettings.showLinkContent) {
+            if (linkContentSettings.show) {
                 this.middleContentElement.append("p")
                     .text(linkContentSettings.linkContent);
             }
@@ -162,8 +160,8 @@ export class ExternalLinkVisual implements IVisual {
                     .style("border-top-width", "3px");
             })
             .on("click", () => {
-                if (!StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkContentSettings.link)) {
-                    this.host.launchUrl(linkContentSettings.link);
+                if (!StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.link)) {
+                    this.host.launchUrl(linkTitleSettings.link);
                 }
             });
 

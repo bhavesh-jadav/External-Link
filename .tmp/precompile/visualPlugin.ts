@@ -2,8 +2,8 @@ import { ExternalLinkVisual } from "../../src/visual";
 declare var powerbi;
 powerbi.visuals = powerbi.visuals || {};
 powerbi.visuals.plugins = powerbi.visuals.plugins || {};
-powerbi.visuals.plugins["externalLinkC315CFE8D1E9496582BCD9F3B9E20D91"] = {
-    name: 'externalLinkC315CFE8D1E9496582BCD9F3B9E20D91',
+powerbi.visuals.plugins["externalLinkC315CFE8D1E9496582BCD9F3B9E20D91_DEBUG"] = {
+    name: 'externalLinkC315CFE8D1E9496582BCD9F3B9E20D91_DEBUG',
     displayName: 'External Link',
     class: 'ExternalLinkVisual',
     version: '1.0.0',

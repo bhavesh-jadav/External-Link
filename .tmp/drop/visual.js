@@ -1,2 +1,13067 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var i=t[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(r,i,function(t){return e[t]}.bind(null,i));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="assets",n(n.s=0)}({0:function(e,t,n){e.exports=n("xlo+")},"1Mos":function(e,t){e.exports=null},"xlo+":function(e,t,n){"use strict";n.r(t);var r={};n.r(r),n.d(r,"MIN_VALUE",function(){return le}),n.d(r,"MAX_VALUE",function(){return se}),n.d(r,"MIN_EXP",function(){return ce}),n.d(r,"MAX_EXP",function(){return fe}),n.d(r,"EPSILON",function(){return he}),n.d(r,"DEFAULT_PRECISION",function(){return de}),n.d(r,"DEFAULT_PRECISION_IN_DECIMAL_DIGITS",function(){return ge}),n.d(r,"LOG_E_10",function(){return me}),n.d(r,"POSITIVE_POWERS",function(){return pe}),n.d(r,"NEGATIVE_POWERS",function(){return ye}),n.d(r,"pow10",function(){return ve}),n.d(r,"log10",function(){return _e}),n.d(r,"getPrecision",function(){return be}),n.d(r,"equalWithPrecision",function(){return Me}),n.d(r,"lessWithPrecision",function(){return xe}),n.d(r,"lessOrEqualWithPrecision",function(){return we}),n.d(r,"greaterWithPrecision",function(){return Se}),n.d(r,"greaterOrEqualWithPrecision",function(){return Te}),n.d(r,"floorWithPrecision",function(){return De}),n.d(r,"ceilWithPrecision",function(){return Ce}),n.d(r,"floorToPrecision",function(){return Ne}),n.d(r,"ceilToPrecision",function(){return Fe}),n.d(r,"roundToPrecision",function(){return Ee}),n.d(r,"ensureInRange",function(){return Pe}),n.d(r,"round",function(){return Oe}),n.d(r,"project",function(){return Ae}),n.d(r,"removeDecimalNoise",function(){return Ie}),n.d(r,"isInteger",function(){return Ue}),n.d(r,"toIncrement",function(){return ke}),n.d(r,"detectPrecision",function(){return Le});var i={};n.r(i),n.d(i,"RegExpExtensions",function(){return We});var a={};n.r(a),n.d(a,"NumericSequenceRange",function(){return ze}),n.d(a,"ValueUtil",function(){return Ye});var o={};n.r(o),n.d(o,"NumericSequence",function(){return He});var u={};n.r(u),n.d(u,"toString",function(){return je}),n.d(u,"fromPoint",function(){return Xe}),n.d(u,"fromPointToPixel",function(){return $e}),n.d(u,"toPoint",function(){return Ze});var l={};n.r(l),n.d(l,"inherit",function(){return Qe}),n.d(l,"inheritSingle",function(){return Je}),n.d(l,"overrideArray",function(){return Ke});var s={};n.r(s),n.d(s,"ValueType",function(){return et}),n.d(s,"ScriptType",function(){return tt}),n.d(s,"TemporalType",function(){return nt}),n.d(s,"GeographyType",function(){return rt}),n.d(s,"MiscellaneousType",function(){return it}),n.d(s,"FormattingType",function(){return at}),n.d(s,"PrimitiveType",function(){return ot}),n.d(s,"ExtendedType",function(){return lt});var c={};n.r(c),n.d(c,"endsWith",function(){return pt}),n.d(c,"format",function(){return yt}),n.d(c,"equalIgnoreCase",function(){return vt}),n.d(c,"startsWithIgnoreCase",function(){return _t}),n.d(c,"startsWith",function(){return bt}),n.d(c,"contains",function(){return Mt}),n.d(c,"containsIgnoreCase",function(){return xt}),n.d(c,"normalizeCase",function(){return wt}),n.d(c,"stringToArrayBuffer",function(){return St}),n.d(c,"isNullOrEmpty",function(){return Tt}),n.d(c,"isNullOrUndefinedOrWhiteSpaceString",function(){return Dt}),n.d(c,"containsWhitespace",function(){return Ct}),n.d(c,"isWhitespace",function(){return Nt}),n.d(c,"trimTrailingWhitespace",function(){return Ft}),n.d(c,"trimWhitespace",function(){return Et}),n.d(c,"getLengthDifference",function(){return Pt}),n.d(c,"repeat",function(){return Ot}),n.d(c,"replaceAll",function(){return At}),n.d(c,"ensureUniqueNames",function(){return It}),n.d(c,"findUniqueName",function(){return Ut}),n.d(c,"constructNameFromList",function(){return kt}),n.d(c,"escapeStringForRegex",function(){return Lt}),n.d(c,"normalizeFileName",function(){return Vt}),n.d(c,"stringifyAsPrettyJSON",function(){return Rt}),n.d(c,"deriveClsCompliantName",function(){return Wt}),n.d(c,"stripTagDelimiters",function(){return Bt});var f={};n.r(f),n.d(f,"DataViewObjects",function(){return Dn});var h={};n.r(h),n.d(h,"DataViewObjectsParser",function(){return On});var d="http://www.w3.org/1999/xhtml",g={svg:"http://www.w3.org/2000/svg",xhtml:d,xlink:"http://www.w3.org/1999/xlink",xml:"http://www.w3.org/XML/1998/namespace",xmlns:"http://www.w3.org/2000/xmlns/"},m=function(e){var t=e+="",n=t.indexOf(":");return n>=0&&"xmlns"!==(t=e.slice(0,n))&&(e=e.slice(n+1)),g.hasOwnProperty(t)?{space:g[t],local:e}:e};var p=function(e){var t=m(e);return(t.local?function(e){return function(){return this.ownerDocument.createElementNS(e.space,e.local)}}:function(e){return function(){var t=this.ownerDocument,n=this.namespaceURI;return n===d&&t.documentElement.namespaceURI===d?t.createElement(e):t.createElementNS(n,e)}})(t)};function y(){}var v=function(e){return null==e?y:function(){return this.querySelector(e)}};function _(){return[]}var b=function(e){return null==e?_:function(){return this.querySelectorAll(e)}},M=function(e){return function(){return this.matches(e)}};if("undefined"!=typeof document){var x=document.documentElement;if(!x.matches){var w=x.webkitMatchesSelector||x.msMatchesSelector||x.mozMatchesSelector||x.oMatchesSelector;M=function(e){return function(){return w.call(this,e)}}}}var S=M,T=function(e){return new Array(e.length)};function D(e,t){this.ownerDocument=e.ownerDocument,this.namespaceURI=e.namespaceURI,this._next=null,this._parent=e,this.__data__=t}D.prototype={constructor:D,appendChild:function(e){return this._parent.insertBefore(e,this._next)},insertBefore:function(e,t){return this._parent.insertBefore(e,t)},querySelector:function(e){return this._parent.querySelector(e)},querySelectorAll:function(e){return this._parent.querySelectorAll(e)}};var C="$";function N(e,t,n,r,i,a){for(var o,u=0,l=t.length,s=a.length;u<s;++u)(o=t[u])?(o.__data__=a[u],r[u]=o):n[u]=new D(e,a[u]);for(;u<l;++u)(o=t[u])&&(i[u]=o)}function F(e,t,n,r,i,a,o){var u,l,s,c={},f=t.length,h=a.length,d=new Array(f);for(u=0;u<f;++u)(l=t[u])&&(d[u]=s=C+o.call(l,l.__data__,u,t),s in c?i[u]=l:c[s]=l);for(u=0;u<h;++u)(l=c[s=C+o.call(e,a[u],u,a)])?(r[u]=l,l.__data__=a[u],c[s]=null):n[u]=new D(e,a[u]);for(u=0;u<f;++u)(l=t[u])&&c[d[u]]===l&&(i[u]=l)}function E(e,t){return e<t?-1:e>t?1:e>=t?0:NaN}var P=function(e){return e.ownerDocument&&e.ownerDocument.defaultView||e.document&&e||e.defaultView};function O(e,t){return e.style.getPropertyValue(t)||P(e).getComputedStyle(e,null).getPropertyValue(t)}function A(e){return e.trim().split(/^|\s+/)}function I(e){return e.classList||new U(e)}function U(e){this._node=e,this._names=A(e.getAttribute("class")||"")}function k(e,t){for(var n=I(e),r=-1,i=t.length;++r<i;)n.add(t[r])}function L(e,t){for(var n=I(e),r=-1,i=t.length;++r<i;)n.remove(t[r])}U.prototype={add:function(e){this._names.indexOf(e)<0&&(this._names.push(e),this._node.setAttribute("class",this._names.join(" ")))},remove:function(e){var t=this._names.indexOf(e);t>=0&&(this._names.splice(t,1),this._node.setAttribute("class",this._names.join(" ")))},contains:function(e){return this._names.indexOf(e)>=0}};function V(){this.textContent=""}function R(){this.innerHTML=""}function W(){this.nextSibling&&this.parentNode.appendChild(this)}function B(){this.previousSibling&&this.parentNode.insertBefore(this,this.parentNode.firstChild)}function Y(){return null}function z(){var e=this.parentNode;e&&e.removeChild(this)}function H(){return this.parentNode.insertBefore(this.cloneNode(!1),this.nextSibling)}function q(){return this.parentNode.insertBefore(this.cloneNode(!0),this.nextSibling)}var G={},j=null;"undefined"!=typeof document&&("onmouseenter"in document.documentElement||(G={mouseenter:"mouseover",mouseleave:"mouseout"}));function X(e,t,n){return e=$(e,t,n),function(t){var n=t.relatedTarget;n&&(n===this||8&n.compareDocumentPosition(this))||e.call(this,t)}}function $(e,t,n){return function(r){var i=j;j=r;try{e.call(this,this.__data__,t,n)}finally{j=i}}}function Z(e){return function(){var t=this.__on;if(t){for(var n,r=0,i=-1,a=t.length;r<a;++r)n=t[r],e.type&&n.type!==e.type||n.name!==e.name?t[++i]=n:this.removeEventListener(n.type,n.listener,n.capture);++i?t.length=i:delete this.__on}}}function Q(e,t,n){var r=G.hasOwnProperty(e.type)?X:$;return function(i,a,o){var u,l=this.__on,s=r(t,a,o);if(l)for(var c=0,f=l.length;c<f;++c)if((u=l[c]).type===e.type&&u.name===e.name)return this.removeEventListener(u.type,u.listener,u.capture),this.addEventListener(u.type,u.listener=s,u.capture=n),void(u.value=t);this.addEventListener(e.type,s,n),u={type:e.type,name:e.name,value:t,listener:s,capture:n},l?l.push(u):this.__on=[u]}}function J(e,t,n){var r=P(e),i=r.CustomEvent;"function"==typeof i?i=new i(t,n):(i=r.document.createEvent("Event"),n?(i.initEvent(t,n.bubbles,n.cancelable),i.detail=n.detail):i.initEvent(t,!1,!1)),e.dispatchEvent(i)}var K=[null];function ee(e,t){this._groups=e,this._parents=t}function te(){return new ee([[document.documentElement]],K)}ee.prototype=te.prototype={constructor:ee,select:function(e){"function"!=typeof e&&(e=v(e));for(var t=this._groups,n=t.length,r=new Array(n),i=0;i<n;++i)for(var a,o,u=t[i],l=u.length,s=r[i]=new Array(l),c=0;c<l;++c)(a=u[c])&&(o=e.call(a,a.__data__,c,u))&&("__data__"in a&&(o.__data__=a.__data__),s[c]=o);return new ee(r,this._parents)},selectAll:function(e){"function"!=typeof e&&(e=b(e));for(var t=this._groups,n=t.length,r=[],i=[],a=0;a<n;++a)for(var o,u=t[a],l=u.length,s=0;s<l;++s)(o=u[s])&&(r.push(e.call(o,o.__data__,s,u)),i.push(o));return new ee(r,i)},filter:function(e){"function"!=typeof e&&(e=S(e));for(var t=this._groups,n=t.length,r=new Array(n),i=0;i<n;++i)for(var a,o=t[i],u=o.length,l=r[i]=[],s=0;s<u;++s)(a=o[s])&&e.call(a,a.__data__,s,o)&&l.push(a);return new ee(r,this._parents)},data:function(e,t){if(!e)return d=new Array(this.size()),s=-1,this.each(function(e){d[++s]=e}),d;var n=t?F:N,r=this._parents,i=this._groups;"function"!=typeof e&&(e=function(e){return function(){return e}}(e));for(var a=i.length,o=new Array(a),u=new Array(a),l=new Array(a),s=0;s<a;++s){var c=r[s],f=i[s],h=f.length,d=e.call(c,c&&c.__data__,s,r),g=d.length,m=u[s]=new Array(g),p=o[s]=new Array(g);n(c,f,m,p,l[s]=new Array(h),d,t);for(var y,v,_=0,b=0;_<g;++_)if(y=m[_]){for(_>=b&&(b=_+1);!(v=p[b])&&++b<g;);y._next=v||null}}return(o=new ee(o,r))._enter=u,o._exit=l,o},enter:function(){return new ee(this._enter||this._groups.map(T),this._parents)},exit:function(){return new ee(this._exit||this._groups.map(T),this._parents)},merge:function(e){for(var t=this._groups,n=e._groups,r=t.length,i=n.length,a=Math.min(r,i),o=new Array(r),u=0;u<a;++u)for(var l,s=t[u],c=n[u],f=s.length,h=o[u]=new Array(f),d=0;d<f;++d)(l=s[d]||c[d])&&(h[d]=l);for(;u<r;++u)o[u]=t[u];return new ee(o,this._parents)},order:function(){for(var e=this._groups,t=-1,n=e.length;++t<n;)for(var r,i=e[t],a=i.length-1,o=i[a];--a>=0;)(r=i[a])&&(o&&o!==r.nextSibling&&o.parentNode.insertBefore(r,o),o=r);return this},sort:function(e){function t(t,n){return t&&n?e(t.__data__,n.__data__):!t-!n}e||(e=E);for(var n=this._groups,r=n.length,i=new Array(r),a=0;a<r;++a){for(var o,u=n[a],l=u.length,s=i[a]=new Array(l),c=0;c<l;++c)(o=u[c])&&(s[c]=o);s.sort(t)}return new ee(i,this._parents).order()},call:function(){var e=arguments[0];return arguments[0]=this,e.apply(null,arguments),this},nodes:function(){var e=new Array(this.size()),t=-1;return this.each(function(){e[++t]=this}),e},node:function(){for(var e=this._groups,t=0,n=e.length;t<n;++t)for(var r=e[t],i=0,a=r.length;i<a;++i){var o=r[i];if(o)return o}return null},size:function(){var e=0;return this.each(function(){++e}),e},empty:function(){return!this.node()},each:function(e){for(var t=this._groups,n=0,r=t.length;n<r;++n)for(var i,a=t[n],o=0,u=a.length;o<u;++o)(i=a[o])&&e.call(i,i.__data__,o,a);return this},attr:function(e,t){var n=m(e);if(arguments.length<2){var r=this.node();return n.local?r.getAttributeNS(n.space,n.local):r.getAttribute(n)}return this.each((null==t?n.local?function(e){return function(){this.removeAttributeNS(e.space,e.local)}}:function(e){return function(){this.removeAttribute(e)}}:"function"==typeof t?n.local?function(e,t){return function(){var n=t.apply(this,arguments);null==n?this.removeAttributeNS(e.space,e.local):this.setAttributeNS(e.space,e.local,n)}}:function(e,t){return function(){var n=t.apply(this,arguments);null==n?this.removeAttribute(e):this.setAttribute(e,n)}}:n.local?function(e,t){return function(){this.setAttributeNS(e.space,e.local,t)}}:function(e,t){return function(){this.setAttribute(e,t)}})(n,t))},style:function(e,t,n){return arguments.length>1?this.each((null==t?function(e){return function(){this.style.removeProperty(e)}}:"function"==typeof t?function(e,t,n){return function(){var r=t.apply(this,arguments);null==r?this.style.removeProperty(e):this.style.setProperty(e,r,n)}}:function(e,t,n){return function(){this.style.setProperty(e,t,n)}})(e,t,null==n?"":n)):O(this.node(),e)},property:function(e,t){return arguments.length>1?this.each((null==t?function(e){return function(){delete this[e]}}:"function"==typeof t?function(e,t){return function(){var n=t.apply(this,arguments);null==n?delete this[e]:this[e]=n}}:function(e,t){return function(){this[e]=t}})(e,t)):this.node()[e]},classed:function(e,t){var n=A(e+"");if(arguments.length<2){for(var r=I(this.node()),i=-1,a=n.length;++i<a;)if(!r.contains(n[i]))return!1;return!0}return this.each(("function"==typeof t?function(e,t){return function(){(t.apply(this,arguments)?k:L)(this,e)}}:t?function(e){return function(){k(this,e)}}:function(e){return function(){L(this,e)}})(n,t))},text:function(e){return arguments.length?this.each(null==e?V:("function"==typeof e?function(e){return function(){var t=e.apply(this,arguments);this.textContent=null==t?"":t}}:function(e){return function(){this.textContent=e}})(e)):this.node().textContent},html:function(e){return arguments.length?this.each(null==e?R:("function"==typeof e?function(e){return function(){var t=e.apply(this,arguments);this.innerHTML=null==t?"":t}}:function(e){return function(){this.innerHTML=e}})(e)):this.node().innerHTML},raise:function(){return this.each(W)},lower:function(){return this.each(B)},append:function(e){var t="function"==typeof e?e:p(e);return this.select(function(){return this.appendChild(t.apply(this,arguments))})},insert:function(e,t){var n="function"==typeof e?e:p(e),r=null==t?Y:"function"==typeof t?t:v(t);return this.select(function(){return this.insertBefore(n.apply(this,arguments),r.apply(this,arguments)||null)})},remove:function(){return this.each(z)},clone:function(e){return this.select(e?q:H)},datum:function(e){return arguments.length?this.property("__data__",e):this.node().__data__},on:function(e,t,n){var r,i,a=function(e){return e.trim().split(/^|\s+/).map(function(e){var t="",n=e.indexOf(".");return n>=0&&(t=e.slice(n+1),e=e.slice(0,n)),{type:e,name:t}})}(e+""),o=a.length;if(!(arguments.length<2)){for(u=t?Q:Z,null==n&&(n=!1),r=0;r<o;++r)this.each(u(a[r],t,n));return this}var u=this.node().__on;if(u)for(var l,s=0,c=u.length;s<c;++s)for(r=0,l=u[s];r<o;++r)if((i=a[r]).type===l.type&&i.name===l.name)return l.value},dispatch:function(e,t){return this.each(("function"==typeof t?function(e,t){return function(){return J(this,e,t.apply(this,arguments))}}:function(e,t){return function(){return J(this,e,t)}})(e,t))}};var ne=te,re=function(e){return"string"==typeof e?new ee([[document.querySelector(e)]],[document.documentElement]):new ee([[e]],K)},ie=0;function ae(){this._="@"+(++ie).toString(36)}ae.prototype=function(){return new ae}.prototype={constructor:ae,get:function(e){for(var t=this._;!(t in e);)if(!(e=e.parentNode))return;return e[t]},set:function(e,t){return e[this._]=t},remove:function(e){return this._ in e&&delete e[this._]},toString:function(){return this._}};let oe;var ue;!function(e){function t(e,t){e.indexOf(t)<0&&e.push(t)}function n(e,t){let n=[];for(let r=0;r<t;++r)n.push(e[r]);return n}function r(e){let t=e;return t.withId=i,t}function i(t){return e.findWithId(this,t)}function a(e){let t=e;return t.withName=l,t}function o(e,t){let n=u(e,t);if(n>=0)return e[n]}function u(e,t){for(let n=0,r=e.length;n<r;n++){if(e[n].name===t)return n}return-1}function l(e){return o(this,e)}function s(e,t){let n=e.length;if(n>=2)for(let r=1;r<n;r++)if(t(e[r-1],e[r])>0)return!1;return!0}e.intersect=function(e,t){let n=[];for(let r=e.length-1;r>=0;--r)-1!==t.indexOf(e[r])&&n.push(e[r]);return n},e.diff=function(e,t){let n=[];for(let r=e.length-1;r>=0;--r){let i=e[r];-1===t.indexOf(i)&&n.push(i)}return n},e.distinct=function(e){let t=[];for(let n=0,r=e.length;n<r;n++){let r=e[n];-1===t.indexOf(r)&&t.push(r)}return t},e.union=function(e,n){for(let r=0,i=n.length;r<i;++r)t(e,n[r])},e.unionSingle=t,e.range=function(e,t,n){let r=[];for(let i=t;i<=n;++i)r.push(e[i]);return r},e.take=n,e.copy=function(e){return n(e,e.length)},e.sequenceEqual=function(e,t,n){if(e||(e=null),t||(t=null),e===t)return!0;if(!!e!=!!t)return!1;let r=e.length;if(r!==t.length)return!1;let i=0;for(;i<r&&n(e[i],t[i]);)++i;return i===r},e.emptyToNull=function(e){return e&&0===e.length?null:e},e.indexOf=function(e,t){for(let n=0,r=e.length;n<r;++n)if(t(e[n]))return n;return-1},e.rotate=function(e,t){if(0===t)return e.slice();let n=e.slice(t);return Array.prototype.push.apply(n,e.slice(0,t)),n},e.createWithId=function(){return r([])},e.extendWithId=r,e.findWithId=function(e,t){for(let n=0,r=e.length;n<r;n++){let r=e[n];if(r.id===t)return r}},e.createWithName=function(){return a([])},e.extendWithName=a,e.findItemWithName=o,e.indexWithName=u,e.insertSorted=function(e,t){for(let n=e.length-1;n>=0;n--){let r=e[n]-t;if(0===r)return!1;if(!(r>0))return e.splice(n+1,0,t),!0}return e.unshift(t),!0},e.removeFirst=function(e,t){let n=e.indexOf(t);return!(n<0||(e.splice(n,1),0))},e.clear=function(e){if(e)for(;e.length>0;)e.pop()},e.isUndefinedOrEmpty=function(e){return!e||0===e.length},e.swap=function(e,t,n){let r=e[t];e[t]=e[n],e[n]=r},e.isInArray=function(e,t,n){return e.some(e=>n(e,t))},e.isArrayOrInheritedArray=function(e){let t=e;for(;null!=t;){if(Array.isArray(t))return!0;t=Object.getPrototypeOf(t)}return!1},e.isSorted=s,e.isSortedNumeric=function(e,t){return s(e,t?(e,t)=>t-e:(e,t)=>e-t)},e.ensureArray=function(e){return Array.isArray(e)?e:[e]}}(ue||(ue={}));const le=-Number.MAX_VALUE,se=Number.MAX_VALUE,ce=-308,fe=308,he=1e-323,de=1e-4,ge=12,me=Math.log(10),pe=[1,10,100,1e3,1e4,1e5,1e6,1e7,1e8,1e9,1e10,1e11,1e12,1e13,1e14,1e15,1e16,1e17,1e18,1e19,1e20,1e21,1e22,1e23,1e24,1e25,1e26,1e27,1e28,1e29,1e30,1e31,1e32,1e33,1e34,1e35,1e36,1e37,1e38,1e39,1e40,1e41,1e42,1e43,1e44,1e45,1e46,1e47,1e48,1e49,1e50,1e51,1e52,1e53,1e54,1e55,1e56,1e57,1e58,1e59,1e60,1e61,1e62,1e63,1e64,1e65,1e66,1e67,1e68,1e69,1e70,1e71,1e72,1e73,1e74,1e75,1e76,1e77,1e78,1e79,1e80,1e81,1e82,1e83,1e84,1e85,1e86,1e87,1e88,1e89,1e90,1e91,1e92,1e93,1e94,1e95,1e96,1e97,1e98,1e99,1e100,1e101,1e102,1e103,1e104,1e105,1e106,1e107,1e108,1e109,1e110,1e111,1e112,1e113,1e114,1e115,1e116,1e117,1e118,1e119,1e120,1e121,1e122,1e123,1e124,1e125,1e126,1e127,1e128,1e129,1e130,1e131,1e132,1e133,1e134,1e135,1e136,1e137,1e138,1e139,1e140,1e141,1e142,1e143,1e144,1e145,1e146,1e147,1e148,1e149,1e150,1e151,1e152,1e153,1e154,1e155,1e156,1e157,1e158,1e159,1e160,1e161,1e162,1e163,1e164,1e165,1e166,1e167,1e168,1e169,1e170,1e171,1e172,1e173,1e174,1e175,1e176,1e177,1e178,1e179,1e180,1e181,1e182,1e183,1e184,1e185,1e186,1e187,1e188,1e189,1e190,1e191,1e192,1e193,1e194,1e195,1e196,1e197,1e198,1e199,1e200,1e201,1e202,1e203,1e204,1e205,1e206,1e207,1e208,1e209,1e210,1e211,1e212,1e213,1e214,1e215,1e216,1e217,1e218,1e219,1e220,1e221,1e222,1e223,1e224,1e225,1e226,1e227,1e228,1e229,1e230,1e231,1e232,1e233,1e234,1e235,1e236,1e237,1e238,1e239,1e240,1e241,1e242,1e243,1e244,1e245,1e246,1e247,1e248,1e249,1e250,1e251,1e252,1e253,1e254,1e255,1e256,1e257,1e258,1e259,1e260,1e261,1e262,1e263,1e264,1e265,1e266,1e267,1e268,1e269,1e270,1e271,1e272,1e273,1e274,1e275,1e276,1e277,1e278,1e279,1e280,1e281,1e282,1e283,1e284,1e285,1e286,1e287,1e288,1e289,1e290,1e291,1e292,1e293,1e294,1e295,1e296,1e297,1e298,1e299,1e300,1e301,1e302,1e303,1e304,1e305,1e306,1e307,1e308],ye=[1,.1,.01,.001,1e-4,1e-5,1e-6,1e-7,1e-8,1e-9,1e-10,1e-11,1e-12,1e-13,1e-14,1e-15,1e-16,1e-17,1e-18,1e-19,1e-20,1e-21,1e-22,1e-23,1e-24,1e-25,1e-26,1e-27,1e-28,1e-29,1e-30,1e-31,1e-32,1e-33,1e-34,1e-35,1e-36,1e-37,1e-38,1e-39,1e-40,1e-41,1e-42,1e-43,1e-44,1e-45,1e-46,1e-47,1e-48,1e-49,1e-50,1e-51,1e-52,1e-53,1e-54,1e-55,1e-56,1e-57,1e-58,1e-59,1e-60,1e-61,1e-62,1e-63,1e-64,1e-65,1e-66,1e-67,1e-68,1e-69,1e-70,1e-71,1e-72,1e-73,1e-74,1e-75,1e-76,1e-77,1e-78,1e-79,1e-80,1e-81,1e-82,1e-83,1e-84,1e-85,1e-86,1e-87,1e-88,1e-89,1e-90,1e-91,1e-92,1e-93,1e-94,1e-95,1e-96,1e-97,1e-98,1e-99,1e-100,1e-101,1e-102,1e-103,1e-104,1e-105,1e-106,1e-107,1e-108,1e-109,1e-110,1e-111,1e-112,1e-113,1e-114,1e-115,1e-116,1e-117,1e-118,1e-119,1e-120,1e-121,1e-122,1e-123,1e-124,1e-125,1e-126,1e-127,1e-128,1e-129,1e-130,1e-131,1e-132,1e-133,1e-134,1e-135,1e-136,1e-137,1e-138,1e-139,1e-140,1e-141,1e-142,1e-143,1e-144,1e-145,1e-146,1e-147,1e-148,1e-149,1e-150,1e-151,1e-152,1e-153,1e-154,1e-155,1e-156,1e-157,1e-158,1e-159,1e-160,1e-161,1e-162,1e-163,1e-164,1e-165,1e-166,1e-167,1e-168,1e-169,1e-170,1e-171,1e-172,1e-173,1e-174,1e-175,1e-176,1e-177,1e-178,1e-179,1e-180,1e-181,1e-182,1e-183,1e-184,1e-185,1e-186,1e-187,1e-188,1e-189,1e-190,1e-191,1e-192,1e-193,1e-194,1e-195,1e-196,1e-197,1e-198,1e-199,1e-200,1e-201,1e-202,1e-203,1e-204,1e-205,1e-206,1e-207,1e-208,1e-209,1e-210,1e-211,1e-212,1e-213,1e-214,1e-215,1e-216,1e-217,1e-218,1e-219,1e-220,1e-221,1e-222,1e-223,1e-224,1e-225,1e-226,1e-227,1e-228,1e-229,1e-230,1e-231,1e-232,1e-233,1e-234,1e-235,1e-236,1e-237,1e-238,1e-239,1e-240,1e-241,1e-242,1e-243,1e-244,1e-245,1e-246,1e-247,1e-248,1e-249,1e-250,1e-251,1e-252,1e-253,1e-254,1e-255,1e-256,1e-257,1e-258,1e-259,1e-260,1e-261,1e-262,1e-263,1e-264,1e-265,1e-266,1e-267,1e-268,1e-269,1e-270,1e-271,1e-272,1e-273,1e-274,1e-275,1e-276,1e-277,1e-278,1e-279,1e-280,1e-281,1e-282,1e-283,1e-284,1e-285,1e-286,1e-287,1e-288,1e-289,1e-290,1e-291,1e-292,1e-293,1e-294,1e-295,1e-296,1e-297,1e-298,1e-299,1e-300,1e-301,1e-302,1e-303,1e-304,1e-305,1e-306,1e-307,1e-308,1e-309,1e-310,1e-311,1e-312,1e-313,1e-314,1e-315,1e-316,1e-317,1e-318,1e-319,1e-320,1e-321,1e-322,1e-323,0];function ve(e){return e>=0?e<pe.length?pe[e]:1/0:(e=-e)>0&&e<ye.length?ye[e]:0}function _e(e){if(e>1&&e<1e16)return e<1e8?e<1e4?e<100?e<10?0:1:e<1e3?2:3:e<1e6?e<1e5?4:5:e<1e7?6:7:e<1e12?e<1e10?e<1e9?8:9:e<1e11?10:11:e<1e14?e<1e13?12:13:e<1e15?14:15;if(e>1e-16&&e<1)return e<1e-8?e<1e-12?e<1e-14?e<1e-15?-16:-15:e<1e-13?-14:-13:e<1e-10?e<1e-11?-12:-11:e<1e-9?-10:-9:e<1e-4?e<1e-6?e<1e-7?-8:-7:e<1e-5?-6:-5:e<.01?e<.001?-4:-3:e<.1?-2:-1;return De(Math.log(e)/me)}function be(e,t){if(void 0===t&&(t=ge),!e||!isFinite(e))return;let n=_e(Math.abs(e));return n<ce?0:ve(Math.max(n-t,1-ye.length))}function Me(e,t,n){return n=Le(n,e,t),e===t||Math.abs(e-t)<n}function xe(e,t,n){return n=Le(n,e,t),e<t&&Math.abs(e-t)>n}function we(e,t,n){return n=Le(n,e,t),e<t||Math.abs(e-t)<n}function Se(e,t,n){return n=Le(n,e,t),e>t&&Math.abs(e-t)>n}function Te(e,t,n){return n=Le(n,e,t),e>t||Math.abs(e-t)<n}function De(e,t){t=null!=t?t:de;let n=Math.round(e);return Math.abs(e-n)<t?n:Math.floor(e)}function Ce(e,t){t=Le(t,de);let n=Math.round(e);return Math.abs(e-n)<t?n:Math.ceil(e)}function Ne(e,t){return 0===(t=Le(t,de))||0===e?e:Math.floor(e/t)*t}function Fe(e,t){return 0===(t=Le(t,de))||0===e?e:Math.ceil(e/t)*t}function Ee(e,t){if(0===(t=Le(t,de))||0===e)return e;let n=Math.round(e/t)*t,r=Math.round(_e(Math.abs(e))-_e(t))+1;return r>0&&r<16&&(n=parseFloat(n.toPrecision(r))),n}function Pe(e,t,n){return void 0===e||null===e?e:e<t?t:e>n?n:e}function Oe(e){return.5+e<<0}function Ae(e,t,n,r,i){if(0===n||0===i)return t<=e&&e<=t+n?r:NaN;return r+(e-t)/n*i}function Ie(e){return Ee(e,be(e))}function Ue(e){return null!==e&&e%1==0}function ke(e,t){return Math.round(e/t)*t}function Le(e,t,n){if(void 0!==e)return e;let r;return(r=be(n?t?Math.min(Math.abs(t),Math.abs(n)):n:t))||de}var Ve,Re,We,Be,Ye;!function(e){e.hasFlag=function(e,t){return(e&t)===t},e.setFlag=function(e,t){return e|t},e.resetFlag=function(e,t){return e&~t},e.toString=function(e,t){return e[t]},e.getBitCount=function(e){if(!Ue(e))return 0;let t=0,n=e;for(;0!==n;)1==(1&n)&&t++,n>>>=1;return t}}(Ve||(Ve={})),function(e){e.XOR=function(e,t){return(e||t)&&!(e&&t)}}(Re||(Re={})),function(e){e.run=function(e,t,n){return e.lastIndex=n||0,e.exec(t)}}(We||(We={})),function(e){(Be||(Be={})).endsWith=function(e,t){return-1!==e.indexOf(t,e.length-t.length)}}();class ze{_ensureIncludeZero(){this.includeZero&&(this.min>0&&!this.hasFixedMin&&(this.min=0),this.max<0&&!this.hasFixedMax&&(this.max=0))}_ensureNotEmpty(){if(this.min===this.max)if(this.min){let e,t=this.min,n=_e(Math.abs(t));n>=0&&n<4?(e=.5,this.forcedSingleStop=t):(e=ve(n)/2,this.forcedSingleStop=null),this.min=t-e,this.max=t+e}else this.min=0,this.max=ze.DEFAULT_MAX,this.hasFixedMin=!0,this.hasFixedMax=!0}_ensureDirection(){if(this.min>this.max){let e=this.min;this.min=this.max,this.max=e}}getSize(){return this.max-this.min}shrinkByStep(e,t){let n=this.min/t,r=e.min/t,i=Math.floor(r-n);this.min+=i*t,n=this.max/t,r=e.max/t,i=Math.ceil(r-n),this.max+=i*t}static calculate(e,t,n,r,i){let a=new ze;return a.includeZero=!!i,a.hasDataRange=Ye.hasValue(e)&&Ye.hasValue(t),a.hasFixedMin=Ye.hasValue(n),a.hasFixedMax=Ye.hasValue(r),e=Pe(e,ze.MIN_SUPPORTED_DOUBLE,ze.MAX_SUPPORTED_DOUBLE),t=Pe(t,ze.MIN_SUPPORTED_DOUBLE,ze.MAX_SUPPORTED_DOUBLE),a.hasFixedMin&&a.hasFixedMax?(a.min=n,a.max=r):a.hasFixedMin?(a.min=n,a.max=t>n?t:n):a.hasFixedMax?(a.min=e<r?e:r,a.max=r):a.hasDataRange?(a.min=e,a.max=t):(a.min=0,a.max=0),a._ensureIncludeZero(),a._ensureNotEmpty(),a._ensureDirection(),0===a.min?a.hasFixedMin=!0:0===a.max&&(a.hasFixedMax=!0),a}static calculateDataRange(e,t,n){return Ye.hasValue(e)&&Ye.hasValue(t)?ze.calculate(e,t,null,null,n):ze.calculateFixedRange(0,ze.DEFAULT_MAX)}static calculateFixedRange(e,t,n){let r=new ze;return r.hasDataRange=!1,r.includeZero=n,r.min=e,r.max=t,r._ensureIncludeZero(),r._ensureNotEmpty(),r._ensureDirection(),r.hasFixedMin=!0,r.hasFixedMax=!0,r}}ze.DEFAULT_MAX=10,ze.MIN_SUPPORTED_DOUBLE=-1e307,ze.MAX_SUPPORTED_DOUBLE=1e307,function(e){e.hasValue=function(e){return void 0!==e&&null!==e}}(Ye||(Ye={}));class He{static calculate(e,t,n,r,i,a){let o=new He;if(t=void 0===t?10:Pe(t,He.MIN_COUNT,He.MAX_COUNT),void 0===r&&(r=ce),void 0===i&&(i=!1),void 0===n&&(n=1),void 0===a&&(a=[1,2,5]),e.forcedSingleStop)return o.interval=e.getSize(),o.intervalOffset=o.interval-(e.forcedSingleStop-e.min),o.min=e.min,o.max=e.max,o.sequence=[e.forcedSingleStop],o;let u=0,l=0,s=9,c=n>0&&!e.hasFixedMin,f=n>0&&!e.hasFixedMax,h=_e(e.getSize()),d=_e(a[0]);h-=d,h-=_e(t),h=Math.max(h,r-d+1);let g=void 0;if(0!==u){let t=ve(h),n=Ne(e.min,t),r=Fe(e.max,t),i=ze.calculateFixedRange(n,r);i.shrinkByStep(e,u),l=i.min,s=i.max,g=Math.floor(i.getSize()/u)}else{let r;for(r=0;r<3;r++){let o=h+r,d=ve(o),m=Ne(e.min,d),p=Fe(e.max,d),y=a.length,v=ve(o-1);for(let o=0;o<y;o++){let h=a[o]*v,d=ze.calculateFixedRange(m,p,i);if(d.shrinkByStep(e,h),c&&e.min===d.min&&n>=1&&(d.min-=h),f&&e.max===d.max&&n>=1&&(d.max+=h),(g=Ce(d.getSize()/h,de))<=t||2===r&&o===y-1||1===t&&2===g&&(h>e.getSize()||e.min<0&&e.max>0&&2*h>=e.getSize())){u=h,l=d.min,s=d.max;break}}if(0!==u)break}}(g>32*t||g>He.MAX_COUNT)&&(u=(s-l)/(g=Math.min(32*t,He.MAX_COUNT))),o.min=l,o.max=s,o.interval=u,o.intervalOffset=l-e.min,o.maxAllowedMargin=n,o.canExtendMin=c,o.canExtendMax=f;let m=be(u,0);o.precision=m;let p=[],y=Ee(l,m);p.push(y);for(let e=0;e<g;e++)y=Ee(y+u,m),p.push(y);return o.sequence=p,o.trimMinMax(e.min,e.max),o}static calculateUnits(e,t,n,r){n=Pe(n,He.MIN_COUNT,He.MAX_COUNT),e===t&&(t=e+1);let i=0,a=0;for(let o=0;o<r.length;o++){if((i=Ce(t/(a=r[o]))-De(e/a))<=n)break}let o=-e;o%=a;let u=new He;u.sequence=[];for(let n=e+o;u.sequence.push(n),!(n>=t);n+=a);return u.interval=a,u.intervalOffset=o,u.min=u.sequence[0],u.max=u.sequence[u.sequence.length-1],u}trimMinMax(e,t){let n=(e-this.min)/this.interval,r=(this.max-t)/this.interval;(!this.canExtendMin||n>this.maxAllowedMargin&&n>.001)&&(this.min=e),(!this.canExtendMax||r>this.maxAllowedMargin&&r>.001)&&(this.max=t)}}He.MIN_COUNT=1,He.MAX_COUNT=1e3;const qe=4/3,Ge="px";function je(e){return e+Ge}function Xe(e){return je($e(e))}function $e(e){return qe*e}function Ze(e){return e/qe}function Qe(e,t){function n(){}n.prototype=e;let r=new n;return t&&t(r),r}function Je(e){let t=Object.getPrototypeOf(e);return t!==Object.prototype&&t!==Array.prototype||(e=Qe(e)),e}function Ke(e,t){if(!e)return;let n;for(let r=0,i=e.length;r<i;r++){let i=t(e[r]);i&&(n||(n=Qe(e)),n[r]=i)}return n}class et{constructor(e,t,n,r){this.underlyingType=e,this.category=t,Ve.hasFlag(e,lt.Temporal)&&(this.temporalType=new nt(e)),Ve.hasFlag(e,lt.Geography)&&(this.geographyType=new rt(e)),Ve.hasFlag(e,lt.Miscellaneous)&&(this.miscType=new it(e)),Ve.hasFlag(e,lt.Formatting)&&(this.formattingType=new at(e)),Ve.hasFlag(e,lt.Enumeration)&&(this.enumType=n),Ve.hasFlag(e,lt.Scripting)&&(this.scriptingType=new tt(e)),Ve.hasFlag(e,lt.Variant)&&(this.variationTypes=r)}static fromDescriptor(e){if((e=e||{}).text)return et.fromExtendedType(lt.Text);if(e.integer)return et.fromExtendedType(lt.Integer);if(e.numeric)return et.fromExtendedType(lt.Double);if(e.bool)return et.fromExtendedType(lt.Boolean);if(e.dateTime)return et.fromExtendedType(lt.DateTime);if(e.duration)return et.fromExtendedType(lt.Duration);if(e.binary)return et.fromExtendedType(lt.Binary);if(e.none)return et.fromExtendedType(lt.None);if(e.scripting&&e.scripting.source)return et.fromExtendedType(lt.ScriptSource);if(e.enumeration)return et.fromEnum(e.enumeration);if(e.temporal){if(e.temporal.year)return et.fromExtendedType(lt.Years_Integer);if(e.temporal.quarter)return et.fromExtendedType(lt.Quarters_Integer);if(e.temporal.month)return et.fromExtendedType(lt.Months_Integer);if(e.temporal.day)return et.fromExtendedType(lt.DayOfMonth_Integer);if(e.temporal.paddedDateTableDate)return et.fromExtendedType(lt.PaddedDateTableDates)}if(e.geography){if(e.geography.address)return et.fromExtendedType(lt.Address);if(e.geography.city)return et.fromExtendedType(lt.City);if(e.geography.continent)return et.fromExtendedType(lt.Continent);if(e.geography.country)return et.fromExtendedType(lt.Country);if(e.geography.county)return et.fromExtendedType(lt.County);if(e.geography.region)return et.fromExtendedType(lt.Region);if(e.geography.postalCode)return et.fromExtendedType(lt.PostalCode_Text);if(e.geography.stateOrProvince)return et.fromExtendedType(lt.StateOrProvince);if(e.geography.place)return et.fromExtendedType(lt.Place);if(e.geography.latitude)return et.fromExtendedType(lt.Latitude_Double);if(e.geography.longitude)return et.fromExtendedType(lt.Longitude_Double)}if(e.misc){if(e.misc.image)return et.fromExtendedType(lt.Image);if(e.misc.imageUrl)return et.fromExtendedType(lt.ImageUrl);if(e.misc.webUrl)return et.fromExtendedType(lt.WebUrl);if(e.misc.barcode)return et.fromExtendedType(lt.Barcode_Text)}if(e.formatting){if(e.formatting.color)return et.fromExtendedType(lt.Color);if(e.formatting.formatString)return et.fromExtendedType(lt.FormatString);if(e.formatting.alignment)return et.fromExtendedType(lt.Alignment);if(e.formatting.labelDisplayUnits)return et.fromExtendedType(lt.LabelDisplayUnits);if(e.formatting.fontSize)return et.fromExtendedType(lt.FontSize);if(e.formatting.labelDensity)return et.fromExtendedType(lt.LabelDensity)}if(e.extendedType)return et.fromExtendedType(e.extendedType);if(e.operations&&e.operations.searchEnabled)return et.fromExtendedType(lt.SearchEnabled);if(e.variant){let t=e.variant.map(e=>et.fromDescriptor(e));return et.fromVariant(t)}return et.fromExtendedType(lt.Null)}static fromExtendedType(e){let t=dt(e=e||lt.Null),n=function(e){if(function(e){return(e&ft)===e}(e))return null;let t=st[e];if(t){let e=t.lastIndexOf("_");if(e>0){let n=t.slice(0,e);st[n]&&(t=n)}}return t||null}(e);return et.fromPrimitiveTypeAndCategory(t,n)}static fromPrimitiveTypeAndCategory(e,t){e=e||ot.Null,t=t||null;let n=e.toString();return t&&(n+="|"+t),et.typeCache[n]||(et.typeCache[n]=new et(function(e,t){let n=ut[e],r=st[n];null==r&&(r=lt.Null);if(e&&t){let n=st[t];if(n){let t=dt(n);t===ot.Null?st[n|=r]&&(r=n):t===e&&(r=n)}}return r}(e,t),t))}static fromEnum(e){return new et(lt.Enumeration,null,e)}static fromVariant(e){return new et(lt.Variant,null,null,e)}static isCompatibleTo(e,t){let n=et.fromDescriptor(e);for(let e of t){if(et.fromDescriptor(e).isCompatibleFrom(n))return!0}return!1}isCompatibleFrom(e){let t=e.primitiveType;return!!(this===e||this.primitiveType===t||t===ot.Null||this.numeric&&e.numeric)}equals(e){return function(e,t){return e===t||JSON.stringify(e)===JSON.stringify(t)}(this,e)}get primitiveType(){return dt(this.underlyingType)}get extendedType(){return this.underlyingType}get categoryString(){return this.category}get text(){return this.primitiveType===ot.Text}get numeric(){return Ve.hasFlag(this.underlyingType,lt.Numeric)}get integer(){return this.primitiveType===ot.Integer}get bool(){return this.primitiveType===ot.Boolean}get dateTime(){return this.primitiveType===ot.DateTime||this.primitiveType===ot.Date||this.primitiveType===ot.Time}get duration(){return this.primitiveType===ot.Duration}get binary(){return this.primitiveType===ot.Binary}get none(){return this.primitiveType===ot.None}get temporal(){return this.temporalType}get geography(){return this.geographyType}get misc(){return this.miscType}get formatting(){return this.formattingType}get enumeration(){return this.enumType}get scripting(){return this.scriptingType}get variant(){return this.variationTypes}}et.typeCache={};class tt{constructor(e){this.underlyingType=e}get source(){return gt(this.underlyingType,lt.ScriptSource)}}class nt{constructor(e){this.underlyingType=e}get year(){return gt(this.underlyingType,lt.Years)}get quarter(){return gt(this.underlyingType,lt.Quarters)}get month(){return gt(this.underlyingType,lt.Months)}get day(){return gt(this.underlyingType,lt.DayOfMonth)}get paddedDateTableDate(){return gt(this.underlyingType,lt.PaddedDateTableDates)}}class rt{constructor(e){this.underlyingType=e}get address(){return gt(this.underlyingType,lt.Address)}get city(){return gt(this.underlyingType,lt.City)}get continent(){return gt(this.underlyingType,lt.Continent)}get country(){return gt(this.underlyingType,lt.Country)}get county(){return gt(this.underlyingType,lt.County)}get region(){return gt(this.underlyingType,lt.Region)}get postalCode(){return gt(this.underlyingType,lt.PostalCode)}get stateOrProvince(){return gt(this.underlyingType,lt.StateOrProvince)}get place(){return gt(this.underlyingType,lt.Place)}get latitude(){return gt(this.underlyingType,lt.Latitude)}get longitude(){return gt(this.underlyingType,lt.Longitude)}}class it{constructor(e){this.underlyingType=e}get image(){return gt(this.underlyingType,lt.Image)}get imageUrl(){return gt(this.underlyingType,lt.ImageUrl)}get webUrl(){return gt(this.underlyingType,lt.WebUrl)}get barcode(){return gt(this.underlyingType,lt.Barcode)}}class at{constructor(e){this.underlyingType=e}get color(){return gt(this.underlyingType,lt.Color)}get formatString(){return gt(this.underlyingType,lt.FormatString)}get alignment(){return gt(this.underlyingType,lt.Alignment)}get labelDisplayUnits(){return gt(this.underlyingType,lt.LabelDisplayUnits)}get fontSize(){return gt(this.underlyingType,lt.FontSize)}get labelDensity(){return gt(this.underlyingType,lt.LabelDensity)}}var ot,ut,lt,st;!function(e){e[e.Null=0]="Null",e[e.Text=1]="Text",e[e.Decimal=2]="Decimal",e[e.Double=3]="Double",e[e.Integer=4]="Integer",e[e.Boolean=5]="Boolean",e[e.Date=6]="Date",e[e.DateTime=7]="DateTime",e[e.DateTimeZone=8]="DateTimeZone",e[e.Time=9]="Time",e[e.Duration=10]="Duration",e[e.Binary=11]="Binary",e[e.None=12]="None",e[e.Variant=13]="Variant"}(ot||(ot={})),function(e){e[e.Null=0]="Null",e[e.Text=1]="Text",e[e.Decimal=2]="Decimal",e[e.Double=3]="Double",e[e.Integer=4]="Integer",e[e.Boolean=5]="Boolean",e[e.Date=6]="Date",e[e.DateTime=7]="DateTime",e[e.DateTimeZone=8]="DateTimeZone",e[e.Time=9]="Time",e[e.Duration=10]="Duration",e[e.Binary=11]="Binary",e[e.None=12]="None",e[e.Variant=13]="Variant"}(ut||(ut={})),function(e){e[e.Numeric=256]="Numeric",e[e.Temporal=512]="Temporal",e[e.Geography=1024]="Geography",e[e.Miscellaneous=2048]="Miscellaneous",e[e.Formatting=4096]="Formatting",e[e.Scripting=8192]="Scripting",e[e.Null=0]="Null",e[e.Text=1]="Text",e[e.Decimal=258]="Decimal",e[e.Double=259]="Double",e[e.Integer=260]="Integer",e[e.Boolean=5]="Boolean",e[e.Date=518]="Date",e[e.DateTime=519]="DateTime",e[e.DateTimeZone=520]="DateTimeZone",e[e.Time=521]="Time",e[e.Duration=10]="Duration",e[e.Binary=11]="Binary",e[e.None=12]="None",e[e.Variant=13]="Variant",e[e.Years=66048]="Years",e[e.Years_Text=66049]="Years_Text",e[e.Years_Integer=66308]="Years_Integer",e[e.Years_Date=66054]="Years_Date",e[e.Years_DateTime=66055]="Years_DateTime",e[e.Months=131584]="Months",e[e.Months_Text=131585]="Months_Text",e[e.Months_Integer=131844]="Months_Integer",e[e.Months_Date=131590]="Months_Date",e[e.Months_DateTime=131591]="Months_DateTime",e[e.PaddedDateTableDates=197127]="PaddedDateTableDates",e[e.Quarters=262656]="Quarters",e[e.Quarters_Text=262657]="Quarters_Text",e[e.Quarters_Integer=262916]="Quarters_Integer",e[e.Quarters_Date=262662]="Quarters_Date",e[e.Quarters_DateTime=262663]="Quarters_DateTime",e[e.DayOfMonth=328192]="DayOfMonth",e[e.DayOfMonth_Text=328193]="DayOfMonth_Text",e[e.DayOfMonth_Integer=328452]="DayOfMonth_Integer",e[e.DayOfMonth_Date=328198]="DayOfMonth_Date",e[e.DayOfMonth_DateTime=328199]="DayOfMonth_DateTime",e[e.Address=6554625]="Address",e[e.City=6620161]="City",e[e.Continent=6685697]="Continent",e[e.Country=6751233]="Country",e[e.County=6816769]="County",e[e.Region=6882305]="Region",e[e.PostalCode=6947840]="PostalCode",e[e.PostalCode_Text=6947841]="PostalCode_Text",e[e.PostalCode_Integer=6948100]="PostalCode_Integer",e[e.StateOrProvince=7013377]="StateOrProvince",e[e.Place=7078913]="Place",e[e.Latitude=7144448]="Latitude",e[e.Latitude_Decimal=7144706]="Latitude_Decimal",e[e.Latitude_Double=7144707]="Latitude_Double",e[e.Longitude=7209984]="Longitude",e[e.Longitude_Decimal=7210242]="Longitude_Decimal",e[e.Longitude_Double=7210243]="Longitude_Double",e[e.Image=13109259]="Image",e[e.ImageUrl=13174785]="ImageUrl",e[e.WebUrl=13240321]="WebUrl",e[e.Barcode=13305856]="Barcode",e[e.Barcode_Text=13305857]="Barcode_Text",e[e.Barcode_Integer=13306116]="Barcode_Integer",e[e.Color=19664897]="Color",e[e.FormatString=19730433]="FormatString",e[e.Alignment=20058113]="Alignment",e[e.LabelDisplayUnits=20123649]="LabelDisplayUnits",e[e.FontSize=20189443]="FontSize",e[e.LabelDensity=20254979]="LabelDensity",e[e.Enumeration=26214401]="Enumeration",e[e.ScriptSource=32776193]="ScriptSource",e[e.SearchEnabled=65541]="SearchEnabled"}(lt||(lt={})),function(e){e[e.Numeric=256]="Numeric",e[e.Temporal=512]="Temporal",e[e.Geography=1024]="Geography",e[e.Miscellaneous=2048]="Miscellaneous",e[e.Formatting=4096]="Formatting",e[e.Scripting=8192]="Scripting",e[e.Null=0]="Null",e[e.Text=1]="Text",e[e.Decimal=258]="Decimal",e[e.Double=259]="Double",e[e.Integer=260]="Integer",e[e.Boolean=5]="Boolean",e[e.Date=518]="Date",e[e.DateTime=519]="DateTime",e[e.DateTimeZone=520]="DateTimeZone",e[e.Time=521]="Time",e[e.Duration=10]="Duration",e[e.Binary=11]="Binary",e[e.None=12]="None",e[e.Variant=13]="Variant",e[e.Years=66048]="Years",e[e.Years_Text=66049]="Years_Text",e[e.Years_Integer=66308]="Years_Integer",e[e.Years_Date=66054]="Years_Date",e[e.Years_DateTime=66055]="Years_DateTime",e[e.Months=131584]="Months",e[e.Months_Text=131585]="Months_Text",e[e.Months_Integer=131844]="Months_Integer",e[e.Months_Date=131590]="Months_Date",e[e.Months_DateTime=131591]="Months_DateTime",e[e.PaddedDateTableDates=197127]="PaddedDateTableDates",e[e.Quarters=262656]="Quarters",e[e.Quarters_Text=262657]="Quarters_Text",e[e.Quarters_Integer=262916]="Quarters_Integer",e[e.Quarters_Date=262662]="Quarters_Date",e[e.Quarters_DateTime=262663]="Quarters_DateTime",e[e.DayOfMonth=328192]="DayOfMonth",e[e.DayOfMonth_Text=328193]="DayOfMonth_Text",e[e.DayOfMonth_Integer=328452]="DayOfMonth_Integer",e[e.DayOfMonth_Date=328198]="DayOfMonth_Date",e[e.DayOfMonth_DateTime=328199]="DayOfMonth_DateTime",e[e.Address=6554625]="Address",e[e.City=6620161]="City",e[e.Continent=6685697]="Continent",e[e.Country=6751233]="Country",e[e.County=6816769]="County",e[e.Region=6882305]="Region",e[e.PostalCode=6947840]="PostalCode",e[e.PostalCode_Text=6947841]="PostalCode_Text",e[e.PostalCode_Integer=6948100]="PostalCode_Integer",e[e.StateOrProvince=7013377]="StateOrProvince",e[e.Place=7078913]="Place",e[e.Latitude=7144448]="Latitude",e[e.Latitude_Decimal=7144706]="Latitude_Decimal",e[e.Latitude_Double=7144707]="Latitude_Double",e[e.Longitude=7209984]="Longitude",e[e.Longitude_Decimal=7210242]="Longitude_Decimal",e[e.Longitude_Double=7210243]="Longitude_Double",e[e.Image=13109259]="Image",e[e.ImageUrl=13174785]="ImageUrl",e[e.WebUrl=13240321]="WebUrl",e[e.Barcode=13305856]="Barcode",e[e.Barcode_Text=13305857]="Barcode_Text",e[e.Barcode_Integer=13306116]="Barcode_Integer",e[e.Color=19664897]="Color",e[e.FormatString=19730433]="FormatString",e[e.Alignment=20058113]="Alignment",e[e.LabelDisplayUnits=20123649]="LabelDisplayUnits",e[e.FontSize=20189443]="FontSize",e[e.LabelDensity=20254979]="LabelDensity",e[e.Enumeration=26214401]="Enumeration",e[e.ScriptSource=32776193]="ScriptSource",e[e.SearchEnabled=65541]="SearchEnabled"}(st||(st={}));const ct=255,ft=65535,ht=4294901760;function dt(e){return e&ct}function gt(e,t){return(e&ht)==(t&ht)}const mt=new RegExp("[<>]","g");function pt(e,t){return-1!==e.indexOf(t,e.length-t.length)}function yt(...e){let t=e[0];if(Dt(t))return t;for(let n=0;n<e.length-1;n++){let r=new RegExp("\\{"+n+"\\}","gm");t=t.replace(r,e[n+1])}return t}function vt(e,t){return wt(e)===wt(t)}function _t(e,t){let n=wt(t);return 0===wt(e).indexOf(n)}function bt(e,t){return 0===e.indexOf(t)}function Mt(e,t){return null!=e&&-1!==e.indexOf(t)}function xt(e,t){return null!=e&&Mt(wt(e),wt(t))}function wt(e){return e.toUpperCase()}function St(e){if(Tt(e))return null;let t=new ArrayBuffer(e.length),n=new Uint8Array(t);for(let t=0,r=e.length;t<r;t++)n[t]=e.charCodeAt(t);return n}function Tt(e){return null==e||0===e.length}function Dt(e){return Tt(e)||Tt(e.trim())}function Ct(e){return/\s/.test(e)}function Nt(e){return""===e.trim()}function Ft(e){return e.replace(/\s+$/,"")}function Et(e){return e.replace(/^\s+/,"").replace(/\s+$/,"")}function Pt(e,t){return Math.abs(e.length-t.length)}function Ot(e,t){let n="";for(let r=0;r<t;r++)n+=e;return n}function At(e,t,n){if(!t)return e;let r=Lt(t);return e.replace(new RegExp(r,"gi"),n)}function It(e){let t={};for(let n of e)t[n]=!1;let n=[];for(let r of e){let e=r;if(t[e]){let n=0;for(;void 0!==t[e];)e=r+"."+ ++n}n.push(e),t[e]=!0}return n}function Ut(e,t){let n=0,r=t;for(;e[r];)r=t+ ++n;return r}function kt(e,t,n){let r,i=[],a=0;for(let t of e){if(a+t.length>n&&i.length>0){r=!0;break}i.push(t),a+=t.length}let o=" "+t+" ",u=i.join(o);return r&&(u+=o+"..."),u}function Lt(e){return e.replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g,"\\$1")}function Vt(e){return e.replace(/[\<\>\:"\/\\\|\?*]/g,"")}function Rt(e){return JSON.stringify(e)}function Wt(e,t){let n=e.replace(/^[^A-Za-z]*/g,"").replace(/[ :\.\/\\\-\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000]/g,"_").replace(/[\W]/g,"");return n.length>0?n:t}function Bt(e){return e.replace(mt,"")}var Yt;!function(e){e[e.Year=0]="Year",e[e.Month=1]="Month",e[e.Week=2]="Week",e[e.Day=3]="Day",e[e.Hour=4]="Hour",e[e.Minute=5]="Minute",e[e.Second=6]="Second",e[e.Millisecond=7]="Millisecond"}(Yt||(Yt={}));var zt=n("1Mos"),Ht=n.n(zt);class qt{static pad(e,t){for(e=String(e),t=t||2;e.length<t;)e="0"+e;return e}static format(e,t,n){let r=qt;if(1!==arguments.length||"[object String]"!==Object.prototype.toString.call(e)||/\d/.test(e)||(t=e,e=void 0),e=e?new Date(e):new Date,isNaN(e))throw SyntaxError("invalid date");"UTC:"===(t=String(qt.masks[t]||t||qt.masks.default)).slice(0,4)&&(t=t.slice(4),n=!0);let i=n?"getUTC":"get",a=e[i+"Date"](),o=e[i+"Day"](),u=e[i+"Month"](),l=e[i+"FullYear"](),s=e[i+"Hours"](),c=e[i+"Minutes"](),f=e[i+"Seconds"](),h=e[i+"Milliseconds"](),d=n?0:e.getTimezoneOffset(),g={d:a,dd:qt.pad(a),ddd:r.i18n.dayNames[o],dddd:r.i18n.dayNames[o+7],m:c,mm:qt.pad(c),mmm:r.i18n.monthNames[c],mmmm:r.i18n.monthNames[c+12],MMM:r.i18n.monthNames[u],yy:String(l).slice(2),yyyy:l,h:s%12||12,hh:qt.pad(s%12||12),H:s,HH:qt.pad(s),M:u+1,MM:qt.pad(u+1),s:f,ss:qt.pad(f),l:qt.pad(h,3),L:qt.pad(h>99?Math.round(h/10):h),t:s<12?"a":"p",tt:s<12?"AM":"PM",T:s<12?"A":"P",TT:s<12?"AM":"PM",Z:n?"UTC":(String(e).match(qt.timezone)||[""]).pop().replace(qt.timezoneClip,""),o:(d>0?"-":"+")+qt.pad(100*Math.floor(Math.abs(d)/60)+Math.abs(d)%60,4),S:["th","st","nd","rd"][a%10>3?0:(a%100-a%10!=10)*a%10]};return t.replace(qt.token,function(e){return e in g?g[e]:e.slice(1,e.length-1)})}}qt.token=/d{1,4}|m{1,4}|M{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,qt.timezone=/\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,qt.timezoneClip=/[^-+\dA-Z]/g,qt.masks={default:"ddd mmm dd yyyy HH:MM:ss",shortDate:"m/d/yy",mediumDate:"mmm d, yyyy",longDate:"mmmm d, yyyy",fullDate:"dddd, mmmm d, yyyy",shortTime:"h:MM TT",mediumTime:"h:MM:ss TT",longTime:"h:MM:ss TT Z",isoDate:"yyyy-mm-dd",isoTime:"HH:MM:ss",isoDateTime:"yyyy-mm-dd'T'HH:MM:ss",isoUtcDateTime:"UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"},qt.i18n={dayNames:["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],monthNames:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","January","February","March","April","May","June","July","August","September","October","November","December"]};class Gt{static expandNumber(e,t,n){let r=n.groupSizes,i=r[0],a=1,o=Math.pow(10,t),u=Math.round(e*o)/o;isFinite(u)||(u=e);let l=(e=u)+"",s="",c=l.split(/e/i),f=c.length>1?parseInt(c[1],10):0;l=(c=(l=c[0]).split("."))[0],s=c.length>1?c[1]:"",f>0?(l+=(s=Gt.zeroPad(s,f,!1)).slice(0,f),s=s.substr(f)):f<0&&(f=-f,s=(l=Gt.zeroPad(l,f+1)).slice(-f,l.length)+s,l=l.slice(0,-f)),s=t>0?n["."]+(s.length>t?s.slice(0,t):Gt.zeroPad(s,t)):"";let h=l.length-1,d=n[","],g="";for(;h>=0;){if(0===i||i>h)return l.slice(0,h+1)+(g.length?d+g+s:s);g=l.slice(h-i+1,h+1)+(g.length?d+g:""),h-=i,a<r.length&&(i=r[a],a++)}return l.slice(0,h+1)+d+g+s}static zeroPad(e,t,n){let r;for(r=e.length;r<t;r+=1)e=n?"0"+e:e+"0";return e}static formatNumber(e,t,n){if(!t||"i"===t)return n.name.length?e.toLocaleString():e.toString();t=t||"D";let r,i=Gt.numberFormat,a=Math.abs(e),o=-1;t.length>1&&(o=parseInt(t.slice(1),10));let u,l=t.charAt(0).toUpperCase();switch(l){case"D":r="n",-1!==o&&(a=Gt.zeroPad(""+a,o,!0)),e<0&&(a=-a);break;case"N":u=i;case"C":u=u||i.currency;case"P":u=u||i.percent,r=e<0?u.pattern[0]:u.pattern[1]||"n",-1===o&&(o=u.decimals),a=Gt.expandNumber(a*("P"===l?100:1),o,u);break;default:throw"Bad number format specifier: "+l}let s=/n|\$|-|%/g,c="";for(;;){let e=s.lastIndex,t=s.exec(r);if(c+=r.slice(e,t?t.index:r.length),!t)break;switch(t[0]){case"n":c+=a;break;case"$":c+=i.currency.symbl;break;case"-":/[1-9]/.test(a.toString())&&(c+=i["-"]);break;case"%":c+=i.percent.symbl}}return c}}var jt,Xt=i.RegExpExtensions;!function(e){const t=new RegExp(["'[^']*'",'"[^"]*"',"\\\\.","'[^']*$",'"[^"]*$',"\\\\$"].join("|"),"g");e.removeLiterals=function(e){return t.lastIndex=0,e.replace(t,"")},e.preserveLiterals=function(e,n){for(t.lastIndex=0;;){let r=t.exec(e);if(!r)break;let i=r[0],a=t.lastIndex-i.length,o=String.fromCharCode(57600+n.length);n.push(i),e=e.substr(0,a)+o+e.substr(t.lastIndex),t.lastIndex=a+1}return e},e.restoreLiterals=function(e,t,n=!0){let r=t.length;for(let i=0;i<r;i++){let r=String.fromCharCode(57600+i),a=t[i];if(!n){let e=a[0];a="\\"===e||1===a.length||a[a.length-1]!==e?a.substring(1):a.substring(1,a.length-1)}e=e.replace(r,a)}return e}}(jt||(jt={}));const $t=/({{)|(}})|{(\d+[^}]*)}/g,Zt="0",Qt="#",Jt="E",Kt=new RegExp([Zt,Qt].join("|"),"g");class en{static format(e,t,n=null){return n||(n=en.enUSCulture),e instanceof Date?e=void 0===t?Intl.DateTimeFormat(n.name).format(e):qt.format(e,t,!1):"number"==typeof e&&(e=void 0===t?e.toLocaleString("en-US"):Gt.formatNumber(e,t,{numberFormat:Gt.numberFormat})),e}}en.enUSCulture={name:"en",numberFormat:{negativeInfinity:"",positiveInfinity:"",pattern:["-n"],decimals:2,",":",",".":".",groupSizes:[3],"+":"+","-":"-",percent:{pattern:["-n %","n %"],decimals:2,groupSizes:[3],",":",",".":".",symbol:"%"},currency:{pattern:["($n)","$n"],decimals:2,groupSizes:[3],",":",",".":".",symbol:"$"}},calendar:{":":":",days:{names:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],namesAbbr:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],namesShort:["Su","Mo","Tu","We","Th","Fr","Sa"]},months:{names:["January","February","March","April","May","June","July","August","September","October","November","December",""],namesAbbr:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""]},AM:["AM","am","AM"],PM:["PM","pm","PM"],eras:[{name:"A.D.",start:null,offset:0}],firstDay:0,patterns:{d:"M/d/yyyy",D:"dddd, MMMM dd, yyyy",t:"h:mm tt",T:"h:mm:ss tt",f:"dddd, MMMM dd, yyyy h:mm tt",F:"dddd, MMMM dd, yyyy h:mm:ss tt",M:"MMMM dd",Y:"yyyy MMMM",S:"yyyy'-'MM'-'dd'T'HH':'mm':'ss"}},calendars:{standard:{firstDay:0,patterns:{d:"M/d/yyyy",D:"dddd, MMMM dd, yyyy",t:"h:mm tt",T:"h:mm:ss tt",f:"dddd, MMMM dd, yyyy h:mm tt",F:"dddd, MMMM dd, yyyy h:mm:ss tt",M:"MMMM dd",Y:"yyyy MMMM",S:"yyyy'-'MM'-'dd'T'HH':'mm':'ss"}}}};var tn,nn;!function(e){let t,n;function r(e,t,n){let r=n.calendar.patterns;!function(e){let t=e.patterns;void 0===t.g&&(t.g=t.f.replace(t.D,t.d),t.G=t.F.replace(t.D,t.d))}(n.calendar);let i=function(e,t,n){switch(t){case"m":t="M";break;case"O":case"o":t="yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'0000'";break;case"R":case"r":e=new Date(e.getUTCFullYear(),e.getUTCMonth(),e.getUTCDate(),e.getUTCHours(),e.getUTCMinutes(),e.getUTCSeconds(),e.getUTCMilliseconds()),t="ddd, dd MMM yyyy HH':'mm':'ss 'GMT'";break;case"s":t="S";break;case"u":e=new Date(e.getUTCFullYear(),e.getUTCMonth(),e.getUTCDate(),e.getUTCHours(),e.getUTCMinutes(),e.getUTCSeconds(),e.getUTCMilliseconds()),t="yyyy'-'MM'-'dd HH':'mm':'ss'Z'";break;case"U":e=new Date(e.getUTCFullYear(),e.getUTCMonth(),e.getUTCDate(),e.getUTCHours(),e.getUTCMinutes(),e.getUTCSeconds(),e.getUTCMilliseconds()),t="F";break;case"y":case"Y":switch(n){case"default":case"en":case"en-US":t="MMMM, yyyy";break;default:t="Y"}}return{value:e,format:t}}(e,t,n.name);return t=1===i.format.length?r[i.format]:i.format,n||(n=this.getCurrentCulture()),en.format(i.value,t,n)}e.canFormat=function(e){return e instanceof Date},e.format=function(e,i,a){let o=1===(i=i||"G").length;try{return o?r(e,i,a):function(e,r,i){let a,o=[];if((r=jt.preserveLiterals(r,o)).indexOf("F")>-1){r=At(r,"FFFF","FFF");let t=e.getMilliseconds();if(t%10>=1&&(r=At(r,"FFF","fff")),r=At(r,"FFF","FF"),t%100/10>=1&&(r=At(r,"FF","ff")),r=At(r,"FF","F"),t%1e3/100>=1&&(r=At(r,"F","f")),""===(r=At(r,"F",""))||"%"===r)return""}return r=function(e){return e===t?n:(t=e,e=function(e){if(e=(e=(e=(e=(e=(e=(e=(e=e.replace(/%K/g,"zzz")).replace(/K/g,"zzz")).replace(/fffffff/g,"fff0000")).replace(/ffffff/g,"fff000")).replace(/fffff/g,"fff00")).replace(/ffff/g,"fff0")).replace(/yyyyy/g,"0yyyy")).replace(/(^y|^)yyy(^y|$)/g,"yyyy"),oe||(oe=["d","f","F","g","h","H","K","m","M","s","t","y","z",":","/"].map(e=>({r:new RegExp("%"+e+"(?!"+e+")","g"),s:e}))),-1!==e.indexOf("%")&&e.length>2)for(let t=0;t<oe.length;t++)e=e.replace(oe[t].r,oe[t].s);return e}(e),n=e,e)}(r),a=function(e,t){let n=t[":"];if(":"===n)return e;let r="",i=e.length;for(let t=0;t<i;t++){let i=e.charAt(t);switch(i){case":":r+=n;break;default:r+=i}}return r}(a=en.format(e,r,i),i.calendar),a=jt.restoreLiterals(a,o,!1)}(e,i,a)}catch(t){return r(e,"G",a)}}}(tn||(tn={})),function(e){const t=/\{.+\}/,n=/e[+-]*[0#]+/i,i=/^[a-z]\d{0,2}$/i,a=/0+$/,o=/\.([0#]*)/g,u=/[0#,\.]+[0,#]*/g,l=/([0#])(?=[^0#]*$)/,s=".";function c(e,t){let n=Xt.run(u,t);return n?n[0]:t}function f(e,t,n){if((t=Math.abs(t))>=0){let r=[];e=jt.preserveLiterals(e,r);let i=Ot(n?Zt:Qt,Math.abs(t)),a=Xt.run(o,e);if(a){let t=e.substr(0,a.index),r=e.substr(a.index+1,a[1].length),o=e.substr(a.index+a[0].length);if(n)r=i;else{let e=i.length-r.length;e>0?r+=i.slice(-e):e<0&&(r=r.slice(0,e))}r.length>0&&(r=s+r),e=t+r+o}else i.length>0&&(e=e.replace(l,"$1"+s+i));0!==r.length&&(e=jt.restoreLiterals(e,r))}return e}function h(t){return-1!==jt.removeLiterals(t).indexOf(e.NumberFormatComponentsDelimeter)}function d(t){let n={hasNegative:!1,positive:t,negative:t,zero:t},r=[],i=(t=jt.preserveLiterals(t,r)).split(e.NumberFormatComponentsDelimeter),a=i.length;return a>1&&(0!==r.length&&(i=i.map(e=>jt.restoreLiterals(e,r))),n.hasNegative=!0,n.positive=n.zero=i[0],n.negative=i[1],a>2&&(n.zero=i[2])),n}let g;function m(e){return i.test(e)}function p(t,r,i,a){let o,u={negativeInfinity:"",positiveInfinity:"",pattern:["-n"],decimals:2,",":",",".":".",groupSizes:[3],"+":"+","-":"-",percent:{pattern:["-n %","n %"],decimals:2,groupSizes:[3],",":",",".":".",symbol:"%"},currency:{pattern:["($n)","$n"],decimals:2,groupSizes:[3],",":",",".":".",symbol:"$"}};if(!isFinite(t))return en.format(t,void 0);{let l=d(r);r=t>0?l.positive:0===t?l.zero:l.negative,l.hasNegative&&(t=Math.abs(t));let s=v(r,!0),c=[];if(s.hasLiterals&&(r=jt.preserveLiterals(r,c)),s.hasE&&!a){let e=Xt.run(n,r);if(e){let n=r.substr(0,e.index),i=r.substr(e.index+2),a=_(n,s),l=M(n,s);if(1!==l&&(t*=l),"number"!=typeof t)return String(t);let c=t.toExponential(a),f=c.indexOf("e"),h=c.substr(0,f),d=c.substr(f+1),g=x(h,n,u),m=x(d,i,u);"+"===m.charAt(0)&&"+"!==e[0].charAt(1)&&(m=m.substr(1)),o=g+e[0].charAt(0)+m}}if(void 0===o){let n,l=!1,c=_(r,s),f=M(r,s);if(1!==f&&(t*=f),t=parseFloat(y(t,c)),!isFinite(t))return en.format(t,void 0);if(a){a=function(e,t){if(!t||void 0===e)return e;let n="{0:"+t+"}";return e.replace("{0}",n)}(a,e.getNumericFormat(t,r)),n=an.format(a,[t],i.name),l=!0}else n=y(t,c);o=x(n,r,u,a,l)}s.hasLiterals&&(o=jt.restoreLiterals(o,c,!1)),g=s}return o}function y(e,t){let n="",i=0;t>16&&(i=t-16,t=16);let a=r.log10(Math.abs(e));if(a<16){if(a>0){let e=16-a;t>e&&(i+=t-e,t=e)}n=e.toFixed(t)}else if(16===a)n=e.toFixed(0),(i+=t)>0&&(n+=".");else{if("number"!=typeof e)return String(e);let r=(n=e.toExponential(15)).indexOf("e");if(r>0){let e=n.indexOf("."),i=n.substr(0,r),a=n.substr(r+1),o=parseInt(a,10)-(i.length-e-1);n=i.replace(".","")+Ot("0",o),t>0&&(n=n+"."+Ot("0",t))}}return i>0&&(n+=Ot("0",i)),n}function v(e,t,n,r){if(void 0!==g&&e===g.format)return g;let i=[],a=jt.preserveLiterals(e,i),o={format:e,hasLiterals:0!==i.length,hasE:!1,hasCommas:!1,hasDots:!1,hasPercent:!1,hasPermile:!1,precision:void 0,scale:void 0,partsPerScale:void 0};for(let e=0,t=a.length;e<t;e++){switch(a.charAt(e)){case"e":case"E":o.hasE=!0;break;case",":o.hasCommas=!0;break;case".":o.hasDots=!0;break;case"%":o.hasPercent=!0;break;case"‰":o.hasPermile=!0}}let u=d(e);return t&&(o.precision=_(u.positive,o)),r&&(o.partsPerScale=b(u.positive,o)),n&&(o.scale=M(u.positive,o)),o}function _(e,t){if(t.precision>-1)return t.precision;let n=0;if(t.hasDots){t.hasLiterals&&(e=jt.removeLiterals(e));let r=e.indexOf(".");if(r>-1){let t=e.length;for(let i=r;i<t;i++){let t=e.charAt(i);if(t.match(Kt)&&n++,t===Jt)break}n=Math.min(19,n)}}return t.precision=n,n}function b(e,t){if(null!=t.partsPerScale)return t.partsPerScale;let n=1;return t.hasPercent&&e.indexOf("%")>-1&&(n*=100),t.hasPermile&&e.indexOf("‰")>-1&&(n*=1e3),t.partsPerScale=n,n}function M(e,t){if(t.scale>-1)return t.scale;let n=b(e,t);if(t.hasCommas){let t=e.indexOf(".");-1===t&&(t=e.length);for(let r=t-1;r>-1;r--){if(","!==e.charAt(r))break;n/=1e3}}return t.scale=n,n}function x(e,n,r,i,o){let u=!!i,l=n.split(".",2);if(2===l.length){let n=l[0],s=l[1],c="";i&&(c=i.replace(t,""),e=e.replace(c,""));let f=r["."],h=o?f:".",d=e.split(h,2),g=1===d.length?d[0]+c:d[0],m=2===d.length?d[1]+c:"";m=m.replace(a,"");let p=w(g,n,r,u),y=function(e,t,n){let r=0,i=t.length,a=e.length;if(n){let n=t.charAt(i-1);return n.match(Kt)?{value:e,fmtOnly:""===e}:{value:e+n,fmtOnly:""===e}}let o="",u=!0;for(let n=0;n<i;n++){let i=t.charAt(n);if(r<a)switch(i){case Zt:case Qt:o+=e[r++],u=!1;break;default:o+=i}else i!==Qt&&(o+=i,u=u&&i!==Zt)}return{value:o,fmtOnly:u}}(m,s,u);return y.fmtOnly||""===y.value?p+y.value:p+f+y.value}return w(e,n,r,u)}function w(e,t,n,r){let i=t.indexOf(","),a=i>-1&&i<Math.max(t.lastIndexOf("0"),t.lastIndexOf("#"))&&n[","],o=0,u=0,l=n.groupSizes||[3],s=l[0],c=n[","],f="",h=e.charAt(0);"+"!==h&&"-"!==h||(f=n[h],e=e.substr(1));let d="0"===e,g="",m="",p=e.length-1,y=!0;for(let n=t.length-1;n>-1;n--){let i=t.charAt(n);switch(i){case Zt:case Qt:y=!1,""!==m&&(g=m+g,m=""),r||((p>-1||i===Zt)&&a&&(o===s?(g=c+g,++u<l.length&&(s=l[u]),o=1):o++),p>-1?(d&&i===Qt||(g=e.charAt(p)+g),p--):i!==Qt&&(g=i+g));break;case",":break;default:m=i+m}}if(!r){if(p>-1&&""!==g)if(a)for(;p>-1;)o===s?(g=c+g,++u<l.length&&(s=l[u]),o=1):o++,g=e.charAt(p)+g,p--;else g=e.substr(0,p+1)+g;return f+m+g}return y?f+m+g:f+m+e+g}function S(e,t){let n=t["+"],r=t["-"],i=t["."],a=t[","];if("+"===n&&"-"===r&&"."===i&&","===a)return e;let o=e.length,u="";for(let t=0;t<o;t++){let o=e.charAt(t);switch(o){case"+":u+=n;break;case"-":u+=r;break;case".":u+=i;break;case",":u+=a;break;default:u+=o}}return u}e.NumberFormatComponentsDelimeter=";",e.getNumericFormat=function(t,n){if(null==n)return n;if(h(n)){let{positive:r,negative:i,zero:a}=e.getComponents(n);return c(t,t>0?r:0===t?a:i)}return c(t,n)},e.addDecimalsToFormat=function(t,n,r){if(null==n)return t;if(null==t&&(t=Zt),h(t)){let{positive:i,negative:a,zero:o}=e.getComponents(t),u=[i,a,o];for(let e=0;e<u.length;e++)u[e]=f(u[e],n,r);return u.join(e.NumberFormatComponentsDelimeter)}return f(t,n,r)},e.hasFormatComponents=h,e.getComponents=d,e.canFormat=function(e){return"number"==typeof e},e.isStandardFormat=m,e.format=function(e,t,n){t=t||"G";try{return m(t)?function(e,t,n){let r,i=t.length>1?parseInt(t.substr(1,t.length-1),10):void 0,a=en.enUSCulture.numberFormat,o=t.charAt(0);switch(o){case"e":case"E":void 0===i&&(i=6);let u=Ot("0",i);r=p(e,t="0."+u+o+"+000",n);break;case"f":case"F":r=S(r=void 0!==i?e.toFixed(i):e.toFixed(a.decimals),a);break;case"g":case"G":let l=Math.abs(e);if(0===l||1e-4<=l&&l<1e15)r=void 0!==i?e.toPrecision(i):e.toString();else{if("number"!=typeof e)return String(e);r=(r=void 0!==i?e.toExponential(i):e.toExponential()).replace("e","E")}r=S(r,a);break;case"r":case"R":r=S(r=e.toString(),a);break;case"x":case"X":if(r=e.toString(16),"X"===o&&(r=r.toUpperCase()),void 0!==i){let t=r.length,n=e<0;n&&t--;let a=i-t,o=void 0;a>0&&(o=Ot("0",a)),r=n?"-"+o+r.substr(1):o+r}r=S(r,a);break;default:r=en.format(e,t,n)}return r}(e,t,n):p(e,t,n)}catch(t){return en.format(e,void 0,n)}},e.formatWithCustomOverride=function(e,t,n,r){return p(e,t,r,n)},e.getCustomFormatMetadata=v}(nn||(nn={}));class rn{constructor(e){let t=e.calendar,n=t.patterns,r=t.months.namesAbbr,i=r&&r[0],a=n.Y,o=n.M,u=n.f,l=n.T,s=n.t,c=u.indexOf(",")>-1?", ":" ",f=0===a.indexOf("yyyy'")&&a.length>6&&"'"===a[6];this.YearPattern=f?a.substr(0,7):"yyyy";let h=u.indexOf("yy"),d=u.indexOf("MMMM");this.MonthPattern=i&&d>-1?h>d?"MMM yyyy":"yyyy MMM":a,this.DayPattern=i?o.replace("MMMM","MMM"):o;let g=u.indexOf("mm"),m=u.indexOf("tt")>-1?s.replace(":mm ",""):s;switch(this.HourPattern=h<g?this.DayPattern+c+m:m+c+this.DayPattern,this.MinutePattern=s,this.SecondPattern=l,this.MillisecondPattern=l.replace("ss","ss.fff"),e.name){case"fi-FI":this.DayPattern=this.DayPattern.replace("'ta'",""),this.HourPattern=this.HourPattern.replace("'ta'","")}}getFormatString(e){switch(e){case Yt.Year:return this.YearPattern;case Yt.Month:return this.MonthPattern;case Yt.Week:case Yt.Day:return this.DayPattern;case Yt.Hour:return this.HourPattern;case Yt.Minute:return this.MinutePattern;case Yt.Second:return this.SecondPattern;case Yt.Millisecond:return this.MillisecondPattern}}}const an=new class{formatValue(e,t,n){if(void 0===e||null===e)return"";const r=this.getCulture(n);return tn.canFormat(e)?tn.format(e,t,r):nn.canFormat(e)?nn.format(e,t,r):e.toString()}format(e,t,n){return e?e.replace($t,(e,r,i,a)=>{if(r)return"{";if(i)return"}";{let e=a.split(":"),r=parseInt(e[0],10),i=e[1];return this.formatValue(t[r],i,n)}}):""}isStandardNumberFormat(e){return nn.isStandardFormat(e)}formatNumberWithCustomOverride(e,t,n,r){let i=this.getCulture(r);return nn.formatWithCustomOverride(e,t,n,i)}dateFormatString(e){return this._dateTimeScaleFormatInfo||this.initialize(),this._dateTimeScaleFormatInfo.getFormatString(e)}setCurrentCulture(e){this._currentCultureSelector!==e&&(this._currentCulture=this.getCulture(e),this._currentCultureSelector=e,this._dateTimeScaleFormatInfo=new rn(this._currentCulture))}getCulture(e){return en.enUSCulture}initialize(){let e=this.getCurrentCulture();this.setCurrentCulture(e);let t=this.getUrlParam("calendar");if(t){let e=this._currentCulture,n=e.calendars[t];n&&(e.calendar=n)}}getCurrentCulture(){let e=this.getUrlParam("language");return e||(Ht.a&&Ht.a.common&&Ht.a.common.cultureInfo?Ht.a.common.cultureInfo:window.navigator.userLanguage||window.navigator.language||"en-US")}getUrlParam(e){let t=window.location.search.match(RegExp("[?&]"+e+"=([^&]*)"));return t?t[1]:void 0}},on=24,un=1e15,ln=1e-4,sn="%",cn="E+0",fn="0.##"+cn,hn=/^([0\#,]*\.[0\#]+|[0\#,]+|g)$/i;class dn{project(e){return this.value?r.removeDecimalNoise(e/this.value):e}reverseProject(e){return this.value?e*this.value:e}isApplicableTo(e){e=Math.abs(e);let t=r.getPrecision(e,3);return r.greaterOrEqualWithPrecision(e,this.applicableRangeMin,t)&&r.lessWithPrecision(e,this.applicableRangeMax,t)}isScaling(){return this.value>1}}class gn{constructor(e){this.units=e||[]}get title(){return this.displayUnit?this.displayUnit.title:void 0}update(e){void 0!==e&&(this.unitBaseValue=e,this.displayUnit=this.findApplicableDisplayUnit(e))}findApplicableDisplayUnit(e){for(let t of this.units)if(t.isApplicableTo(e))return t}format(e,t,n,r,i){n=this.getNumberOfDecimalsForFormatting(t,n);let a="";return this.isFormatSupported(t)&&!this.hasScientitifcFormat(t)&&this.isScalingUnit()&&this.shouldRespectScalingUnit(t)&&(e=this.displayUnit.project(e),a=this.displayUnit.labelFormat),this.formatHelper({value:e,nonScientificFormat:a,format:t,decimals:n,trailingZeros:r,cultureSelector:i})}isFormatSupported(e){return!gn.UNSUPPORTED_FORMATS.test(e)}isPercentageFormat(e){return e&&e.indexOf(sn)>=0}shouldRespectScalingUnit(e){return!0}getNumberOfDecimalsForFormatting(e,t){return t}isScalingUnit(){return this.displayUnit&&this.displayUnit.isScaling()}formatHelper(e){let{value:t,nonScientificFormat:n,cultureSelector:r,format:i,decimals:a,trailingZeros:o}=e;if("g"!==i&&"G"!==i||null==a||(i="#,0.00"),(i=nn.addDecimalsToFormat(i,a,o))&&!an.isStandardNumberFormat(i))return an.formatNumberWithCustomOverride(t,i,n,r);i||(i="G"),n||(n="{0}");let u=an.formatValue(t,i,r);return an.format(n,[u])}formatSingleValue(e,t,n,i,a){return this.update(this.shouldUseValuePrecision(e)?r.getPrecision(e,8):e),this.format(e,t,n,i,a)}shouldUseValuePrecision(e){if(0===this.units.length)return!0;let t=0;for(let e=0;e<this.units.length;e++)if(this.units[e].isScaling()){t=this.units[e].applicableRangeMin;break}return Math.abs(e)<t}isScientific(e){return e<-un||e>un||-ln<e&&e<ln&&0!==e}hasScientitifcFormat(e){return e&&-1!==e.toUpperCase().indexOf("E")}supportsScientificFormat(e){return!e||hn.test(e)}shouldFallbackToScientific(e,t){return!this.hasScientitifcFormat(t)&&this.supportsScientificFormat(t)&&this.isScientific(e)}getScientificFormat(e,t,n,r){if(this.isFormatSupported(t)&&this.shouldFallbackToScientific(e,t)){let i=nn.getNumericFormat(e,t);return n&&(i=nn.addDecimalsToFormat(i||"0",Math.abs(n),r)),i?i+cn:fn}return t}}gn.UNSUPPORTED_FORMATS=/^(p\d*)|(e\d*)$/i;class mn extends gn{constructor(){super([])}}class pn extends gn{constructor(e){super(pn.getUnits(e))}format(e,t,n,r,i){return t=this.getScientificFormat(e,t,n,r),super.format(e,t,n,r,i)}static reset(){pn.units=null}static getUnits(e){return pn.units||(pn.units=_n(e,(e,t,n)=>e-t>=1e3?e/10:n),pn.units[pn.units.length-1].applicableRangeMax=1/0),pn.units}}class yn extends gn{constructor(e){super(yn.getUnits(e))}static reset(){yn.units=null}static getUnits(e){return yn.units||(yn.units=_n(e),yn.units[yn.units.length-1].applicableRangeMax=1/0),yn.units}format(e,t,n,r,i){return t=this.getScientificFormat(e,t,n,r),super.format(e,t,n,r,i)}}class vn extends gn{constructor(e){super(vn.getUnits(e))}isFormatSupported(e){return!vn.UNSUPPORTED_FORMATS.test(e)}static getUnits(e){if(!vn.units){let t=[],n=(e,t,n)=>-1===e&&e-t>=1e3?e/10:n,r=e(-1);bn(t,vn.AUTO_DISPLAYUNIT_VALUE,r.title,r.format,n),r=e(0),bn(t,vn.NONE_DISPLAYUNIT_VALUE,r.title,r.format,n),vn.units=t.concat(_n(e,n)),vn.units[vn.units.length-1].applicableRangeMax=1/0}return vn.units}format(e,t,n,r,i){return t=this.getScientificFormat(e,t,n,r),super.format(e,t,n,r,i)}}function _n(e,t){let n=[];for(let i=3;i<on;i++){let a=e(i);a&&bn(n,r.pow10(i),a.title,a.format,t)}return n}function bn(e,t,n,r,i){if(n||r){let a=t;if(e.length>0){let n=e[e.length-1];i&&(a=i(t,n.value,a)),n.applicableRangeMax=a}let o=new dn;o.value=t,o.applicableRangeMin=a,o.applicableRangeMax=1e3*a,o.title=n,o.labelFormat=r,e.push(o)}}var Mn,xn;vn.AUTO_DISPLAYUNIT_VALUE=0,vn.NONE_DISPLAYUNIT_VALUE=1,vn.UNSUPPORTED_FORMATS=/^(e\d*)$/i,function(e){e[e.Default=0]="Default",e[e.Verbose=1]="Verbose",e[e.WholeUnits=2]="WholeUnits",e[e.DataLabels=3]="DataLabels"}(Mn||(Mn={})),function(e){let t=[31,28,31,30,31,30,31,31,30,31,30,31],n=[31,29,31,30,31,30,31,31,30,31,30,31];function r(e){return e%4==0&&e%100!=0||e%400==0}function i(e,t){let n=e.getFullYear(),r=e.getMonth(),i=e.getDate(),a=new Date(e.getTime());return a.setFullYear(n,r,i+t),a}e.addYears=function(e,t){let n=e.getFullYear(),i=e.getMonth(),a=e.getDate(),o=2===i&&29===a,u=new Date(e.getTime());return n+=t,o&&!r(n)&&(a=28),u.setFullYear(n,i,a),u},e.addMonths=function(e,i){let a=e.getFullYear(),o=e.getMonth(),u=e.getDate(),l=new Date(e.getTime());return a+=(i-i%12)/12,(o+=i%12)>11&&(o%=12,a++),u=Math.min(u,function(e,i){return r(e)?n[i]:t[i]}(a,o)),l.setFullYear(a,o,u),l},e.addWeeks=function(e,t){return i(e,7*t)},e.addDays=i,e.addHours=function(e,t){return new Date(e.getTime()+36e5*t)},e.addMinutes=function(e,t){return new Date(e.getTime()+6e4*t)},e.addSeconds=function(e,t){return new Date(e.getTime()+1e3*t)},e.addMilliseconds=function(e,t){return new Date(e.getTime()+t)}}(xn||(xn={}));var wn,Sn,Tn,Dn,Cn,Nn,Fn=o.NumericSequence,En=a.NumericSequenceRange;class Pn{constructor(e){this.unit=e,this.sequence=[],this.min=new Date("9999-12-31T23:59:59.999"),this.max=new Date("0001-01-01T00:00:00.000")}add(e){e<this.min&&(this.min=e),e>this.max&&(this.max=e),this.sequence.push(e)}extendToCover(e,t){let n=this.min;for(;e<n;)n=Pn.addInterval(n,-this.interval,this.unit),this.sequence.splice(0,0,n);for(this.min=n,n=this.max;n<t;)n=Pn.addInterval(n,this.interval,this.unit),this.sequence.push(n);this.max=n}moveToCover(e,t){let n=Pn.getDelta(e,t,this.unit),r=Math.floor(n/this.interval);for(this.min=Pn.addInterval(this.min,r*this.interval,this.unit),this.sequence=[],this.sequence.push(this.min),this.max=this.min;this.max<t;)this.max=Pn.addInterval(this.max,this.interval,this.unit),this.sequence.push(this.max)}static calculate(e,t,n,r){switch(r||(r=Pn.getIntervalUnit(e,t,n)),r){case Yt.Year:return Pn.calculateYears(e,t,n);case Yt.Month:return Pn.calculateMonths(e,t,n);case Yt.Week:return Pn.calculateWeeks(e,t,n);case Yt.Day:return Pn.calculateDays(e,t,n);case Yt.Hour:return Pn.calculateHours(e,t,n);case Yt.Minute:return Pn.calculateMinutes(e,t,n);case Yt.Second:return Pn.calculateSeconds(e,t,n);case Yt.Millisecond:return Pn.calculateMilliseconds(e,t,n)}}static calculateYears(e,t,n){let r=En.calculateDataRange(e.getFullYear(),t.getFullYear(),!1),i=Fn.calculate(En.calculate(0,r.max-r.min),n,0,null,null,[1,2,5]),a=Math.floor(r.min/i.interval)*i.interval,o=new Date(a,0,1);return Pn.fromNumericSequence(o,i,Yt.Year)}static calculateMonths(e,t,n){let r=e.getFullYear(),i=t.getFullYear(),a=e.getMonth(),o=12*(i-r)+t.getMonth(),u=new Date(r,0,1),l=Fn.calculateUnits(a,o,n,[1,2,3,6,12]);return Pn.fromNumericSequence(u,l,Yt.Month)}static calculateWeeks(e,t,n){let i=(e.getDay()-0+7)%7,a=e.getDate()-i,o=new Date(e.getFullYear(),e.getMonth(),a),u=r.ceilWithPrecision(Pn.getDelta(o,t,Yt.Week)),l=Fn.calculateUnits(0,u,n,[1,2,4,8]);return Pn.fromNumericSequence(o,l,Yt.Week)}static calculateDays(e,t,n){let i=new Date(e.getFullYear(),e.getMonth(),e.getDate()),a=r.ceilWithPrecision(Pn.getDelta(e,t,Yt.Day)),o=Fn.calculateUnits(0,a,n,[1,2,7,14]);return Pn.fromNumericSequence(i,o,Yt.Day)}static calculateHours(e,t,n){let i=new Date(e.getFullYear(),e.getMonth(),e.getDate()),a=r.floorWithPrecision(Pn.getDelta(i,e,Yt.Hour)),o=r.ceilWithPrecision(Pn.getDelta(i,t,Yt.Hour)),u=Fn.calculateUnits(a,o,n,[1,2,3,6,12,24]);return Pn.fromNumericSequence(i,u,Yt.Hour)}static calculateMinutes(e,t,n){let i=new Date(e.getFullYear(),e.getMonth(),e.getDate(),e.getHours()),a=r.floorWithPrecision(Pn.getDelta(i,e,Yt.Minute)),o=r.ceilWithPrecision(Pn.getDelta(i,t,Yt.Minute)),u=Fn.calculateUnits(a,o,n,[1,2,5,10,15,30,60,120,180,360,720,1440]);return Pn.fromNumericSequence(i,u,Yt.Minute)}static calculateSeconds(e,t,n){let i=new Date(e.getFullYear(),e.getMonth(),e.getDate(),e.getHours(),e.getMinutes()),a=r.floorWithPrecision(Pn.getDelta(i,e,Yt.Second)),o=r.ceilWithPrecision(Pn.getDelta(i,t,Yt.Second)),u=Fn.calculateUnits(a,o,n,[1,2,5,10,15,30,60,120,300,600,900,1800,3600]);return Pn.fromNumericSequence(i,u,Yt.Second)}static calculateMilliseconds(e,t,n){let r=new Date(e.getFullYear(),e.getMonth(),e.getDate(),e.getHours(),e.getMinutes(),e.getSeconds()),i=Pn.getDelta(r,e,Yt.Millisecond),a=Pn.getDelta(r,t,Yt.Millisecond),o=Fn.calculate(En.calculate(i,a),n,0);return Pn.fromNumericSequence(r,o,Yt.Millisecond)}static addInterval(e,t,n){switch(t=Math.round(t),n){case Yt.Year:return xn.addYears(e,t);case Yt.Month:return xn.addMonths(e,t);case Yt.Week:return xn.addWeeks(e,t);case Yt.Day:return xn.addDays(e,t);case Yt.Hour:return xn.addHours(e,t);case Yt.Minute:return xn.addMinutes(e,t);case Yt.Second:return xn.addSeconds(e,t);case Yt.Millisecond:return xn.addMilliseconds(e,t)}}static fromNumericSequence(e,t,n){let r=new Pn(n);for(let i=0;i<t.sequence.length;i++){let a=t.sequence[i],o=Pn.addInterval(e,a,n);r.add(o)}return r.interval=t.interval,r.intervalOffset=t.intervalOffset,r}static getDelta(e,t,n){let r=0;switch(n){case Yt.Year:r=t.getFullYear()-e.getFullYear();break;case Yt.Month:r=12*(t.getFullYear()-e.getFullYear())+t.getMonth()-e.getMonth();break;case Yt.Week:r=(t.getTime()-e.getTime())/6048e5;break;case Yt.Day:r=(t.getTime()-e.getTime())/864e5;break;case Yt.Hour:r=(t.getTime()-e.getTime())/36e5;break;case Yt.Minute:r=(t.getTime()-e.getTime())/6e4;break;case Yt.Second:r=(t.getTime()-e.getTime())/1e3;break;case Yt.Millisecond:r=t.getTime()-e.getTime()}return r}static getIntervalUnit(e,t,n){n=Math.max(n,2);let r=Pn.getDelta(e,t,Yt.Day);if(r>356&&r>=180*n)return Yt.Year;if(r>60&&r>7*n)return Yt.Month;if(r>14&&r>2*n)return Yt.Week;let i=Pn.getDelta(e,t,Yt.Hour);if(r>2&&i>12*n)return Yt.Day;if(i>=24&&i>=n)return Yt.Hour;let a=Pn.getDelta(e,t,Yt.Minute);if(a>2&&a>=n)return Yt.Minute;let o=Pn.getDelta(e,t,Yt.Second);if(o>2&&o>=.8*n)return Yt.Second;if(Pn.getDelta(e,t,Yt.Millisecond)>0)return Yt.Millisecond;let u=e;return 0!==u.getMilliseconds()?Yt.Millisecond:0!==u.getSeconds()?Yt.Second:0!==u.getMinutes()?Yt.Minute:0!==u.getHours()?Yt.Hour:1!==u.getDate()?Yt.Day:0!==u.getMonth()?Yt.Month:Yt.Year}}Pn.MIN_COUNT=1,Pn.MAX_COUNT=1e3,function(e){function t(e,t){let n=e.roles;return n&&n[t]}e.getMeasureIndexOfRole=function(e,n){if(!e||!e.length)return-1;let r=e[0];if(r.values&&r.values.length>0)for(let e=0,i=r.values.length;e<i;++e){let i=r.values[e];if(i&&i.source&&t(i.source,n))return e}return-1},e.getCategoryIndexOfRole=function(e,n){if(e&&e.length)for(let r=0,i=e.length;r<i;r++)if(t(e[r].source,n))return r;return-1},e.hasRole=t,e.hasRoleInDataView=function(e,t){return null!=e&&null!=e.metadata&&e.metadata.columns&&e.metadata.columns.some(e=>e.roles&&void 0!==e.roles[t])},e.hasRoleInValueColumn=function(e,t){return e&&e.source&&e.source.roles&&!0===e.source.roles[t]}}(wn||(wn={})),function(e){function t(e){let t=n(e);return null!=t&&!0===t.imageUrl}function n(e){return e&&e.type&&e.type.misc}e.categoryIsAlsoSeriesRole=function(e,t,n){if(e.categories&&e.categories.length>0){let r=e.categories[0];return r.source&&wn.hasRole(r.source,t)&&wn.hasRole(r.source,n)}return!1},e.getSeriesName=function(e){return void 0!==e.groupName?e.groupName:e.queryName},e.isImageUrlColumn=t,e.isWebUrlColumn=function(e){let t=n(e);return null!=t&&!0===t.webUrl},e.getMiscellaneousTypeDescriptor=n,e.hasImageUrlColumn=function(e){return!!(e&&e.metadata&&e.metadata.columns&&e.metadata.columns.length)&&e.metadata.columns.some(e=>!0===t(e))}}(Sn||(Sn={})),function(e){function t(e,t,n){if(!e)return n;let r=e[t];return void 0===r?n:r}e.getValue=t,e.getFillColorByPropertyName=function(e,n,r){let i=t(e,n);return i&&i.solid?i.solid.color:r}}(Tn||(Tn={})),function(e){function t(e,t,n){return e?Tn.getValue(e[t.objectName],t.propertyName,n):n}e.getValue=t,e.getObject=function(e,t,n){return e&&e[t]?e[t]:n},e.getFillColor=function(e,n,r){const i=t(e,n);return i&&i.solid?i.solid.color:r},e.getCommonValue=function(e,n,r){const i=t(e,n,r);return i&&i.solid?i.solid.color:void 0===i||null===i||"object"==typeof i&&!i.solid?r:i}}(Dn||(Dn={}));class On{static getDefault(){return new this}static createPropertyIdentifier(e,t){return{objectName:e,propertyName:t}}static parse(e){let t,n=this.getDefault();if(!e||!e.metadata||!e.metadata.objects)return n;t=n.getProperties();for(let r in t)for(let i in t[r]){const a=n[r][i];n[r][i]=Dn.getCommonValue(e.metadata.objects,t[r][i],a)}return n}static isPropertyEnumerable(e){return!On.InnumerablePropertyPrefix.test(e)}static enumerateObjectInstances(e,t){let n=e&&e[t.objectName];if(!n)return[];let r={objectName:t.objectName,selector:null,properties:{}};for(let e in n)n.hasOwnProperty(e)&&(r.properties[e]=n[e]);return{instances:[r]}}getProperties(){let e={};return Object.keys(this).forEach(t=>{if(On.isPropertyEnumerable(t)){let n=Object.keys(this[t]);e[t]={},n.forEach(n=>{On.isPropertyEnumerable(t)&&(e[t][n]=On.createPropertyIdentifier(t,n))})}}),e}}On.InnumerablePropertyPrefix=/^_/,function(e){function t(e,t){e.grouped=t?()=>t:()=>n(e)}function n(e){let t,n=[];for(let r=0,i=e.length;r<i;r++){let i=e[r];if(!t||t.identity!==i.identity){if(t={values:[]},i.identity){t.identity=i.identity;let e=i.source;void 0!==e.groupName?t.name=e.groupName:e.displayName&&(t.name=e.displayName)}n.push(t)}t.values.push(i)}return n}e.createValueColumns=function(e=[],n,r){let i=e;return t(i),n&&(i.identityFields=n),r&&(i.source=r),i},e.setGrouped=t,e.groupValues=n}(Cn||(Cn={})),function(e){e.isImageUrlAllowed=function(e){return/^https?:\/\/.+\.(gif|jpg|png|svg)$/i.test(e)||/^data:image\/(gif|jpeg|png|svg\+xml);base64,/i.test(e)},e.isFileImage=function(e,t){let n=new XMLHttpRequest;n.onreadystatechange=function(){if(n.readyState!==this.HEADERS_RECEIVED)return;let e=n.getResponseHeader("Content-Type");return["image/png","image/jpeg","image/gif","image/svg+xml"].indexOf(e)>-1?t(!0,e):t(!1,e)},n.open("HEAD",e,!0),n.send()}}(Nn||(Nn={}));var An,In=f.DataViewObjects,Un=s.ValueType,kn=s.PrimitiveType;!function(e){var t=c;const n={"0.00 %;-0.00 %;0.00 %":"Percentage","0.0 %;-0.0 %;0.0 %":"Percentage1"};e.DefaultIntegerFormat="g",e.DefaultNumericFormat="#,0.00",e.DefaultDateFormat="d";const i={NullValue:"(Blank)",BooleanTrue:"True",BooleanFalse:"False",NaNValue:"NaN",InfinityValue:"+Infinity",NegativeInfinityValue:"-Infinity",RestatementComma:"{0}, {1}",RestatementCompoundAnd:"{0} and {1}",RestatementCompoundOr:"{0} or {1}",DisplayUnitSystem_EAuto_Title:"Auto",DisplayUnitSystem_E0_Title:"None",DisplayUnitSystem_E3_LabelFormat:"{0}K",DisplayUnitSystem_E3_Title:"Thousands",DisplayUnitSystem_E6_LabelFormat:"{0}M",DisplayUnitSystem_E6_Title:"Millions",DisplayUnitSystem_E9_LabelFormat:"{0}bn",DisplayUnitSystem_E9_Title:"Billions",DisplayUnitSystem_E12_LabelFormat:"{0}T",DisplayUnitSystem_E12_Title:"Trillions",Percentage:"#,0.##%",Percentage1:"#,0.#%",TableTotalLabel:"Total",Tooltip_HighlightedValueDisplayName:"Highlighted",Funnel_PercentOfFirst:"Percent of first",Funnel_PercentOfPrevious:"Percent of previous",Funnel_PercentOfFirst_Highlight:"Percent of first (highlighted)",Funnel_PercentOfPrevious_Highlight:"Percent of previous (highlighted)",GeotaggingString_Continent:"continent",GeotaggingString_Continents:"continents",GeotaggingString_Country:"country",GeotaggingString_Countries:"countries",GeotaggingString_State:"state",GeotaggingString_States:"states",GeotaggingString_City:"city",GeotaggingString_Cities:"cities",GeotaggingString_Town:"town",GeotaggingString_Towns:"towns",GeotaggingString_Province:"province",GeotaggingString_Provinces:"provinces",GeotaggingString_County:"county",GeotaggingString_Counties:"counties",GeotaggingString_Village:"village",GeotaggingString_Villages:"villages",GeotaggingString_Post:"post",GeotaggingString_Zip:"zip",GeotaggingString_Code:"code",GeotaggingString_Place:"place",GeotaggingString_Places:"places",GeotaggingString_Address:"address",GeotaggingString_Addresses:"addresses",GeotaggingString_Street:"street",GeotaggingString_Streets:"streets",GeotaggingString_Longitude:"longitude",GeotaggingString_Longitude_Short:"lon",GeotaggingString_Longitude_Short2:"long",GeotaggingString_Latitude:"latitude",GeotaggingString_Latitude_Short:"lat",GeotaggingString_PostalCode:"postal code",GeotaggingString_PostalCodes:"postal codes",GeotaggingString_ZipCode:"zip code",GeotaggingString_ZipCodes:"zip codes",GeotaggingString_Territory:"territory",GeotaggingString_Territories:"territories"};e.getLocalizedString=function(e){return i[e]};let a={nullValue:i.NullValue,trueValue:i.BooleanTrue,falseValue:i.BooleanFalse,NaN:i.NaNValue,infinity:i.InfinityValue,negativeInfinity:i.NegativeInfinityValue,beautify:e=>(function(e){let t=n[e];return t&&i[t]||e})(e),describe:e=>(function(e){let t=-1===e?"Auto":e.toString(),n=i["DisplayUnitSystem_E"+t+"_Title"],r=e<=0?"{0}":i["DisplayUnitSystem_E"+t+"_LabelFormat"];if(n||r)return{title:n,format:r}})(e),restatementComma:i.RestatementComma,restatementCompoundAnd:i.RestatementCompoundAnd,restatementCompoundOr:i.RestatementCompoundOr};const o=2,u=1e3,l=1e4,s=2,f={displayName:"",type:Un.fromPrimitiveTypeAndCategory(kn.DateTime)};function h(e,t,n){const r=t?a.beautify(e):e;return{format:function(e){return null==e?a.nullValue:p({value:e,cultureSelector:n,format:r})}}}function d(e){if(null==e)return new pn(a.describe);switch(e){case Mn.Default:return new pn(a.describe);case Mn.WholeUnits:return new yn(a.describe);case Mn.Verbose:return new mn;case Mn.DataLabels:return new vn(a.describe);default:return new pn(a.describe)}}function g(t,n,r){if(t){if(n){let e=In.getValue(t.objects,n);if(e)return e}if(!r){let n=t.type;if(n){if(n.dateTime)return e.DefaultDateFormat;if(n.integer)return n.temporal&&n.temporal.year?"0":e.DefaultIntegerFormat;if(n.numeric)return e.DefaultNumericFormat}}}}function m(e,n){let r;if(!e)return null;let i=e.length;if(i>0){r=e[0];let o=i-1;for(let n=1,i=o;n<i;n++){let i=e[n];r=t.format(a.restatementComma,r,i)}if(i>1){let i=e[o];r=t.format(n,r,i)}}else r=null;return r}function p(e){const{value:n,format:r,nullsAreBlank:i,cultureSelector:a}=e;let o=y(n,i||!1);return t.isNullOrUndefinedOrWhiteSpaceString(o)?an.formatValue(n,r,a):o}function y(e,t){return null==e&&t?a.nullValue:!0===e?a.trueValue:!1===e?a.falseValue:"number"==typeof e&&isNaN(e)?a.NaN:e===Number.NEGATIVE_INFINITY?a.negativeInfinity:e===Number.POSITIVE_INFINITY?a.infinity:""}e.getFormatMetadata=function(e){return nn.getCustomFormatMetadata(e)},e.setLocaleOptions=function(e){a=e,pn.reset(),yn.reset()},e.createDefaultFormatter=h,e.create=function(e){const n=e.allowFormatBeautification?a.beautify(e.format):e.format,{cultureSelector:i}=e;if(function(e){let t=e.value,n=e.value2,i=e.format;if(e.formatSingleValues&&i&&Math.abs(t)<l){let e=!nn.isStandardFormat(i);if(e){let e=nn.getCustomFormatMetadata(i,!0).precision;if(e<s)return!1}else if(r.isInteger(t))return!1}if("number"==typeof t||"number"==typeof n)return!0}(e)){let a=d(e.displayUnitSystemType),l=!!e.formatSingleValues;a.update(Math.max(Math.abs(e.value||0),Math.abs(e.value2||0)));let s,c=null!=e.precision;return c?s=-e.precision:a.displayUnit&&a.displayUnit.value>1&&(s=-o),{format:function(e){let o=y(e,!0);return t.isNullOrUndefinedOrWhiteSpaceString(o)?(e&&!a.isScalingUnit()&&Math.abs(e)<u&&!c&&(e=r.roundToPrecision(e)),l?a.formatSingleValue(e,n,s,c,i):a.format(e,n,s,c,i)):o},displayUnit:a.displayUnit,options:e}}if(function(e,t,n){return e instanceof Date&&t instanceof Date&&void 0!==n&&null!==n}(e.value,e.value2,e.tickCount)){const t=Pn.getIntervalUnit(e.value,e.value2,e.tickCount);return{format:function(e){if(null==e)return a.nullValue;let n=an.dateFormatString(t);return p({value:e,cultureSelector:i,format:n})},options:e}}return h(n,!1,i)},e.format=function(e,t,n,r){return null==e?a.nullValue:p({value:e,cultureSelector:r,format:n?a.beautify(t):t})},e.formatVariantMeasureValue=function(e,t,n,r,i){if(!(t&&t.type&&t.type.dateTime)&&e instanceof Date)return p({value:e,nullsAreBlank:r,cultureSelector:i,format:g(f,null,!1)});return p({value:e,nullsAreBlank:r,cultureSelector:i,format:g(t,n)})},e.createDisplayUnitSystem=d,e.getFormatString=g,e.getFormatStringByColumn=function(t,n){if(t){if(t.format)return t.format;if(!n){let n=t.type;if(n){if(n.dateTime)return e.DefaultDateFormat;if(n.integer)return n.temporal&&n.temporal.year?"0":e.DefaultIntegerFormat;if(n.numeric)return e.DefaultNumericFormat}}}},e.formatListAnd=function(e){return m(e,a.restatementCompoundAnd)},e.formatListOr=function(e){return m(e,a.restatementCompoundOr)},e.getDisplayUnits=function(e){return d(e).units}}(An||(An={}));const Ln=" ",Vn=/[\s\n]+/g;function Rn(e){return e.split(Vn)}function Wn(e,t,n){return t.text=e,n(t)}function Bn(e,t,n,r){return t.text=e,n(t,r)}function Yn(e,t,n,r,i,a){a=a||((e,t)=>e.text);let o=[],u=Rn(e),l=0,s=[];for(let e of u){if(i>0&&o.length>=i-1){s.push(e);continue}let u=0===s.length?Wn(e,t,n):Wn(Ln+e,t,n);if(l+u>r){if(0===s.length){o.push(Bn(e,t,a,r)),l=0,s=[];continue}o.push(Bn(s.join(Ln),t,a,r)),l=0,s=[]}s.push(e),l+=u}return s&&s.length&&o.push(Bn(s.join(Ln),t,a,r)),o}class zn{constructor(e){this.cache={},this.clearCacheInterval=null!=e?e:zn.defaultClearCacheInterval,this.clearCache()}getData(e){return this.cache[e]}setData(e,t){this.cache[e]=t,null==this.clearCacheTimerId&&(this.clearCacheTimerId=setTimeout(()=>this.clearCache(),this.clearCacheInterval))}clearCache(){this.cache={},this.clearCacheTimerId=void 0}}zn.defaultClearCacheInterval=864e5;const Hn=new zn;var qn;!function(e){const t="...";let n,r,i,a;function o(){if(n)return;n=document.createElement("span"),document.body.appendChild(n);const e=document.createElementNS("http://www.w3.org/2000/svg","svg");e.setAttribute("height","0"),e.setAttribute("width","0"),e.setAttribute("position","absolute"),r=document.createElementNS("http://www.w3.org/2000/svg","text"),e.appendChild(r),document.body.appendChild(e);let t=document.createElement("canvas");i=t.getContext("2d");let o=window.getComputedStyle(r);a=o?o.fontFamily:""}function s(e,t){return o(),i.font=(e.fontStyle||"")+" "+(e.fontVariant||"")+" "+(e.fontWeight||"")+" "+e.fontSize+" "+(e.fontFamily||a),i.measureText(t||e.text).width}function c(e,t){for(o();r.firstChild;)r.removeChild(r.firstChild);return r.setAttribute("style",null),r.style.visibility="hidden",r.style.fontFamily=e.fontFamily||a,r.style.fontVariant=e.fontVariant,r.style.fontSize=e.fontSize,r.style.fontWeight=e.fontWeight,r.style.fontStyle=e.fontStyle,r.style.whiteSpace=e.whiteSpace||"nowrap",r.appendChild(document.createTextNode(t||e.text)),r.getBBox()}function f(t){let n=t.fontFamily+t.fontSize,r=Hn.getData(n);if(null==r){let i={fontFamily:t.fontFamily,fontSize:t.fontSize,text:"M"};(r=e.measureSvgTextRect(i)).height>0&&Hn.setData(n,r)}return r}function h(e,t=!1){let n=f(e).height;return t&&(n*=.7),n}function d(e){let t=window.getComputedStyle(e);return t?{text:e.textContent,fontFamily:t.fontFamily,fontSize:t.fontSize,fontWeight:t.fontWeight,fontStyle:t.fontStyle,fontVariant:t.fontVariant,whiteSpace:t.whiteSpace}:{text:e.textContent,fontFamily:"",fontSize:"0"}}function g(e,n){if(o(),0===e.text.length)return e.text;let r=s(e);if(r<n)return e.text;let i=l.inherit(e),a=i.text=t+i.text,u=1,c=a.length,f=t.length;for(;u<=c;)if(f=(u+c)/2|0,i.text=a.substr(0,f),n>(r=s(i)))u=f+1;else{if(!(n<r))break;c=f-1}return i.text=a.substr(0,f),(r=s(i))>n&&f--,a.substr(t.length,f-t.length)+t}e.removeSpanElement=function(){n&&n.remove&&n.remove(),n=null},e.measureSvgTextWidth=s,e.measureSvgTextRect=c,e.measureSvgTextHeight=function(e,t){return c(e,t).height},e.estimateSvgTextBaselineDelta=function(e){let t=f(e);return t.y+t.height},e.estimateSvgTextHeight=h,e.measureSvgTextElementWidth=function(e){return s(d(e))},e.getMeasurementProperties=function(e){const t=window.getComputedStyle(e);return{text:e.value||e.textContent,fontFamily:t.fontFamily,fontSize:t.fontSize,fontWeight:t.fontWeight,fontStyle:t.fontStyle,fontVariant:t.fontVariant,whiteSpace:t.whiteSpace}},e.getSvgMeasurementProperties=d,e.getDivElementWidth=function(e){const t=window.getComputedStyle(e);return t?t.width:"0"},e.getTailoredTextOrDefault=g,e.svgEllipsis=function(e,t){let n=d(e),r=n.text,i=g(n,t);r!==i&&(e.textContent=i)},e.wordBreak=function(e,t,n,r=0){let i=d(e),a=h(i)+r,o=Math.max(1,Math.floor(n/a)),u=e?e.getAttribute("y"):null,l=e?e.textContent:null;e.textContent=null;let c=Yn(l,i,s,t,o);const f=document.createDocumentFragment();for(let e=0,n=c.length;e<n;e++){const n=0===e?u:a;i.text=c[e];const r=document.createElementNS("http://www.w3.org/2000/svg","tspan");r.setAttribute("x","0"),r.setAttribute("dy",n?n.toString():null),r.appendChild(document.createTextNode(g(i,t))),f.appendChild(r)}e.appendChild(f)},e.wordBreakOverflowingText=function(e,t,n,r=0){const i=d(e);let a=h(i)+r,o=Math.max(1,Math.floor(n/a));const l=e.textContent;e.textContent=null;const c=Yn(l,i,s,t,o),f=document.createDocumentFragment();for(let e=0;e<c.length;e++){const n=document.createElement("span");n.classList.add("overflowingText"),n.style.overflow="hidden",n.style.whiteSpace="nowrap",n.style.textOverflow="ellipsis",n.style.display="block",n.style.width=u.toString(t),n.appendChild(document.createTextNode(c[e])),n.appendChild(document.createTextNode(g(i,t))),f.appendChild(n)}e.appendChild(f)}}(qn||(qn={}));class Gn{constructor(e){this.families=e}get family(){return this.getFamily()}getFamily(e=/^wf_/){if(!this.families)return null;if(e)for(let t of this.families)if(e.test(t))return t;return this.families[0]}get css(){return this.getCSS()}getCSS(){return this.families?this.families.map(e=>e.indexOf(" ")>0?"'"+e+"'":e).join(", "):null}}const jn=["helvetica","arial","sans-serif"];new Gn(jn),new Gn(jn),new Gn(jn),new Gn(jn),new Gn(jn),new Gn(jn),new Gn(jn),new Gn(jn);var Xn={value:function(){}};function $n(){for(var e,t=0,n=arguments.length,r={};t<n;++t){if(!(e=arguments[t]+"")||e in r)throw new Error("illegal type: "+e);r[e]=[]}return new Zn(r)}function Zn(e){this._=e}function Qn(e,t){for(var n,r=0,i=e.length;r<i;++r)if((n=e[r]).name===t)return n.value}function Jn(e,t,n){for(var r=0,i=e.length;r<i;++r)if(e[r].name===t){e[r]=Xn,e=e.slice(0,r).concat(e.slice(r+1));break}return null!=n&&e.push({name:t,value:n}),e}Zn.prototype=$n.prototype={constructor:Zn,on:function(e,t){var n,r=this._,i=function(e,t){return e.trim().split(/^|\s+/).map(function(e){var n="",r=e.indexOf(".");if(r>=0&&(n=e.slice(r+1),e=e.slice(0,r)),e&&!t.hasOwnProperty(e))throw new Error("unknown type: "+e);return{type:e,name:n}})}(e+"",r),a=-1,o=i.length;if(!(arguments.length<2)){if(null!=t&&"function"!=typeof t)throw new Error("invalid callback: "+t);for(;++a<o;)if(n=(e=i[a]).type)r[n]=Jn(r[n],e.name,t);else if(null==t)for(n in r)r[n]=Jn(r[n],e.name,null);return this}for(;++a<o;)if((n=(e=i[a]).type)&&(n=Qn(r[n],e.name)))return n},copy:function(){var e={},t=this._;for(var n in t)e[n]=t[n].slice();return new Zn(e)},call:function(e,t){if((n=arguments.length-2)>0)for(var n,r,i=new Array(n),a=0;a<n;++a)i[a]=arguments[a+2];if(!this._.hasOwnProperty(e))throw new Error("unknown type: "+e);for(a=0,n=(r=this._[e]).length;a<n;++a)r[a].value.apply(t,i)},apply:function(e,t,n){if(!this._.hasOwnProperty(e))throw new Error("unknown type: "+e);for(var r=this._[e],i=0,a=r.length;i<a;++i)r[i].value.apply(t,n)}};var Kn,er,tr=$n,nr=0,rr=0,ir=0,ar=1e3,or=0,ur=0,lr=0,sr="object"==typeof performance&&performance.now?performance:Date,cr="object"==typeof window&&window.requestAnimationFrame?window.requestAnimationFrame.bind(window):function(e){setTimeout(e,17)};function fr(){return ur||(cr(hr),ur=sr.now()+lr)}function hr(){ur=0}function dr(){this._call=this._time=this._next=null}function gr(e,t,n){var r=new dr;return r.restart(e,t,n),r}function mr(){ur=(or=sr.now())+lr,nr=rr=0;try{!function(){fr(),++nr;for(var e,t=Kn;t;)(e=ur-t._time)>=0&&t._call.call(null,e),t=t._next;--nr}()}finally{nr=0,function(){var e,t,n=Kn,r=1/0;for(;n;)n._call?(r>n._time&&(r=n._time),e=n,n=n._next):(t=n._next,n._next=null,n=e?e._next=t:Kn=t);er=e,yr(r)}(),ur=0}}function pr(){var e=sr.now(),t=e-or;t>ar&&(lr-=t,or=e)}function yr(e){nr||(rr&&(rr=clearTimeout(rr)),e-ur>24?(e<1/0&&(rr=setTimeout(mr,e-sr.now()-lr)),ir&&(ir=clearInterval(ir))):(ir||(or=sr.now(),ir=setInterval(pr,ar)),nr=1,cr(mr)))}dr.prototype=gr.prototype={constructor:dr,restart:function(e,t,n){if("function"!=typeof e)throw new TypeError("callback is not a function");n=(null==n?fr():+n)+(null==t?0:+t),this._next||er===this||(er?er._next=this:Kn=this,er=this),this._call=e,this._time=n,yr()},stop:function(){this._call&&(this._call=null,this._time=1/0,yr())}};var vr=function(e,t,n){var r=new dr;return t=null==t?0:+t,r.restart(function(n){r.stop(),e(n+t)},t,n),r},_r=tr("start","end","interrupt"),br=[],Mr=0,xr=1,wr=2,Sr=3,Tr=4,Dr=5,Cr=6,Nr=function(e,t,n,r,i,a){var o=e.__transition;if(o){if(n in o)return}else e.__transition={};!function(e,t,n){var r,i=e.__transition;function a(l){var s,c,f,h;if(n.state!==xr)return u();for(s in i)if((h=i[s]).name===n.name){if(h.state===Sr)return vr(a);h.state===Tr?(h.state=Cr,h.timer.stop(),h.on.call("interrupt",e,e.__data__,h.index,h.group),delete i[s]):+s<t&&(h.state=Cr,h.timer.stop(),delete i[s])}if(vr(function(){n.state===Sr&&(n.state=Tr,n.timer.restart(o,n.delay,n.time),o(l))}),n.state=wr,n.on.call("start",e,e.__data__,n.index,n.group),n.state===wr){for(n.state=Sr,r=new Array(f=n.tween.length),s=0,c=-1;s<f;++s)(h=n.tween[s].value.call(e,e.__data__,n.index,n.group))&&(r[++c]=h);r.length=c+1}}function o(t){for(var i=t<n.duration?n.ease.call(null,t/n.duration):(n.timer.restart(u),n.state=Dr,1),a=-1,o=r.length;++a<o;)r[a].call(null,i);n.state===Dr&&(n.on.call("end",e,e.__data__,n.index,n.group),u())}function u(){for(var r in n.state=Cr,n.timer.stop(),delete i[t],i)return;delete e.__transition}i[t]=n,n.timer=gr(function(e){n.state=xr,n.timer.restart(a,n.delay,n.time),n.delay<=e&&a(e-n.delay)},0,n.time)}(e,n,{name:t,index:r,group:i,on:_r,tween:br,time:a.time,delay:a.delay,duration:a.duration,ease:a.ease,timer:null,state:Mr})};function Fr(e,t){var n=Pr(e,t);if(n.state>Mr)throw new Error("too late; already scheduled");return n}function Er(e,t){var n=Pr(e,t);if(n.state>wr)throw new Error("too late; already started");return n}function Pr(e,t){var n=e.__transition;if(!n||!(n=n[t]))throw new Error("transition not found");return n}var Or=function(e,t,n){e.prototype=t.prototype=n,n.constructor=e};function Ar(e,t){var n=Object.create(e.prototype);for(var r in t)n[r]=t[r];return n}function Ir(){}var Ur="\\s*([+-]?\\d+)\\s*",kr="\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)\\s*",Lr="\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)%\\s*",Vr=/^#([0-9a-f]{3})$/,Rr=/^#([0-9a-f]{6})$/,Wr=new RegExp("^rgb\\("+[Ur,Ur,Ur]+"\\)$"),Br=new RegExp("^rgb\\("+[Lr,Lr,Lr]+"\\)$"),Yr=new RegExp("^rgba\\("+[Ur,Ur,Ur,kr]+"\\)$"),zr=new RegExp("^rgba\\("+[Lr,Lr,Lr,kr]+"\\)$"),Hr=new RegExp("^hsl\\("+[kr,Lr,Lr]+"\\)$"),qr=new RegExp("^hsla\\("+[kr,Lr,Lr,kr]+"\\)$"),Gr={aliceblue:15792383,antiquewhite:16444375,aqua:65535,aquamarine:8388564,azure:15794175,beige:16119260,bisque:16770244,black:0,blanchedalmond:16772045,blue:255,blueviolet:9055202,brown:10824234,burlywood:14596231,cadetblue:6266528,chartreuse:8388352,chocolate:13789470,coral:16744272,cornflowerblue:6591981,cornsilk:16775388,crimson:14423100,cyan:65535,darkblue:139,darkcyan:35723,darkgoldenrod:12092939,darkgray:11119017,darkgreen:25600,darkgrey:11119017,darkkhaki:12433259,darkmagenta:9109643,darkolivegreen:5597999,darkorange:16747520,darkorchid:10040012,darkred:9109504,darksalmon:15308410,darkseagreen:9419919,darkslateblue:4734347,darkslategray:3100495,darkslategrey:3100495,darkturquoise:52945,darkviolet:9699539,deeppink:16716947,deepskyblue:49151,dimgray:6908265,dimgrey:6908265,dodgerblue:2003199,firebrick:11674146,floralwhite:16775920,forestgreen:2263842,fuchsia:16711935,gainsboro:14474460,ghostwhite:16316671,gold:16766720,goldenrod:14329120,gray:8421504,green:32768,greenyellow:11403055,grey:8421504,honeydew:15794160,hotpink:16738740,indianred:13458524,indigo:4915330,ivory:16777200,khaki:15787660,lavender:15132410,lavenderblush:16773365,lawngreen:8190976,lemonchiffon:16775885,lightblue:11393254,lightcoral:15761536,lightcyan:14745599,lightgoldenrodyellow:16448210,lightgray:13882323,lightgreen:9498256,lightgrey:13882323,lightpink:16758465,lightsalmon:16752762,lightseagreen:2142890,lightskyblue:8900346,lightslategray:7833753,lightslategrey:7833753,lightsteelblue:11584734,lightyellow:16777184,lime:65280,limegreen:3329330,linen:16445670,magenta:16711935,maroon:8388608,mediumaquamarine:6737322,mediumblue:205,mediumorchid:12211667,mediumpurple:9662683,mediumseagreen:3978097,mediumslateblue:8087790,mediumspringgreen:64154,mediumturquoise:4772300,mediumvioletred:13047173,midnightblue:1644912,mintcream:16121850,mistyrose:16770273,moccasin:16770229,navajowhite:16768685,navy:128,oldlace:16643558,olive:8421376,olivedrab:7048739,orange:16753920,orangered:16729344,orchid:14315734,palegoldenrod:15657130,palegreen:10025880,paleturquoise:11529966,palevioletred:14381203,papayawhip:16773077,peachpuff:16767673,peru:13468991,pink:16761035,plum:14524637,powderblue:11591910,purple:8388736,rebeccapurple:6697881,red:16711680,rosybrown:12357519,royalblue:4286945,saddlebrown:9127187,salmon:16416882,sandybrown:16032864,seagreen:3050327,seashell:16774638,sienna:10506797,silver:12632256,skyblue:8900331,slateblue:6970061,slategray:7372944,slategrey:7372944,snow:16775930,springgreen:65407,steelblue:4620980,tan:13808780,teal:32896,thistle:14204888,tomato:16737095,turquoise:4251856,violet:15631086,wheat:16113331,white:16777215,whitesmoke:16119285,yellow:16776960,yellowgreen:10145074};function jr(e){var t;return e=(e+"").trim().toLowerCase(),(t=Vr.exec(e))?new Jr((t=parseInt(t[1],16))>>8&15|t>>4&240,t>>4&15|240&t,(15&t)<<4|15&t,1):(t=Rr.exec(e))?Xr(parseInt(t[1],16)):(t=Wr.exec(e))?new Jr(t[1],t[2],t[3],1):(t=Br.exec(e))?new Jr(255*t[1]/100,255*t[2]/100,255*t[3]/100,1):(t=Yr.exec(e))?$r(t[1],t[2],t[3],t[4]):(t=zr.exec(e))?$r(255*t[1]/100,255*t[2]/100,255*t[3]/100,t[4]):(t=Hr.exec(e))?ei(t[1],t[2]/100,t[3]/100,1):(t=qr.exec(e))?ei(t[1],t[2]/100,t[3]/100,t[4]):Gr.hasOwnProperty(e)?Xr(Gr[e]):"transparent"===e?new Jr(NaN,NaN,NaN,0):null}function Xr(e){return new Jr(e>>16&255,e>>8&255,255&e,1)}function $r(e,t,n,r){return r<=0&&(e=t=n=NaN),new Jr(e,t,n,r)}function Zr(e){return e instanceof Ir||(e=jr(e)),e?new Jr((e=e.rgb()).r,e.g,e.b,e.opacity):new Jr}function Qr(e,t,n,r){return 1===arguments.length?Zr(e):new Jr(e,t,n,null==r?1:r)}function Jr(e,t,n,r){this.r=+e,this.g=+t,this.b=+n,this.opacity=+r}function Kr(e){return((e=Math.max(0,Math.min(255,Math.round(e)||0)))<16?"0":"")+e.toString(16)}function ei(e,t,n,r){return r<=0?e=t=n=NaN:n<=0||n>=1?e=t=NaN:t<=0&&(e=NaN),new ni(e,t,n,r)}function ti(e,t,n,r){return 1===arguments.length?function(e){if(e instanceof ni)return new ni(e.h,e.s,e.l,e.opacity);if(e instanceof Ir||(e=jr(e)),!e)return new ni;if(e instanceof ni)return e;var t=(e=e.rgb()).r/255,n=e.g/255,r=e.b/255,i=Math.min(t,n,r),a=Math.max(t,n,r),o=NaN,u=a-i,l=(a+i)/2;return u?(o=t===a?(n-r)/u+6*(n<r):n===a?(r-t)/u+2:(t-n)/u+4,u/=l<.5?a+i:2-a-i,o*=60):u=l>0&&l<1?0:o,new ni(o,u,l,e.opacity)}(e):new ni(e,t,n,null==r?1:r)}function ni(e,t,n,r){this.h=+e,this.s=+t,this.l=+n,this.opacity=+r}function ri(e,t,n){return 255*(e<60?t+(n-t)*e/60:e<180?n:e<240?t+(n-t)*(240-e)/60:t)}Or(Ir,jr,{displayable:function(){return this.rgb().displayable()},hex:function(){return this.rgb().hex()},toString:function(){return this.rgb()+""}}),Or(Jr,Qr,Ar(Ir,{brighter:function(e){return e=null==e?1/.7:Math.pow(1/.7,e),new Jr(this.r*e,this.g*e,this.b*e,this.opacity)},darker:function(e){return e=null==e?.7:Math.pow(.7,e),new Jr(this.r*e,this.g*e,this.b*e,this.opacity)},rgb:function(){return this},displayable:function(){return 0<=this.r&&this.r<=255&&0<=this.g&&this.g<=255&&0<=this.b&&this.b<=255&&0<=this.opacity&&this.opacity<=1},hex:function(){return"#"+Kr(this.r)+Kr(this.g)+Kr(this.b)},toString:function(){var e=this.opacity;return(1===(e=isNaN(e)?1:Math.max(0,Math.min(1,e)))?"rgb(":"rgba(")+Math.max(0,Math.min(255,Math.round(this.r)||0))+", "+Math.max(0,Math.min(255,Math.round(this.g)||0))+", "+Math.max(0,Math.min(255,Math.round(this.b)||0))+(1===e?")":", "+e+")")}})),Or(ni,ti,Ar(Ir,{brighter:function(e){return e=null==e?1/.7:Math.pow(1/.7,e),new ni(this.h,this.s,this.l*e,this.opacity)},darker:function(e){return e=null==e?.7:Math.pow(.7,e),new ni(this.h,this.s,this.l*e,this.opacity)},rgb:function(){var e=this.h%360+360*(this.h<0),t=isNaN(e)||isNaN(this.s)?0:this.s,n=this.l,r=n+(n<.5?n:1-n)*t,i=2*n-r;return new Jr(ri(e>=240?e-240:e+120,i,r),ri(e,i,r),ri(e<120?e+240:e-120,i,r),this.opacity)},displayable:function(){return(0<=this.s&&this.s<=1||isNaN(this.s))&&0<=this.l&&this.l<=1&&0<=this.opacity&&this.opacity<=1}}));var ii=Math.PI/180,ai=180/Math.PI,oi=.96422,ui=1,li=.82521,si=4/29,ci=6/29,fi=3*ci*ci,hi=ci*ci*ci;function di(e){if(e instanceof mi)return new mi(e.l,e.a,e.b,e.opacity);if(e instanceof xi){if(isNaN(e.h))return new mi(e.l,0,0,e.opacity);var t=e.h*ii;return new mi(e.l,Math.cos(t)*e.c,Math.sin(t)*e.c,e.opacity)}e instanceof Jr||(e=Zr(e));var n,r,i=_i(e.r),a=_i(e.g),o=_i(e.b),u=pi((.2225045*i+.7168786*a+.0606169*o)/ui);return i===a&&a===o?n=r=u:(n=pi((.4360747*i+.3850649*a+.1430804*o)/oi),r=pi((.0139322*i+.0971045*a+.7141733*o)/li)),new mi(116*u-16,500*(n-u),200*(u-r),e.opacity)}function gi(e,t,n,r){return 1===arguments.length?di(e):new mi(e,t,n,null==r?1:r)}function mi(e,t,n,r){this.l=+e,this.a=+t,this.b=+n,this.opacity=+r}function pi(e){return e>hi?Math.pow(e,1/3):e/fi+si}function yi(e){return e>ci?e*e*e:fi*(e-si)}function vi(e){return 255*(e<=.0031308?12.92*e:1.055*Math.pow(e,1/2.4)-.055)}function _i(e){return(e/=255)<=.04045?e/12.92:Math.pow((e+.055)/1.055,2.4)}function bi(e){if(e instanceof xi)return new xi(e.h,e.c,e.l,e.opacity);if(e instanceof mi||(e=di(e)),0===e.a&&0===e.b)return new xi(NaN,0,e.l,e.opacity);var t=Math.atan2(e.b,e.a)*ai;return new xi(t<0?t+360:t,Math.sqrt(e.a*e.a+e.b*e.b),e.l,e.opacity)}function Mi(e,t,n,r){return 1===arguments.length?bi(e):new xi(e,t,n,null==r?1:r)}function xi(e,t,n,r){this.h=+e,this.c=+t,this.l=+n,this.opacity=+r}Or(mi,gi,Ar(Ir,{brighter:function(e){return new mi(this.l+18*(null==e?1:e),this.a,this.b,this.opacity)},darker:function(e){return new mi(this.l-18*(null==e?1:e),this.a,this.b,this.opacity)},rgb:function(){var e=(this.l+16)/116,t=isNaN(this.a)?e:e+this.a/500,n=isNaN(this.b)?e:e-this.b/200;return new Jr(vi(3.1338561*(t=oi*yi(t))-1.6168667*(e=ui*yi(e))-.4906146*(n=li*yi(n))),vi(-.9787684*t+1.9161415*e+.033454*n),vi(.0719453*t-.2289914*e+1.4052427*n),this.opacity)}})),Or(xi,Mi,Ar(Ir,{brighter:function(e){return new xi(this.h,this.c,this.l+18*(null==e?1:e),this.opacity)},darker:function(e){return new xi(this.h,this.c,this.l-18*(null==e?1:e),this.opacity)},rgb:function(){return di(this).rgb()}}));var wi=-.14861,Si=1.78277,Ti=-.29227,Di=-.90649,Ci=1.97294,Ni=Ci*Di,Fi=Ci*Si,Ei=Si*Ti-Di*wi;function Pi(e,t,n,r){return 1===arguments.length?function(e){if(e instanceof Oi)return new Oi(e.h,e.s,e.l,e.opacity);e instanceof Jr||(e=Zr(e));var t=e.r/255,n=e.g/255,r=e.b/255,i=(Ei*r+Ni*t-Fi*n)/(Ei+Ni-Fi),a=r-i,o=(Ci*(n-i)-Ti*a)/Di,u=Math.sqrt(o*o+a*a)/(Ci*i*(1-i)),l=u?Math.atan2(o,a)*ai-120:NaN;return new Oi(l<0?l+360:l,u,i,e.opacity)}(e):new Oi(e,t,n,null==r?1:r)}function Oi(e,t,n,r){this.h=+e,this.s=+t,this.l=+n,this.opacity=+r}function Ai(e,t,n,r,i){var a=e*e,o=a*e;return((1-3*e+3*a-o)*t+(4-6*a+3*o)*n+(1+3*e+3*a-3*o)*r+o*i)/6}Or(Oi,Pi,Ar(Ir,{brighter:function(e){return e=null==e?1/.7:Math.pow(1/.7,e),new Oi(this.h,this.s,this.l*e,this.opacity)},darker:function(e){return e=null==e?.7:Math.pow(.7,e),new Oi(this.h,this.s,this.l*e,this.opacity)},rgb:function(){var e=isNaN(this.h)?0:(this.h+120)*ii,t=+this.l,n=isNaN(this.s)?0:this.s*t*(1-t),r=Math.cos(e),i=Math.sin(e);return new Jr(255*(t+n*(wi*r+Si*i)),255*(t+n*(Ti*r+Di*i)),255*(t+n*(Ci*r)),this.opacity)}}));var Ii=function(e){return function(){return e}};function Ui(e,t){return function(n){return e+n*t}}function ki(e,t){var n=t-e;return n?Ui(e,n>180||n<-180?n-360*Math.round(n/360):n):Ii(isNaN(e)?t:e)}function Li(e){return 1==(e=+e)?Vi:function(t,n){return n-t?function(e,t,n){return e=Math.pow(e,n),t=Math.pow(t,n)-e,n=1/n,function(r){return Math.pow(e+r*t,n)}}(t,n,e):Ii(isNaN(t)?n:t)}}function Vi(e,t){var n=t-e;return n?Ui(e,n):Ii(isNaN(e)?t:e)}var Ri=function e(t){var n=Li(t);function r(e,t){var r=n((e=Qr(e)).r,(t=Qr(t)).r),i=n(e.g,t.g),a=n(e.b,t.b),o=Vi(e.opacity,t.opacity);return function(t){return e.r=r(t),e.g=i(t),e.b=a(t),e.opacity=o(t),e+""}}return r.gamma=e,r}(1);function Wi(e){return function(t){var n,r,i=t.length,a=new Array(i),o=new Array(i),u=new Array(i);for(n=0;n<i;++n)r=Qr(t[n]),a[n]=r.r||0,o[n]=r.g||0,u[n]=r.b||0;return a=e(a),o=e(o),u=e(u),r.opacity=1,function(e){return r.r=a(e),r.g=o(e),r.b=u(e),r+""}}}Wi(function(e){var t=e.length-1;return function(n){var r=n<=0?n=0:n>=1?(n=1,t-1):Math.floor(n*t),i=e[r],a=e[r+1],o=r>0?e[r-1]:2*i-a,u=r<t-1?e[r+2]:2*a-i;return Ai((n-r/t)*t,o,i,a,u)}}),Wi(function(e){var t=e.length;return function(n){var r=Math.floor(((n%=1)<0?++n:n)*t),i=e[(r+t-1)%t],a=e[r%t],o=e[(r+1)%t],u=e[(r+2)%t];return Ai((n-r/t)*t,i,a,o,u)}});var Bi=function(e,t){return t-=e=+e,function(n){return e+t*n}},Yi=/[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,zi=new RegExp(Yi.source,"g");var Hi,qi,Gi,ji,Xi=function(e,t){var n,r,i,a=Yi.lastIndex=zi.lastIndex=0,o=-1,u=[],l=[];for(e+="",t+="";(n=Yi.exec(e))&&(r=zi.exec(t));)(i=r.index)>a&&(i=t.slice(a,i),u[o]?u[o]+=i:u[++o]=i),(n=n[0])===(r=r[0])?u[o]?u[o]+=r:u[++o]=r:(u[++o]=null,l.push({i:o,x:Bi(n,r)})),a=zi.lastIndex;return a<t.length&&(i=t.slice(a),u[o]?u[o]+=i:u[++o]=i),u.length<2?l[0]?function(e){return function(t){return e(t)+""}}(l[0].x):function(e){return function(){return e}}(t):(t=l.length,function(e){for(var n,r=0;r<t;++r)u[(n=l[r]).i]=n.x(e);return u.join("")})},$i=180/Math.PI,Zi={translateX:0,translateY:0,rotate:0,skewX:0,scaleX:1,scaleY:1},Qi=function(e,t,n,r,i,a){var o,u,l;return(o=Math.sqrt(e*e+t*t))&&(e/=o,t/=o),(l=e*n+t*r)&&(n-=e*l,r-=t*l),(u=Math.sqrt(n*n+r*r))&&(n/=u,r/=u,l/=u),e*r<t*n&&(e=-e,t=-t,l=-l,o=-o),{translateX:i,translateY:a,rotate:Math.atan2(t,e)*$i,skewX:Math.atan(l)*$i,scaleX:o,scaleY:u}};function Ji(e,t,n,r){function i(e){return e.length?e.pop()+" ":""}return function(a,o){var u=[],l=[];return a=e(a),o=e(o),function(e,r,i,a,o,u){if(e!==i||r!==a){var l=o.push("translate(",null,t,null,n);u.push({i:l-4,x:Bi(e,i)},{i:l-2,x:Bi(r,a)})}else(i||a)&&o.push("translate("+i+t+a+n)}(a.translateX,a.translateY,o.translateX,o.translateY,u,l),function(e,t,n,a){e!==t?(e-t>180?t+=360:t-e>180&&(e+=360),a.push({i:n.push(i(n)+"rotate(",null,r)-2,x:Bi(e,t)})):t&&n.push(i(n)+"rotate("+t+r)}(a.rotate,o.rotate,u,l),function(e,t,n,a){e!==t?a.push({i:n.push(i(n)+"skewX(",null,r)-2,x:Bi(e,t)}):t&&n.push(i(n)+"skewX("+t+r)}(a.skewX,o.skewX,u,l),function(e,t,n,r,a,o){if(e!==n||t!==r){var u=a.push(i(a)+"scale(",null,",",null,")");o.push({i:u-4,x:Bi(e,n)},{i:u-2,x:Bi(t,r)})}else 1===n&&1===r||a.push(i(a)+"scale("+n+","+r+")")}(a.scaleX,a.scaleY,o.scaleX,o.scaleY,u,l),a=o=null,function(e){for(var t,n=-1,r=l.length;++n<r;)u[(t=l[n]).i]=t.x(e);return u.join("")}}}var Ki=Ji(function(e){return"none"===e?Zi:(Hi||(Hi=document.createElement("DIV"),qi=document.documentElement,Gi=document.defaultView),Hi.style.transform=e,e=Gi.getComputedStyle(qi.appendChild(Hi),null).getPropertyValue("transform"),qi.removeChild(Hi),e=e.slice(7,-1).split(","),Qi(+e[0],+e[1],+e[2],+e[3],+e[4],+e[5]))},"px, ","px)","deg)"),ea=Ji(function(e){return null==e?Zi:(ji||(ji=document.createElementNS("http://www.w3.org/2000/svg","g")),ji.setAttribute("transform",e),(e=ji.transform.baseVal.consolidate())?(e=e.matrix,Qi(e.a,e.b,e.c,e.d,e.e,e.f)):Zi)},", ",")",")");Math.SQRT2;function ta(e){return function(t,n){var r=e((t=ti(t)).h,(n=ti(n)).h),i=Vi(t.s,n.s),a=Vi(t.l,n.l),o=Vi(t.opacity,n.opacity);return function(e){return t.h=r(e),t.s=i(e),t.l=a(e),t.opacity=o(e),t+""}}}ta(ki),ta(Vi);function na(e){return function(t,n){var r=e((t=Mi(t)).h,(n=Mi(n)).h),i=Vi(t.c,n.c),a=Vi(t.l,n.l),o=Vi(t.opacity,n.opacity);return function(e){return t.h=r(e),t.c=i(e),t.l=a(e),t.opacity=o(e),t+""}}}na(ki),na(Vi);function ra(e){return function t(n){function r(t,r){var i=e((t=Pi(t)).h,(r=Pi(r)).h),a=Vi(t.s,r.s),o=Vi(t.l,r.l),u=Vi(t.opacity,r.opacity);return function(e){return t.h=i(e),t.s=a(e),t.l=o(Math.pow(e,n)),t.opacity=u(e),t+""}}return n=+n,r.gamma=t,r}(1)}ra(ki),ra(Vi);function ia(e,t,n){var r=e._id;return e.each(function(){var e=Er(this,r);(e.value||(e.value={}))[t]=n.apply(this,arguments)}),function(e){return Pr(e,r).value[t]}}var aa=function(e,t){var n;return("number"==typeof t?Bi:t instanceof jr?Ri:(n=jr(t))?(t=n,Ri):Xi)(e,t)};var oa=ne.prototype.constructor;var ua=0;function la(e,t,n,r){this._groups=e,this._parents=t,this._name=n,this._id=r}function sa(){return++ua}var ca=ne.prototype;la.prototype=function(e){return ne().transition(e)}.prototype={constructor:la,select:function(e){var t=this._name,n=this._id;"function"!=typeof e&&(e=v(e));for(var r=this._groups,i=r.length,a=new Array(i),o=0;o<i;++o)for(var u,l,s=r[o],c=s.length,f=a[o]=new Array(c),h=0;h<c;++h)(u=s[h])&&(l=e.call(u,u.__data__,h,s))&&("__data__"in u&&(l.__data__=u.__data__),f[h]=l,Nr(f[h],t,n,h,f,Pr(u,n)));return new la(a,this._parents,t,n)},selectAll:function(e){var t=this._name,n=this._id;"function"!=typeof e&&(e=b(e));for(var r=this._groups,i=r.length,a=[],o=[],u=0;u<i;++u)for(var l,s=r[u],c=s.length,f=0;f<c;++f)if(l=s[f]){for(var h,d=e.call(l,l.__data__,f,s),g=Pr(l,n),m=0,p=d.length;m<p;++m)(h=d[m])&&Nr(h,t,n,m,d,g);a.push(d),o.push(l)}return new la(a,o,t,n)},filter:function(e){"function"!=typeof e&&(e=S(e));for(var t=this._groups,n=t.length,r=new Array(n),i=0;i<n;++i)for(var a,o=t[i],u=o.length,l=r[i]=[],s=0;s<u;++s)(a=o[s])&&e.call(a,a.__data__,s,o)&&l.push(a);return new la(r,this._parents,this._name,this._id)},merge:function(e){if(e._id!==this._id)throw new Error;for(var t=this._groups,n=e._groups,r=t.length,i=n.length,a=Math.min(r,i),o=new Array(r),u=0;u<a;++u)for(var l,s=t[u],c=n[u],f=s.length,h=o[u]=new Array(f),d=0;d<f;++d)(l=s[d]||c[d])&&(h[d]=l);for(;u<r;++u)o[u]=t[u];return new la(o,this._parents,this._name,this._id)},selection:function(){return new oa(this._groups,this._parents)},transition:function(){for(var e=this._name,t=this._id,n=sa(),r=this._groups,i=r.length,a=0;a<i;++a)for(var o,u=r[a],l=u.length,s=0;s<l;++s)if(o=u[s]){var c=Pr(o,t);Nr(o,e,n,s,u,{time:c.time+c.delay+c.duration,delay:0,duration:c.duration,ease:c.ease})}return new la(r,this._parents,e,n)},call:ca.call,nodes:ca.nodes,node:ca.node,size:ca.size,empty:ca.empty,each:ca.each,on:function(e,t){var n=this._id;return arguments.length<2?Pr(this.node(),n).on.on(e):this.each(function(e,t,n){var r,i,a=function(e){return(e+"").trim().split(/^|\s+/).every(function(e){var t=e.indexOf(".");return t>=0&&(e=e.slice(0,t)),!e||"start"===e})}(t)?Fr:Er;return function(){var o=a(this,e),u=o.on;u!==r&&(i=(r=u).copy()).on(t,n),o.on=i}}(n,e,t))},attr:function(e,t){var n=m(e),r="transform"===n?ea:aa;return this.attrTween(e,"function"==typeof t?(n.local?function(e,t,n){var r,i,a;return function(){var o,u=n(this);if(null!=u)return(o=this.getAttributeNS(e.space,e.local))===u?null:o===r&&u===i?a:a=t(r=o,i=u);this.removeAttributeNS(e.space,e.local)}}:function(e,t,n){var r,i,a;return function(){var o,u=n(this);if(null!=u)return(o=this.getAttribute(e))===u?null:o===r&&u===i?a:a=t(r=o,i=u);this.removeAttribute(e)}})(n,r,ia(this,"attr."+e,t)):null==t?(n.local?function(e){return function(){this.removeAttributeNS(e.space,e.local)}}:function(e){return function(){this.removeAttribute(e)}})(n):(n.local?function(e,t,n){var r,i;return function(){var a=this.getAttributeNS(e.space,e.local);return a===n?null:a===r?i:i=t(r=a,n)}}:function(e,t,n){var r,i;return function(){var a=this.getAttribute(e);return a===n?null:a===r?i:i=t(r=a,n)}})(n,r,t+""))},attrTween:function(e,t){var n="attr."+e;if(arguments.length<2)return(n=this.tween(n))&&n._value;if(null==t)return this.tween(n,null);if("function"!=typeof t)throw new Error;var r=m(e);return this.tween(n,(r.local?function(e,t){function n(){var n=this,r=t.apply(n,arguments);return r&&function(t){n.setAttributeNS(e.space,e.local,r(t))}}return n._value=t,n}:function(e,t){function n(){var n=this,r=t.apply(n,arguments);return r&&function(t){n.setAttribute(e,r(t))}}return n._value=t,n})(r,t))},style:function(e,t,n){var r="transform"==(e+="")?Ki:aa;return null==t?this.styleTween(e,function(e,t){var n,r,i;return function(){var a=O(this,e),o=(this.style.removeProperty(e),O(this,e));return a===o?null:a===n&&o===r?i:i=t(n=a,r=o)}}(e,r)).on("end.style."+e,function(e){return function(){this.style.removeProperty(e)}}(e)):this.styleTween(e,"function"==typeof t?function(e,t,n){var r,i,a;return function(){var o=O(this,e),u=n(this);return null==u&&(this.style.removeProperty(e),u=O(this,e)),o===u?null:o===r&&u===i?a:a=t(r=o,i=u)}}(e,r,ia(this,"style."+e,t)):function(e,t,n){var r,i;return function(){var a=O(this,e);return a===n?null:a===r?i:i=t(r=a,n)}}(e,r,t+""),n)},styleTween:function(e,t,n){var r="style."+(e+="");if(arguments.length<2)return(r=this.tween(r))&&r._value;if(null==t)return this.tween(r,null);if("function"!=typeof t)throw new Error;return this.tween(r,function(e,t,n){function r(){var r=this,i=t.apply(r,arguments);return i&&function(t){r.style.setProperty(e,i(t),n)}}return r._value=t,r}(e,t,null==n?"":n))},text:function(e){return this.tween("text","function"==typeof e?function(e){return function(){var t=e(this);this.textContent=null==t?"":t}}(ia(this,"text",e)):function(e){return function(){this.textContent=e}}(null==e?"":e+""))},remove:function(){return this.on("end.remove",function(e){return function(){var t=this.parentNode;for(var n in this.__transition)if(+n!==e)return;t&&t.removeChild(this)}}(this._id))},tween:function(e,t){var n=this._id;if(e+="",arguments.length<2){for(var r,i=Pr(this.node(),n).tween,a=0,o=i.length;a<o;++a)if((r=i[a]).name===e)return r.value;return null}return this.each((null==t?function(e,t){var n,r;return function(){var i=Er(this,e),a=i.tween;if(a!==n)for(var o=0,u=(r=n=a).length;o<u;++o)if(r[o].name===t){(r=r.slice()).splice(o,1);break}i.tween=r}}:function(e,t,n){var r,i;if("function"!=typeof n)throw new Error;return function(){var a=Er(this,e),o=a.tween;if(o!==r){i=(r=o).slice();for(var u={name:t,value:n},l=0,s=i.length;l<s;++l)if(i[l].name===t){i[l]=u;break}l===s&&i.push(u)}a.tween=i}})(n,e,t))},delay:function(e){var t=this._id;return arguments.length?this.each(("function"==typeof e?function(e,t){return function(){Fr(this,e).delay=+t.apply(this,arguments)}}:function(e,t){return t=+t,function(){Fr(this,e).delay=t}})(t,e)):Pr(this.node(),t).delay},duration:function(e){var t=this._id;return arguments.length?this.each(("function"==typeof e?function(e,t){return function(){Er(this,e).duration=+t.apply(this,arguments)}}:function(e,t){return t=+t,function(){Er(this,e).duration=t}})(t,e)):Pr(this.node(),t).duration},ease:function(e){var t=this._id;return arguments.length?this.each(function(e,t){if("function"!=typeof t)throw new Error;return function(){Er(this,e).ease=t}}(t,e)):Pr(this.node(),t).ease}};(function e(t){function n(e){return Math.pow(e,t)}return t=+t,n.exponent=e,n})(3),function e(t){function n(e){return 1-Math.pow(1-e,t)}return t=+t,n.exponent=e,n}(3),function e(t){function n(e){return((e*=2)<=1?Math.pow(e,t):2-Math.pow(2-e,t))/2}return t=+t,n.exponent=e,n}(3),Math.PI;(function e(t){function n(e){return e*e*((t+1)*e-t)}return t=+t,n.overshoot=e,n})(1.70158),function e(t){function n(e){return--e*e*((t+1)*e+t)+1}return t=+t,n.overshoot=e,n}(1.70158),function e(t){function n(e){return((e*=2)<1?e*e*((t+1)*e-t):(e-=2)*e*((t+1)*e+t)+2)/2}return t=+t,n.overshoot=e,n}(1.70158);var fa=2*Math.PI,ha=(function e(t,n){var r=Math.asin(1/(t=Math.max(1,t)))*(n/=fa);function i(e){return t*Math.pow(2,10*--e)*Math.sin((r-e)/n)}return i.amplitude=function(t){return e(t,n*fa)},i.period=function(n){return e(t,n)},i}(1,.3),function e(t,n){var r=Math.asin(1/(t=Math.max(1,t)))*(n/=fa);function i(e){return 1-t*Math.pow(2,-10*(e=+e))*Math.sin((e+r)/n)}return i.amplitude=function(t){return e(t,n*fa)},i.period=function(n){return e(t,n)},i}(1,.3),function e(t,n){var r=Math.asin(1/(t=Math.max(1,t)))*(n/=fa);function i(e){return((e=2*e-1)<0?t*Math.pow(2,10*e)*Math.sin((r-e)/n):2-t*Math.pow(2,-10*e)*Math.sin((r+e)/n))/2}return i.amplitude=function(t){return e(t,n*fa)},i.period=function(n){return e(t,n)},i}(1,.3),{time:null,delay:0,duration:250,ease:function(e){return((e*=2)<=1?e*e*e:(e-=2)*e*e+2)/2}});function da(e,t){for(var n;!(n=e.__transition)||!(n=n[t]);)if(!(e=e.parentNode))return ha.time=fr(),ha;return n}ne.prototype.interrupt=function(e){return this.each(function(){!function(e,t){var n,r,i,a=e.__transition,o=!0;if(a){for(i in t=null==t?null:t+"",a)(n=a[i]).name===t?(r=n.state>wr&&n.state<Dr,n.state=Cr,n.timer.stop(),r&&n.on.call("interrupt",e,e.__data__,n.index,n.group),delete a[i]):o=!1;o&&delete e.__transition}}(this,e)})},ne.prototype.transition=function(e){var t,n;e instanceof la?(t=e._id,e=e._name):(t=sa(),(n=ha).time=fr(),e=null==e?null:e+"");for(var r=this._groups,i=r.length,a=0;a<i;++a)for(var o,u=r[a],l=u.length,s=0;s<l;++s)(o=u[s])&&Nr(o,e,t,s,u,n||da(o,t));return new la(r,this._parents,e,t)};var ga=h.DataViewObjectsParser;class ma extends ga{constructor(){super(...arguments),this.linkGeneralSettings=new pa,this.linkImageSettings=new ya,this.linkContentSettings=new va,this.linkBottomSettings=new _a}}class pa{constructor(){this.borderColor="#F2F2F2",this.borderHoverColor="black"}}class ya{constructor(){this.show=!1,this.imageURL="https://www.w3schools.com/w3css/img_lights.jpg"}}class va{constructor(){this.link="",this.linkTitle="",this.linkHoverTitle="",this.showLinkContent=!1,this.linkContent=""}}class _a{constructor(){this.show=!0,this.linkBottomText="Go to Report"}}class ba{constructor(e){this.target=e.element,this.host=e.host}update(e){this.linkVisualSettings=ba.parseSettings(e&&e.dataViews&&e.dataViews[0]);let t=this.linkVisualSettings.linkGeneralSettings,n=this.linkVisualSettings.linkImageSettings,r=this.linkVisualSettings.linkContentSettings,i=this.linkVisualSettings.linkBottomSettings,a="";try{this.rootElement&&this.rootElement.remove(),a=c.isNullOrUndefinedOrWhiteSpaceString(r.linkHoverTitle)?c.isNullOrUndefinedOrWhiteSpaceString(r.link)?"Click here to go to nowhere":"Click here to go to "+r.link:r.linkHoverTitle,this.rootElement=re(this.target).append("div").classed("rootElement",!0).attr("title",a).style("height","100%").style("width","100%").style("border",t.borderColor).style("border-style","solid").style("border-width","3px").style("box-sizing","border-box"),n.show&&(this.topContentElement=this.rootElement.append("img").attr("src",n.imageURL).style("width","100%")),this.middleContentElement=this.rootElement.append("div").style("padding","20px").style("margin",0).style("max-width","100%").style("left","0px"),this.middleContentElement.append("h2").style("text-align","start").style("margin",0).text(r.linkTitle),r.showLinkContent&&this.middleContentElement.append("p").text(r.linkContent),i.show&&(this.bottomContentElement=this.rootElement.append("div").classed("bottomLink",!0).style("position","absolute").style("bottom","0").style("left","0").style("width","100%").style("max-width","100%"),this.bottomContentElement.append("p").attr("id","bottomText").style("border-top",t.borderColor).style("border-top-style","solid").style("border-top-width","3px").style("padding-left","20px").style("padding-top","10px").text(i.linkBottomText).append("span").style("margin-left","5px").text("🡭")),this.rootElement.on("mouseover",(e,n,r)=>{re(r[n]).style("border",t.borderHoverColor).style("border-style","solid").style("border-width","3px"),this.bottomContentElement.select("#bottomText").style("border-top",t.borderHoverColor).style("border-top-style","solid").style("border-top-width","3px")}).on("mouseout",(e,n,r)=>{re(r[n]).style("border",t.borderColor).style("border-style","solid").style("border-width","3px"),this.bottomContentElement.select("#bottomText").style("border-top",t.borderColor).style("border-top-style","solid").style("border-top-width","3px")}).on("click",()=>{c.isNullOrUndefinedOrWhiteSpaceString(r.link)||this.host.launchUrl(r.link)})}catch(e){console.log(e)}}static parseSettings(e){return ma.parse(e)}enumerateObjectInstances(e){return ma.enumerateObjectInstances(this.linkVisualSettings||ma.getDefault(),e)}}powerbi.visuals=powerbi.visuals||{},powerbi.visuals.plugins=powerbi.visuals.plugins||{},powerbi.visuals.plugins.externalLinkC315CFE8D1E9496582BCD9F3B9E20D91={name:"externalLinkC315CFE8D1E9496582BCD9F3B9E20D91",displayName:"External Link",class:"ExternalLinkVisual",version:"1.0.0",apiVersion:"2.1.0",create:e=>{if(ba)return new ba(e);console.error("Visual instance not found")},custom:!0};t.default=powerbi}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "assets";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./.tmp/precompile/visualPlugin.ts":
+/*!*****************************************!*\
+  !*** ./.tmp/precompile/visualPlugin.ts ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_visual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../src/visual */ "./src/visual.ts");
+
+powerbi.visuals = powerbi.visuals || {};
+powerbi.visuals.plugins = powerbi.visuals.plugins || {};
+powerbi.visuals.plugins["externalLinkC315CFE8D1E9496582BCD9F3B9E20D91_DEBUG"] = {
+    name: 'externalLinkC315CFE8D1E9496582BCD9F3B9E20D91_DEBUG',
+    displayName: 'External Link',
+    class: 'ExternalLinkVisual',
+    version: '1.0.0',
+    apiVersion: '2.1.0',
+    create: (options) => {
+        if (_src_visual__WEBPACK_IMPORTED_MODULE_0__["ExternalLinkVisual"]) {
+            return new _src_visual__WEBPACK_IMPORTED_MODULE_0__["ExternalLinkVisual"](options);
+        }
+        console.error('Visual instance not found');
+    },
+    custom: true
+};
+/* harmony default export */ __webpack_exports__["default"] = (powerbi);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/color.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-color/src/color.js ***!
+  \********************************************/
+/*! exports provided: Color, darker, brighter, default, rgbConvert, rgb, Rgb, hslConvert, hsl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Color", function() { return Color; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darker", function() { return darker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "brighter", function() { return brighter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return color; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgbConvert", function() { return rgbConvert; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgb", function() { return rgb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Rgb", function() { return Rgb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hslConvert", function() { return hslConvert; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hsl", function() { return hsl; });
+/* harmony import */ var _define__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./define */ "./node_modules/d3-color/src/define.js");
+
+
+function Color() {}
+
+var darker = 0.7;
+var brighter = 1 / darker;
+
+var reI = "\\s*([+-]?\\d+)\\s*",
+    reN = "\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)\\s*",
+    reP = "\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)%\\s*",
+    reHex3 = /^#([0-9a-f]{3})$/,
+    reHex6 = /^#([0-9a-f]{6})$/,
+    reRgbInteger = new RegExp("^rgb\\(" + [reI, reI, reI] + "\\)$"),
+    reRgbPercent = new RegExp("^rgb\\(" + [reP, reP, reP] + "\\)$"),
+    reRgbaInteger = new RegExp("^rgba\\(" + [reI, reI, reI, reN] + "\\)$"),
+    reRgbaPercent = new RegExp("^rgba\\(" + [reP, reP, reP, reN] + "\\)$"),
+    reHslPercent = new RegExp("^hsl\\(" + [reN, reP, reP] + "\\)$"),
+    reHslaPercent = new RegExp("^hsla\\(" + [reN, reP, reP, reN] + "\\)$");
+
+var named = {
+  aliceblue: 0xf0f8ff,
+  antiquewhite: 0xfaebd7,
+  aqua: 0x00ffff,
+  aquamarine: 0x7fffd4,
+  azure: 0xf0ffff,
+  beige: 0xf5f5dc,
+  bisque: 0xffe4c4,
+  black: 0x000000,
+  blanchedalmond: 0xffebcd,
+  blue: 0x0000ff,
+  blueviolet: 0x8a2be2,
+  brown: 0xa52a2a,
+  burlywood: 0xdeb887,
+  cadetblue: 0x5f9ea0,
+  chartreuse: 0x7fff00,
+  chocolate: 0xd2691e,
+  coral: 0xff7f50,
+  cornflowerblue: 0x6495ed,
+  cornsilk: 0xfff8dc,
+  crimson: 0xdc143c,
+  cyan: 0x00ffff,
+  darkblue: 0x00008b,
+  darkcyan: 0x008b8b,
+  darkgoldenrod: 0xb8860b,
+  darkgray: 0xa9a9a9,
+  darkgreen: 0x006400,
+  darkgrey: 0xa9a9a9,
+  darkkhaki: 0xbdb76b,
+  darkmagenta: 0x8b008b,
+  darkolivegreen: 0x556b2f,
+  darkorange: 0xff8c00,
+  darkorchid: 0x9932cc,
+  darkred: 0x8b0000,
+  darksalmon: 0xe9967a,
+  darkseagreen: 0x8fbc8f,
+  darkslateblue: 0x483d8b,
+  darkslategray: 0x2f4f4f,
+  darkslategrey: 0x2f4f4f,
+  darkturquoise: 0x00ced1,
+  darkviolet: 0x9400d3,
+  deeppink: 0xff1493,
+  deepskyblue: 0x00bfff,
+  dimgray: 0x696969,
+  dimgrey: 0x696969,
+  dodgerblue: 0x1e90ff,
+  firebrick: 0xb22222,
+  floralwhite: 0xfffaf0,
+  forestgreen: 0x228b22,
+  fuchsia: 0xff00ff,
+  gainsboro: 0xdcdcdc,
+  ghostwhite: 0xf8f8ff,
+  gold: 0xffd700,
+  goldenrod: 0xdaa520,
+  gray: 0x808080,
+  green: 0x008000,
+  greenyellow: 0xadff2f,
+  grey: 0x808080,
+  honeydew: 0xf0fff0,
+  hotpink: 0xff69b4,
+  indianred: 0xcd5c5c,
+  indigo: 0x4b0082,
+  ivory: 0xfffff0,
+  khaki: 0xf0e68c,
+  lavender: 0xe6e6fa,
+  lavenderblush: 0xfff0f5,
+  lawngreen: 0x7cfc00,
+  lemonchiffon: 0xfffacd,
+  lightblue: 0xadd8e6,
+  lightcoral: 0xf08080,
+  lightcyan: 0xe0ffff,
+  lightgoldenrodyellow: 0xfafad2,
+  lightgray: 0xd3d3d3,
+  lightgreen: 0x90ee90,
+  lightgrey: 0xd3d3d3,
+  lightpink: 0xffb6c1,
+  lightsalmon: 0xffa07a,
+  lightseagreen: 0x20b2aa,
+  lightskyblue: 0x87cefa,
+  lightslategray: 0x778899,
+  lightslategrey: 0x778899,
+  lightsteelblue: 0xb0c4de,
+  lightyellow: 0xffffe0,
+  lime: 0x00ff00,
+  limegreen: 0x32cd32,
+  linen: 0xfaf0e6,
+  magenta: 0xff00ff,
+  maroon: 0x800000,
+  mediumaquamarine: 0x66cdaa,
+  mediumblue: 0x0000cd,
+  mediumorchid: 0xba55d3,
+  mediumpurple: 0x9370db,
+  mediumseagreen: 0x3cb371,
+  mediumslateblue: 0x7b68ee,
+  mediumspringgreen: 0x00fa9a,
+  mediumturquoise: 0x48d1cc,
+  mediumvioletred: 0xc71585,
+  midnightblue: 0x191970,
+  mintcream: 0xf5fffa,
+  mistyrose: 0xffe4e1,
+  moccasin: 0xffe4b5,
+  navajowhite: 0xffdead,
+  navy: 0x000080,
+  oldlace: 0xfdf5e6,
+  olive: 0x808000,
+  olivedrab: 0x6b8e23,
+  orange: 0xffa500,
+  orangered: 0xff4500,
+  orchid: 0xda70d6,
+  palegoldenrod: 0xeee8aa,
+  palegreen: 0x98fb98,
+  paleturquoise: 0xafeeee,
+  palevioletred: 0xdb7093,
+  papayawhip: 0xffefd5,
+  peachpuff: 0xffdab9,
+  peru: 0xcd853f,
+  pink: 0xffc0cb,
+  plum: 0xdda0dd,
+  powderblue: 0xb0e0e6,
+  purple: 0x800080,
+  rebeccapurple: 0x663399,
+  red: 0xff0000,
+  rosybrown: 0xbc8f8f,
+  royalblue: 0x4169e1,
+  saddlebrown: 0x8b4513,
+  salmon: 0xfa8072,
+  sandybrown: 0xf4a460,
+  seagreen: 0x2e8b57,
+  seashell: 0xfff5ee,
+  sienna: 0xa0522d,
+  silver: 0xc0c0c0,
+  skyblue: 0x87ceeb,
+  slateblue: 0x6a5acd,
+  slategray: 0x708090,
+  slategrey: 0x708090,
+  snow: 0xfffafa,
+  springgreen: 0x00ff7f,
+  steelblue: 0x4682b4,
+  tan: 0xd2b48c,
+  teal: 0x008080,
+  thistle: 0xd8bfd8,
+  tomato: 0xff6347,
+  turquoise: 0x40e0d0,
+  violet: 0xee82ee,
+  wheat: 0xf5deb3,
+  white: 0xffffff,
+  whitesmoke: 0xf5f5f5,
+  yellow: 0xffff00,
+  yellowgreen: 0x9acd32
+};
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Color, color, {
+  displayable: function() {
+    return this.rgb().displayable();
+  },
+  hex: function() {
+    return this.rgb().hex();
+  },
+  toString: function() {
+    return this.rgb() + "";
+  }
+});
+
+function color(format) {
+  var m;
+  format = (format + "").trim().toLowerCase();
+  return (m = reHex3.exec(format)) ? (m = parseInt(m[1], 16), new Rgb((m >> 8 & 0xf) | (m >> 4 & 0x0f0), (m >> 4 & 0xf) | (m & 0xf0), ((m & 0xf) << 4) | (m & 0xf), 1)) // #f00
+      : (m = reHex6.exec(format)) ? rgbn(parseInt(m[1], 16)) // #ff0000
+      : (m = reRgbInteger.exec(format)) ? new Rgb(m[1], m[2], m[3], 1) // rgb(255, 0, 0)
+      : (m = reRgbPercent.exec(format)) ? new Rgb(m[1] * 255 / 100, m[2] * 255 / 100, m[3] * 255 / 100, 1) // rgb(100%, 0%, 0%)
+      : (m = reRgbaInteger.exec(format)) ? rgba(m[1], m[2], m[3], m[4]) // rgba(255, 0, 0, 1)
+      : (m = reRgbaPercent.exec(format)) ? rgba(m[1] * 255 / 100, m[2] * 255 / 100, m[3] * 255 / 100, m[4]) // rgb(100%, 0%, 0%, 1)
+      : (m = reHslPercent.exec(format)) ? hsla(m[1], m[2] / 100, m[3] / 100, 1) // hsl(120, 50%, 50%)
+      : (m = reHslaPercent.exec(format)) ? hsla(m[1], m[2] / 100, m[3] / 100, m[4]) // hsla(120, 50%, 50%, 1)
+      : named.hasOwnProperty(format) ? rgbn(named[format])
+      : format === "transparent" ? new Rgb(NaN, NaN, NaN, 0)
+      : null;
+}
+
+function rgbn(n) {
+  return new Rgb(n >> 16 & 0xff, n >> 8 & 0xff, n & 0xff, 1);
+}
+
+function rgba(r, g, b, a) {
+  if (a <= 0) r = g = b = NaN;
+  return new Rgb(r, g, b, a);
+}
+
+function rgbConvert(o) {
+  if (!(o instanceof Color)) o = color(o);
+  if (!o) return new Rgb;
+  o = o.rgb();
+  return new Rgb(o.r, o.g, o.b, o.opacity);
+}
+
+function rgb(r, g, b, opacity) {
+  return arguments.length === 1 ? rgbConvert(r) : new Rgb(r, g, b, opacity == null ? 1 : opacity);
+}
+
+function Rgb(r, g, b, opacity) {
+  this.r = +r;
+  this.g = +g;
+  this.b = +b;
+  this.opacity = +opacity;
+}
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Rgb, rgb, Object(_define__WEBPACK_IMPORTED_MODULE_0__["extend"])(Color, {
+  brighter: function(k) {
+    k = k == null ? brighter : Math.pow(brighter, k);
+    return new Rgb(this.r * k, this.g * k, this.b * k, this.opacity);
+  },
+  darker: function(k) {
+    k = k == null ? darker : Math.pow(darker, k);
+    return new Rgb(this.r * k, this.g * k, this.b * k, this.opacity);
+  },
+  rgb: function() {
+    return this;
+  },
+  displayable: function() {
+    return (0 <= this.r && this.r <= 255)
+        && (0 <= this.g && this.g <= 255)
+        && (0 <= this.b && this.b <= 255)
+        && (0 <= this.opacity && this.opacity <= 1);
+  },
+  hex: function() {
+    return "#" + hex(this.r) + hex(this.g) + hex(this.b);
+  },
+  toString: function() {
+    var a = this.opacity; a = isNaN(a) ? 1 : Math.max(0, Math.min(1, a));
+    return (a === 1 ? "rgb(" : "rgba(")
+        + Math.max(0, Math.min(255, Math.round(this.r) || 0)) + ", "
+        + Math.max(0, Math.min(255, Math.round(this.g) || 0)) + ", "
+        + Math.max(0, Math.min(255, Math.round(this.b) || 0))
+        + (a === 1 ? ")" : ", " + a + ")");
+  }
+}));
+
+function hex(value) {
+  value = Math.max(0, Math.min(255, Math.round(value) || 0));
+  return (value < 16 ? "0" : "") + value.toString(16);
+}
+
+function hsla(h, s, l, a) {
+  if (a <= 0) h = s = l = NaN;
+  else if (l <= 0 || l >= 1) h = s = NaN;
+  else if (s <= 0) h = NaN;
+  return new Hsl(h, s, l, a);
+}
+
+function hslConvert(o) {
+  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);
+  if (!(o instanceof Color)) o = color(o);
+  if (!o) return new Hsl;
+  if (o instanceof Hsl) return o;
+  o = o.rgb();
+  var r = o.r / 255,
+      g = o.g / 255,
+      b = o.b / 255,
+      min = Math.min(r, g, b),
+      max = Math.max(r, g, b),
+      h = NaN,
+      s = max - min,
+      l = (max + min) / 2;
+  if (s) {
+    if (r === max) h = (g - b) / s + (g < b) * 6;
+    else if (g === max) h = (b - r) / s + 2;
+    else h = (r - g) / s + 4;
+    s /= l < 0.5 ? max + min : 2 - max - min;
+    h *= 60;
+  } else {
+    s = l > 0 && l < 1 ? 0 : h;
+  }
+  return new Hsl(h, s, l, o.opacity);
+}
+
+function hsl(h, s, l, opacity) {
+  return arguments.length === 1 ? hslConvert(h) : new Hsl(h, s, l, opacity == null ? 1 : opacity);
+}
+
+function Hsl(h, s, l, opacity) {
+  this.h = +h;
+  this.s = +s;
+  this.l = +l;
+  this.opacity = +opacity;
+}
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Hsl, hsl, Object(_define__WEBPACK_IMPORTED_MODULE_0__["extend"])(Color, {
+  brighter: function(k) {
+    k = k == null ? brighter : Math.pow(brighter, k);
+    return new Hsl(this.h, this.s, this.l * k, this.opacity);
+  },
+  darker: function(k) {
+    k = k == null ? darker : Math.pow(darker, k);
+    return new Hsl(this.h, this.s, this.l * k, this.opacity);
+  },
+  rgb: function() {
+    var h = this.h % 360 + (this.h < 0) * 360,
+        s = isNaN(h) || isNaN(this.s) ? 0 : this.s,
+        l = this.l,
+        m2 = l + (l < 0.5 ? l : 1 - l) * s,
+        m1 = 2 * l - m2;
+    return new Rgb(
+      hsl2rgb(h >= 240 ? h - 240 : h + 120, m1, m2),
+      hsl2rgb(h, m1, m2),
+      hsl2rgb(h < 120 ? h + 240 : h - 120, m1, m2),
+      this.opacity
+    );
+  },
+  displayable: function() {
+    return (0 <= this.s && this.s <= 1 || isNaN(this.s))
+        && (0 <= this.l && this.l <= 1)
+        && (0 <= this.opacity && this.opacity <= 1);
+  }
+}));
+
+/* From FvD 13.37, CSS Color Module Level 3 */
+function hsl2rgb(h, m1, m2) {
+  return (h < 60 ? m1 + (m2 - m1) * h / 60
+      : h < 180 ? m2
+      : h < 240 ? m1 + (m2 - m1) * (240 - h) / 60
+      : m1) * 255;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/cubehelix.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-color/src/cubehelix.js ***!
+  \************************************************/
+/*! exports provided: default, Cubehelix */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return cubehelix; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cubehelix", function() { return Cubehelix; });
+/* harmony import */ var _define__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./define */ "./node_modules/d3-color/src/define.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-color/src/color.js");
+/* harmony import */ var _math__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./math */ "./node_modules/d3-color/src/math.js");
+
+
+
+
+var A = -0.14861,
+    B = +1.78277,
+    C = -0.29227,
+    D = -0.90649,
+    E = +1.97294,
+    ED = E * D,
+    EB = E * B,
+    BC_DA = B * C - D * A;
+
+function cubehelixConvert(o) {
+  if (o instanceof Cubehelix) return new Cubehelix(o.h, o.s, o.l, o.opacity);
+  if (!(o instanceof _color__WEBPACK_IMPORTED_MODULE_1__["Rgb"])) o = Object(_color__WEBPACK_IMPORTED_MODULE_1__["rgbConvert"])(o);
+  var r = o.r / 255,
+      g = o.g / 255,
+      b = o.b / 255,
+      l = (BC_DA * b + ED * r - EB * g) / (BC_DA + ED - EB),
+      bl = b - l,
+      k = (E * (g - l) - C * bl) / D,
+      s = Math.sqrt(k * k + bl * bl) / (E * l * (1 - l)), // NaN if l=0 or l=1
+      h = s ? Math.atan2(k, bl) * _math__WEBPACK_IMPORTED_MODULE_2__["rad2deg"] - 120 : NaN;
+  return new Cubehelix(h < 0 ? h + 360 : h, s, l, o.opacity);
+}
+
+function cubehelix(h, s, l, opacity) {
+  return arguments.length === 1 ? cubehelixConvert(h) : new Cubehelix(h, s, l, opacity == null ? 1 : opacity);
+}
+
+function Cubehelix(h, s, l, opacity) {
+  this.h = +h;
+  this.s = +s;
+  this.l = +l;
+  this.opacity = +opacity;
+}
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Cubehelix, cubehelix, Object(_define__WEBPACK_IMPORTED_MODULE_0__["extend"])(_color__WEBPACK_IMPORTED_MODULE_1__["Color"], {
+  brighter: function(k) {
+    k = k == null ? _color__WEBPACK_IMPORTED_MODULE_1__["brighter"] : Math.pow(_color__WEBPACK_IMPORTED_MODULE_1__["brighter"], k);
+    return new Cubehelix(this.h, this.s, this.l * k, this.opacity);
+  },
+  darker: function(k) {
+    k = k == null ? _color__WEBPACK_IMPORTED_MODULE_1__["darker"] : Math.pow(_color__WEBPACK_IMPORTED_MODULE_1__["darker"], k);
+    return new Cubehelix(this.h, this.s, this.l * k, this.opacity);
+  },
+  rgb: function() {
+    var h = isNaN(this.h) ? 0 : (this.h + 120) * _math__WEBPACK_IMPORTED_MODULE_2__["deg2rad"],
+        l = +this.l,
+        a = isNaN(this.s) ? 0 : this.s * l * (1 - l),
+        cosh = Math.cos(h),
+        sinh = Math.sin(h);
+    return new _color__WEBPACK_IMPORTED_MODULE_1__["Rgb"](
+      255 * (l + a * (A * cosh + B * sinh)),
+      255 * (l + a * (C * cosh + D * sinh)),
+      255 * (l + a * (E * cosh)),
+      this.opacity
+    );
+  }
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/define.js":
+/*!*********************************************!*\
+  !*** ./node_modules/d3-color/src/define.js ***!
+  \*********************************************/
+/*! exports provided: default, extend */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "extend", function() { return extend; });
+/* harmony default export */ __webpack_exports__["default"] = (function(constructor, factory, prototype) {
+  constructor.prototype = factory.prototype = prototype;
+  prototype.constructor = constructor;
+});
+
+function extend(parent, definition) {
+  var prototype = Object.create(parent.prototype);
+  for (var key in definition) prototype[key] = definition[key];
+  return prototype;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-color/src/index.js ***!
+  \********************************************/
+/*! exports provided: color, rgb, hsl, lab, hcl, lch, gray, cubehelix */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./color */ "./node_modules/d3-color/src/color.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "color", function() { return _color__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "rgb", function() { return _color__WEBPACK_IMPORTED_MODULE_0__["rgb"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "hsl", function() { return _color__WEBPACK_IMPORTED_MODULE_0__["hsl"]; });
+
+/* harmony import */ var _lab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lab */ "./node_modules/d3-color/src/lab.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lab", function() { return _lab__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "hcl", function() { return _lab__WEBPACK_IMPORTED_MODULE_1__["hcl"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lch", function() { return _lab__WEBPACK_IMPORTED_MODULE_1__["lch"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "gray", function() { return _lab__WEBPACK_IMPORTED_MODULE_1__["gray"]; });
+
+/* harmony import */ var _cubehelix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cubehelix */ "./node_modules/d3-color/src/cubehelix.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "cubehelix", function() { return _cubehelix__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/lab.js":
+/*!******************************************!*\
+  !*** ./node_modules/d3-color/src/lab.js ***!
+  \******************************************/
+/*! exports provided: gray, default, Lab, lch, hcl, Hcl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gray", function() { return gray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return lab; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Lab", function() { return Lab; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lch", function() { return lch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hcl", function() { return hcl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hcl", function() { return Hcl; });
+/* harmony import */ var _define__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./define */ "./node_modules/d3-color/src/define.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-color/src/color.js");
+/* harmony import */ var _math__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./math */ "./node_modules/d3-color/src/math.js");
+
+
+
+
+// https://beta.observablehq.com/@mbostock/lab-and-rgb
+var K = 18,
+    Xn = 0.96422,
+    Yn = 1,
+    Zn = 0.82521,
+    t0 = 4 / 29,
+    t1 = 6 / 29,
+    t2 = 3 * t1 * t1,
+    t3 = t1 * t1 * t1;
+
+function labConvert(o) {
+  if (o instanceof Lab) return new Lab(o.l, o.a, o.b, o.opacity);
+  if (o instanceof Hcl) {
+    if (isNaN(o.h)) return new Lab(o.l, 0, 0, o.opacity);
+    var h = o.h * _math__WEBPACK_IMPORTED_MODULE_2__["deg2rad"];
+    return new Lab(o.l, Math.cos(h) * o.c, Math.sin(h) * o.c, o.opacity);
+  }
+  if (!(o instanceof _color__WEBPACK_IMPORTED_MODULE_1__["Rgb"])) o = Object(_color__WEBPACK_IMPORTED_MODULE_1__["rgbConvert"])(o);
+  var r = rgb2lrgb(o.r),
+      g = rgb2lrgb(o.g),
+      b = rgb2lrgb(o.b),
+      y = xyz2lab((0.2225045 * r + 0.7168786 * g + 0.0606169 * b) / Yn), x, z;
+  if (r === g && g === b) x = z = y; else {
+    x = xyz2lab((0.4360747 * r + 0.3850649 * g + 0.1430804 * b) / Xn);
+    z = xyz2lab((0.0139322 * r + 0.0971045 * g + 0.7141733 * b) / Zn);
+  }
+  return new Lab(116 * y - 16, 500 * (x - y), 200 * (y - z), o.opacity);
+}
+
+function gray(l, opacity) {
+  return new Lab(l, 0, 0, opacity == null ? 1 : opacity);
+}
+
+function lab(l, a, b, opacity) {
+  return arguments.length === 1 ? labConvert(l) : new Lab(l, a, b, opacity == null ? 1 : opacity);
+}
+
+function Lab(l, a, b, opacity) {
+  this.l = +l;
+  this.a = +a;
+  this.b = +b;
+  this.opacity = +opacity;
+}
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Lab, lab, Object(_define__WEBPACK_IMPORTED_MODULE_0__["extend"])(_color__WEBPACK_IMPORTED_MODULE_1__["Color"], {
+  brighter: function(k) {
+    return new Lab(this.l + K * (k == null ? 1 : k), this.a, this.b, this.opacity);
+  },
+  darker: function(k) {
+    return new Lab(this.l - K * (k == null ? 1 : k), this.a, this.b, this.opacity);
+  },
+  rgb: function() {
+    var y = (this.l + 16) / 116,
+        x = isNaN(this.a) ? y : y + this.a / 500,
+        z = isNaN(this.b) ? y : y - this.b / 200;
+    x = Xn * lab2xyz(x);
+    y = Yn * lab2xyz(y);
+    z = Zn * lab2xyz(z);
+    return new _color__WEBPACK_IMPORTED_MODULE_1__["Rgb"](
+      lrgb2rgb( 3.1338561 * x - 1.6168667 * y - 0.4906146 * z),
+      lrgb2rgb(-0.9787684 * x + 1.9161415 * y + 0.0334540 * z),
+      lrgb2rgb( 0.0719453 * x - 0.2289914 * y + 1.4052427 * z),
+      this.opacity
+    );
+  }
+}));
+
+function xyz2lab(t) {
+  return t > t3 ? Math.pow(t, 1 / 3) : t / t2 + t0;
+}
+
+function lab2xyz(t) {
+  return t > t1 ? t * t * t : t2 * (t - t0);
+}
+
+function lrgb2rgb(x) {
+  return 255 * (x <= 0.0031308 ? 12.92 * x : 1.055 * Math.pow(x, 1 / 2.4) - 0.055);
+}
+
+function rgb2lrgb(x) {
+  return (x /= 255) <= 0.04045 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4);
+}
+
+function hclConvert(o) {
+  if (o instanceof Hcl) return new Hcl(o.h, o.c, o.l, o.opacity);
+  if (!(o instanceof Lab)) o = labConvert(o);
+  if (o.a === 0 && o.b === 0) return new Hcl(NaN, 0, o.l, o.opacity);
+  var h = Math.atan2(o.b, o.a) * _math__WEBPACK_IMPORTED_MODULE_2__["rad2deg"];
+  return new Hcl(h < 0 ? h + 360 : h, Math.sqrt(o.a * o.a + o.b * o.b), o.l, o.opacity);
+}
+
+function lch(l, c, h, opacity) {
+  return arguments.length === 1 ? hclConvert(l) : new Hcl(h, c, l, opacity == null ? 1 : opacity);
+}
+
+function hcl(h, c, l, opacity) {
+  return arguments.length === 1 ? hclConvert(h) : new Hcl(h, c, l, opacity == null ? 1 : opacity);
+}
+
+function Hcl(h, c, l, opacity) {
+  this.h = +h;
+  this.c = +c;
+  this.l = +l;
+  this.opacity = +opacity;
+}
+
+Object(_define__WEBPACK_IMPORTED_MODULE_0__["default"])(Hcl, hcl, Object(_define__WEBPACK_IMPORTED_MODULE_0__["extend"])(_color__WEBPACK_IMPORTED_MODULE_1__["Color"], {
+  brighter: function(k) {
+    return new Hcl(this.h, this.c, this.l + K * (k == null ? 1 : k), this.opacity);
+  },
+  darker: function(k) {
+    return new Hcl(this.h, this.c, this.l - K * (k == null ? 1 : k), this.opacity);
+  },
+  rgb: function() {
+    return labConvert(this).rgb();
+  }
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-color/src/math.js":
+/*!*******************************************!*\
+  !*** ./node_modules/d3-color/src/math.js ***!
+  \*******************************************/
+/*! exports provided: deg2rad, rad2deg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deg2rad", function() { return deg2rad; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rad2deg", function() { return rad2deg; });
+var deg2rad = Math.PI / 180;
+var rad2deg = 180 / Math.PI;
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-dispatch/src/dispatch.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-dispatch/src/dispatch.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var noop = {value: function() {}};
+
+function dispatch() {
+  for (var i = 0, n = arguments.length, _ = {}, t; i < n; ++i) {
+    if (!(t = arguments[i] + "") || (t in _)) throw new Error("illegal type: " + t);
+    _[t] = [];
+  }
+  return new Dispatch(_);
+}
+
+function Dispatch(_) {
+  this._ = _;
+}
+
+function parseTypenames(typenames, types) {
+  return typenames.trim().split(/^|\s+/).map(function(t) {
+    var name = "", i = t.indexOf(".");
+    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
+    if (t && !types.hasOwnProperty(t)) throw new Error("unknown type: " + t);
+    return {type: t, name: name};
+  });
+}
+
+Dispatch.prototype = dispatch.prototype = {
+  constructor: Dispatch,
+  on: function(typename, callback) {
+    var _ = this._,
+        T = parseTypenames(typename + "", _),
+        t,
+        i = -1,
+        n = T.length;
+
+    // If no callback was specified, return the callback of the given type and name.
+    if (arguments.length < 2) {
+      while (++i < n) if ((t = (typename = T[i]).type) && (t = get(_[t], typename.name))) return t;
+      return;
+    }
+
+    // If a type was specified, set the callback for the given type and name.
+    // Otherwise, if a null callback was specified, remove callbacks of the given name.
+    if (callback != null && typeof callback !== "function") throw new Error("invalid callback: " + callback);
+    while (++i < n) {
+      if (t = (typename = T[i]).type) _[t] = set(_[t], typename.name, callback);
+      else if (callback == null) for (t in _) _[t] = set(_[t], typename.name, null);
+    }
+
+    return this;
+  },
+  copy: function() {
+    var copy = {}, _ = this._;
+    for (var t in _) copy[t] = _[t].slice();
+    return new Dispatch(copy);
+  },
+  call: function(type, that) {
+    if ((n = arguments.length - 2) > 0) for (var args = new Array(n), i = 0, n, t; i < n; ++i) args[i] = arguments[i + 2];
+    if (!this._.hasOwnProperty(type)) throw new Error("unknown type: " + type);
+    for (t = this._[type], i = 0, n = t.length; i < n; ++i) t[i].value.apply(that, args);
+  },
+  apply: function(type, that, args) {
+    if (!this._.hasOwnProperty(type)) throw new Error("unknown type: " + type);
+    for (var t = this._[type], i = 0, n = t.length; i < n; ++i) t[i].value.apply(that, args);
+  }
+};
+
+function get(type, name) {
+  for (var i = 0, n = type.length, c; i < n; ++i) {
+    if ((c = type[i]).name === name) {
+      return c.value;
+    }
+  }
+}
+
+function set(type, name, callback) {
+  for (var i = 0, n = type.length; i < n; ++i) {
+    if (type[i].name === name) {
+      type[i] = noop, type = type.slice(0, i).concat(type.slice(i + 1));
+      break;
+    }
+  }
+  if (callback != null) type.push({name: name, value: callback});
+  return type;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (dispatch);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-dispatch/src/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/d3-dispatch/src/index.js ***!
+  \***********************************************/
+/*! exports provided: dispatch */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _dispatch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dispatch */ "./node_modules/d3-dispatch/src/dispatch.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dispatch", function() { return _dispatch__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/back.js":
+/*!******************************************!*\
+  !*** ./node_modules/d3-ease/src/back.js ***!
+  \******************************************/
+/*! exports provided: backIn, backOut, backInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "backIn", function() { return backIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "backOut", function() { return backOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "backInOut", function() { return backInOut; });
+var overshoot = 1.70158;
+
+var backIn = (function custom(s) {
+  s = +s;
+
+  function backIn(t) {
+    return t * t * ((s + 1) * t - s);
+  }
+
+  backIn.overshoot = custom;
+
+  return backIn;
+})(overshoot);
+
+var backOut = (function custom(s) {
+  s = +s;
+
+  function backOut(t) {
+    return --t * t * ((s + 1) * t + s) + 1;
+  }
+
+  backOut.overshoot = custom;
+
+  return backOut;
+})(overshoot);
+
+var backInOut = (function custom(s) {
+  s = +s;
+
+  function backInOut(t) {
+    return ((t *= 2) < 1 ? t * t * ((s + 1) * t - s) : (t -= 2) * t * ((s + 1) * t + s) + 2) / 2;
+  }
+
+  backInOut.overshoot = custom;
+
+  return backInOut;
+})(overshoot);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/bounce.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-ease/src/bounce.js ***!
+  \********************************************/
+/*! exports provided: bounceIn, bounceOut, bounceInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bounceIn", function() { return bounceIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bounceOut", function() { return bounceOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bounceInOut", function() { return bounceInOut; });
+var b1 = 4 / 11,
+    b2 = 6 / 11,
+    b3 = 8 / 11,
+    b4 = 3 / 4,
+    b5 = 9 / 11,
+    b6 = 10 / 11,
+    b7 = 15 / 16,
+    b8 = 21 / 22,
+    b9 = 63 / 64,
+    b0 = 1 / b1 / b1;
+
+function bounceIn(t) {
+  return 1 - bounceOut(1 - t);
+}
+
+function bounceOut(t) {
+  return (t = +t) < b1 ? b0 * t * t : t < b3 ? b0 * (t -= b2) * t + b4 : t < b6 ? b0 * (t -= b5) * t + b7 : b0 * (t -= b8) * t + b9;
+}
+
+function bounceInOut(t) {
+  return ((t *= 2) <= 1 ? 1 - bounceOut(1 - t) : bounceOut(t - 1) + 1) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/circle.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-ease/src/circle.js ***!
+  \********************************************/
+/*! exports provided: circleIn, circleOut, circleInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "circleIn", function() { return circleIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "circleOut", function() { return circleOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "circleInOut", function() { return circleInOut; });
+function circleIn(t) {
+  return 1 - Math.sqrt(1 - t * t);
+}
+
+function circleOut(t) {
+  return Math.sqrt(1 - --t * t);
+}
+
+function circleInOut(t) {
+  return ((t *= 2) <= 1 ? 1 - Math.sqrt(1 - t * t) : Math.sqrt(1 - (t -= 2) * t) + 1) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/cubic.js":
+/*!*******************************************!*\
+  !*** ./node_modules/d3-ease/src/cubic.js ***!
+  \*******************************************/
+/*! exports provided: cubicIn, cubicOut, cubicInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cubicIn", function() { return cubicIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cubicOut", function() { return cubicOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cubicInOut", function() { return cubicInOut; });
+function cubicIn(t) {
+  return t * t * t;
+}
+
+function cubicOut(t) {
+  return --t * t * t + 1;
+}
+
+function cubicInOut(t) {
+  return ((t *= 2) <= 1 ? t * t * t : (t -= 2) * t * t + 2) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/elastic.js":
+/*!*********************************************!*\
+  !*** ./node_modules/d3-ease/src/elastic.js ***!
+  \*********************************************/
+/*! exports provided: elasticIn, elasticOut, elasticInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "elasticIn", function() { return elasticIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "elasticOut", function() { return elasticOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "elasticInOut", function() { return elasticInOut; });
+var tau = 2 * Math.PI,
+    amplitude = 1,
+    period = 0.3;
+
+var elasticIn = (function custom(a, p) {
+  var s = Math.asin(1 / (a = Math.max(1, a))) * (p /= tau);
+
+  function elasticIn(t) {
+    return a * Math.pow(2, 10 * --t) * Math.sin((s - t) / p);
+  }
+
+  elasticIn.amplitude = function(a) { return custom(a, p * tau); };
+  elasticIn.period = function(p) { return custom(a, p); };
+
+  return elasticIn;
+})(amplitude, period);
+
+var elasticOut = (function custom(a, p) {
+  var s = Math.asin(1 / (a = Math.max(1, a))) * (p /= tau);
+
+  function elasticOut(t) {
+    return 1 - a * Math.pow(2, -10 * (t = +t)) * Math.sin((t + s) / p);
+  }
+
+  elasticOut.amplitude = function(a) { return custom(a, p * tau); };
+  elasticOut.period = function(p) { return custom(a, p); };
+
+  return elasticOut;
+})(amplitude, period);
+
+var elasticInOut = (function custom(a, p) {
+  var s = Math.asin(1 / (a = Math.max(1, a))) * (p /= tau);
+
+  function elasticInOut(t) {
+    return ((t = t * 2 - 1) < 0
+        ? a * Math.pow(2, 10 * t) * Math.sin((s - t) / p)
+        : 2 - a * Math.pow(2, -10 * t) * Math.sin((s + t) / p)) / 2;
+  }
+
+  elasticInOut.amplitude = function(a) { return custom(a, p * tau); };
+  elasticInOut.period = function(p) { return custom(a, p); };
+
+  return elasticInOut;
+})(amplitude, period);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/exp.js":
+/*!*****************************************!*\
+  !*** ./node_modules/d3-ease/src/exp.js ***!
+  \*****************************************/
+/*! exports provided: expIn, expOut, expInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "expIn", function() { return expIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "expOut", function() { return expOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "expInOut", function() { return expInOut; });
+function expIn(t) {
+  return Math.pow(2, 10 * t - 10);
+}
+
+function expOut(t) {
+  return 1 - Math.pow(2, -10 * t);
+}
+
+function expInOut(t) {
+  return ((t *= 2) <= 1 ? Math.pow(2, 10 * t - 10) : 2 - Math.pow(2, 10 - 10 * t)) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/d3-ease/src/index.js ***!
+  \*******************************************/
+/*! exports provided: easeLinear, easeQuad, easeQuadIn, easeQuadOut, easeQuadInOut, easeCubic, easeCubicIn, easeCubicOut, easeCubicInOut, easePoly, easePolyIn, easePolyOut, easePolyInOut, easeSin, easeSinIn, easeSinOut, easeSinInOut, easeExp, easeExpIn, easeExpOut, easeExpInOut, easeCircle, easeCircleIn, easeCircleOut, easeCircleInOut, easeBounce, easeBounceIn, easeBounceOut, easeBounceInOut, easeBack, easeBackIn, easeBackOut, easeBackInOut, easeElastic, easeElasticIn, easeElasticOut, easeElasticInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _linear__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./linear */ "./node_modules/d3-ease/src/linear.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeLinear", function() { return _linear__WEBPACK_IMPORTED_MODULE_0__["linear"]; });
+
+/* harmony import */ var _quad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./quad */ "./node_modules/d3-ease/src/quad.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeQuad", function() { return _quad__WEBPACK_IMPORTED_MODULE_1__["quadInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeQuadIn", function() { return _quad__WEBPACK_IMPORTED_MODULE_1__["quadIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeQuadOut", function() { return _quad__WEBPACK_IMPORTED_MODULE_1__["quadOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeQuadInOut", function() { return _quad__WEBPACK_IMPORTED_MODULE_1__["quadInOut"]; });
+
+/* harmony import */ var _cubic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cubic */ "./node_modules/d3-ease/src/cubic.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCubic", function() { return _cubic__WEBPACK_IMPORTED_MODULE_2__["cubicInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCubicIn", function() { return _cubic__WEBPACK_IMPORTED_MODULE_2__["cubicIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCubicOut", function() { return _cubic__WEBPACK_IMPORTED_MODULE_2__["cubicOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCubicInOut", function() { return _cubic__WEBPACK_IMPORTED_MODULE_2__["cubicInOut"]; });
+
+/* harmony import */ var _poly__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./poly */ "./node_modules/d3-ease/src/poly.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easePoly", function() { return _poly__WEBPACK_IMPORTED_MODULE_3__["polyInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easePolyIn", function() { return _poly__WEBPACK_IMPORTED_MODULE_3__["polyIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easePolyOut", function() { return _poly__WEBPACK_IMPORTED_MODULE_3__["polyOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easePolyInOut", function() { return _poly__WEBPACK_IMPORTED_MODULE_3__["polyInOut"]; });
+
+/* harmony import */ var _sin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sin */ "./node_modules/d3-ease/src/sin.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeSin", function() { return _sin__WEBPACK_IMPORTED_MODULE_4__["sinInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeSinIn", function() { return _sin__WEBPACK_IMPORTED_MODULE_4__["sinIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeSinOut", function() { return _sin__WEBPACK_IMPORTED_MODULE_4__["sinOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeSinInOut", function() { return _sin__WEBPACK_IMPORTED_MODULE_4__["sinInOut"]; });
+
+/* harmony import */ var _exp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./exp */ "./node_modules/d3-ease/src/exp.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeExp", function() { return _exp__WEBPACK_IMPORTED_MODULE_5__["expInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeExpIn", function() { return _exp__WEBPACK_IMPORTED_MODULE_5__["expIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeExpOut", function() { return _exp__WEBPACK_IMPORTED_MODULE_5__["expOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeExpInOut", function() { return _exp__WEBPACK_IMPORTED_MODULE_5__["expInOut"]; });
+
+/* harmony import */ var _circle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./circle */ "./node_modules/d3-ease/src/circle.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCircle", function() { return _circle__WEBPACK_IMPORTED_MODULE_6__["circleInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCircleIn", function() { return _circle__WEBPACK_IMPORTED_MODULE_6__["circleIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCircleOut", function() { return _circle__WEBPACK_IMPORTED_MODULE_6__["circleOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeCircleInOut", function() { return _circle__WEBPACK_IMPORTED_MODULE_6__["circleInOut"]; });
+
+/* harmony import */ var _bounce__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./bounce */ "./node_modules/d3-ease/src/bounce.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBounce", function() { return _bounce__WEBPACK_IMPORTED_MODULE_7__["bounceOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBounceIn", function() { return _bounce__WEBPACK_IMPORTED_MODULE_7__["bounceIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBounceOut", function() { return _bounce__WEBPACK_IMPORTED_MODULE_7__["bounceOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBounceInOut", function() { return _bounce__WEBPACK_IMPORTED_MODULE_7__["bounceInOut"]; });
+
+/* harmony import */ var _back__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./back */ "./node_modules/d3-ease/src/back.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBack", function() { return _back__WEBPACK_IMPORTED_MODULE_8__["backInOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBackIn", function() { return _back__WEBPACK_IMPORTED_MODULE_8__["backIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBackOut", function() { return _back__WEBPACK_IMPORTED_MODULE_8__["backOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeBackInOut", function() { return _back__WEBPACK_IMPORTED_MODULE_8__["backInOut"]; });
+
+/* harmony import */ var _elastic__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./elastic */ "./node_modules/d3-ease/src/elastic.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeElastic", function() { return _elastic__WEBPACK_IMPORTED_MODULE_9__["elasticOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeElasticIn", function() { return _elastic__WEBPACK_IMPORTED_MODULE_9__["elasticIn"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeElasticOut", function() { return _elastic__WEBPACK_IMPORTED_MODULE_9__["elasticOut"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easeElasticInOut", function() { return _elastic__WEBPACK_IMPORTED_MODULE_9__["elasticInOut"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/linear.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-ease/src/linear.js ***!
+  \********************************************/
+/*! exports provided: linear */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "linear", function() { return linear; });
+function linear(t) {
+  return +t;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/poly.js":
+/*!******************************************!*\
+  !*** ./node_modules/d3-ease/src/poly.js ***!
+  \******************************************/
+/*! exports provided: polyIn, polyOut, polyInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyIn", function() { return polyIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyOut", function() { return polyOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyInOut", function() { return polyInOut; });
+var exponent = 3;
+
+var polyIn = (function custom(e) {
+  e = +e;
+
+  function polyIn(t) {
+    return Math.pow(t, e);
+  }
+
+  polyIn.exponent = custom;
+
+  return polyIn;
+})(exponent);
+
+var polyOut = (function custom(e) {
+  e = +e;
+
+  function polyOut(t) {
+    return 1 - Math.pow(1 - t, e);
+  }
+
+  polyOut.exponent = custom;
+
+  return polyOut;
+})(exponent);
+
+var polyInOut = (function custom(e) {
+  e = +e;
+
+  function polyInOut(t) {
+    return ((t *= 2) <= 1 ? Math.pow(t, e) : 2 - Math.pow(2 - t, e)) / 2;
+  }
+
+  polyInOut.exponent = custom;
+
+  return polyInOut;
+})(exponent);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/quad.js":
+/*!******************************************!*\
+  !*** ./node_modules/d3-ease/src/quad.js ***!
+  \******************************************/
+/*! exports provided: quadIn, quadOut, quadInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "quadIn", function() { return quadIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "quadOut", function() { return quadOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "quadInOut", function() { return quadInOut; });
+function quadIn(t) {
+  return t * t;
+}
+
+function quadOut(t) {
+  return t * (2 - t);
+}
+
+function quadInOut(t) {
+  return ((t *= 2) <= 1 ? t * t : --t * (2 - t) + 1) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-ease/src/sin.js":
+/*!*****************************************!*\
+  !*** ./node_modules/d3-ease/src/sin.js ***!
+  \*****************************************/
+/*! exports provided: sinIn, sinOut, sinInOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sinIn", function() { return sinIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sinOut", function() { return sinOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sinInOut", function() { return sinInOut; });
+var pi = Math.PI,
+    halfPi = pi / 2;
+
+function sinIn(t) {
+  return 1 - Math.cos(t * halfPi);
+}
+
+function sinOut(t) {
+  return Math.sin(t * halfPi);
+}
+
+function sinInOut(t) {
+  return (1 - Math.cos(pi * t)) / 2;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/array.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/array.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _value__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./value */ "./node_modules/d3-interpolate/src/value.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var nb = b ? b.length : 0,
+      na = a ? Math.min(nb, a.length) : 0,
+      x = new Array(na),
+      c = new Array(nb),
+      i;
+
+  for (i = 0; i < na; ++i) x[i] = Object(_value__WEBPACK_IMPORTED_MODULE_0__["default"])(a[i], b[i]);
+  for (; i < nb; ++i) c[i] = b[i];
+
+  return function(t) {
+    for (i = 0; i < na; ++i) c[i] = x[i](t);
+    return c;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/basis.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/basis.js ***!
+  \**************************************************/
+/*! exports provided: basis, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "basis", function() { return basis; });
+function basis(t1, v0, v1, v2, v3) {
+  var t2 = t1 * t1, t3 = t2 * t1;
+  return ((1 - 3 * t1 + 3 * t2 - t3) * v0
+      + (4 - 6 * t2 + 3 * t3) * v1
+      + (1 + 3 * t1 + 3 * t2 - 3 * t3) * v2
+      + t3 * v3) / 6;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(values) {
+  var n = values.length - 1;
+  return function(t) {
+    var i = t <= 0 ? (t = 0) : t >= 1 ? (t = 1, n - 1) : Math.floor(t * n),
+        v1 = values[i],
+        v2 = values[i + 1],
+        v0 = i > 0 ? values[i - 1] : 2 * v1 - v2,
+        v3 = i < n - 1 ? values[i + 2] : 2 * v2 - v1;
+    return basis((t - i / n) * n, v0, v1, v2, v3);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/basisClosed.js":
+/*!********************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/basisClosed.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _basis__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./basis */ "./node_modules/d3-interpolate/src/basis.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(values) {
+  var n = values.length;
+  return function(t) {
+    var i = Math.floor(((t %= 1) < 0 ? ++t : t) * n),
+        v0 = values[(i + n - 1) % n],
+        v1 = values[i % n],
+        v2 = values[(i + 1) % n],
+        v3 = values[(i + 2) % n];
+    return Object(_basis__WEBPACK_IMPORTED_MODULE_0__["basis"])((t - i / n) * n, v0, v1, v2, v3);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/color.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/color.js ***!
+  \**************************************************/
+/*! exports provided: hue, gamma, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hue", function() { return hue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gamma", function() { return gamma; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return nogamma; });
+/* harmony import */ var _constant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constant */ "./node_modules/d3-interpolate/src/constant.js");
+
+
+function linear(a, d) {
+  return function(t) {
+    return a + t * d;
+  };
+}
+
+function exponential(a, b, y) {
+  return a = Math.pow(a, y), b = Math.pow(b, y) - a, y = 1 / y, function(t) {
+    return Math.pow(a + t * b, y);
+  };
+}
+
+function hue(a, b) {
+  var d = b - a;
+  return d ? linear(a, d > 180 || d < -180 ? d - 360 * Math.round(d / 360) : d) : Object(_constant__WEBPACK_IMPORTED_MODULE_0__["default"])(isNaN(a) ? b : a);
+}
+
+function gamma(y) {
+  return (y = +y) === 1 ? nogamma : function(a, b) {
+    return b - a ? exponential(a, b, y) : Object(_constant__WEBPACK_IMPORTED_MODULE_0__["default"])(isNaN(a) ? b : a);
+  };
+}
+
+function nogamma(a, b) {
+  var d = b - a;
+  return d ? linear(a, d) : Object(_constant__WEBPACK_IMPORTED_MODULE_0__["default"])(isNaN(a) ? b : a);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/constant.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/constant.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(x) {
+  return function() {
+    return x;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/cubehelix.js":
+/*!******************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/cubehelix.js ***!
+  \******************************************************/
+/*! exports provided: default, cubehelixLong */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cubehelixLong", function() { return cubehelixLong; });
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+
+function cubehelix(hue) {
+  return (function cubehelixGamma(y) {
+    y = +y;
+
+    function cubehelix(start, end) {
+      var h = hue((start = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["cubehelix"])(start)).h, (end = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["cubehelix"])(end)).h),
+          s = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.s, end.s),
+          l = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.l, end.l),
+          opacity = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.opacity, end.opacity);
+      return function(t) {
+        start.h = h(t);
+        start.s = s(t);
+        start.l = l(Math.pow(t, y));
+        start.opacity = opacity(t);
+        return start + "";
+      };
+    }
+
+    cubehelix.gamma = cubehelixGamma;
+
+    return cubehelix;
+  })(1);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (cubehelix(_color__WEBPACK_IMPORTED_MODULE_1__["hue"]));
+var cubehelixLong = cubehelix(_color__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/date.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/date.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var d = new Date;
+  return a = +a, b -= a, function(t) {
+    return d.setTime(a + b * t), d;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/discrete.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/discrete.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(range) {
+  var n = range.length;
+  return function(t) {
+    return range[Math.max(0, Math.min(n - 1, Math.floor(t * n)))];
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/hcl.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/hcl.js ***!
+  \************************************************/
+/*! exports provided: default, hclLong */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hclLong", function() { return hclLong; });
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+
+function hcl(hue) {
+  return function(start, end) {
+    var h = hue((start = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["hcl"])(start)).h, (end = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["hcl"])(end)).h),
+        c = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.c, end.c),
+        l = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.l, end.l),
+        opacity = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.opacity, end.opacity);
+    return function(t) {
+      start.h = h(t);
+      start.c = c(t);
+      start.l = l(t);
+      start.opacity = opacity(t);
+      return start + "";
+    };
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (hcl(_color__WEBPACK_IMPORTED_MODULE_1__["hue"]));
+var hclLong = hcl(_color__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/hsl.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/hsl.js ***!
+  \************************************************/
+/*! exports provided: default, hslLong */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hslLong", function() { return hslLong; });
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+
+function hsl(hue) {
+  return function(start, end) {
+    var h = hue((start = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["hsl"])(start)).h, (end = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["hsl"])(end)).h),
+        s = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.s, end.s),
+        l = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.l, end.l),
+        opacity = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.opacity, end.opacity);
+    return function(t) {
+      start.h = h(t);
+      start.s = s(t);
+      start.l = l(t);
+      start.opacity = opacity(t);
+      return start + "";
+    };
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (hsl(_color__WEBPACK_IMPORTED_MODULE_1__["hue"]));
+var hslLong = hsl(_color__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/hue.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/hue.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var i = Object(_color__WEBPACK_IMPORTED_MODULE_0__["hue"])(+a, +b);
+  return function(t) {
+    var x = i(t);
+    return x - 360 * Math.floor(x / 360);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/index.js ***!
+  \**************************************************/
+/*! exports provided: interpolate, interpolateArray, interpolateBasis, interpolateBasisClosed, interpolateDate, interpolateDiscrete, interpolateHue, interpolateNumber, interpolateObject, interpolateRound, interpolateString, interpolateTransformCss, interpolateTransformSvg, interpolateZoom, interpolateRgb, interpolateRgbBasis, interpolateRgbBasisClosed, interpolateHsl, interpolateHslLong, interpolateLab, interpolateHcl, interpolateHclLong, interpolateCubehelix, interpolateCubehelixLong, piecewise, quantize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _value__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./value */ "./node_modules/d3-interpolate/src/value.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolate", function() { return _value__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _array__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./array */ "./node_modules/d3-interpolate/src/array.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateArray", function() { return _array__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _basis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./basis */ "./node_modules/d3-interpolate/src/basis.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateBasis", function() { return _basis__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _basisClosed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./basisClosed */ "./node_modules/d3-interpolate/src/basisClosed.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateBasisClosed", function() { return _basisClosed__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _date__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./date */ "./node_modules/d3-interpolate/src/date.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateDate", function() { return _date__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _discrete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./discrete */ "./node_modules/d3-interpolate/src/discrete.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateDiscrete", function() { return _discrete__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _hue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hue */ "./node_modules/d3-interpolate/src/hue.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateHue", function() { return _hue__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+/* harmony import */ var _number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./number */ "./node_modules/d3-interpolate/src/number.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateNumber", function() { return _number__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+
+/* harmony import */ var _object__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./object */ "./node_modules/d3-interpolate/src/object.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateObject", function() { return _object__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+
+/* harmony import */ var _round__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./round */ "./node_modules/d3-interpolate/src/round.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateRound", function() { return _round__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+/* harmony import */ var _string__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./string */ "./node_modules/d3-interpolate/src/string.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateString", function() { return _string__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
+/* harmony import */ var _transform_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./transform/index */ "./node_modules/d3-interpolate/src/transform/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformCss", function() { return _transform_index__WEBPACK_IMPORTED_MODULE_11__["interpolateTransformCss"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformSvg", function() { return _transform_index__WEBPACK_IMPORTED_MODULE_11__["interpolateTransformSvg"]; });
+
+/* harmony import */ var _zoom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./zoom */ "./node_modules/d3-interpolate/src/zoom.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateZoom", function() { return _zoom__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+
+/* harmony import */ var _rgb__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./rgb */ "./node_modules/d3-interpolate/src/rgb.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateRgb", function() { return _rgb__WEBPACK_IMPORTED_MODULE_13__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateRgbBasis", function() { return _rgb__WEBPACK_IMPORTED_MODULE_13__["rgbBasis"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateRgbBasisClosed", function() { return _rgb__WEBPACK_IMPORTED_MODULE_13__["rgbBasisClosed"]; });
+
+/* harmony import */ var _hsl__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./hsl */ "./node_modules/d3-interpolate/src/hsl.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateHsl", function() { return _hsl__WEBPACK_IMPORTED_MODULE_14__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateHslLong", function() { return _hsl__WEBPACK_IMPORTED_MODULE_14__["hslLong"]; });
+
+/* harmony import */ var _lab__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./lab */ "./node_modules/d3-interpolate/src/lab.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateLab", function() { return _lab__WEBPACK_IMPORTED_MODULE_15__["default"]; });
+
+/* harmony import */ var _hcl__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./hcl */ "./node_modules/d3-interpolate/src/hcl.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateHcl", function() { return _hcl__WEBPACK_IMPORTED_MODULE_16__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateHclLong", function() { return _hcl__WEBPACK_IMPORTED_MODULE_16__["hclLong"]; });
+
+/* harmony import */ var _cubehelix__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./cubehelix */ "./node_modules/d3-interpolate/src/cubehelix.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateCubehelix", function() { return _cubehelix__WEBPACK_IMPORTED_MODULE_17__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpolateCubehelixLong", function() { return _cubehelix__WEBPACK_IMPORTED_MODULE_17__["cubehelixLong"]; });
+
+/* harmony import */ var _piecewise__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./piecewise */ "./node_modules/d3-interpolate/src/piecewise.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "piecewise", function() { return _piecewise__WEBPACK_IMPORTED_MODULE_18__["default"]; });
+
+/* harmony import */ var _quantize__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./quantize */ "./node_modules/d3-interpolate/src/quantize.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "quantize", function() { return _quantize__WEBPACK_IMPORTED_MODULE_19__["default"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/lab.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/lab.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return lab; });
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+
+function lab(start, end) {
+  var l = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])((start = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["lab"])(start)).l, (end = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["lab"])(end)).l),
+      a = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.a, end.a),
+      b = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.b, end.b),
+      opacity = Object(_color__WEBPACK_IMPORTED_MODULE_1__["default"])(start.opacity, end.opacity);
+  return function(t) {
+    start.l = l(t);
+    start.a = a(t);
+    start.b = b(t);
+    start.opacity = opacity(t);
+    return start + "";
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/number.js":
+/*!***************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/number.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  return a = +a, b -= a, function(t) {
+    return a + b * t;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/object.js":
+/*!***************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/object.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _value__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./value */ "./node_modules/d3-interpolate/src/value.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var i = {},
+      c = {},
+      k;
+
+  if (a === null || typeof a !== "object") a = {};
+  if (b === null || typeof b !== "object") b = {};
+
+  for (k in b) {
+    if (k in a) {
+      i[k] = Object(_value__WEBPACK_IMPORTED_MODULE_0__["default"])(a[k], b[k]);
+    } else {
+      c[k] = b[k];
+    }
+  }
+
+  return function(t) {
+    for (k in i) c[k] = i[k](t);
+    return c;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/piecewise.js":
+/*!******************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/piecewise.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return piecewise; });
+function piecewise(interpolate, values) {
+  var i = 0, n = values.length - 1, v = values[0], I = new Array(n < 0 ? 0 : n);
+  while (i < n) I[i] = interpolate(v, v = values[++i]);
+  return function(t) {
+    var i = Math.max(0, Math.min(n - 1, Math.floor(t *= n)));
+    return I[i](t - i);
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/quantize.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/quantize.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(interpolator, n) {
+  var samples = new Array(n);
+  for (var i = 0; i < n; ++i) samples[i] = interpolator(i / (n - 1));
+  return samples;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/rgb.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/rgb.js ***!
+  \************************************************/
+/*! exports provided: default, rgbBasis, rgbBasisClosed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgbBasis", function() { return rgbBasis; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgbBasisClosed", function() { return rgbBasisClosed; });
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _basis__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basis */ "./node_modules/d3-interpolate/src/basis.js");
+/* harmony import */ var _basisClosed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./basisClosed */ "./node_modules/d3-interpolate/src/basisClosed.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./color */ "./node_modules/d3-interpolate/src/color.js");
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ((function rgbGamma(y) {
+  var color = Object(_color__WEBPACK_IMPORTED_MODULE_3__["gamma"])(y);
+
+  function rgb(start, end) {
+    var r = color((start = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["rgb"])(start)).r, (end = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["rgb"])(end)).r),
+        g = color(start.g, end.g),
+        b = color(start.b, end.b),
+        opacity = Object(_color__WEBPACK_IMPORTED_MODULE_3__["default"])(start.opacity, end.opacity);
+    return function(t) {
+      start.r = r(t);
+      start.g = g(t);
+      start.b = b(t);
+      start.opacity = opacity(t);
+      return start + "";
+    };
+  }
+
+  rgb.gamma = rgbGamma;
+
+  return rgb;
+})(1));
+
+function rgbSpline(spline) {
+  return function(colors) {
+    var n = colors.length,
+        r = new Array(n),
+        g = new Array(n),
+        b = new Array(n),
+        i, color;
+    for (i = 0; i < n; ++i) {
+      color = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["rgb"])(colors[i]);
+      r[i] = color.r || 0;
+      g[i] = color.g || 0;
+      b[i] = color.b || 0;
+    }
+    r = spline(r);
+    g = spline(g);
+    b = spline(b);
+    color.opacity = 1;
+    return function(t) {
+      color.r = r(t);
+      color.g = g(t);
+      color.b = b(t);
+      return color + "";
+    };
+  };
+}
+
+var rgbBasis = rgbSpline(_basis__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var rgbBasisClosed = rgbSpline(_basisClosed__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/round.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/round.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  return a = +a, b -= a, function(t) {
+    return Math.round(a + b * t);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/string.js":
+/*!***************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/string.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _number__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./number */ "./node_modules/d3-interpolate/src/number.js");
+
+
+var reA = /[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,
+    reB = new RegExp(reA.source, "g");
+
+function zero(b) {
+  return function() {
+    return b;
+  };
+}
+
+function one(b) {
+  return function(t) {
+    return b(t) + "";
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var bi = reA.lastIndex = reB.lastIndex = 0, // scan index for next number in b
+      am, // current match in a
+      bm, // current match in b
+      bs, // string preceding current number in b, if any
+      i = -1, // index in s
+      s = [], // string constants and placeholders
+      q = []; // number interpolators
+
+  // Coerce inputs to strings.
+  a = a + "", b = b + "";
+
+  // Interpolate pairs of numbers in a & b.
+  while ((am = reA.exec(a))
+      && (bm = reB.exec(b))) {
+    if ((bs = bm.index) > bi) { // a string precedes the next number in b
+      bs = b.slice(bi, bs);
+      if (s[i]) s[i] += bs; // coalesce with previous string
+      else s[++i] = bs;
+    }
+    if ((am = am[0]) === (bm = bm[0])) { // numbers in a & b match
+      if (s[i]) s[i] += bm; // coalesce with previous string
+      else s[++i] = bm;
+    } else { // interpolate non-matching numbers
+      s[++i] = null;
+      q.push({i: i, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(am, bm)});
+    }
+    bi = reB.lastIndex;
+  }
+
+  // Add remains of b.
+  if (bi < b.length) {
+    bs = b.slice(bi);
+    if (s[i]) s[i] += bs; // coalesce with previous string
+    else s[++i] = bs;
+  }
+
+  // Special optimization for only a single match.
+  // Otherwise, interpolate each of the numbers and rejoin the string.
+  return s.length < 2 ? (q[0]
+      ? one(q[0].x)
+      : zero(b))
+      : (b = q.length, function(t) {
+          for (var i = 0, o; i < b; ++i) s[(o = q[i]).i] = o.x(t);
+          return s.join("");
+        });
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/transform/decompose.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/transform/decompose.js ***!
+  \****************************************************************/
+/*! exports provided: identity, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "identity", function() { return identity; });
+var degrees = 180 / Math.PI;
+
+var identity = {
+  translateX: 0,
+  translateY: 0,
+  rotate: 0,
+  skewX: 0,
+  scaleX: 1,
+  scaleY: 1
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b, c, d, e, f) {
+  var scaleX, scaleY, skewX;
+  if (scaleX = Math.sqrt(a * a + b * b)) a /= scaleX, b /= scaleX;
+  if (skewX = a * c + b * d) c -= a * skewX, d -= b * skewX;
+  if (scaleY = Math.sqrt(c * c + d * d)) c /= scaleY, d /= scaleY, skewX /= scaleY;
+  if (a * d < b * c) a = -a, b = -b, skewX = -skewX, scaleX = -scaleX;
+  return {
+    translateX: e,
+    translateY: f,
+    rotate: Math.atan2(b, a) * degrees,
+    skewX: Math.atan(skewX) * degrees,
+    scaleX: scaleX,
+    scaleY: scaleY
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/transform/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/transform/index.js ***!
+  \************************************************************/
+/*! exports provided: interpolateTransformCss, interpolateTransformSvg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformCss", function() { return interpolateTransformCss; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformSvg", function() { return interpolateTransformSvg; });
+/* harmony import */ var _number__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../number */ "./node_modules/d3-interpolate/src/number.js");
+/* harmony import */ var _parse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse */ "./node_modules/d3-interpolate/src/transform/parse.js");
+
+
+
+function interpolateTransform(parse, pxComma, pxParen, degParen) {
+
+  function pop(s) {
+    return s.length ? s.pop() + " " : "";
+  }
+
+  function translate(xa, ya, xb, yb, s, q) {
+    if (xa !== xb || ya !== yb) {
+      var i = s.push("translate(", null, pxComma, null, pxParen);
+      q.push({i: i - 4, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(xa, xb)}, {i: i - 2, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(ya, yb)});
+    } else if (xb || yb) {
+      s.push("translate(" + xb + pxComma + yb + pxParen);
+    }
+  }
+
+  function rotate(a, b, s, q) {
+    if (a !== b) {
+      if (a - b > 180) b += 360; else if (b - a > 180) a += 360; // shortest path
+      q.push({i: s.push(pop(s) + "rotate(", null, degParen) - 2, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(a, b)});
+    } else if (b) {
+      s.push(pop(s) + "rotate(" + b + degParen);
+    }
+  }
+
+  function skewX(a, b, s, q) {
+    if (a !== b) {
+      q.push({i: s.push(pop(s) + "skewX(", null, degParen) - 2, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(a, b)});
+    } else if (b) {
+      s.push(pop(s) + "skewX(" + b + degParen);
+    }
+  }
+
+  function scale(xa, ya, xb, yb, s, q) {
+    if (xa !== xb || ya !== yb) {
+      var i = s.push(pop(s) + "scale(", null, ",", null, ")");
+      q.push({i: i - 4, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(xa, xb)}, {i: i - 2, x: Object(_number__WEBPACK_IMPORTED_MODULE_0__["default"])(ya, yb)});
+    } else if (xb !== 1 || yb !== 1) {
+      s.push(pop(s) + "scale(" + xb + "," + yb + ")");
+    }
+  }
+
+  return function(a, b) {
+    var s = [], // string constants and placeholders
+        q = []; // number interpolators
+    a = parse(a), b = parse(b);
+    translate(a.translateX, a.translateY, b.translateX, b.translateY, s, q);
+    rotate(a.rotate, b.rotate, s, q);
+    skewX(a.skewX, b.skewX, s, q);
+    scale(a.scaleX, a.scaleY, b.scaleX, b.scaleY, s, q);
+    a = b = null; // gc
+    return function(t) {
+      var i = -1, n = q.length, o;
+      while (++i < n) s[(o = q[i]).i] = o.x(t);
+      return s.join("");
+    };
+  };
+}
+
+var interpolateTransformCss = interpolateTransform(_parse__WEBPACK_IMPORTED_MODULE_1__["parseCss"], "px, ", "px)", "deg)");
+var interpolateTransformSvg = interpolateTransform(_parse__WEBPACK_IMPORTED_MODULE_1__["parseSvg"], ", ", ")", ")");
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/transform/parse.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/transform/parse.js ***!
+  \************************************************************/
+/*! exports provided: parseCss, parseSvg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseCss", function() { return parseCss; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseSvg", function() { return parseSvg; });
+/* harmony import */ var _decompose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./decompose */ "./node_modules/d3-interpolate/src/transform/decompose.js");
+
+
+var cssNode,
+    cssRoot,
+    cssView,
+    svgNode;
+
+function parseCss(value) {
+  if (value === "none") return _decompose__WEBPACK_IMPORTED_MODULE_0__["identity"];
+  if (!cssNode) cssNode = document.createElement("DIV"), cssRoot = document.documentElement, cssView = document.defaultView;
+  cssNode.style.transform = value;
+  value = cssView.getComputedStyle(cssRoot.appendChild(cssNode), null).getPropertyValue("transform");
+  cssRoot.removeChild(cssNode);
+  value = value.slice(7, -1).split(",");
+  return Object(_decompose__WEBPACK_IMPORTED_MODULE_0__["default"])(+value[0], +value[1], +value[2], +value[3], +value[4], +value[5]);
+}
+
+function parseSvg(value) {
+  if (value == null) return _decompose__WEBPACK_IMPORTED_MODULE_0__["identity"];
+  if (!svgNode) svgNode = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  svgNode.setAttribute("transform", value);
+  if (!(value = svgNode.transform.baseVal.consolidate())) return _decompose__WEBPACK_IMPORTED_MODULE_0__["identity"];
+  value = value.matrix;
+  return Object(_decompose__WEBPACK_IMPORTED_MODULE_0__["default"])(value.a, value.b, value.c, value.d, value.e, value.f);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/value.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/value.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var _rgb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rgb */ "./node_modules/d3-interpolate/src/rgb.js");
+/* harmony import */ var _array__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./array */ "./node_modules/d3-interpolate/src/array.js");
+/* harmony import */ var _date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./date */ "./node_modules/d3-interpolate/src/date.js");
+/* harmony import */ var _number__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./number */ "./node_modules/d3-interpolate/src/number.js");
+/* harmony import */ var _object__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./object */ "./node_modules/d3-interpolate/src/object.js");
+/* harmony import */ var _string__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./string */ "./node_modules/d3-interpolate/src/string.js");
+/* harmony import */ var _constant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./constant */ "./node_modules/d3-interpolate/src/constant.js");
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var t = typeof b, c;
+  return b == null || t === "boolean" ? Object(_constant__WEBPACK_IMPORTED_MODULE_7__["default"])(b)
+      : (t === "number" ? _number__WEBPACK_IMPORTED_MODULE_4__["default"]
+      : t === "string" ? ((c = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["color"])(b)) ? (b = c, _rgb__WEBPACK_IMPORTED_MODULE_1__["default"]) : _string__WEBPACK_IMPORTED_MODULE_6__["default"])
+      : b instanceof d3_color__WEBPACK_IMPORTED_MODULE_0__["color"] ? _rgb__WEBPACK_IMPORTED_MODULE_1__["default"]
+      : b instanceof Date ? _date__WEBPACK_IMPORTED_MODULE_3__["default"]
+      : Array.isArray(b) ? _array__WEBPACK_IMPORTED_MODULE_2__["default"]
+      : typeof b.valueOf !== "function" && typeof b.toString !== "function" || isNaN(b) ? _object__WEBPACK_IMPORTED_MODULE_5__["default"]
+      : _number__WEBPACK_IMPORTED_MODULE_4__["default"])(a, b);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-interpolate/src/zoom.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-interpolate/src/zoom.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var rho = Math.SQRT2,
+    rho2 = 2,
+    rho4 = 4,
+    epsilon2 = 1e-12;
+
+function cosh(x) {
+  return ((x = Math.exp(x)) + 1 / x) / 2;
+}
+
+function sinh(x) {
+  return ((x = Math.exp(x)) - 1 / x) / 2;
+}
+
+function tanh(x) {
+  return ((x = Math.exp(2 * x)) - 1) / (x + 1);
+}
+
+// p0 = [ux0, uy0, w0]
+// p1 = [ux1, uy1, w1]
+/* harmony default export */ __webpack_exports__["default"] = (function(p0, p1) {
+  var ux0 = p0[0], uy0 = p0[1], w0 = p0[2],
+      ux1 = p1[0], uy1 = p1[1], w1 = p1[2],
+      dx = ux1 - ux0,
+      dy = uy1 - uy0,
+      d2 = dx * dx + dy * dy,
+      i,
+      S;
+
+  // Special case for u0 ≅ u1.
+  if (d2 < epsilon2) {
+    S = Math.log(w1 / w0) / rho;
+    i = function(t) {
+      return [
+        ux0 + t * dx,
+        uy0 + t * dy,
+        w0 * Math.exp(rho * t * S)
+      ];
+    }
+  }
+
+  // General case.
+  else {
+    var d1 = Math.sqrt(d2),
+        b0 = (w1 * w1 - w0 * w0 + rho4 * d2) / (2 * w0 * rho2 * d1),
+        b1 = (w1 * w1 - w0 * w0 - rho4 * d2) / (2 * w1 * rho2 * d1),
+        r0 = Math.log(Math.sqrt(b0 * b0 + 1) - b0),
+        r1 = Math.log(Math.sqrt(b1 * b1 + 1) - b1);
+    S = (r1 - r0) / rho;
+    i = function(t) {
+      var s = t * S,
+          coshr0 = cosh(r0),
+          u = w0 / (rho2 * d1) * (coshr0 * tanh(rho * s + r0) - sinh(r0));
+      return [
+        ux0 + u * dx,
+        uy0 + u * dy,
+        w0 * coshr0 / cosh(rho * s + r0)
+      ];
+    }
+  }
+
+  i.duration = S * 1000;
+
+  return i;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/constant.js":
+/*!***************************************************!*\
+  !*** ./node_modules/d3-selection/src/constant.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(x) {
+  return function() {
+    return x;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/create.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-selection/src/create.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _creator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./creator */ "./node_modules/d3-selection/src/creator.js");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./select */ "./node_modules/d3-selection/src/select.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  return Object(_select__WEBPACK_IMPORTED_MODULE_1__["default"])(Object(_creator__WEBPACK_IMPORTED_MODULE_0__["default"])(name).call(document.documentElement));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/creator.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-selection/src/creator.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./namespace */ "./node_modules/d3-selection/src/namespace.js");
+/* harmony import */ var _namespaces__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./namespaces */ "./node_modules/d3-selection/src/namespaces.js");
+
+
+
+function creatorInherit(name) {
+  return function() {
+    var document = this.ownerDocument,
+        uri = this.namespaceURI;
+    return uri === _namespaces__WEBPACK_IMPORTED_MODULE_1__["xhtml"] && document.documentElement.namespaceURI === _namespaces__WEBPACK_IMPORTED_MODULE_1__["xhtml"]
+        ? document.createElement(name)
+        : document.createElementNS(uri, name);
+  };
+}
+
+function creatorFixed(fullname) {
+  return function() {
+    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  var fullname = Object(_namespace__WEBPACK_IMPORTED_MODULE_0__["default"])(name);
+  return (fullname.local
+      ? creatorFixed
+      : creatorInherit)(fullname);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-selection/src/index.js ***!
+  \************************************************/
+/*! exports provided: create, creator, local, matcher, mouse, namespace, namespaces, clientPoint, select, selectAll, selection, selector, selectorAll, style, touch, touches, window, event, customEvent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _create__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create */ "./node_modules/d3-selection/src/create.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "create", function() { return _create__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _creator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./creator */ "./node_modules/d3-selection/src/creator.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "creator", function() { return _creator__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _local__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./local */ "./node_modules/d3-selection/src/local.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "local", function() { return _local__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _matcher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./matcher */ "./node_modules/d3-selection/src/matcher.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "matcher", function() { return _matcher__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _mouse__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mouse */ "./node_modules/d3-selection/src/mouse.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "mouse", function() { return _mouse__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./namespace */ "./node_modules/d3-selection/src/namespace.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "namespace", function() { return _namespace__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _namespaces__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./namespaces */ "./node_modules/d3-selection/src/namespaces.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "namespaces", function() { return _namespaces__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./point */ "./node_modules/d3-selection/src/point.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "clientPoint", function() { return _point__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./select */ "./node_modules/d3-selection/src/select.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "select", function() { return _select__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+
+/* harmony import */ var _selectAll__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./selectAll */ "./node_modules/d3-selection/src/selectAll.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "selectAll", function() { return _selectAll__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+/* harmony import */ var _selection_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./selection/index */ "./node_modules/d3-selection/src/selection/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "selection", function() { return _selection_index__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
+/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./selector */ "./node_modules/d3-selection/src/selector.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "selector", function() { return _selector__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
+/* harmony import */ var _selectorAll__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./selectorAll */ "./node_modules/d3-selection/src/selectorAll.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "selectorAll", function() { return _selectorAll__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+
+/* harmony import */ var _selection_style__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./selection/style */ "./node_modules/d3-selection/src/selection/style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "style", function() { return _selection_style__WEBPACK_IMPORTED_MODULE_13__["styleValue"]; });
+
+/* harmony import */ var _touch__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./touch */ "./node_modules/d3-selection/src/touch.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "touch", function() { return _touch__WEBPACK_IMPORTED_MODULE_14__["default"]; });
+
+/* harmony import */ var _touches__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./touches */ "./node_modules/d3-selection/src/touches.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "touches", function() { return _touches__WEBPACK_IMPORTED_MODULE_15__["default"]; });
+
+/* harmony import */ var _window__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./window */ "./node_modules/d3-selection/src/window.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "window", function() { return _window__WEBPACK_IMPORTED_MODULE_16__["default"]; });
+
+/* harmony import */ var _selection_on__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./selection/on */ "./node_modules/d3-selection/src/selection/on.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "event", function() { return _selection_on__WEBPACK_IMPORTED_MODULE_17__["event"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "customEvent", function() { return _selection_on__WEBPACK_IMPORTED_MODULE_17__["customEvent"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/local.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-selection/src/local.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return local; });
+var nextId = 0;
+
+function local() {
+  return new Local;
+}
+
+function Local() {
+  this._ = "@" + (++nextId).toString(36);
+}
+
+Local.prototype = local.prototype = {
+  constructor: Local,
+  get: function(node) {
+    var id = this._;
+    while (!(id in node)) if (!(node = node.parentNode)) return;
+    return node[id];
+  },
+  set: function(node, value) {
+    return node[this._] = value;
+  },
+  remove: function(node) {
+    return this._ in node && delete node[this._];
+  },
+  toString: function() {
+    return this._;
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/matcher.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-selection/src/matcher.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var matcher = function(selector) {
+  return function() {
+    return this.matches(selector);
+  };
+};
+
+if (typeof document !== "undefined") {
+  var element = document.documentElement;
+  if (!element.matches) {
+    var vendorMatches = element.webkitMatchesSelector
+        || element.msMatchesSelector
+        || element.mozMatchesSelector
+        || element.oMatchesSelector;
+    matcher = function(selector) {
+      return function() {
+        return vendorMatches.call(this, selector);
+      };
+    };
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (matcher);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/mouse.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-selection/src/mouse.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sourceEvent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sourceEvent */ "./node_modules/d3-selection/src/sourceEvent.js");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./point */ "./node_modules/d3-selection/src/point.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node) {
+  var event = Object(_sourceEvent__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  if (event.changedTouches) event = event.changedTouches[0];
+  return Object(_point__WEBPACK_IMPORTED_MODULE_1__["default"])(node, event);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/namespace.js":
+/*!****************************************************!*\
+  !*** ./node_modules/d3-selection/src/namespace.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _namespaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./namespaces */ "./node_modules/d3-selection/src/namespaces.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  var prefix = name += "", i = prefix.indexOf(":");
+  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
+  return _namespaces__WEBPACK_IMPORTED_MODULE_0__["default"].hasOwnProperty(prefix) ? {space: _namespaces__WEBPACK_IMPORTED_MODULE_0__["default"][prefix], local: name} : name;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/namespaces.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/d3-selection/src/namespaces.js ***!
+  \*****************************************************/
+/*! exports provided: xhtml, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xhtml", function() { return xhtml; });
+var xhtml = "http://www.w3.org/1999/xhtml";
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  svg: "http://www.w3.org/2000/svg",
+  xhtml: xhtml,
+  xlink: "http://www.w3.org/1999/xlink",
+  xml: "http://www.w3.org/XML/1998/namespace",
+  xmlns: "http://www.w3.org/2000/xmlns/"
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/point.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-selection/src/point.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(node, event) {
+  var svg = node.ownerSVGElement || node;
+
+  if (svg.createSVGPoint) {
+    var point = svg.createSVGPoint();
+    point.x = event.clientX, point.y = event.clientY;
+    point = point.matrixTransform(node.getScreenCTM().inverse());
+    return [point.x, point.y];
+  }
+
+  var rect = node.getBoundingClientRect();
+  return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/select.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-selection/src/select.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _selection_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./selection/index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(selector) {
+  return typeof selector === "string"
+      ? new _selection_index__WEBPACK_IMPORTED_MODULE_0__["Selection"]([[document.querySelector(selector)]], [document.documentElement])
+      : new _selection_index__WEBPACK_IMPORTED_MODULE_0__["Selection"]([[selector]], _selection_index__WEBPACK_IMPORTED_MODULE_0__["root"]);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selectAll.js":
+/*!****************************************************!*\
+  !*** ./node_modules/d3-selection/src/selectAll.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _selection_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./selection/index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(selector) {
+  return typeof selector === "string"
+      ? new _selection_index__WEBPACK_IMPORTED_MODULE_0__["Selection"]([document.querySelectorAll(selector)], [document.documentElement])
+      : new _selection_index__WEBPACK_IMPORTED_MODULE_0__["Selection"]([selector == null ? [] : selector], _selection_index__WEBPACK_IMPORTED_MODULE_0__["root"]);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/append.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/append.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _creator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../creator */ "./node_modules/d3-selection/src/creator.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  var create = typeof name === "function" ? name : Object(_creator__WEBPACK_IMPORTED_MODULE_0__["default"])(name);
+  return this.select(function() {
+    return this.appendChild(create.apply(this, arguments));
+  });
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/attr.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/attr.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../namespace */ "./node_modules/d3-selection/src/namespace.js");
+
+
+function attrRemove(name) {
+  return function() {
+    this.removeAttribute(name);
+  };
+}
+
+function attrRemoveNS(fullname) {
+  return function() {
+    this.removeAttributeNS(fullname.space, fullname.local);
+  };
+}
+
+function attrConstant(name, value) {
+  return function() {
+    this.setAttribute(name, value);
+  };
+}
+
+function attrConstantNS(fullname, value) {
+  return function() {
+    this.setAttributeNS(fullname.space, fullname.local, value);
+  };
+}
+
+function attrFunction(name, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.removeAttribute(name);
+    else this.setAttribute(name, v);
+  };
+}
+
+function attrFunctionNS(fullname, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.removeAttributeNS(fullname.space, fullname.local);
+    else this.setAttributeNS(fullname.space, fullname.local, v);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  var fullname = Object(_namespace__WEBPACK_IMPORTED_MODULE_0__["default"])(name);
+
+  if (arguments.length < 2) {
+    var node = this.node();
+    return fullname.local
+        ? node.getAttributeNS(fullname.space, fullname.local)
+        : node.getAttribute(fullname);
+  }
+
+  return this.each((value == null
+      ? (fullname.local ? attrRemoveNS : attrRemove) : (typeof value === "function"
+      ? (fullname.local ? attrFunctionNS : attrFunction)
+      : (fullname.local ? attrConstantNS : attrConstant)))(fullname, value));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/call.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/call.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  var callback = arguments[0];
+  arguments[0] = this;
+  callback.apply(null, arguments);
+  return this;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/classed.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/classed.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function classArray(string) {
+  return string.trim().split(/^|\s+/);
+}
+
+function classList(node) {
+  return node.classList || new ClassList(node);
+}
+
+function ClassList(node) {
+  this._node = node;
+  this._names = classArray(node.getAttribute("class") || "");
+}
+
+ClassList.prototype = {
+  add: function(name) {
+    var i = this._names.indexOf(name);
+    if (i < 0) {
+      this._names.push(name);
+      this._node.setAttribute("class", this._names.join(" "));
+    }
+  },
+  remove: function(name) {
+    var i = this._names.indexOf(name);
+    if (i >= 0) {
+      this._names.splice(i, 1);
+      this._node.setAttribute("class", this._names.join(" "));
+    }
+  },
+  contains: function(name) {
+    return this._names.indexOf(name) >= 0;
+  }
+};
+
+function classedAdd(node, names) {
+  var list = classList(node), i = -1, n = names.length;
+  while (++i < n) list.add(names[i]);
+}
+
+function classedRemove(node, names) {
+  var list = classList(node), i = -1, n = names.length;
+  while (++i < n) list.remove(names[i]);
+}
+
+function classedTrue(names) {
+  return function() {
+    classedAdd(this, names);
+  };
+}
+
+function classedFalse(names) {
+  return function() {
+    classedRemove(this, names);
+  };
+}
+
+function classedFunction(names, value) {
+  return function() {
+    (value.apply(this, arguments) ? classedAdd : classedRemove)(this, names);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  var names = classArray(name + "");
+
+  if (arguments.length < 2) {
+    var list = classList(this.node()), i = -1, n = names.length;
+    while (++i < n) if (!list.contains(names[i])) return false;
+    return true;
+  }
+
+  return this.each((typeof value === "function"
+      ? classedFunction : value
+      ? classedTrue
+      : classedFalse)(names, value));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/clone.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/clone.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function selection_cloneShallow() {
+  return this.parentNode.insertBefore(this.cloneNode(false), this.nextSibling);
+}
+
+function selection_cloneDeep() {
+  return this.parentNode.insertBefore(this.cloneNode(true), this.nextSibling);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(deep) {
+  return this.select(deep ? selection_cloneDeep : selection_cloneShallow);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/data.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/data.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+/* harmony import */ var _enter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter */ "./node_modules/d3-selection/src/selection/enter.js");
+/* harmony import */ var _constant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constant */ "./node_modules/d3-selection/src/constant.js");
+
+
+
+
+var keyPrefix = "$"; // Protect against keys like “__proto__”.
+
+function bindIndex(parent, group, enter, update, exit, data) {
+  var i = 0,
+      node,
+      groupLength = group.length,
+      dataLength = data.length;
+
+  // Put any non-null nodes that fit into update.
+  // Put any null nodes into enter.
+  // Put any remaining data into enter.
+  for (; i < dataLength; ++i) {
+    if (node = group[i]) {
+      node.__data__ = data[i];
+      update[i] = node;
+    } else {
+      enter[i] = new _enter__WEBPACK_IMPORTED_MODULE_1__["EnterNode"](parent, data[i]);
+    }
+  }
+
+  // Put any non-null nodes that don’t fit into exit.
+  for (; i < groupLength; ++i) {
+    if (node = group[i]) {
+      exit[i] = node;
+    }
+  }
+}
+
+function bindKey(parent, group, enter, update, exit, data, key) {
+  var i,
+      node,
+      nodeByKeyValue = {},
+      groupLength = group.length,
+      dataLength = data.length,
+      keyValues = new Array(groupLength),
+      keyValue;
+
+  // Compute the key for each node.
+  // If multiple nodes have the same key, the duplicates are added to exit.
+  for (i = 0; i < groupLength; ++i) {
+    if (node = group[i]) {
+      keyValues[i] = keyValue = keyPrefix + key.call(node, node.__data__, i, group);
+      if (keyValue in nodeByKeyValue) {
+        exit[i] = node;
+      } else {
+        nodeByKeyValue[keyValue] = node;
+      }
+    }
+  }
+
+  // Compute the key for each datum.
+  // If there a node associated with this key, join and add it to update.
+  // If there is not (or the key is a duplicate), add it to enter.
+  for (i = 0; i < dataLength; ++i) {
+    keyValue = keyPrefix + key.call(parent, data[i], i, data);
+    if (node = nodeByKeyValue[keyValue]) {
+      update[i] = node;
+      node.__data__ = data[i];
+      nodeByKeyValue[keyValue] = null;
+    } else {
+      enter[i] = new _enter__WEBPACK_IMPORTED_MODULE_1__["EnterNode"](parent, data[i]);
+    }
+  }
+
+  // Add any remaining nodes that were not bound to data to exit.
+  for (i = 0; i < groupLength; ++i) {
+    if ((node = group[i]) && (nodeByKeyValue[keyValues[i]] === node)) {
+      exit[i] = node;
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value, key) {
+  if (!value) {
+    data = new Array(this.size()), j = -1;
+    this.each(function(d) { data[++j] = d; });
+    return data;
+  }
+
+  var bind = key ? bindKey : bindIndex,
+      parents = this._parents,
+      groups = this._groups;
+
+  if (typeof value !== "function") value = Object(_constant__WEBPACK_IMPORTED_MODULE_2__["default"])(value);
+
+  for (var m = groups.length, update = new Array(m), enter = new Array(m), exit = new Array(m), j = 0; j < m; ++j) {
+    var parent = parents[j],
+        group = groups[j],
+        groupLength = group.length,
+        data = value.call(parent, parent && parent.__data__, j, parents),
+        dataLength = data.length,
+        enterGroup = enter[j] = new Array(dataLength),
+        updateGroup = update[j] = new Array(dataLength),
+        exitGroup = exit[j] = new Array(groupLength);
+
+    bind(parent, group, enterGroup, updateGroup, exitGroup, data, key);
+
+    // Now connect the enter nodes to their following update node, such that
+    // appendChild can insert the materialized enter node before this node,
+    // rather than at the end of the parent node.
+    for (var i0 = 0, i1 = 0, previous, next; i0 < dataLength; ++i0) {
+      if (previous = enterGroup[i0]) {
+        if (i0 >= i1) i1 = i0 + 1;
+        while (!(next = updateGroup[i1]) && ++i1 < dataLength);
+        previous._next = next || null;
+      }
+    }
+  }
+
+  update = new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](update, parents);
+  update._enter = enter;
+  update._exit = exit;
+  return update;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/datum.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/datum.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  return arguments.length
+      ? this.property("__data__", value)
+      : this.node().__data__;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/dispatch.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/dispatch.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../window */ "./node_modules/d3-selection/src/window.js");
+
+
+function dispatchEvent(node, type, params) {
+  var window = Object(_window__WEBPACK_IMPORTED_MODULE_0__["default"])(node),
+      event = window.CustomEvent;
+
+  if (typeof event === "function") {
+    event = new event(type, params);
+  } else {
+    event = window.document.createEvent("Event");
+    if (params) event.initEvent(type, params.bubbles, params.cancelable), event.detail = params.detail;
+    else event.initEvent(type, false, false);
+  }
+
+  node.dispatchEvent(event);
+}
+
+function dispatchConstant(type, params) {
+  return function() {
+    return dispatchEvent(this, type, params);
+  };
+}
+
+function dispatchFunction(type, params) {
+  return function() {
+    return dispatchEvent(this, type, params.apply(this, arguments));
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(type, params) {
+  return this.each((typeof params === "function"
+      ? dispatchFunction
+      : dispatchConstant)(type, params));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/each.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/each.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(callback) {
+
+  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
+    for (var group = groups[j], i = 0, n = group.length, node; i < n; ++i) {
+      if (node = group[i]) callback.call(node, node.__data__, i, group);
+    }
+  }
+
+  return this;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/empty.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/empty.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return !this.node();
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/enter.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/enter.js ***!
+  \**********************************************************/
+/*! exports provided: default, EnterNode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnterNode", function() { return EnterNode; });
+/* harmony import */ var _sparse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sparse */ "./node_modules/d3-selection/src/selection/sparse.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return new _index__WEBPACK_IMPORTED_MODULE_1__["Selection"](this._enter || this._groups.map(_sparse__WEBPACK_IMPORTED_MODULE_0__["default"]), this._parents);
+});
+
+function EnterNode(parent, datum) {
+  this.ownerDocument = parent.ownerDocument;
+  this.namespaceURI = parent.namespaceURI;
+  this._next = null;
+  this._parent = parent;
+  this.__data__ = datum;
+}
+
+EnterNode.prototype = {
+  constructor: EnterNode,
+  appendChild: function(child) { return this._parent.insertBefore(child, this._next); },
+  insertBefore: function(child, next) { return this._parent.insertBefore(child, next); },
+  querySelector: function(selector) { return this._parent.querySelector(selector); },
+  querySelectorAll: function(selector) { return this._parent.querySelectorAll(selector); }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/exit.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/exit.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sparse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sparse */ "./node_modules/d3-selection/src/selection/sparse.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return new _index__WEBPACK_IMPORTED_MODULE_1__["Selection"](this._exit || this._groups.map(_sparse__WEBPACK_IMPORTED_MODULE_0__["default"]), this._parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/filter.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/filter.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+/* harmony import */ var _matcher__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../matcher */ "./node_modules/d3-selection/src/matcher.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(match) {
+  if (typeof match !== "function") match = Object(_matcher__WEBPACK_IMPORTED_MODULE_1__["default"])(match);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
+      if ((node = group[i]) && match.call(node, node.__data__, i, group)) {
+        subgroup.push(node);
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](subgroups, this._parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/html.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/html.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function htmlRemove() {
+  this.innerHTML = "";
+}
+
+function htmlConstant(value) {
+  return function() {
+    this.innerHTML = value;
+  };
+}
+
+function htmlFunction(value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    this.innerHTML = v == null ? "" : v;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  return arguments.length
+      ? this.each(value == null
+          ? htmlRemove : (typeof value === "function"
+          ? htmlFunction
+          : htmlConstant)(value))
+      : this.node().innerHTML;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/index.js ***!
+  \**********************************************************/
+/*! exports provided: root, Selection, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "root", function() { return root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Selection", function() { return Selection; });
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./select */ "./node_modules/d3-selection/src/selection/select.js");
+/* harmony import */ var _selectAll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./selectAll */ "./node_modules/d3-selection/src/selection/selectAll.js");
+/* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./filter */ "./node_modules/d3-selection/src/selection/filter.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./node_modules/d3-selection/src/selection/data.js");
+/* harmony import */ var _enter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./enter */ "./node_modules/d3-selection/src/selection/enter.js");
+/* harmony import */ var _exit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./exit */ "./node_modules/d3-selection/src/selection/exit.js");
+/* harmony import */ var _merge__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./merge */ "./node_modules/d3-selection/src/selection/merge.js");
+/* harmony import */ var _order__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./order */ "./node_modules/d3-selection/src/selection/order.js");
+/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sort */ "./node_modules/d3-selection/src/selection/sort.js");
+/* harmony import */ var _call__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./call */ "./node_modules/d3-selection/src/selection/call.js");
+/* harmony import */ var _nodes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./nodes */ "./node_modules/d3-selection/src/selection/nodes.js");
+/* harmony import */ var _node__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node */ "./node_modules/d3-selection/src/selection/node.js");
+/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./size */ "./node_modules/d3-selection/src/selection/size.js");
+/* harmony import */ var _empty__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./empty */ "./node_modules/d3-selection/src/selection/empty.js");
+/* harmony import */ var _each__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./each */ "./node_modules/d3-selection/src/selection/each.js");
+/* harmony import */ var _attr__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./attr */ "./node_modules/d3-selection/src/selection/attr.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./style */ "./node_modules/d3-selection/src/selection/style.js");
+/* harmony import */ var _property__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./property */ "./node_modules/d3-selection/src/selection/property.js");
+/* harmony import */ var _classed__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./classed */ "./node_modules/d3-selection/src/selection/classed.js");
+/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./text */ "./node_modules/d3-selection/src/selection/text.js");
+/* harmony import */ var _html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./html */ "./node_modules/d3-selection/src/selection/html.js");
+/* harmony import */ var _raise__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./raise */ "./node_modules/d3-selection/src/selection/raise.js");
+/* harmony import */ var _lower__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./lower */ "./node_modules/d3-selection/src/selection/lower.js");
+/* harmony import */ var _append__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./append */ "./node_modules/d3-selection/src/selection/append.js");
+/* harmony import */ var _insert__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./insert */ "./node_modules/d3-selection/src/selection/insert.js");
+/* harmony import */ var _remove__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./remove */ "./node_modules/d3-selection/src/selection/remove.js");
+/* harmony import */ var _clone__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./clone */ "./node_modules/d3-selection/src/selection/clone.js");
+/* harmony import */ var _datum__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./datum */ "./node_modules/d3-selection/src/selection/datum.js");
+/* harmony import */ var _on__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./on */ "./node_modules/d3-selection/src/selection/on.js");
+/* harmony import */ var _dispatch__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./dispatch */ "./node_modules/d3-selection/src/selection/dispatch.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var root = [null];
+
+function Selection(groups, parents) {
+  this._groups = groups;
+  this._parents = parents;
+}
+
+function selection() {
+  return new Selection([[document.documentElement]], root);
+}
+
+Selection.prototype = selection.prototype = {
+  constructor: Selection,
+  select: _select__WEBPACK_IMPORTED_MODULE_0__["default"],
+  selectAll: _selectAll__WEBPACK_IMPORTED_MODULE_1__["default"],
+  filter: _filter__WEBPACK_IMPORTED_MODULE_2__["default"],
+  data: _data__WEBPACK_IMPORTED_MODULE_3__["default"],
+  enter: _enter__WEBPACK_IMPORTED_MODULE_4__["default"],
+  exit: _exit__WEBPACK_IMPORTED_MODULE_5__["default"],
+  merge: _merge__WEBPACK_IMPORTED_MODULE_6__["default"],
+  order: _order__WEBPACK_IMPORTED_MODULE_7__["default"],
+  sort: _sort__WEBPACK_IMPORTED_MODULE_8__["default"],
+  call: _call__WEBPACK_IMPORTED_MODULE_9__["default"],
+  nodes: _nodes__WEBPACK_IMPORTED_MODULE_10__["default"],
+  node: _node__WEBPACK_IMPORTED_MODULE_11__["default"],
+  size: _size__WEBPACK_IMPORTED_MODULE_12__["default"],
+  empty: _empty__WEBPACK_IMPORTED_MODULE_13__["default"],
+  each: _each__WEBPACK_IMPORTED_MODULE_14__["default"],
+  attr: _attr__WEBPACK_IMPORTED_MODULE_15__["default"],
+  style: _style__WEBPACK_IMPORTED_MODULE_16__["default"],
+  property: _property__WEBPACK_IMPORTED_MODULE_17__["default"],
+  classed: _classed__WEBPACK_IMPORTED_MODULE_18__["default"],
+  text: _text__WEBPACK_IMPORTED_MODULE_19__["default"],
+  html: _html__WEBPACK_IMPORTED_MODULE_20__["default"],
+  raise: _raise__WEBPACK_IMPORTED_MODULE_21__["default"],
+  lower: _lower__WEBPACK_IMPORTED_MODULE_22__["default"],
+  append: _append__WEBPACK_IMPORTED_MODULE_23__["default"],
+  insert: _insert__WEBPACK_IMPORTED_MODULE_24__["default"],
+  remove: _remove__WEBPACK_IMPORTED_MODULE_25__["default"],
+  clone: _clone__WEBPACK_IMPORTED_MODULE_26__["default"],
+  datum: _datum__WEBPACK_IMPORTED_MODULE_27__["default"],
+  on: _on__WEBPACK_IMPORTED_MODULE_28__["default"],
+  dispatch: _dispatch__WEBPACK_IMPORTED_MODULE_29__["default"]
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (selection);
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/insert.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/insert.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _creator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../creator */ "./node_modules/d3-selection/src/creator.js");
+/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selector */ "./node_modules/d3-selection/src/selector.js");
+
+
+
+function constantNull() {
+  return null;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, before) {
+  var create = typeof name === "function" ? name : Object(_creator__WEBPACK_IMPORTED_MODULE_0__["default"])(name),
+      select = before == null ? constantNull : typeof before === "function" ? before : Object(_selector__WEBPACK_IMPORTED_MODULE_1__["default"])(before);
+  return this.select(function() {
+    return this.insertBefore(create.apply(this, arguments), select.apply(this, arguments) || null);
+  });
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/lower.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/lower.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function lower() {
+  if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return this.each(lower);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/merge.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/merge.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(selection) {
+
+  for (var groups0 = this._groups, groups1 = selection._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
+    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
+      if (node = group0[i] || group1[i]) {
+        merge[i] = node;
+      }
+    }
+  }
+
+  for (; j < m0; ++j) {
+    merges[j] = groups0[j];
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](merges, this._parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/node.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/node.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+
+  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
+    for (var group = groups[j], i = 0, n = group.length; i < n; ++i) {
+      var node = group[i];
+      if (node) return node;
+    }
+  }
+
+  return null;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/nodes.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/nodes.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  var nodes = new Array(this.size()), i = -1;
+  this.each(function() { nodes[++i] = this; });
+  return nodes;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/on.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/on.js ***!
+  \*******************************************************/
+/*! exports provided: event, default, customEvent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "event", function() { return event; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customEvent", function() { return customEvent; });
+var filterEvents = {};
+
+var event = null;
+
+if (typeof document !== "undefined") {
+  var element = document.documentElement;
+  if (!("onmouseenter" in element)) {
+    filterEvents = {mouseenter: "mouseover", mouseleave: "mouseout"};
+  }
+}
+
+function filterContextListener(listener, index, group) {
+  listener = contextListener(listener, index, group);
+  return function(event) {
+    var related = event.relatedTarget;
+    if (!related || (related !== this && !(related.compareDocumentPosition(this) & 8))) {
+      listener.call(this, event);
+    }
+  };
+}
+
+function contextListener(listener, index, group) {
+  return function(event1) {
+    var event0 = event; // Events can be reentrant (e.g., focus).
+    event = event1;
+    try {
+      listener.call(this, this.__data__, index, group);
+    } finally {
+      event = event0;
+    }
+  };
+}
+
+function parseTypenames(typenames) {
+  return typenames.trim().split(/^|\s+/).map(function(t) {
+    var name = "", i = t.indexOf(".");
+    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
+    return {type: t, name: name};
+  });
+}
+
+function onRemove(typename) {
+  return function() {
+    var on = this.__on;
+    if (!on) return;
+    for (var j = 0, i = -1, m = on.length, o; j < m; ++j) {
+      if (o = on[j], (!typename.type || o.type === typename.type) && o.name === typename.name) {
+        this.removeEventListener(o.type, o.listener, o.capture);
+      } else {
+        on[++i] = o;
+      }
+    }
+    if (++i) on.length = i;
+    else delete this.__on;
+  };
+}
+
+function onAdd(typename, value, capture) {
+  var wrap = filterEvents.hasOwnProperty(typename.type) ? filterContextListener : contextListener;
+  return function(d, i, group) {
+    var on = this.__on, o, listener = wrap(value, i, group);
+    if (on) for (var j = 0, m = on.length; j < m; ++j) {
+      if ((o = on[j]).type === typename.type && o.name === typename.name) {
+        this.removeEventListener(o.type, o.listener, o.capture);
+        this.addEventListener(o.type, o.listener = listener, o.capture = capture);
+        o.value = value;
+        return;
+      }
+    }
+    this.addEventListener(typename.type, listener, capture);
+    o = {type: typename.type, name: typename.name, value: value, listener: listener, capture: capture};
+    if (!on) this.__on = [o];
+    else on.push(o);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(typename, value, capture) {
+  var typenames = parseTypenames(typename + ""), i, n = typenames.length, t;
+
+  if (arguments.length < 2) {
+    var on = this.node().__on;
+    if (on) for (var j = 0, m = on.length, o; j < m; ++j) {
+      for (i = 0, o = on[j]; i < n; ++i) {
+        if ((t = typenames[i]).type === o.type && t.name === o.name) {
+          return o.value;
+        }
+      }
+    }
+    return;
+  }
+
+  on = value ? onAdd : onRemove;
+  if (capture == null) capture = false;
+  for (i = 0; i < n; ++i) this.each(on(typenames[i], value, capture));
+  return this;
+});
+
+function customEvent(event1, listener, that, args) {
+  var event0 = event;
+  event1.sourceEvent = event;
+  event = event1;
+  try {
+    return listener.apply(that, args);
+  } finally {
+    event = event0;
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/order.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/order.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+
+  for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
+    for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0;) {
+      if (node = group[i]) {
+        if (next && next !== node.nextSibling) next.parentNode.insertBefore(node, next);
+        next = node;
+      }
+    }
+  }
+
+  return this;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/property.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/property.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function propertyRemove(name) {
+  return function() {
+    delete this[name];
+  };
+}
+
+function propertyConstant(name, value) {
+  return function() {
+    this[name] = value;
+  };
+}
+
+function propertyFunction(name, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) delete this[name];
+    else this[name] = v;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  return arguments.length > 1
+      ? this.each((value == null
+          ? propertyRemove : typeof value === "function"
+          ? propertyFunction
+          : propertyConstant)(name, value))
+      : this.node()[name];
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/raise.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/raise.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function raise() {
+  if (this.nextSibling) this.parentNode.appendChild(this);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return this.each(raise);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/remove.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/remove.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function remove() {
+  var parent = this.parentNode;
+  if (parent) parent.removeChild(this);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return this.each(remove);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/select.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/select.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selector */ "./node_modules/d3-selection/src/selector.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(select) {
+  if (typeof select !== "function") select = Object(_selector__WEBPACK_IMPORTED_MODULE_1__["default"])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
+      if ((node = group[i]) && (subnode = select.call(node, node.__data__, i, group))) {
+        if ("__data__" in node) subnode.__data__ = node.__data__;
+        subgroup[i] = subnode;
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](subgroups, this._parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/selectAll.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/selectAll.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+/* harmony import */ var _selectorAll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selectorAll */ "./node_modules/d3-selection/src/selectorAll.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(select) {
+  if (typeof select !== "function") select = Object(_selectorAll__WEBPACK_IMPORTED_MODULE_1__["default"])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        subgroups.push(select.call(node, node.__data__, i, group));
+        parents.push(node);
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](subgroups, parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/size.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/size.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  var size = 0;
+  this.each(function() { ++size; });
+  return size;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/sort.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/sort.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-selection/src/selection/index.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(compare) {
+  if (!compare) compare = ascending;
+
+  function compareNode(a, b) {
+    return a && b ? compare(a.__data__, b.__data__) : !a - !b;
+  }
+
+  for (var groups = this._groups, m = groups.length, sortgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, sortgroup = sortgroups[j] = new Array(n), node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        sortgroup[i] = node;
+      }
+    }
+    sortgroup.sort(compareNode);
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Selection"](sortgroups, this._parents).order();
+});
+
+function ascending(a, b) {
+  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/sparse.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/sparse.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(update) {
+  return new Array(update.length);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/style.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/style.js ***!
+  \**********************************************************/
+/*! exports provided: default, styleValue */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styleValue", function() { return styleValue; });
+/* harmony import */ var _window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../window */ "./node_modules/d3-selection/src/window.js");
+
+
+function styleRemove(name) {
+  return function() {
+    this.style.removeProperty(name);
+  };
+}
+
+function styleConstant(name, value, priority) {
+  return function() {
+    this.style.setProperty(name, value, priority);
+  };
+}
+
+function styleFunction(name, value, priority) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.style.removeProperty(name);
+    else this.style.setProperty(name, v, priority);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value, priority) {
+  return arguments.length > 1
+      ? this.each((value == null
+            ? styleRemove : typeof value === "function"
+            ? styleFunction
+            : styleConstant)(name, value, priority == null ? "" : priority))
+      : styleValue(this.node(), name);
+});
+
+function styleValue(node, name) {
+  return node.style.getPropertyValue(name)
+      || Object(_window__WEBPACK_IMPORTED_MODULE_0__["default"])(node).getComputedStyle(node, null).getPropertyValue(name);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selection/text.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-selection/src/selection/text.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function textRemove() {
+  this.textContent = "";
+}
+
+function textConstant(value) {
+  return function() {
+    this.textContent = value;
+  };
+}
+
+function textFunction(value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    this.textContent = v == null ? "" : v;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  return arguments.length
+      ? this.each(value == null
+          ? textRemove : (typeof value === "function"
+          ? textFunction
+          : textConstant)(value))
+      : this.node().textContent;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selector.js":
+/*!***************************************************!*\
+  !*** ./node_modules/d3-selection/src/selector.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function none() {}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(selector) {
+  return selector == null ? none : function() {
+    return this.querySelector(selector);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/selectorAll.js":
+/*!******************************************************!*\
+  !*** ./node_modules/d3-selection/src/selectorAll.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function empty() {
+  return [];
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(selector) {
+  return selector == null ? empty : function() {
+    return this.querySelectorAll(selector);
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/sourceEvent.js":
+/*!******************************************************!*\
+  !*** ./node_modules/d3-selection/src/sourceEvent.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _selection_on__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./selection/on */ "./node_modules/d3-selection/src/selection/on.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  var current = _selection_on__WEBPACK_IMPORTED_MODULE_0__["event"], source;
+  while (source = current.sourceEvent) current = source;
+  return current;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/touch.js":
+/*!************************************************!*\
+  !*** ./node_modules/d3-selection/src/touch.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sourceEvent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sourceEvent */ "./node_modules/d3-selection/src/sourceEvent.js");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./point */ "./node_modules/d3-selection/src/point.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node, touches, identifier) {
+  if (arguments.length < 3) identifier = touches, touches = Object(_sourceEvent__WEBPACK_IMPORTED_MODULE_0__["default"])().changedTouches;
+
+  for (var i = 0, n = touches ? touches.length : 0, touch; i < n; ++i) {
+    if ((touch = touches[i]).identifier === identifier) {
+      return Object(_point__WEBPACK_IMPORTED_MODULE_1__["default"])(node, touch);
+    }
+  }
+
+  return null;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/touches.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-selection/src/touches.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sourceEvent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sourceEvent */ "./node_modules/d3-selection/src/sourceEvent.js");
+/* harmony import */ var _point__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./point */ "./node_modules/d3-selection/src/point.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node, touches) {
+  if (touches == null) touches = Object(_sourceEvent__WEBPACK_IMPORTED_MODULE_0__["default"])().touches;
+
+  for (var i = 0, n = touches ? touches.length : 0, points = new Array(n); i < n; ++i) {
+    points[i] = Object(_point__WEBPACK_IMPORTED_MODULE_1__["default"])(node, touches[i]);
+  }
+
+  return points;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-selection/src/window.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-selection/src/window.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(node) {
+  return (node.ownerDocument && node.ownerDocument.defaultView) // node is a Node
+      || (node.document && node) // node is a Window
+      || node.defaultView; // node is a Document
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-timer/src/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-timer/src/index.js ***!
+  \********************************************/
+/*! exports provided: now, timer, timerFlush, timeout, interval */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./timer */ "./node_modules/d3-timer/src/timer.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "now", function() { return _timer__WEBPACK_IMPORTED_MODULE_0__["now"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "timer", function() { return _timer__WEBPACK_IMPORTED_MODULE_0__["timer"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "timerFlush", function() { return _timer__WEBPACK_IMPORTED_MODULE_0__["timerFlush"]; });
+
+/* harmony import */ var _timeout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./timeout */ "./node_modules/d3-timer/src/timeout.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "timeout", function() { return _timeout__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _interval__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./interval */ "./node_modules/d3-timer/src/interval.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interval", function() { return _interval__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-timer/src/interval.js":
+/*!***********************************************!*\
+  !*** ./node_modules/d3-timer/src/interval.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./timer */ "./node_modules/d3-timer/src/timer.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(callback, delay, time) {
+  var t = new _timer__WEBPACK_IMPORTED_MODULE_0__["Timer"], total = delay;
+  if (delay == null) return t.restart(callback, delay, time), t;
+  delay = +delay, time = time == null ? Object(_timer__WEBPACK_IMPORTED_MODULE_0__["now"])() : +time;
+  t.restart(function tick(elapsed) {
+    elapsed += total;
+    t.restart(tick, total += delay, time);
+    callback(elapsed);
+  }, delay, time);
+  return t;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-timer/src/timeout.js":
+/*!**********************************************!*\
+  !*** ./node_modules/d3-timer/src/timeout.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./timer */ "./node_modules/d3-timer/src/timer.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(callback, delay, time) {
+  var t = new _timer__WEBPACK_IMPORTED_MODULE_0__["Timer"];
+  delay = delay == null ? 0 : +delay;
+  t.restart(function(elapsed) {
+    t.stop();
+    callback(elapsed + delay);
+  }, delay, time);
+  return t;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-timer/src/timer.js":
+/*!********************************************!*\
+  !*** ./node_modules/d3-timer/src/timer.js ***!
+  \********************************************/
+/*! exports provided: now, Timer, timer, timerFlush */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "now", function() { return now; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Timer", function() { return Timer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "timer", function() { return timer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "timerFlush", function() { return timerFlush; });
+var frame = 0, // is an animation frame pending?
+    timeout = 0, // is a timeout pending?
+    interval = 0, // are any timers active?
+    pokeDelay = 1000, // how frequently we check for clock skew
+    taskHead,
+    taskTail,
+    clockLast = 0,
+    clockNow = 0,
+    clockSkew = 0,
+    clock = typeof performance === "object" && performance.now ? performance : Date,
+    setFrame = typeof window === "object" && window.requestAnimationFrame ? window.requestAnimationFrame.bind(window) : function(f) { setTimeout(f, 17); };
+
+function now() {
+  return clockNow || (setFrame(clearNow), clockNow = clock.now() + clockSkew);
+}
+
+function clearNow() {
+  clockNow = 0;
+}
+
+function Timer() {
+  this._call =
+  this._time =
+  this._next = null;
+}
+
+Timer.prototype = timer.prototype = {
+  constructor: Timer,
+  restart: function(callback, delay, time) {
+    if (typeof callback !== "function") throw new TypeError("callback is not a function");
+    time = (time == null ? now() : +time) + (delay == null ? 0 : +delay);
+    if (!this._next && taskTail !== this) {
+      if (taskTail) taskTail._next = this;
+      else taskHead = this;
+      taskTail = this;
+    }
+    this._call = callback;
+    this._time = time;
+    sleep();
+  },
+  stop: function() {
+    if (this._call) {
+      this._call = null;
+      this._time = Infinity;
+      sleep();
+    }
+  }
+};
+
+function timer(callback, delay, time) {
+  var t = new Timer;
+  t.restart(callback, delay, time);
+  return t;
+}
+
+function timerFlush() {
+  now(); // Get the current time, if not already set.
+  ++frame; // Pretend we’ve set an alarm, if we haven’t already.
+  var t = taskHead, e;
+  while (t) {
+    if ((e = clockNow - t._time) >= 0) t._call.call(null, e);
+    t = t._next;
+  }
+  --frame;
+}
+
+function wake() {
+  clockNow = (clockLast = clock.now()) + clockSkew;
+  frame = timeout = 0;
+  try {
+    timerFlush();
+  } finally {
+    frame = 0;
+    nap();
+    clockNow = 0;
+  }
+}
+
+function poke() {
+  var now = clock.now(), delay = now - clockLast;
+  if (delay > pokeDelay) clockSkew -= delay, clockLast = now;
+}
+
+function nap() {
+  var t0, t1 = taskHead, t2, time = Infinity;
+  while (t1) {
+    if (t1._call) {
+      if (time > t1._time) time = t1._time;
+      t0 = t1, t1 = t1._next;
+    } else {
+      t2 = t1._next, t1._next = null;
+      t1 = t0 ? t0._next = t2 : taskHead = t2;
+    }
+  }
+  taskTail = t0;
+  sleep(time);
+}
+
+function sleep(time) {
+  if (frame) return; // Soonest alarm already set, or will be.
+  if (timeout) timeout = clearTimeout(timeout);
+  var delay = time - clockNow; // Strictly less than if we recomputed clockNow.
+  if (delay > 24) {
+    if (time < Infinity) timeout = setTimeout(wake, time - clock.now() - clockSkew);
+    if (interval) interval = clearInterval(interval);
+  } else {
+    if (!interval) clockLast = clock.now(), interval = setInterval(poke, pokeDelay);
+    frame = 1, setFrame(wake);
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/active.js":
+/*!**************************************************!*\
+  !*** ./node_modules/d3-transition/src/active.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _transition_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transition/index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony import */ var _transition_schedule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./transition/schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+
+var root = [null];
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node, name) {
+  var schedules = node.__transition,
+      schedule,
+      i;
+
+  if (schedules) {
+    name = name == null ? null : name + "";
+    for (i in schedules) {
+      if ((schedule = schedules[i]).state > _transition_schedule__WEBPACK_IMPORTED_MODULE_1__["SCHEDULED"] && schedule.name === name) {
+        return new _transition_index__WEBPACK_IMPORTED_MODULE_0__["Transition"]([[node]], root, name, +i);
+      }
+    }
+  }
+
+  return null;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/d3-transition/src/index.js ***!
+  \*************************************************/
+/*! exports provided: transition, active, interrupt */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _selection_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./selection/index */ "./node_modules/d3-transition/src/selection/index.js");
+/* harmony import */ var _transition_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./transition/index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "transition", function() { return _transition_index__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _active__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./active */ "./node_modules/d3-transition/src/active.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "active", function() { return _active__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _interrupt__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./interrupt */ "./node_modules/d3-transition/src/interrupt.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interrupt", function() { return _interrupt__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/interrupt.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/d3-transition/src/interrupt.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _transition_schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transition/schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node, name) {
+  var schedules = node.__transition,
+      schedule,
+      active,
+      empty = true,
+      i;
+
+  if (!schedules) return;
+
+  name = name == null ? null : name + "";
+
+  for (i in schedules) {
+    if ((schedule = schedules[i]).name !== name) { empty = false; continue; }
+    active = schedule.state > _transition_schedule__WEBPACK_IMPORTED_MODULE_0__["STARTING"] && schedule.state < _transition_schedule__WEBPACK_IMPORTED_MODULE_0__["ENDING"];
+    schedule.state = _transition_schedule__WEBPACK_IMPORTED_MODULE_0__["ENDED"];
+    schedule.timer.stop();
+    if (active) schedule.on.call("interrupt", node, node.__data__, schedule.index, schedule.group);
+    delete schedules[i];
+  }
+
+  if (empty) delete node.__transition;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/selection/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-transition/src/selection/index.js ***!
+  \***********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _interrupt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./interrupt */ "./node_modules/d3-transition/src/selection/interrupt.js");
+/* harmony import */ var _transition__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./transition */ "./node_modules/d3-transition/src/selection/transition.js");
+
+
+
+
+d3_selection__WEBPACK_IMPORTED_MODULE_0__["selection"].prototype.interrupt = _interrupt__WEBPACK_IMPORTED_MODULE_1__["default"];
+d3_selection__WEBPACK_IMPORTED_MODULE_0__["selection"].prototype.transition = _transition__WEBPACK_IMPORTED_MODULE_2__["default"];
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/selection/interrupt.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/d3-transition/src/selection/interrupt.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interrupt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../interrupt */ "./node_modules/d3-transition/src/interrupt.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  return this.each(function() {
+    Object(_interrupt__WEBPACK_IMPORTED_MODULE_0__["default"])(this, name);
+  });
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/selection/transition.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/selection/transition.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _transition_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../transition/index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony import */ var _transition_schedule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../transition/schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+/* harmony import */ var d3_ease__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3-ease */ "./node_modules/d3-ease/src/index.js");
+/* harmony import */ var d3_timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! d3-timer */ "./node_modules/d3-timer/src/index.js");
+
+
+
+
+
+var defaultTiming = {
+  time: null, // Set on use.
+  delay: 0,
+  duration: 250,
+  ease: d3_ease__WEBPACK_IMPORTED_MODULE_2__["easeCubicInOut"]
+};
+
+function inherit(node, id) {
+  var timing;
+  while (!(timing = node.__transition) || !(timing = timing[id])) {
+    if (!(node = node.parentNode)) {
+      return defaultTiming.time = Object(d3_timer__WEBPACK_IMPORTED_MODULE_3__["now"])(), defaultTiming;
+    }
+  }
+  return timing;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name) {
+  var id,
+      timing;
+
+  if (name instanceof _transition_index__WEBPACK_IMPORTED_MODULE_0__["Transition"]) {
+    id = name._id, name = name._name;
+  } else {
+    id = Object(_transition_index__WEBPACK_IMPORTED_MODULE_0__["newId"])(), (timing = defaultTiming).time = Object(d3_timer__WEBPACK_IMPORTED_MODULE_3__["now"])(), name = name == null ? null : name + "";
+  }
+
+  for (var groups = this._groups, m = groups.length, j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        Object(_transition_schedule__WEBPACK_IMPORTED_MODULE_1__["default"])(node, name, id, i, group, timing || inherit(node, id));
+      }
+    }
+  }
+
+  return new _transition_index__WEBPACK_IMPORTED_MODULE_0__["Transition"](groups, this._parents, name, id);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/attr.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/attr.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_interpolate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-interpolate */ "./node_modules/d3-interpolate/src/index.js");
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _tween__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tween */ "./node_modules/d3-transition/src/transition/tween.js");
+/* harmony import */ var _interpolate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./interpolate */ "./node_modules/d3-transition/src/transition/interpolate.js");
+
+
+
+
+
+function attrRemove(name) {
+  return function() {
+    this.removeAttribute(name);
+  };
+}
+
+function attrRemoveNS(fullname) {
+  return function() {
+    this.removeAttributeNS(fullname.space, fullname.local);
+  };
+}
+
+function attrConstant(name, interpolate, value1) {
+  var value00,
+      interpolate0;
+  return function() {
+    var value0 = this.getAttribute(name);
+    return value0 === value1 ? null
+        : value0 === value00 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value1);
+  };
+}
+
+function attrConstantNS(fullname, interpolate, value1) {
+  var value00,
+      interpolate0;
+  return function() {
+    var value0 = this.getAttributeNS(fullname.space, fullname.local);
+    return value0 === value1 ? null
+        : value0 === value00 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value1);
+  };
+}
+
+function attrFunction(name, interpolate, value) {
+  var value00,
+      value10,
+      interpolate0;
+  return function() {
+    var value0, value1 = value(this);
+    if (value1 == null) return void this.removeAttribute(name);
+    value0 = this.getAttribute(name);
+    return value0 === value1 ? null
+        : value0 === value00 && value1 === value10 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value10 = value1);
+  };
+}
+
+function attrFunctionNS(fullname, interpolate, value) {
+  var value00,
+      value10,
+      interpolate0;
+  return function() {
+    var value0, value1 = value(this);
+    if (value1 == null) return void this.removeAttributeNS(fullname.space, fullname.local);
+    value0 = this.getAttributeNS(fullname.space, fullname.local);
+    return value0 === value1 ? null
+        : value0 === value00 && value1 === value10 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value10 = value1);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  var fullname = Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["namespace"])(name), i = fullname === "transform" ? d3_interpolate__WEBPACK_IMPORTED_MODULE_0__["interpolateTransformSvg"] : _interpolate__WEBPACK_IMPORTED_MODULE_3__["default"];
+  return this.attrTween(name, typeof value === "function"
+      ? (fullname.local ? attrFunctionNS : attrFunction)(fullname, i, Object(_tween__WEBPACK_IMPORTED_MODULE_2__["tweenValue"])(this, "attr." + name, value))
+      : value == null ? (fullname.local ? attrRemoveNS : attrRemove)(fullname)
+      : (fullname.local ? attrConstantNS : attrConstant)(fullname, i, value + ""));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/attrTween.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/attrTween.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+
+
+function attrTweenNS(fullname, value) {
+  function tween() {
+    var node = this, i = value.apply(node, arguments);
+    return i && function(t) {
+      node.setAttributeNS(fullname.space, fullname.local, i(t));
+    };
+  }
+  tween._value = value;
+  return tween;
+}
+
+function attrTween(name, value) {
+  function tween() {
+    var node = this, i = value.apply(node, arguments);
+    return i && function(t) {
+      node.setAttribute(name, i(t));
+    };
+  }
+  tween._value = value;
+  return tween;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  var key = "attr." + name;
+  if (arguments.length < 2) return (key = this.tween(key)) && key._value;
+  if (value == null) return this.tween(key, null);
+  if (typeof value !== "function") throw new Error;
+  var fullname = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["namespace"])(name);
+  return this.tween(key, (fullname.local ? attrTweenNS : attrTween)(fullname, value));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/delay.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/delay.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+function delayFunction(id, value) {
+  return function() {
+    Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["init"])(this, id).delay = +value.apply(this, arguments);
+  };
+}
+
+function delayConstant(id, value) {
+  return value = +value, function() {
+    Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["init"])(this, id).delay = value;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  var id = this._id;
+
+  return arguments.length
+      ? this.each((typeof value === "function"
+          ? delayFunction
+          : delayConstant)(id, value))
+      : Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(this.node(), id).delay;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/duration.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/duration.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+function durationFunction(id, value) {
+  return function() {
+    Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id).duration = +value.apply(this, arguments);
+  };
+}
+
+function durationConstant(id, value) {
+  return value = +value, function() {
+    Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id).duration = value;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  var id = this._id;
+
+  return arguments.length
+      ? this.each((typeof value === "function"
+          ? durationFunction
+          : durationConstant)(id, value))
+      : Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(this.node(), id).duration;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/ease.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/ease.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+function easeConstant(id, value) {
+  if (typeof value !== "function") throw new Error;
+  return function() {
+    Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id).ease = value;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  var id = this._id;
+
+  return arguments.length
+      ? this.each(easeConstant(id, value))
+      : Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(this.node(), id).ease;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/filter.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/filter.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ "./node_modules/d3-transition/src/transition/index.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(match) {
+  if (typeof match !== "function") match = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["matcher"])(match);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
+      if ((node = group[i]) && match.call(node, node.__data__, i, group)) {
+        subgroup.push(node);
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_1__["Transition"](subgroups, this._parents, this._name, this._id);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/index.js ***!
+  \************************************************************/
+/*! exports provided: Transition, default, newId */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Transition", function() { return Transition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return transition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "newId", function() { return newId; });
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _attr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./attr */ "./node_modules/d3-transition/src/transition/attr.js");
+/* harmony import */ var _attrTween__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./attrTween */ "./node_modules/d3-transition/src/transition/attrTween.js");
+/* harmony import */ var _delay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./delay */ "./node_modules/d3-transition/src/transition/delay.js");
+/* harmony import */ var _duration__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./duration */ "./node_modules/d3-transition/src/transition/duration.js");
+/* harmony import */ var _ease__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ease */ "./node_modules/d3-transition/src/transition/ease.js");
+/* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./filter */ "./node_modules/d3-transition/src/transition/filter.js");
+/* harmony import */ var _merge__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./merge */ "./node_modules/d3-transition/src/transition/merge.js");
+/* harmony import */ var _on__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./on */ "./node_modules/d3-transition/src/transition/on.js");
+/* harmony import */ var _remove__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./remove */ "./node_modules/d3-transition/src/transition/remove.js");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./select */ "./node_modules/d3-transition/src/transition/select.js");
+/* harmony import */ var _selectAll__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./selectAll */ "./node_modules/d3-transition/src/transition/selectAll.js");
+/* harmony import */ var _selection__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./selection */ "./node_modules/d3-transition/src/transition/selection.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./style */ "./node_modules/d3-transition/src/transition/style.js");
+/* harmony import */ var _styleTween__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./styleTween */ "./node_modules/d3-transition/src/transition/styleTween.js");
+/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./text */ "./node_modules/d3-transition/src/transition/text.js");
+/* harmony import */ var _transition__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./transition */ "./node_modules/d3-transition/src/transition/transition.js");
+/* harmony import */ var _tween__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tween */ "./node_modules/d3-transition/src/transition/tween.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var id = 0;
+
+function Transition(groups, parents, name, id) {
+  this._groups = groups;
+  this._parents = parents;
+  this._name = name;
+  this._id = id;
+}
+
+function transition(name) {
+  return Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["selection"])().transition(name);
+}
+
+function newId() {
+  return ++id;
+}
+
+var selection_prototype = d3_selection__WEBPACK_IMPORTED_MODULE_0__["selection"].prototype;
+
+Transition.prototype = transition.prototype = {
+  constructor: Transition,
+  select: _select__WEBPACK_IMPORTED_MODULE_10__["default"],
+  selectAll: _selectAll__WEBPACK_IMPORTED_MODULE_11__["default"],
+  filter: _filter__WEBPACK_IMPORTED_MODULE_6__["default"],
+  merge: _merge__WEBPACK_IMPORTED_MODULE_7__["default"],
+  selection: _selection__WEBPACK_IMPORTED_MODULE_12__["default"],
+  transition: _transition__WEBPACK_IMPORTED_MODULE_16__["default"],
+  call: selection_prototype.call,
+  nodes: selection_prototype.nodes,
+  node: selection_prototype.node,
+  size: selection_prototype.size,
+  empty: selection_prototype.empty,
+  each: selection_prototype.each,
+  on: _on__WEBPACK_IMPORTED_MODULE_8__["default"],
+  attr: _attr__WEBPACK_IMPORTED_MODULE_1__["default"],
+  attrTween: _attrTween__WEBPACK_IMPORTED_MODULE_2__["default"],
+  style: _style__WEBPACK_IMPORTED_MODULE_13__["default"],
+  styleTween: _styleTween__WEBPACK_IMPORTED_MODULE_14__["default"],
+  text: _text__WEBPACK_IMPORTED_MODULE_15__["default"],
+  remove: _remove__WEBPACK_IMPORTED_MODULE_9__["default"],
+  tween: _tween__WEBPACK_IMPORTED_MODULE_17__["default"],
+  delay: _delay__WEBPACK_IMPORTED_MODULE_3__["default"],
+  duration: _duration__WEBPACK_IMPORTED_MODULE_4__["default"],
+  ease: _ease__WEBPACK_IMPORTED_MODULE_5__["default"]
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/interpolate.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/interpolate.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-color */ "./node_modules/d3-color/src/index.js");
+/* harmony import */ var d3_interpolate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3-interpolate */ "./node_modules/d3-interpolate/src/index.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(a, b) {
+  var c;
+  return (typeof b === "number" ? d3_interpolate__WEBPACK_IMPORTED_MODULE_1__["interpolateNumber"]
+      : b instanceof d3_color__WEBPACK_IMPORTED_MODULE_0__["color"] ? d3_interpolate__WEBPACK_IMPORTED_MODULE_1__["interpolateRgb"]
+      : (c = Object(d3_color__WEBPACK_IMPORTED_MODULE_0__["color"])(b)) ? (b = c, d3_interpolate__WEBPACK_IMPORTED_MODULE_1__["interpolateRgb"])
+      : d3_interpolate__WEBPACK_IMPORTED_MODULE_1__["interpolateString"])(a, b);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/merge.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/merge.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-transition/src/transition/index.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(transition) {
+  if (transition._id !== this._id) throw new Error;
+
+  for (var groups0 = this._groups, groups1 = transition._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
+    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
+      if (node = group0[i] || group1[i]) {
+        merge[i] = node;
+      }
+    }
+  }
+
+  for (; j < m0; ++j) {
+    merges[j] = groups0[j];
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Transition"](merges, this._parents, this._name, this._id);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/on.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/on.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+function start(name) {
+  return (name + "").trim().split(/^|\s+/).every(function(t) {
+    var i = t.indexOf(".");
+    if (i >= 0) t = t.slice(0, i);
+    return !t || t === "start";
+  });
+}
+
+function onFunction(id, name, listener) {
+  var on0, on1, sit = start(name) ? _schedule__WEBPACK_IMPORTED_MODULE_0__["init"] : _schedule__WEBPACK_IMPORTED_MODULE_0__["set"];
+  return function() {
+    var schedule = sit(this, id),
+        on = schedule.on;
+
+    // If this node shared a dispatch with the previous node,
+    // just assign the updated shared dispatch and we’re done!
+    // Otherwise, copy-on-write.
+    if (on !== on0) (on1 = (on0 = on).copy()).on(name, listener);
+
+    schedule.on = on1;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, listener) {
+  var id = this._id;
+
+  return arguments.length < 2
+      ? Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(this.node(), id).on.on(name)
+      : this.each(onFunction(id, name, listener));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/remove.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/remove.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function removeFunction(id) {
+  return function() {
+    var parent = this.parentNode;
+    for (var i in this.__transition) if (+i !== id) return;
+    if (parent) parent.removeChild(this);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return this.on("end.remove", removeFunction(this._id));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/schedule.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/schedule.js ***!
+  \***************************************************************/
+/*! exports provided: CREATED, SCHEDULED, STARTING, STARTED, RUNNING, ENDING, ENDED, default, init, set, get */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CREATED", function() { return CREATED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SCHEDULED", function() { return SCHEDULED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "STARTING", function() { return STARTING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "STARTED", function() { return STARTED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RUNNING", function() { return RUNNING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ENDING", function() { return ENDING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ENDED", function() { return ENDED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "set", function() { return set; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+/* harmony import */ var d3_dispatch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-dispatch */ "./node_modules/d3-dispatch/src/index.js");
+/* harmony import */ var d3_timer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3-timer */ "./node_modules/d3-timer/src/index.js");
+
+
+
+var emptyOn = Object(d3_dispatch__WEBPACK_IMPORTED_MODULE_0__["dispatch"])("start", "end", "interrupt");
+var emptyTween = [];
+
+var CREATED = 0;
+var SCHEDULED = 1;
+var STARTING = 2;
+var STARTED = 3;
+var RUNNING = 4;
+var ENDING = 5;
+var ENDED = 6;
+
+/* harmony default export */ __webpack_exports__["default"] = (function(node, name, id, index, group, timing) {
+  var schedules = node.__transition;
+  if (!schedules) node.__transition = {};
+  else if (id in schedules) return;
+  create(node, id, {
+    name: name,
+    index: index, // For context during callback.
+    group: group, // For context during callback.
+    on: emptyOn,
+    tween: emptyTween,
+    time: timing.time,
+    delay: timing.delay,
+    duration: timing.duration,
+    ease: timing.ease,
+    timer: null,
+    state: CREATED
+  });
+});
+
+function init(node, id) {
+  var schedule = get(node, id);
+  if (schedule.state > CREATED) throw new Error("too late; already scheduled");
+  return schedule;
+}
+
+function set(node, id) {
+  var schedule = get(node, id);
+  if (schedule.state > STARTING) throw new Error("too late; already started");
+  return schedule;
+}
+
+function get(node, id) {
+  var schedule = node.__transition;
+  if (!schedule || !(schedule = schedule[id])) throw new Error("transition not found");
+  return schedule;
+}
+
+function create(node, id, self) {
+  var schedules = node.__transition,
+      tween;
+
+  // Initialize the self timer when the transition is created.
+  // Note the actual delay is not known until the first callback!
+  schedules[id] = self;
+  self.timer = Object(d3_timer__WEBPACK_IMPORTED_MODULE_1__["timer"])(schedule, 0, self.time);
+
+  function schedule(elapsed) {
+    self.state = SCHEDULED;
+    self.timer.restart(start, self.delay, self.time);
+
+    // If the elapsed delay is less than our first sleep, start immediately.
+    if (self.delay <= elapsed) start(elapsed - self.delay);
+  }
+
+  function start(elapsed) {
+    var i, j, n, o;
+
+    // If the state is not SCHEDULED, then we previously errored on start.
+    if (self.state !== SCHEDULED) return stop();
+
+    for (i in schedules) {
+      o = schedules[i];
+      if (o.name !== self.name) continue;
+
+      // While this element already has a starting transition during this frame,
+      // defer starting an interrupting transition until that transition has a
+      // chance to tick (and possibly end); see d3/d3-transition#54!
+      if (o.state === STARTED) return Object(d3_timer__WEBPACK_IMPORTED_MODULE_1__["timeout"])(start);
+
+      // Interrupt the active transition, if any.
+      // Dispatch the interrupt event.
+      if (o.state === RUNNING) {
+        o.state = ENDED;
+        o.timer.stop();
+        o.on.call("interrupt", node, node.__data__, o.index, o.group);
+        delete schedules[i];
+      }
+
+      // Cancel any pre-empted transitions. No interrupt event is dispatched
+      // because the cancelled transitions never started. Note that this also
+      // removes this transition from the pending list!
+      else if (+i < id) {
+        o.state = ENDED;
+        o.timer.stop();
+        delete schedules[i];
+      }
+    }
+
+    // Defer the first tick to end of the current frame; see d3/d3#1576.
+    // Note the transition may be canceled after start and before the first tick!
+    // Note this must be scheduled before the start event; see d3/d3-transition#16!
+    // Assuming this is successful, subsequent callbacks go straight to tick.
+    Object(d3_timer__WEBPACK_IMPORTED_MODULE_1__["timeout"])(function() {
+      if (self.state === STARTED) {
+        self.state = RUNNING;
+        self.timer.restart(tick, self.delay, self.time);
+        tick(elapsed);
+      }
+    });
+
+    // Dispatch the start event.
+    // Note this must be done before the tween are initialized.
+    self.state = STARTING;
+    self.on.call("start", node, node.__data__, self.index, self.group);
+    if (self.state !== STARTING) return; // interrupted
+    self.state = STARTED;
+
+    // Initialize the tween, deleting null tween.
+    tween = new Array(n = self.tween.length);
+    for (i = 0, j = -1; i < n; ++i) {
+      if (o = self.tween[i].value.call(node, node.__data__, self.index, self.group)) {
+        tween[++j] = o;
+      }
+    }
+    tween.length = j + 1;
+  }
+
+  function tick(elapsed) {
+    var t = elapsed < self.duration ? self.ease.call(null, elapsed / self.duration) : (self.timer.restart(stop), self.state = ENDING, 1),
+        i = -1,
+        n = tween.length;
+
+    while (++i < n) {
+      tween[i].call(null, t);
+    }
+
+    // Dispatch the end event.
+    if (self.state === ENDING) {
+      self.on.call("end", node, node.__data__, self.index, self.group);
+      stop();
+    }
+  }
+
+  function stop() {
+    self.state = ENDED;
+    self.timer.stop();
+    delete schedules[id];
+    for (var i in schedules) return; // eslint-disable-line no-unused-vars
+    delete node.__transition;
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/select.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/select.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(select) {
+  var name = this._name,
+      id = this._id;
+
+  if (typeof select !== "function") select = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["selector"])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
+      if ((node = group[i]) && (subnode = select.call(node, node.__data__, i, group))) {
+        if ("__data__" in node) subnode.__data__ = node.__data__;
+        subgroup[i] = subnode;
+        Object(_schedule__WEBPACK_IMPORTED_MODULE_2__["default"])(subgroup[i], name, id, i, subgroup, Object(_schedule__WEBPACK_IMPORTED_MODULE_2__["get"])(node, id));
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_1__["Transition"](subgroups, this._parents, name, id);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/selectAll.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/selectAll.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function(select) {
+  var name = this._name,
+      id = this._id;
+
+  if (typeof select !== "function") select = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["selectorAll"])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        for (var children = select.call(node, node.__data__, i, group), child, inherit = Object(_schedule__WEBPACK_IMPORTED_MODULE_2__["get"])(node, id), k = 0, l = children.length; k < l; ++k) {
+          if (child = children[k]) {
+            Object(_schedule__WEBPACK_IMPORTED_MODULE_2__["default"])(child, name, id, k, children, inherit);
+          }
+        }
+        subgroups.push(children);
+        parents.push(node);
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_1__["Transition"](subgroups, parents, name, id);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/selection.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/selection.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+
+
+var Selection = d3_selection__WEBPACK_IMPORTED_MODULE_0__["selection"].prototype.constructor;
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  return new Selection(this._groups, this._parents);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/style.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/style.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var d3_interpolate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-interpolate */ "./node_modules/d3-interpolate/src/index.js");
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var _tween__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tween */ "./node_modules/d3-transition/src/transition/tween.js");
+/* harmony import */ var _interpolate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./interpolate */ "./node_modules/d3-transition/src/transition/interpolate.js");
+
+
+
+
+
+function styleRemove(name, interpolate) {
+  var value00,
+      value10,
+      interpolate0;
+  return function() {
+    var value0 = Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["style"])(this, name),
+        value1 = (this.style.removeProperty(name), Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["style"])(this, name));
+    return value0 === value1 ? null
+        : value0 === value00 && value1 === value10 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value10 = value1);
+  };
+}
+
+function styleRemoveEnd(name) {
+  return function() {
+    this.style.removeProperty(name);
+  };
+}
+
+function styleConstant(name, interpolate, value1) {
+  var value00,
+      interpolate0;
+  return function() {
+    var value0 = Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["style"])(this, name);
+    return value0 === value1 ? null
+        : value0 === value00 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value1);
+  };
+}
+
+function styleFunction(name, interpolate, value) {
+  var value00,
+      value10,
+      interpolate0;
+  return function() {
+    var value0 = Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["style"])(this, name),
+        value1 = value(this);
+    if (value1 == null) value1 = (this.style.removeProperty(name), Object(d3_selection__WEBPACK_IMPORTED_MODULE_1__["style"])(this, name));
+    return value0 === value1 ? null
+        : value0 === value00 && value1 === value10 ? interpolate0
+        : interpolate0 = interpolate(value00 = value0, value10 = value1);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value, priority) {
+  var i = (name += "") === "transform" ? d3_interpolate__WEBPACK_IMPORTED_MODULE_0__["interpolateTransformCss"] : _interpolate__WEBPACK_IMPORTED_MODULE_3__["default"];
+  return value == null ? this
+          .styleTween(name, styleRemove(name, i))
+          .on("end.style." + name, styleRemoveEnd(name))
+      : this.styleTween(name, typeof value === "function"
+          ? styleFunction(name, i, Object(_tween__WEBPACK_IMPORTED_MODULE_2__["tweenValue"])(this, "style." + name, value))
+          : styleConstant(name, i, value + ""), priority);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/styleTween.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/styleTween.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function styleTween(name, value, priority) {
+  function tween() {
+    var node = this, i = value.apply(node, arguments);
+    return i && function(t) {
+      node.style.setProperty(name, i(t), priority);
+    };
+  }
+  tween._value = value;
+  return tween;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value, priority) {
+  var key = "style." + (name += "");
+  if (arguments.length < 2) return (key = this.tween(key)) && key._value;
+  if (value == null) return this.tween(key, null);
+  if (typeof value !== "function") throw new Error;
+  return this.tween(key, styleTween(name, value, priority == null ? "" : priority));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/text.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/text.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _tween__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tween */ "./node_modules/d3-transition/src/transition/tween.js");
+
+
+function textConstant(value) {
+  return function() {
+    this.textContent = value;
+  };
+}
+
+function textFunction(value) {
+  return function() {
+    var value1 = value(this);
+    this.textContent = value1 == null ? "" : value1;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(value) {
+  return this.tween("text", typeof value === "function"
+      ? textFunction(Object(_tween__WEBPACK_IMPORTED_MODULE_0__["tweenValue"])(this, "text", value))
+      : textConstant(value == null ? "" : value + ""));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/transition.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/transition.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./node_modules/d3-transition/src/transition/index.js");
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function() {
+  var name = this._name,
+      id0 = this._id,
+      id1 = Object(_index__WEBPACK_IMPORTED_MODULE_0__["newId"])();
+
+  for (var groups = this._groups, m = groups.length, j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        var inherit = Object(_schedule__WEBPACK_IMPORTED_MODULE_1__["get"])(node, id0);
+        Object(_schedule__WEBPACK_IMPORTED_MODULE_1__["default"])(node, name, id1, i, group, {
+          time: inherit.time + inherit.delay + inherit.duration,
+          delay: 0,
+          duration: inherit.duration,
+          ease: inherit.ease
+        });
+      }
+    }
+  }
+
+  return new _index__WEBPACK_IMPORTED_MODULE_0__["Transition"](groups, this._parents, name, id1);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/d3-transition/src/transition/tween.js":
+/*!************************************************************!*\
+  !*** ./node_modules/d3-transition/src/transition/tween.js ***!
+  \************************************************************/
+/*! exports provided: default, tweenValue */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tweenValue", function() { return tweenValue; });
+/* harmony import */ var _schedule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./schedule */ "./node_modules/d3-transition/src/transition/schedule.js");
+
+
+function tweenRemove(id, name) {
+  var tween0, tween1;
+  return function() {
+    var schedule = Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id),
+        tween = schedule.tween;
+
+    // If this node shared tween with the previous node,
+    // just assign the updated shared tween and we’re done!
+    // Otherwise, copy-on-write.
+    if (tween !== tween0) {
+      tween1 = tween0 = tween;
+      for (var i = 0, n = tween1.length; i < n; ++i) {
+        if (tween1[i].name === name) {
+          tween1 = tween1.slice();
+          tween1.splice(i, 1);
+          break;
+        }
+      }
+    }
+
+    schedule.tween = tween1;
+  };
+}
+
+function tweenFunction(id, name, value) {
+  var tween0, tween1;
+  if (typeof value !== "function") throw new Error;
+  return function() {
+    var schedule = Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id),
+        tween = schedule.tween;
+
+    // If this node shared tween with the previous node,
+    // just assign the updated shared tween and we’re done!
+    // Otherwise, copy-on-write.
+    if (tween !== tween0) {
+      tween1 = (tween0 = tween).slice();
+      for (var t = {name: name, value: value}, i = 0, n = tween1.length; i < n; ++i) {
+        if (tween1[i].name === name) {
+          tween1[i] = t;
+          break;
+        }
+      }
+      if (i === n) tween1.push(t);
+    }
+
+    schedule.tween = tween1;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function(name, value) {
+  var id = this._id;
+
+  name += "";
+
+  if (arguments.length < 2) {
+    var tween = Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(this.node(), id).tween;
+    for (var i = 0, n = tween.length, t; i < n; ++i) {
+      if ((t = tween[i]).name === name) {
+        return t.value;
+      }
+    }
+    return null;
+  }
+
+  return this.each((value == null ? tweenRemove : tweenFunction)(id, name, value));
+});
+
+function tweenValue(transition, name, value) {
+  var id = transition._id;
+
+  transition.each(function() {
+    var schedule = Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["set"])(this, id);
+    (schedule.value || (schedule.value = {}))[name] = value.apply(this, arguments);
+  });
+
+  return function(node) {
+    return Object(_schedule__WEBPACK_IMPORTED_MODULE_0__["get"])(node, id).value[name];
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/converterHelper.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/converterHelper.js ***!
+  \*********************************************************************************/
+/*! exports provided: converterHelper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "converterHelper", function() { return converterHelper; });
+/* harmony import */ var _dataRoleHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dataRoleHelper */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataRoleHelper.js");
+// powerbi.extensibility.utils.dataview
+
+var converterHelper;
+(function (converterHelper) {
+    function categoryIsAlsoSeriesRole(dataView, seriesRoleName, categoryRoleName) {
+        if (dataView.categories && dataView.categories.length > 0) {
+            // Need to pivot data if our category soure is a series role
+            let category = dataView.categories[0];
+            return category.source &&
+                _dataRoleHelper__WEBPACK_IMPORTED_MODULE_0__["DataRoleHelper"].hasRole(category.source, seriesRoleName) &&
+                _dataRoleHelper__WEBPACK_IMPORTED_MODULE_0__["DataRoleHelper"].hasRole(category.source, categoryRoleName);
+        }
+        return false;
+    }
+    converterHelper.categoryIsAlsoSeriesRole = categoryIsAlsoSeriesRole;
+    function getSeriesName(source) {
+        return (source.groupName !== undefined)
+            ? source.groupName
+            : source.queryName;
+    }
+    converterHelper.getSeriesName = getSeriesName;
+    function isImageUrlColumn(column) {
+        let misc = getMiscellaneousTypeDescriptor(column);
+        return misc != null && misc.imageUrl === true;
+    }
+    converterHelper.isImageUrlColumn = isImageUrlColumn;
+    function isWebUrlColumn(column) {
+        let misc = getMiscellaneousTypeDescriptor(column);
+        return misc != null && misc.webUrl === true;
+    }
+    converterHelper.isWebUrlColumn = isWebUrlColumn;
+    function getMiscellaneousTypeDescriptor(column) {
+        return column
+            && column.type
+            && column.type.misc;
+    }
+    converterHelper.getMiscellaneousTypeDescriptor = getMiscellaneousTypeDescriptor;
+    function hasImageUrlColumn(dataView) {
+        if (!dataView || !dataView.metadata || !dataView.metadata.columns || !dataView.metadata.columns.length) {
+            return false;
+        }
+        return dataView.metadata.columns.some((column) => isImageUrlColumn(column) === true);
+    }
+    converterHelper.hasImageUrlColumn = hasImageUrlColumn;
+})(converterHelper || (converterHelper = {}));
+//# sourceMappingURL=converterHelper.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataRoleHelper.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataRoleHelper.js ***!
+  \********************************************************************************/
+/*! exports provided: DataRoleHelper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataRoleHelper", function() { return DataRoleHelper; });
+var DataRoleHelper;
+(function (DataRoleHelper) {
+    function getMeasureIndexOfRole(grouped, roleName) {
+        if (!grouped || !grouped.length) {
+            return -1;
+        }
+        let firstGroup = grouped[0];
+        if (firstGroup.values && firstGroup.values.length > 0) {
+            for (let i = 0, len = firstGroup.values.length; i < len; ++i) {
+                let value = firstGroup.values[i];
+                if (value && value.source) {
+                    if (hasRole(value.source, roleName)) {
+                        return i;
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+    DataRoleHelper.getMeasureIndexOfRole = getMeasureIndexOfRole;
+    function getCategoryIndexOfRole(categories, roleName) {
+        if (categories && categories.length) {
+            for (let i = 0, ilen = categories.length; i < ilen; i++) {
+                if (hasRole(categories[i].source, roleName)) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+    DataRoleHelper.getCategoryIndexOfRole = getCategoryIndexOfRole;
+    function hasRole(column, name) {
+        let roles = column.roles;
+        return roles && roles[name];
+    }
+    DataRoleHelper.hasRole = hasRole;
+    function hasRoleInDataView(dataView, name) {
+        return dataView != null
+            && dataView.metadata != null
+            && dataView.metadata.columns
+            && dataView.metadata.columns.some((c) => c.roles && c.roles[name] !== undefined); // any is an alias of some
+    }
+    DataRoleHelper.hasRoleInDataView = hasRoleInDataView;
+    function hasRoleInValueColumn(valueColumn, name) {
+        return valueColumn
+            && valueColumn.source
+            && valueColumn.source.roles
+            && (valueColumn.source.roles[name] === true);
+    }
+    DataRoleHelper.hasRoleInValueColumn = hasRoleInValueColumn;
+})(DataRoleHelper || (DataRoleHelper = {}));
+//# sourceMappingURL=dataRoleHelper.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObject.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObject.js ***!
+  \********************************************************************************/
+/*! exports provided: DataViewObject */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataViewObject", function() { return DataViewObject; });
+var DataViewObject;
+(function (DataViewObject) {
+    function getValue(object, propertyName, defaultValue) {
+        if (!object) {
+            return defaultValue;
+        }
+        let propertyValue = object[propertyName];
+        if (propertyValue === undefined) {
+            return defaultValue;
+        }
+        return propertyValue;
+    }
+    DataViewObject.getValue = getValue;
+    /** Gets the solid color from a fill property using only a propertyName */
+    function getFillColorByPropertyName(object, propertyName, defaultColor) {
+        let value = getValue(object, propertyName);
+        if (!value || !value.solid) {
+            return defaultColor;
+        }
+        return value.solid.color;
+    }
+    DataViewObject.getFillColorByPropertyName = getFillColorByPropertyName;
+})(DataViewObject || (DataViewObject = {}));
+//# sourceMappingURL=dataViewObject.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjects.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjects.js ***!
+  \*********************************************************************************/
+/*! exports provided: DataViewObjects */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataViewObjects", function() { return DataViewObjects; });
+/* harmony import */ var _dataViewObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dataViewObject */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObject.js");
+
+var DataViewObjects;
+(function (DataViewObjects) {
+    /** Gets the value of the given object/property pair. */
+    function getValue(objects, propertyId, defaultValue) {
+        if (!objects) {
+            return defaultValue;
+        }
+        return _dataViewObject__WEBPACK_IMPORTED_MODULE_0__["DataViewObject"].getValue(objects[propertyId.objectName], propertyId.propertyName, defaultValue);
+    }
+    DataViewObjects.getValue = getValue;
+    /** Gets an object from objects. */
+    function getObject(objects, objectName, defaultValue) {
+        if (objects && objects[objectName]) {
+            return objects[objectName];
+        }
+        return defaultValue;
+    }
+    DataViewObjects.getObject = getObject;
+    /** Gets the solid color from a fill property. */
+    function getFillColor(objects, propertyId, defaultColor) {
+        const value = getValue(objects, propertyId);
+        if (!value || !value.solid) {
+            return defaultColor;
+        }
+        return value.solid.color;
+    }
+    DataViewObjects.getFillColor = getFillColor;
+    function getCommonValue(objects, propertyId, defaultValue) {
+        const value = getValue(objects, propertyId, defaultValue);
+        if (value && value.solid) {
+            return value.solid.color;
+        }
+        if (value === undefined
+            || value === null
+            || (typeof value === "object" && !value.solid)) {
+            return defaultValue;
+        }
+        return value;
+    }
+    DataViewObjects.getCommonValue = getCommonValue;
+})(DataViewObjects || (DataViewObjects = {}));
+//# sourceMappingURL=dataViewObjects.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjectsParser.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjectsParser.js ***!
+  \***************************************************************************************/
+/*! exports provided: DataViewObjectsParser */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataViewObjectsParser", function() { return DataViewObjectsParser; });
+/* harmony import */ var _dataViewObjects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dataViewObjects */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjects.js");
+
+class DataViewObjectsParser {
+    static getDefault() {
+        return new this();
+    }
+    static createPropertyIdentifier(objectName, propertyName) {
+        return {
+            objectName,
+            propertyName
+        };
+    }
+    static parse(dataView) {
+        let dataViewObjectParser = this.getDefault(), properties;
+        if (!dataView || !dataView.metadata || !dataView.metadata.objects) {
+            return dataViewObjectParser;
+        }
+        properties = dataViewObjectParser.getProperties();
+        for (let objectName in properties) {
+            for (let propertyName in properties[objectName]) {
+                const defaultValue = dataViewObjectParser[objectName][propertyName];
+                dataViewObjectParser[objectName][propertyName] = _dataViewObjects__WEBPACK_IMPORTED_MODULE_0__["DataViewObjects"].getCommonValue(dataView.metadata.objects, properties[objectName][propertyName], defaultValue);
+            }
+        }
+        return dataViewObjectParser;
+    }
+    static isPropertyEnumerable(propertyName) {
+        return !DataViewObjectsParser.InnumerablePropertyPrefix.test(propertyName);
+    }
+    static enumerateObjectInstances(dataViewObjectParser, options) {
+        let dataViewProperties = dataViewObjectParser && dataViewObjectParser[options.objectName];
+        if (!dataViewProperties) {
+            return [];
+        }
+        let instance = {
+            objectName: options.objectName,
+            selector: null,
+            properties: {}
+        };
+        for (let key in dataViewProperties) {
+            if (dataViewProperties.hasOwnProperty(key)) {
+                instance.properties[key] = dataViewProperties[key];
+            }
+        }
+        return {
+            instances: [instance]
+        };
+    }
+    getProperties() {
+        let properties = {}, objectNames = Object.keys(this);
+        objectNames.forEach((objectName) => {
+            if (DataViewObjectsParser.isPropertyEnumerable(objectName)) {
+                let propertyNames = Object.keys(this[objectName]);
+                properties[objectName] = {};
+                propertyNames.forEach((propertyName) => {
+                    if (DataViewObjectsParser.isPropertyEnumerable(objectName)) {
+                        properties[objectName][propertyName] =
+                            DataViewObjectsParser.createPropertyIdentifier(objectName, propertyName);
+                    }
+                });
+            }
+        });
+        return properties;
+    }
+}
+DataViewObjectsParser.InnumerablePropertyPrefix = /^_/;
+//# sourceMappingURL=dataViewObjectsParser.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewTransform.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewTransform.js ***!
+  \***********************************************************************************/
+/*! exports provided: DataViewTransform */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataViewTransform", function() { return DataViewTransform; });
+// TODO: refactor & focus DataViewTransform into a service with well-defined dependencies.
+var DataViewTransform;
+(function (DataViewTransform) {
+    // TODO: refactor this, setGrouped, and groupValues to a test helper to stop using it in the product
+    function createValueColumns(values = [], valueIdentityFields, source) {
+        let result = values;
+        setGrouped(result);
+        if (valueIdentityFields) {
+            result.identityFields = valueIdentityFields;
+        }
+        if (source) {
+            result.source = source;
+        }
+        return result;
+    }
+    DataViewTransform.createValueColumns = createValueColumns;
+    function setGrouped(values, groupedResult) {
+        values.grouped = groupedResult
+            ? () => groupedResult
+            : () => groupValues(values);
+    }
+    DataViewTransform.setGrouped = setGrouped;
+    /** Group together the values with a common identity. */
+    function groupValues(values) {
+        let groups = [], currentGroup;
+        for (let i = 0, len = values.length; i < len; i++) {
+            let value = values[i];
+            if (!currentGroup || currentGroup.identity !== value.identity) {
+                currentGroup = {
+                    values: []
+                };
+                if (value.identity) {
+                    currentGroup.identity = value.identity;
+                    let source = value.source;
+                    // allow null, which will be formatted as (Blank).
+                    if (source.groupName !== undefined) {
+                        currentGroup.name = source.groupName;
+                    }
+                    else if (source.displayName) {
+                        currentGroup.name = source.displayName;
+                    }
+                }
+                groups.push(currentGroup);
+            }
+            currentGroup.values.push(value);
+        }
+        return groups;
+    }
+    DataViewTransform.groupValues = groupValues;
+})(DataViewTransform || (DataViewTransform = {}));
+//# sourceMappingURL=dataViewTransform.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js ***!
+  \***********************************************************************/
+/*! exports provided: converterHelper, dataRoleHelper, dataViewObject, dataViewObjects, dataViewObjectsParser, dataViewTransform, validationHelper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _converterHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./converterHelper */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/converterHelper.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "converterHelper", function() { return _converterHelper__WEBPACK_IMPORTED_MODULE_0__; });
+/* harmony import */ var _dataRoleHelper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dataRoleHelper */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataRoleHelper.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dataRoleHelper", function() { return _dataRoleHelper__WEBPACK_IMPORTED_MODULE_1__; });
+/* harmony import */ var _dataViewObject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dataViewObject */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObject.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dataViewObject", function() { return _dataViewObject__WEBPACK_IMPORTED_MODULE_2__; });
+/* harmony import */ var _dataViewObjects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dataViewObjects */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjects.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dataViewObjects", function() { return _dataViewObjects__WEBPACK_IMPORTED_MODULE_3__; });
+/* harmony import */ var _dataViewObjectsParser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dataViewObjectsParser */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewObjectsParser.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dataViewObjectsParser", function() { return _dataViewObjectsParser__WEBPACK_IMPORTED_MODULE_4__; });
+/* harmony import */ var _dataViewTransform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dataViewTransform */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/dataViewTransform.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dataViewTransform", function() { return _dataViewTransform__WEBPACK_IMPORTED_MODULE_5__; });
+/* harmony import */ var _validationHelper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./validationHelper */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/validationHelper.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "validationHelper", function() { return _validationHelper__WEBPACK_IMPORTED_MODULE_6__; });
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/validationHelper.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-dataviewutils/lib/validationHelper.js ***!
+  \**********************************************************************************/
+/*! exports provided: validationHelper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validationHelper", function() { return validationHelper; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+var validationHelper;
+(function (validationHelper) {
+    function isImageUrlAllowed(url) {
+        // Excludes all URLs that don't contain .gif .jpg .png or .svg extensions and don't start from "http(s)://".
+        // Base64 incoded images are allowable too.
+        return (/^https?:\/\/.+\.(gif|jpg|png|svg)$/i).test(url) || (/^data:image\/(gif|jpeg|png|svg\+xml);base64,/i).test(url);
+    }
+    validationHelper.isImageUrlAllowed = isImageUrlAllowed;
+    function isFileImage(url, imageCheckResultCallBack) {
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState !== this.HEADERS_RECEIVED) {
+                return;
+            }
+            let contentType = request.getResponseHeader("Content-Type"), supportedTypes = ["image/png", "image/jpeg", "image/gif", "image/svg+xml"];
+            if (supportedTypes.indexOf(contentType) > -1) {
+                return imageCheckResultCallBack(true, contentType);
+            }
+            return imageCheckResultCallBack(false, contentType);
+        };
+        request.open("HEAD", url, true);
+        request.send();
+    }
+    validationHelper.isFileImage = isFileImage;
+})(validationHelper || (validationHelper = {}));
+//# sourceMappingURL=validationHelper.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateFormatter.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateFormatter.js ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DateFormatter; });
+class DateFormatter {
+    static pad(val, len) {
+        val = String(val);
+        len = len || 2;
+        while (val.length < len)
+            val = "0" + val;
+        return val;
+    }
+    // Regexes and supporting functions are cached through closure
+    static format(date, mask, utc) {
+        let dF = DateFormatter;
+        // You can't provide utc if you skip other args (use the "UTC:" mask prefix)
+        if (arguments.length === 1 && Object.prototype.toString.call(date) === "[object String]" && !/\d/.test(date)) {
+            mask = date;
+            date = undefined;
+        }
+        // Passing date through Date applies Date.parse, if necessary
+        date = date ? new Date(date) : new Date;
+        if (isNaN(date))
+            throw SyntaxError("invalid date");
+        mask = String(DateFormatter.masks[mask] || mask || DateFormatter.masks["default"]);
+        // Allow setting the utc argument via the mask
+        if (mask.slice(0, 4) === "UTC:") {
+            mask = mask.slice(4);
+            utc = true;
+        }
+        let _ = utc ? "getUTC" : "get", d = date[_ + "Date"](), D = date[_ + "Day"](), M = date[_ + "Month"](), y = date[_ + "FullYear"](), H = date[_ + "Hours"](), m = date[_ + "Minutes"](), s = date[_ + "Seconds"](), L = date[_ + "Milliseconds"](), o = utc ? 0 : date.getTimezoneOffset(), flags = {
+            d: d,
+            dd: DateFormatter.pad(d),
+            ddd: dF.i18n.dayNames[D],
+            dddd: dF.i18n.dayNames[D + 7],
+            m: m,
+            mm: DateFormatter.pad(m),
+            mmm: dF.i18n.monthNames[m],
+            mmmm: dF.i18n.monthNames[m + 12],
+            MMM: dF.i18n.monthNames[M],
+            yy: String(y).slice(2),
+            yyyy: y,
+            h: H % 12 || 12,
+            hh: DateFormatter.pad(H % 12 || 12),
+            H: H,
+            HH: DateFormatter.pad(H),
+            M: M + 1,
+            MM: DateFormatter.pad(M + 1),
+            s: s,
+            ss: DateFormatter.pad(s),
+            l: DateFormatter.pad(L, 3),
+            L: DateFormatter.pad(L > 99 ? Math.round(L / 10) : L),
+            t: H < 12 ? "a" : "p",
+            tt: H < 12 ? "AM" : "PM",
+            T: H < 12 ? "A" : "P",
+            TT: H < 12 ? "AM" : "PM",
+            Z: utc ? "UTC" : (String(date).match(DateFormatter.timezone) || [""]).pop().replace(DateFormatter.timezoneClip, ""),
+            o: (o > 0 ? "-" : "+") + DateFormatter.pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+            S: ["th", "st", "nd", "rd"][d % 10 > 3 ? 0 : (d % 100 - d % 10 !== 10) * d % 10]
+        };
+        return mask.replace(DateFormatter.token, function ($0) {
+            return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
+        });
+    }
+}
+DateFormatter.token = /d{1,4}|m{1,4}|M{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g;
+DateFormatter.timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g;
+DateFormatter.timezoneClip = /[^-+\dA-Z]/g;
+// Some common format strings
+DateFormatter.masks = {
+    "default": "ddd mmm dd yyyy HH:MM:ss",
+    shortDate: "m/d/yy",
+    mediumDate: "mmm d, yyyy",
+    longDate: "mmmm d, yyyy",
+    fullDate: "dddd, mmmm d, yyyy",
+    shortTime: "h:MM TT",
+    mediumTime: "h:MM:ss TT",
+    longTime: "h:MM:ss TT Z",
+    isoDate: "yyyy-mm-dd",
+    isoTime: "HH:MM:ss",
+    isoDateTime: "yyyy-mm-dd'T'HH:MM:ss",
+    isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+};
+// Internationalization strings
+DateFormatter.i18n = {
+    dayNames: [
+        "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ],
+    monthNames: [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+        "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+    ]
+};
+//# sourceMappingURL=dateFormatter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateTimeSequence.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateTimeSequence.js ***!
+  \*****************************************************************************************/
+/*! exports provided: DateTimeSequence */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DateTimeSequence", function() { return DateTimeSequence; });
+/* harmony import */ var _dateUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dateUtils */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateUtils.js");
+/* harmony import */ var powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! powerbi-visuals-utils-typeutils */ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js");
+/* harmony import */ var _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../formattingService/iFormattingService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/iFormattingService.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+// powerbi.extensibility.utils.type
+
+var NumericSequence = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["numericSequence"].NumericSequence;
+var NumericSequenceRange = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["numericSequenceRange"].NumericSequenceRange;
+// powerbi.extensibility.utils.formatting
+
+/** Repreasents the sequence of the dates/times */
+class DateTimeSequence {
+    // Constructors
+    /** Creates new instance of the DateTimeSequence */
+    constructor(unit) {
+        this.unit = unit;
+        this.sequence = [];
+        this.min = new Date("9999-12-31T23:59:59.999");
+        this.max = new Date("0001-01-01T00:00:00.000");
+    }
+    // Methods
+    /**
+     * Add a new Date to a sequence.
+     * @param date - date to add
+     */
+    add(date) {
+        if (date < this.min) {
+            this.min = date;
+        }
+        if (date > this.max) {
+            this.max = date;
+        }
+        this.sequence.push(date);
+    }
+    // Methods
+    /**
+     * Extends the sequence to cover new date range
+     * @param min - new min to be covered by sequence
+     * @param max - new max to be covered by sequence
+     */
+    extendToCover(min, max) {
+        let x = this.min;
+        while (min < x) {
+            x = DateTimeSequence.addInterval(x, -this.interval, this.unit);
+            this.sequence.splice(0, 0, x);
+        }
+        this.min = x;
+        x = this.max;
+        while (x < max) {
+            x = DateTimeSequence.addInterval(x, this.interval, this.unit);
+            this.sequence.push(x);
+        }
+        this.max = x;
+    }
+    /**
+     * Move the sequence to cover new date range
+     * @param min - new min to be covered by sequence
+     * @param max - new max to be covered by sequence
+     */
+    moveToCover(min, max) {
+        let delta = DateTimeSequence.getDelta(min, max, this.unit);
+        let count = Math.floor(delta / this.interval);
+        this.min = DateTimeSequence.addInterval(this.min, count * this.interval, this.unit);
+        this.sequence = [];
+        this.sequence.push(this.min);
+        this.max = this.min;
+        while (this.max < max) {
+            this.max = DateTimeSequence.addInterval(this.max, this.interval, this.unit);
+            this.sequence.push(this.max);
+        }
+    }
+    // Static
+    /**
+     * Calculate a new DateTimeSequence
+     * @param dataMin - Date representing min of the data range
+     * @param dataMax - Date representing max of the data range
+     * @param expectedCount - expected number of intervals in the sequence
+     * @param unit - of the intervals in the sequence
+     */
+    static calculate(dataMin, dataMax, expectedCount, unit) {
+        if (!unit) {
+            unit = DateTimeSequence.getIntervalUnit(dataMin, dataMax, expectedCount);
+        }
+        switch (unit) {
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year:
+                return DateTimeSequence.calculateYears(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month:
+                return DateTimeSequence.calculateMonths(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week:
+                return DateTimeSequence.calculateWeeks(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day:
+                return DateTimeSequence.calculateDays(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour:
+                return DateTimeSequence.calculateHours(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute:
+                return DateTimeSequence.calculateMinutes(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second:
+                return DateTimeSequence.calculateSeconds(dataMin, dataMax, expectedCount);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond:
+                return DateTimeSequence.calculateMilliseconds(dataMin, dataMax, expectedCount);
+        }
+    }
+    static calculateYears(dataMin, dataMax, expectedCount) {
+        // Calculate range and sequence
+        let yearsRange = NumericSequenceRange.calculateDataRange(dataMin.getFullYear(), dataMax.getFullYear(), false);
+        // Calculate year sequence
+        let sequence = NumericSequence.calculate(NumericSequenceRange.calculate(0, yearsRange.max - yearsRange.min), expectedCount, 0, null, null, [1, 2, 5]);
+        let newMinYear = Math.floor(yearsRange.min / sequence.interval) * sequence.interval;
+        let date = new Date(newMinYear, 0, 1);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year);
+        return result;
+    }
+    static calculateMonths(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let minYear = dataMin.getFullYear();
+        let maxYear = dataMax.getFullYear();
+        let minMonth = dataMin.getMonth();
+        let maxMonth = (maxYear - minYear) * 12 + dataMax.getMonth();
+        let date = new Date(minYear, 0, 1);
+        // Calculate month sequence
+        let sequence = NumericSequence.calculateUnits(minMonth, maxMonth, expectedCount, [1, 2, 3, 6, 12]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month);
+        return result;
+    }
+    static calculateWeeks(dataMin, dataMax, expectedCount) {
+        let firstDayOfWeek = 0;
+        let minDayOfWeek = dataMin.getDay();
+        let dayOffset = (minDayOfWeek - firstDayOfWeek + 7) % 7;
+        let minDay = dataMin.getDate() - dayOffset;
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), minDay);
+        let min = 0;
+        let max = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].ceilWithPrecision(DateTimeSequence.getDelta(date, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week));
+        // Calculate week sequence
+        let sequence = NumericSequence.calculateUnits(min, max, expectedCount, [1, 2, 4, 8]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week);
+        return result;
+    }
+    static calculateDays(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), dataMin.getDate());
+        let min = 0;
+        let max = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].ceilWithPrecision(DateTimeSequence.getDelta(dataMin, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day));
+        // Calculate day sequence
+        let sequence = NumericSequence.calculateUnits(min, max, expectedCount, [1, 2, 7, 14]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day);
+        return result;
+    }
+    static calculateHours(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), dataMin.getDate());
+        let min = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].floorWithPrecision(DateTimeSequence.getDelta(date, dataMin, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour));
+        let max = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].ceilWithPrecision(DateTimeSequence.getDelta(date, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour));
+        // Calculate hour sequence
+        let sequence = NumericSequence.calculateUnits(min, max, expectedCount, [1, 2, 3, 6, 12, 24]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour);
+        return result;
+    }
+    static calculateMinutes(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), dataMin.getDate(), dataMin.getHours());
+        let min = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].floorWithPrecision(DateTimeSequence.getDelta(date, dataMin, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute));
+        let max = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].ceilWithPrecision(DateTimeSequence.getDelta(date, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute));
+        // Calculate minutes numeric sequence
+        let sequence = NumericSequence.calculateUnits(min, max, expectedCount, [1, 2, 5, 10, 15, 30, 60, 60 * 2, 60 * 3, 60 * 6, 60 * 12, 60 * 24]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute);
+        return result;
+    }
+    static calculateSeconds(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), dataMin.getDate(), dataMin.getHours(), dataMin.getMinutes());
+        let min = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].floorWithPrecision(DateTimeSequence.getDelta(date, dataMin, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second));
+        let max = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].ceilWithPrecision(DateTimeSequence.getDelta(date, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second));
+        // Calculate minutes numeric sequence
+        let sequence = NumericSequence.calculateUnits(min, max, expectedCount, [1, 2, 5, 10, 15, 30, 60, 60 * 2, 60 * 5, 60 * 10, 60 * 15, 60 * 30, 60 * 60]);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second);
+        return result;
+    }
+    static calculateMilliseconds(dataMin, dataMax, expectedCount) {
+        // Calculate range
+        let date = new Date(dataMin.getFullYear(), dataMin.getMonth(), dataMin.getDate(), dataMin.getHours(), dataMin.getMinutes(), dataMin.getSeconds());
+        let min = DateTimeSequence.getDelta(date, dataMin, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond);
+        let max = DateTimeSequence.getDelta(date, dataMax, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond);
+        // Calculate milliseconds numeric sequence
+        let sequence = NumericSequence.calculate(NumericSequenceRange.calculate(min, max), expectedCount, 0);
+        // Convert to date sequence
+        let result = DateTimeSequence.fromNumericSequence(date, sequence, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond);
+        return result;
+    }
+    static addInterval(value, interval, unit) {
+        interval = Math.round(interval);
+        switch (unit) {
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addYears(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addMonths(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addWeeks(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addDays(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addHours(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addMinutes(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addSeconds(value, interval);
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond:
+                return _dateUtils__WEBPACK_IMPORTED_MODULE_0__["dateUtils"].addMilliseconds(value, interval);
+        }
+    }
+    static fromNumericSequence(date, sequence, unit) {
+        let result = new DateTimeSequence(unit);
+        for (let i = 0; i < sequence.sequence.length; i++) {
+            let x = sequence.sequence[i];
+            let d = DateTimeSequence.addInterval(date, x, unit);
+            result.add(d);
+        }
+        result.interval = sequence.interval;
+        result.intervalOffset = sequence.intervalOffset;
+        return result;
+    }
+    static getDelta(min, max, unit) {
+        let delta = 0;
+        switch (unit) {
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year:
+                delta = max.getFullYear() - min.getFullYear();
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month:
+                delta = (max.getFullYear() - min.getFullYear()) * 12 + max.getMonth() - min.getMonth();
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week:
+                delta = (max.getTime() - min.getTime()) / (7 * 24 * 3600000);
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day:
+                delta = (max.getTime() - min.getTime()) / (24 * 3600000);
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour:
+                delta = (max.getTime() - min.getTime()) / 3600000;
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute:
+                delta = (max.getTime() - min.getTime()) / 60000;
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second:
+                delta = (max.getTime() - min.getTime()) / 1000;
+                break;
+            case _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond:
+                delta = max.getTime() - min.getTime();
+                break;
+        }
+        return delta;
+    }
+    static getIntervalUnit(min, max, maxCount) {
+        maxCount = Math.max(maxCount, 2);
+        let totalDays = DateTimeSequence.getDelta(min, max, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day);
+        if (totalDays > 356 && totalDays >= 30 * 6 * maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year;
+        if (totalDays > 60 && totalDays > 7 * maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month;
+        if (totalDays > 14 && totalDays > 2 * maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Week;
+        let totalHours = DateTimeSequence.getDelta(min, max, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour);
+        if (totalDays > 2 && totalHours > 12 * maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day;
+        if (totalHours >= 24 && totalHours >= maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour;
+        let totalMinutes = DateTimeSequence.getDelta(min, max, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute);
+        if (totalMinutes > 2 && totalMinutes >= maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute;
+        let totalSeconds = DateTimeSequence.getDelta(min, max, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second);
+        if (totalSeconds > 2 && totalSeconds >= 0.8 * maxCount)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second;
+        let totalMilliseconds = DateTimeSequence.getDelta(min, max, _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond);
+        if (totalMilliseconds > 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond;
+        // If the size of the range is 0 we need to guess the unit based on the date's non-zero values starting with milliseconds
+        let date = min;
+        if (date.getMilliseconds() !== 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Millisecond;
+        if (date.getSeconds() !== 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Second;
+        if (date.getMinutes() !== 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Minute;
+        if (date.getHours() !== 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Hour;
+        if (date.getDate() !== 1)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Day;
+        if (date.getMonth() !== 0)
+            return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Month;
+        return _formattingService_iFormattingService__WEBPACK_IMPORTED_MODULE_2__["DateTimeUnit"].Year;
+    }
+}
+// Constants
+DateTimeSequence.MIN_COUNT = 1;
+DateTimeSequence.MAX_COUNT = 1000;
+//# sourceMappingURL=dateTimeSequence.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateUtils.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateUtils.js ***!
+  \**********************************************************************************/
+/*! exports provided: dateUtils */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dateUtils", function() { return dateUtils; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+/** dateUtils module provides DateTimeSequence with set of additional date manipulation routines */
+var dateUtils;
+(function (dateUtils) {
+    let MonthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    let MonthDaysLeap = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    /**
+     * Returns bool indicating weither the provided year is a leap year.
+     * @param year - year value
+     */
+    function isLeap(year) {
+        return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0);
+    }
+    /**
+     * Returns number of days in the provided year/month.
+     * @param year - year value
+     * @param month - month value
+     */
+    function getMonthDays(year, month) {
+        return isLeap(year) ? MonthDaysLeap[month] : MonthDays[month];
+    }
+    /**
+     * Adds a specified number of years to the provided date.
+     * @param date - date value
+     * @param yearDelta - number of years to add
+     */
+    function addYears(date, yearDelta) {
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        let isLeapDay = month === 2 && day === 29;
+        let result = new Date(date.getTime());
+        year = year + yearDelta;
+        if (isLeapDay && !isLeap(year)) {
+            day = 28;
+        }
+        result.setFullYear(year, month, day);
+        return result;
+    }
+    dateUtils.addYears = addYears;
+    /**
+     * Adds a specified number of months to the provided date.
+     * @param date - date value
+     * @param monthDelta - number of months to add
+     */
+    function addMonths(date, monthDelta) {
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        let result = new Date(date.getTime());
+        year += (monthDelta - (monthDelta % 12)) / 12;
+        month += monthDelta % 12;
+        // VSTS 1325771: Certain column charts don't display any data
+        // Wrap arround the month if is after december (value 11)
+        if (month > 11) {
+            month = month % 12;
+            year++;
+        }
+        day = Math.min(day, getMonthDays(year, month));
+        result.setFullYear(year, month, day);
+        return result;
+    }
+    dateUtils.addMonths = addMonths;
+    /**
+     * Adds a specified number of weeks to the provided date.
+     * @param date - date value
+     * @param weeks - number of weeks to add
+     */
+    function addWeeks(date, weeks) {
+        return addDays(date, weeks * 7);
+    }
+    dateUtils.addWeeks = addWeeks;
+    /**
+     * Adds a specified number of days to the provided date.
+     * @param date - date value
+     * @param days - number of days to add
+     */
+    function addDays(date, days) {
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        let result = new Date(date.getTime());
+        result.setFullYear(year, month, day + days);
+        return result;
+    }
+    dateUtils.addDays = addDays;
+    /**
+     * Adds a specified number of hours to the provided date.
+     * @param date - date value
+     * @param hours - number of hours to add
+     */
+    function addHours(date, hours) {
+        return new Date(date.getTime() + hours * 3600000);
+    }
+    dateUtils.addHours = addHours;
+    /**
+     * Adds a specified number of minutes to the provided date.
+     * @param date - date value
+     * @param minutes - number of minutes to add
+     */
+    function addMinutes(date, minutes) {
+        return new Date(date.getTime() + minutes * 60000);
+    }
+    dateUtils.addMinutes = addMinutes;
+    /**
+     * Adds a specified number of seconds to the provided date.
+     * @param date - date value
+     * @param seconds - number of seconds to add
+     */
+    function addSeconds(date, seconds) {
+        return new Date(date.getTime() + seconds * 1000);
+    }
+    dateUtils.addSeconds = addSeconds;
+    /**
+     * Adds a specified number of milliseconds to the provided date.
+     * @param date - date value
+     * @param milliseconds - number of milliseconds to add
+     */
+    function addMilliseconds(date, milliseconds) {
+        return new Date(date.getTime() + milliseconds);
+    }
+    dateUtils.addMilliseconds = addMilliseconds;
+})(dateUtils || (dateUtils = {}));
+//# sourceMappingURL=dateUtils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystem.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystem.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: DisplayUnit, DisplayUnitSystem, NoDisplayUnitSystem, DefaultDisplayUnitSystem, WholeUnitsDisplayUnitSystem, DataLabelsDisplayUnitSystem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DisplayUnit", function() { return DisplayUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DisplayUnitSystem", function() { return DisplayUnitSystem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoDisplayUnitSystem", function() { return NoDisplayUnitSystem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultDisplayUnitSystem", function() { return DefaultDisplayUnitSystem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WholeUnitsDisplayUnitSystem", function() { return WholeUnitsDisplayUnitSystem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataLabelsDisplayUnitSystem", function() { return DataLabelsDisplayUnitSystem; });
+/* harmony import */ var _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../formattingService/formattingService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/formattingService.js");
+/* harmony import */ var powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! powerbi-visuals-utils-typeutils */ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+
+// Constants
+const maxExponent = 24;
+const defaultScientificBigNumbersBoundary = 1E15;
+const scientificSmallNumbersBoundary = 1E-4;
+const PERCENTAGE_FORMAT = "%";
+const SCIENTIFIC_FORMAT = "E+0";
+const DEFAULT_SCIENTIFIC_FORMAT = "0.##" + SCIENTIFIC_FORMAT;
+// Regular expressions
+/**
+ * This regex looks for strings that match one of the following conditions:
+ *   - Optionally contain "0", "#", followed by a period, followed by at least one "0" or "#" (Ex. ###,000.###)
+ *   - Contains at least one of "0", "#", or "," (Ex. ###,000)
+ *   - Contain a "g" (indicates to use the general .NET numeric format string)
+ * The entire string (start to end) must match, and the match is not case-sensitive.
+ */
+const SUPPORTED_SCIENTIFIC_FORMATS = /^([0\#,]*\.[0\#]+|[0\#,]+|g)$/i;
+class DisplayUnit {
+    // Methods
+    project(value) {
+        if (this.value) {
+            return powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].removeDecimalNoise(value / this.value);
+        }
+        else {
+            return value;
+        }
+    }
+    reverseProject(value) {
+        if (this.value) {
+            return value * this.value;
+        }
+        else {
+            return value;
+        }
+    }
+    isApplicableTo(value) {
+        value = Math.abs(value);
+        let precision = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].getPrecision(value, 3);
+        return powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].greaterOrEqualWithPrecision(value, this.applicableRangeMin, precision) && powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].lessWithPrecision(value, this.applicableRangeMax, precision);
+    }
+    isScaling() {
+        return this.value > 1;
+    }
+}
+class DisplayUnitSystem {
+    // Constructor
+    constructor(units) {
+        this.units = units ? units : [];
+    }
+    // Properties
+    get title() {
+        return this.displayUnit ? this.displayUnit.title : undefined;
+    }
+    // Methods
+    update(value) {
+        if (value === undefined)
+            return;
+        this.unitBaseValue = value;
+        this.displayUnit = this.findApplicableDisplayUnit(value);
+    }
+    findApplicableDisplayUnit(value) {
+        for (let unit of this.units) {
+            if (unit.isApplicableTo(value))
+                return unit;
+        }
+        return undefined;
+    }
+    format(value, format, decimals, trailingZeros, cultureSelector) {
+        decimals = this.getNumberOfDecimalsForFormatting(format, decimals);
+        let nonScientificFormat = "";
+        if (this.isFormatSupported(format)
+            && !this.hasScientitifcFormat(format)
+            && this.isScalingUnit()
+            && this.shouldRespectScalingUnit(format)) {
+            value = this.displayUnit.project(value);
+            nonScientificFormat = this.displayUnit.labelFormat;
+        }
+        return this.formatHelper({
+            value,
+            nonScientificFormat,
+            format,
+            decimals,
+            trailingZeros,
+            cultureSelector
+        });
+    }
+    isFormatSupported(format) {
+        return !DisplayUnitSystem.UNSUPPORTED_FORMATS.test(format);
+    }
+    isPercentageFormat(format) {
+        return format && format.indexOf(PERCENTAGE_FORMAT) >= 0;
+    }
+    shouldRespectScalingUnit(format) {
+        return true;
+    }
+    getNumberOfDecimalsForFormatting(format, decimals) {
+        return decimals;
+    }
+    isScalingUnit() {
+        return this.displayUnit && this.displayUnit.isScaling();
+    }
+    formatHelper(options) {
+        let { value, nonScientificFormat, cultureSelector, format, decimals, trailingZeros } = options;
+        // If the format is "general" and we want to override the number of decimal places then use the default numeric format string.
+        if ((format === "g" || format === "G") && decimals != null) {
+            format = "#,0.00";
+        }
+        format = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["numberFormat"].addDecimalsToFormat(format, decimals, trailingZeros);
+        if (format && !_formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["formattingService"].isStandardNumberFormat(format))
+            return _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["formattingService"].formatNumberWithCustomOverride(value, format, nonScientificFormat, cultureSelector);
+        if (!format) {
+            format = "G";
+        }
+        if (!nonScientificFormat) {
+            nonScientificFormat = "{0}";
+        }
+        let text = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["formattingService"].formatValue(value, format, cultureSelector);
+        return _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["formattingService"].format(nonScientificFormat, [text]);
+    }
+    /** Formats a single value by choosing an appropriate base for the DisplayUnitSystem before formatting. */
+    formatSingleValue(value, format, decimals, trailingZeros, cultureSelector) {
+        // Change unit base to a value appropriate for this value
+        this.update(this.shouldUseValuePrecision(value) ? powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].getPrecision(value, 8) : value);
+        return this.format(value, format, decimals, trailingZeros, cultureSelector);
+    }
+    shouldUseValuePrecision(value) {
+        if (this.units.length === 0)
+            return true;
+        // Check if the value is big enough to have a valid unit by checking against the smallest unit (that it's value bigger than 1).
+        let applicableRangeMin = 0;
+        for (let i = 0; i < this.units.length; i++) {
+            if (this.units[i].isScaling()) {
+                applicableRangeMin = this.units[i].applicableRangeMin;
+                break;
+            }
+        }
+        return Math.abs(value) < applicableRangeMin;
+    }
+    isScientific(value) {
+        return value < -defaultScientificBigNumbersBoundary || value > defaultScientificBigNumbersBoundary ||
+            (-scientificSmallNumbersBoundary < value && value < scientificSmallNumbersBoundary && value !== 0);
+    }
+    hasScientitifcFormat(format) {
+        return format && format.toUpperCase().indexOf("E") !== -1;
+    }
+    supportsScientificFormat(format) {
+        if (format)
+            return SUPPORTED_SCIENTIFIC_FORMATS.test(format);
+        return true;
+    }
+    shouldFallbackToScientific(value, format) {
+        return !this.hasScientitifcFormat(format)
+            && this.supportsScientificFormat(format)
+            && this.isScientific(value);
+    }
+    getScientificFormat(data, format, decimals, trailingZeros) {
+        // Use scientific format outside of the range
+        if (this.isFormatSupported(format) && this.shouldFallbackToScientific(data, format)) {
+            let numericFormat = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["numberFormat"].getNumericFormat(data, format);
+            if (decimals)
+                numericFormat = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_0__["numberFormat"].addDecimalsToFormat(numericFormat ? numericFormat : "0", Math.abs(decimals), trailingZeros);
+            if (numericFormat)
+                return numericFormat + SCIENTIFIC_FORMAT;
+            else
+                return DEFAULT_SCIENTIFIC_FORMAT;
+        }
+        return format;
+    }
+}
+DisplayUnitSystem.UNSUPPORTED_FORMATS = /^(p\d*)|(e\d*)$/i;
+/** Provides a unit system that is defined by formatting in the model, and is suitable for visualizations shown in single number visuals in explore mode. */
+class NoDisplayUnitSystem extends DisplayUnitSystem {
+    // Constructor
+    constructor() {
+        super([]);
+    }
+}
+/** Provides a unit system that creates a more concise format for displaying values. This is suitable for most of the cases where
+    we are showing values (chart axes) and as such it is the default unit system. */
+class DefaultDisplayUnitSystem extends DisplayUnitSystem {
+    // Constructor
+    constructor(unitLookup) {
+        super(DefaultDisplayUnitSystem.getUnits(unitLookup));
+    }
+    // Methods
+    format(data, format, decimals, trailingZeros, cultureSelector) {
+        format = this.getScientificFormat(data, format, decimals, trailingZeros);
+        return super.format(data, format, decimals, trailingZeros, cultureSelector);
+    }
+    static reset() {
+        DefaultDisplayUnitSystem.units = null;
+    }
+    static getUnits(unitLookup) {
+        if (!DefaultDisplayUnitSystem.units) {
+            DefaultDisplayUnitSystem.units = createDisplayUnits(unitLookup, (value, previousUnitValue, min) => {
+                // When dealing with millions/billions/trillions we need to switch to millions earlier: for example instead of showing 100K 200K 300K we should show 0.1M 0.2M 0.3M etc
+                if (value - previousUnitValue >= 1000) {
+                    return value / 10;
+                }
+                return min;
+            });
+            // Ensure last unit has max of infinity
+            DefaultDisplayUnitSystem.units[DefaultDisplayUnitSystem.units.length - 1].applicableRangeMax = Infinity;
+        }
+        return DefaultDisplayUnitSystem.units;
+    }
+}
+/** Provides a unit system that creates a more concise format for displaying values, but only allows showing a unit if we have at least
+    one of those units (e.g. 0.9M is not allowed since it's less than 1 million). This is suitable for cases such as dashboard tiles
+    where we have restricted space but do not want to show partial units. */
+class WholeUnitsDisplayUnitSystem extends DisplayUnitSystem {
+    // Constructor
+    constructor(unitLookup) {
+        super(WholeUnitsDisplayUnitSystem.getUnits(unitLookup));
+    }
+    static reset() {
+        WholeUnitsDisplayUnitSystem.units = null;
+    }
+    static getUnits(unitLookup) {
+        if (!WholeUnitsDisplayUnitSystem.units) {
+            WholeUnitsDisplayUnitSystem.units = createDisplayUnits(unitLookup);
+            // Ensure last unit has max of infinity
+            WholeUnitsDisplayUnitSystem.units[WholeUnitsDisplayUnitSystem.units.length - 1].applicableRangeMax = Infinity;
+        }
+        return WholeUnitsDisplayUnitSystem.units;
+    }
+    format(data, format, decimals, trailingZeros, cultureSelector) {
+        format = this.getScientificFormat(data, format, decimals, trailingZeros);
+        return super.format(data, format, decimals, trailingZeros, cultureSelector);
+    }
+}
+class DataLabelsDisplayUnitSystem extends DisplayUnitSystem {
+    constructor(unitLookup) {
+        super(DataLabelsDisplayUnitSystem.getUnits(unitLookup));
+    }
+    isFormatSupported(format) {
+        return !DataLabelsDisplayUnitSystem.UNSUPPORTED_FORMATS.test(format);
+    }
+    static getUnits(unitLookup) {
+        if (!DataLabelsDisplayUnitSystem.units) {
+            let units = [];
+            let adjustMinBasedOnPreviousUnit = (value, previousUnitValue, min) => {
+                // Never returns true, we are always ignoring
+                // We do not early switch (e.g. 100K instead of 0.1M)
+                // Intended? If so, remove this function, otherwise, remove if statement
+                if (value === -1)
+                    if (value - previousUnitValue >= 1000) {
+                        return value / 10;
+                    }
+                return min;
+            };
+            // Add Auto & None
+            let names = unitLookup(-1);
+            addUnitIfNonEmpty(units, DataLabelsDisplayUnitSystem.AUTO_DISPLAYUNIT_VALUE, names.title, names.format, adjustMinBasedOnPreviousUnit);
+            names = unitLookup(0);
+            addUnitIfNonEmpty(units, DataLabelsDisplayUnitSystem.NONE_DISPLAYUNIT_VALUE, names.title, names.format, adjustMinBasedOnPreviousUnit);
+            // Add normal units
+            DataLabelsDisplayUnitSystem.units = units.concat(createDisplayUnits(unitLookup, adjustMinBasedOnPreviousUnit));
+            // Ensure last unit has max of infinity
+            DataLabelsDisplayUnitSystem.units[DataLabelsDisplayUnitSystem.units.length - 1].applicableRangeMax = Infinity;
+        }
+        return DataLabelsDisplayUnitSystem.units;
+    }
+    format(data, format, decimals, trailingZeros, cultureSelector) {
+        format = this.getScientificFormat(data, format, decimals, trailingZeros);
+        return super.format(data, format, decimals, trailingZeros, cultureSelector);
+    }
+}
+// Constants
+DataLabelsDisplayUnitSystem.AUTO_DISPLAYUNIT_VALUE = 0;
+DataLabelsDisplayUnitSystem.NONE_DISPLAYUNIT_VALUE = 1;
+DataLabelsDisplayUnitSystem.UNSUPPORTED_FORMATS = /^(e\d*)$/i;
+function createDisplayUnits(unitLookup, adjustMinBasedOnPreviousUnit) {
+    let units = [];
+    for (let i = 3; i < maxExponent; i++) {
+        let names = unitLookup(i);
+        if (names)
+            addUnitIfNonEmpty(units, powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_1__["double"].pow10(i), names.title, names.format, adjustMinBasedOnPreviousUnit);
+    }
+    return units;
+}
+function addUnitIfNonEmpty(units, value, title, labelFormat, adjustMinBasedOnPreviousUnit) {
+    if (title || labelFormat) {
+        let min = value;
+        if (units.length > 0) {
+            let previousUnit = units[units.length - 1];
+            if (adjustMinBasedOnPreviousUnit)
+                min = adjustMinBasedOnPreviousUnit(value, previousUnit.value, min);
+            previousUnit.applicableRangeMax = min;
+        }
+        let unit = new DisplayUnit();
+        unit.value = value;
+        unit.applicableRangeMin = min;
+        unit.applicableRangeMax = min * 1000;
+        unit.title = title;
+        unit.labelFormat = labelFormat;
+        units.push(unit);
+    }
+}
+//# sourceMappingURL=displayUnitSystem.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystemType.js":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystemType.js ***!
+  \***********************************************************************************************************/
+/*! exports provided: DisplayUnitSystemType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DisplayUnitSystemType", function() { return DisplayUnitSystemType; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+/** The system used to determine display units used during formatting */
+var DisplayUnitSystemType;
+(function (DisplayUnitSystemType) {
+    /** Default display unit system, which saves space by using units such as K, M, bn with PowerView rules for when to pick a unit. Suitable for chart axes. */
+    DisplayUnitSystemType[DisplayUnitSystemType["Default"] = 0] = "Default";
+    /** A verbose display unit system that will only respect the formatting defined in the model. Suitable for explore mode single-value cards. */
+    DisplayUnitSystemType[DisplayUnitSystemType["Verbose"] = 1] = "Verbose";
+    /**
+     * A display unit system that uses units such as K, M, bn if we have at least one of those units (e.g. 0.9M is not valid as it's less than 1 million).
+     * Suitable for dashboard tile cards
+     */
+    DisplayUnitSystemType[DisplayUnitSystemType["WholeUnits"] = 2] = "WholeUnits";
+    /**A display unit system that also contains Auto and None units for data labels*/
+    DisplayUnitSystemType[DisplayUnitSystemType["DataLabels"] = 3] = "DataLabels";
+})(DisplayUnitSystemType || (DisplayUnitSystemType = {}));
+//# sourceMappingURL=displayUnitSystemType.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/font/family.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/font/family.js ***!
+  \*******************************************************************************/
+/*! exports provided: fallbackFonts, Family */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fallbackFonts", function() { return fallbackFonts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Family", function() { return Family; });
+/* harmony import */ var _familyInfo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./familyInfo */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/font/familyInfo.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+const fallbackFonts = ["helvetica", "arial", "sans-serif"];
+const Family = {
+    light: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    semilight: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    regular: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    semibold: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    bold: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    lightSecondary: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    regularSecondary: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts),
+    boldSecondary: new _familyInfo__WEBPACK_IMPORTED_MODULE_0__["FamilyInfo"](fallbackFonts)
+};
+//# sourceMappingURL=family.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/font/familyInfo.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/font/familyInfo.js ***!
+  \***********************************************************************************/
+/*! exports provided: FamilyInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FamilyInfo", function() { return FamilyInfo; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+class FamilyInfo {
+    constructor(families) {
+        this.families = families;
+    }
+    /**
+     * Gets the first font "wf_" font family since it will always be loaded.
+     */
+    get family() {
+        return this.getFamily();
+    }
+    /**
+    * Gets the first font family that matches regex (if provided).
+    * Default regex looks for "wf_" fonts which are always loaded.
+    */
+    getFamily(regex = /^wf_/) {
+        if (!this.families) {
+            return null;
+        }
+        if (regex) {
+            for (let fontFamily of this.families) {
+                if (regex.test(fontFamily)) {
+                    return fontFamily;
+                }
+            }
+        }
+        return this.families[0];
+    }
+    /**
+     * Gets the CSS string for the "font-family" CSS attribute.
+     */
+    get css() {
+        return this.getCSS();
+    }
+    /**
+     * Gets the CSS string for the "font-family" CSS attribute.
+     */
+    getCSS() {
+        return this.families ? this.families.map((font => font.indexOf(" ") > 0 ? `'` + font + `'` : font)).join(", ") : null;
+    }
+}
+//# sourceMappingURL=familyInfo.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formatting.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/formatting.js ***!
+  \******************************************************************************/
+/*! exports provided: findDateFormat, fixDateTimeFormat */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "findDateFormat", function() { return findDateFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fixDateTimeFormat", function() { return fixDateTimeFormat; });
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+let regexCache;
+/**
+ * Translate .NET format into something supported by jQuery.Globalize.
+ */
+function findDateFormat(value, format, cultureName) {
+    switch (format) {
+        case "m":
+            // Month + day
+            format = "M";
+            break;
+        case "O":
+        case "o":
+            // Roundtrip
+            format = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'0000'";
+            break;
+        case "R":
+        case "r":
+            // RFC1123 pattern - - time must be converted to UTC before formatting
+            value = new Date(value.getUTCFullYear(), value.getUTCMonth(), value.getUTCDate(), value.getUTCHours(), value.getUTCMinutes(), value.getUTCSeconds(), value.getUTCMilliseconds());
+            format = "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'";
+            break;
+        case "s":
+            // Sortable - should use invariant culture
+            format = "S";
+            break;
+        case "u":
+            // Universal sortable - should convert to UTC before applying the "yyyy'-'MM'-'dd HH':'mm':'ss'Z' format.
+            value = new Date(value.getUTCFullYear(), value.getUTCMonth(), value.getUTCDate(), value.getUTCHours(), value.getUTCMinutes(), value.getUTCSeconds(), value.getUTCMilliseconds());
+            format = "yyyy'-'MM'-'dd HH':'mm':'ss'Z'";
+            break;
+        case "U":
+            // Universal full - the pattern is same as F but the time must be converted to UTC before formatting
+            value = new Date(value.getUTCFullYear(), value.getUTCMonth(), value.getUTCDate(), value.getUTCHours(), value.getUTCMinutes(), value.getUTCSeconds(), value.getUTCMilliseconds());
+            format = "F";
+            break;
+        case "y":
+        case "Y":
+            // Year and month
+            switch (cultureName) {
+                case "default":
+                case "en":
+                case "en-US":
+                    format = "MMMM, yyyy"; // Fix the default year-month pattern for english
+                    break;
+                default:
+                    format = "Y"; // For other cultures - use the localized pattern
+            }
+            break;
+    }
+    return { value: value, format: format };
+}
+/**
+ * Translates unsupported .NET custom format expressions to the custom expressions supported by JQuery.Globalize.
+ */
+function fixDateTimeFormat(format) {
+    // Fix for the "K" format (timezone):
+    // T he js dates don't have a kind property so we'll support only local kind which is equavalent to zzz format.
+    format = format.replace(/%K/g, "zzz");
+    format = format.replace(/K/g, "zzz");
+    format = format.replace(/fffffff/g, "fff0000");
+    format = format.replace(/ffffff/g, "fff000");
+    format = format.replace(/fffff/g, "fff00");
+    format = format.replace(/ffff/g, "fff0");
+    // Fix for the 5 digit year: "yyyyy" format.
+    // The Globalize doesn't support dates greater than 9999 so we replace the "yyyyy" with "0yyyy".
+    format = format.replace(/yyyyy/g, "0yyyy");
+    // Fix for the 3 digit year: "yyy" format.
+    // The Globalize doesn't support this formatting so we need to replace it with the 4 digit year "yyyy" format.
+    format = format.replace(/(^y|^)yyy(^y|$)/g, "yyyy");
+    if (!regexCache) {
+        // Creating Regexes for cases "Using single format specifier"
+        // - http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx#UsingSingleSpecifiers
+        // This is not supported from The Globalize.
+        // The case covers all single "%" lead specifier (like "%d" but not %dd)
+        // The cases as single "%d" are filtered in if the bellow.
+        // (?!S) where S is the specifier make sure that we only one symbol for specifier.
+        regexCache = ["d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", "/"].map((s) => {
+            return { r: new RegExp("\%" + s + "(?!" + s + ")", "g"), s: s };
+        });
+    }
+    if (format.indexOf("%") !== -1 && format.length > 2) {
+        for (let i = 0; i < regexCache.length; i++) {
+            format = format.replace(regexCache[i].r, regexCache[i].s);
+        }
+    }
+    return format;
+}
+//# sourceMappingURL=formatting.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/formattingService.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/formattingService.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: FormattingService, numberFormat, formattingService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattingService", function() { return FormattingService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "numberFormat", function() { return numberFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formattingService", function() { return formattingService; });
+/* harmony import */ var powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! powerbi-visuals-utils-typeutils */ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js");
+/* harmony import */ var _stringExtensions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../stringExtensions */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/stringExtensions.js");
+/* harmony import */ var _formatting__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../formatting */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formatting.js");
+/* harmony import */ var _iFormattingService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./iFormattingService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/iFormattingService.js");
+/* harmony import */ var powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! powerbi-visuals-api */ "powerbi-visuals-api");
+/* harmony import */ var powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _date_dateFormatter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../date/dateFormatter */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateFormatter.js");
+/* harmony import */ var _number_numberFormatter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../number/numberFormatter */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/number/numberFormatter.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// powerbi.extensibility.utils.type
+
+var RegExpExtensions = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__["regExpExtensions"].RegExpExtensions;
+// powerbi.extensibility.utils.formatting
+
+
+
+
+
+
+/** Formatting Encoder */
+var formattingEncoder;
+(function (formattingEncoder) {
+    // quoted and escaped literal patterns
+    // NOTE: the final three cases match .NET behavior
+    const literalPatterns = [
+        "'[^']*'",
+        `"[^"]*"`,
+        "\\\\.",
+        "'[^']*$",
+        `"[^"]*$`,
+        "\\\\$",
+    ];
+    const literalMatcher = new RegExp(literalPatterns.join("|"), "g");
+    // Unicode U+E000 - U+F8FF is a private area and so we can use the chars from the range to encode the escaped sequences
+    function removeLiterals(format) {
+        literalMatcher.lastIndex = 0;
+        // just in case consecutive non-literals have some meaning
+        return format.replace(literalMatcher, "\uE100");
+    }
+    formattingEncoder.removeLiterals = removeLiterals;
+    function preserveLiterals(format, literals) {
+        literalMatcher.lastIndex = 0;
+        for (;;) {
+            let match = literalMatcher.exec(format);
+            if (!match)
+                break;
+            let literal = match[0];
+            let literalOffset = literalMatcher.lastIndex - literal.length;
+            let token = String.fromCharCode(0xE100 + literals.length);
+            literals.push(literal);
+            format = format.substr(0, literalOffset) + token + format.substr(literalMatcher.lastIndex);
+            // back to avoid skipping due to removed literal substring
+            literalMatcher.lastIndex = literalOffset + 1;
+        }
+        return format;
+    }
+    formattingEncoder.preserveLiterals = preserveLiterals;
+    function restoreLiterals(format, literals, quoted = true) {
+        let count = literals.length;
+        for (let i = 0; i < count; i++) {
+            let token = String.fromCharCode(0xE100 + i);
+            let literal = literals[i];
+            if (!quoted) {
+                // caller wants literals to be re-inserted without escaping
+                let firstChar = literal[0];
+                if (firstChar === "\\" || literal.length === 1 || literal[literal.length - 1] !== firstChar) {
+                    // either escaped literal OR quoted literal that's missing the trailing quote
+                    // in either case we only remove the leading character
+                    literal = literal.substring(1);
+                }
+                else {
+                    // so must be a quoted literal with both starting and ending quote
+                    literal = literal.substring(1, literal.length - 1);
+                }
+            }
+            format = format.replace(token, literal);
+        }
+        return format;
+    }
+    formattingEncoder.restoreLiterals = restoreLiterals;
+})(formattingEncoder || (formattingEncoder = {}));
+const IndexedTokensRegex = /({{)|(}})|{(\d+[^}]*)}/g;
+const ZeroPlaceholder = "0";
+const DigitPlaceholder = "#";
+const ExponentialFormatChar = "E";
+const NumericPlaceholders = [ZeroPlaceholder, DigitPlaceholder];
+const NumericPlaceholderRegex = new RegExp(NumericPlaceholders.join("|"), "g");
+class Globalize {
+    static format(value, format, culture = null) {
+        if (!culture) {
+            culture = Globalize.enUSCulture;
+        }
+        if (value instanceof Date) {
+            if (typeof format === "undefined") {
+                value = Intl.DateTimeFormat(culture.name).format(value);
+            }
+            else {
+                value = _date_dateFormatter__WEBPACK_IMPORTED_MODULE_5__["default"].format(value, format, false);
+            }
+        }
+        else if (typeof value === "number") {
+            if (typeof format === "undefined") {
+                value = value.toLocaleString("en-US");
+            }
+            else {
+                value = _number_numberFormatter__WEBPACK_IMPORTED_MODULE_6__["default"].formatNumber(value, format, {
+                    numberFormat: _number_numberFormatter__WEBPACK_IMPORTED_MODULE_6__["default"].numberFormat
+                });
+            }
+        }
+        return value;
+    }
+}
+Globalize.enUSCulture = {
+    name: "en",
+    numberFormat: {
+        negativeInfinity: "",
+        positiveInfinity: "",
+        pattern: ["-n"],
+        decimals: 2,
+        ",": ",",
+        ".": ".",
+        groupSizes: [3],
+        "+": "+",
+        "-": "-",
+        percent: {
+            pattern: ["-n %", "n %"],
+            decimals: 2,
+            groupSizes: [3],
+            ",": ",",
+            ".": ".",
+            symbol: "%"
+        },
+        currency: {
+            pattern: ["($n)", "$n"],
+            decimals: 2,
+            groupSizes: [3],
+            ",": ",",
+            ".": ".",
+            symbol: "$"
+        }
+    },
+    calendar: {
+        ":": ":",
+        days: {
+            // full day names
+            names: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            // abbreviated day names
+            namesAbbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            // shortest day names
+            namesShort: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]
+        },
+        months: {
+            // full month names (13 months for lunar calendards -- 13th month should be "" if not lunar)
+            names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""],
+            // abbreviated month names
+            namesAbbr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ""]
+        },
+        // AM and PM designators in one of these forms:
+        // The usual view, and the upper and lower case versions
+        //   [ standard, lowercase, uppercase ]
+        // The culture does not use AM or PM (likely all standard date formats use 24 hour time)
+        //   null
+        AM: ["AM", "am", "AM"],
+        PM: ["PM", "pm", "PM"],
+        eras: [
+            // eras in reverse chronological order.
+            // name: the name of the era in this culture (e.g. A.D., C.E.)
+            // start: when the era starts in ticks (gregorian, gmt), null if it is the earliest supported era.
+            // offset: offset in years from gregorian calendar
+            {
+                "name": "A.D.",
+                "start": null,
+                "offset": 0
+            }
+        ],
+        firstDay: 0,
+        patterns: {
+            d: "M/d/yyyy",
+            D: "dddd, MMMM dd, yyyy",
+            t: "h:mm tt",
+            T: "h:mm:ss tt",
+            f: "dddd, MMMM dd, yyyy h:mm tt",
+            F: "dddd, MMMM dd, yyyy h:mm:ss tt",
+            M: "MMMM dd",
+            Y: "yyyy MMMM",
+            S: "yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss"
+        }
+    },
+    calendars: {
+        standard: {
+            firstDay: 0,
+            patterns: {
+                d: "M/d/yyyy",
+                D: "dddd, MMMM dd, yyyy",
+                t: "h:mm tt",
+                T: "h:mm:ss tt",
+                f: "dddd, MMMM dd, yyyy h:mm tt",
+                F: "dddd, MMMM dd, yyyy h:mm:ss tt",
+                M: "MMMM dd",
+                Y: "yyyy MMMM",
+                S: "yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss"
+            }
+        }
+    }
+};
+/** Formatting Service */
+class FormattingService {
+    formatValue(value, format, cultureSelector) {
+        // Handle special cases
+        if (value === undefined || value === null) {
+            return "";
+        }
+        const gculture = this.getCulture(cultureSelector);
+        if (dateTimeFormat.canFormat(value)) {
+            // Dates
+            return dateTimeFormat.format(value, format, gculture);
+        }
+        else if (numberFormat.canFormat(value)) {
+            // Numbers
+            return numberFormat.format(value, format, gculture);
+        }
+        // Other data types - return as string
+        return value.toString();
+    }
+    format(formatWithIndexedTokens, args, culture) {
+        if (!formatWithIndexedTokens) {
+            return "";
+        }
+        let result = formatWithIndexedTokens.replace(IndexedTokensRegex, (match, left, right, argToken) => {
+            if (left) {
+                return "{";
+            }
+            else if (right) {
+                return "}";
+            }
+            else {
+                let parts = argToken.split(":");
+                let argIndex = parseInt(parts[0], 10);
+                let argFormat = parts[1];
+                return this.formatValue(args[argIndex], argFormat, culture);
+            }
+        });
+        return result;
+    }
+    isStandardNumberFormat(format) {
+        return numberFormat.isStandardFormat(format);
+    }
+    formatNumberWithCustomOverride(value, format, nonScientificOverrideFormat, culture) {
+        let gculture = this.getCulture(culture);
+        return numberFormat.formatWithCustomOverride(value, format, nonScientificOverrideFormat, gculture);
+    }
+    dateFormatString(unit) {
+        if (!this._dateTimeScaleFormatInfo)
+            this.initialize();
+        return this._dateTimeScaleFormatInfo.getFormatString(unit);
+    }
+    /**
+     * Sets the current localization culture
+     * @param cultureSelector - name of a culture: "en", "en-UK", "fr-FR" etc. (See National Language Support (NLS) for full lists. Use "default" for invariant culture).
+     */
+    setCurrentCulture(cultureSelector) {
+        if (this._currentCultureSelector !== cultureSelector) {
+            this._currentCulture = this.getCulture(cultureSelector);
+            this._currentCultureSelector = cultureSelector;
+            this._dateTimeScaleFormatInfo = new DateTimeScaleFormatInfo(this._currentCulture);
+        }
+    }
+    /**
+     * Gets the culture assotiated with the specified cultureSelector ("en", "en-US", "fr-FR" etc).
+     * @param cultureSelector - name of a culture: "en", "en-UK", "fr-FR" etc. (See National Language Support (NLS) for full lists. Use "default" for invariant culture).
+     * Exposing this function for testability of unsupported cultures
+     */
+    getCulture(cultureSelector) {
+        return Globalize.enUSCulture;
+    }
+    /** By default the Globalization module initializes to the culture/calendar provided in the language/culture URL params */
+    initialize() {
+        let cultureName = this.getCurrentCulture();
+        this.setCurrentCulture(cultureName);
+        let calendarName = this.getUrlParam("calendar");
+        if (calendarName) {
+            let culture = this._currentCulture;
+            let c = culture.calendars[calendarName];
+            if (c) {
+                culture.calendar = c;
+            }
+        }
+    }
+    /**
+     *  Exposing this function for testability
+     */
+    getCurrentCulture() {
+        let urlParam = this.getUrlParam("language");
+        if (urlParam) {
+            return urlParam;
+        }
+        if (powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4___default.a && powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4___default.a.common && powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4___default.a.common.cultureInfo) {
+            // Get cultureInfo set in powerbi
+            return powerbi_visuals_api__WEBPACK_IMPORTED_MODULE_4___default.a.common.cultureInfo;
+        }
+        return window.navigator.userLanguage || window.navigator["language"] || "en-US";
+    }
+    /**
+     *  Exposing this function for testability
+     *  @param name: queryString name
+     */
+    getUrlParam(name) {
+        let param = window.location.search.match(RegExp("[?&]" + name + "=([^&]*)"));
+        return param ? param[1] : undefined;
+    }
+}
+/**
+ * DateTimeFormat module contains the static methods for formatting the DateTimes.
+ * It extends the JQuery.Globalize functionality to support complete set of .NET
+ * formatting expressions for dates.
+ */
+var dateTimeFormat;
+(function (dateTimeFormat) {
+    let _currentCachedFormat;
+    let _currentCachedProcessedFormat;
+    /** Evaluates if the value can be formatted using the NumberFormat */
+    function canFormat(value) {
+        let result = value instanceof Date;
+        return result;
+    }
+    dateTimeFormat.canFormat = canFormat;
+    /** Formats the date using provided format and culture */
+    function format(value, format, culture) {
+        format = format || "G";
+        let isStandard = format.length === 1;
+        try {
+            if (isStandard) {
+                return formatDateStandard(value, format, culture);
+            }
+            else {
+                return formatDateCustom(value, format, culture);
+            }
+        }
+        catch (e) {
+            return formatDateStandard(value, "G", culture);
+        }
+    }
+    dateTimeFormat.format = format;
+    /** Formats the date using standard format expression */
+    function formatDateStandard(value, format, culture) {
+        // In order to provide parity with .NET we have to support additional set of DateTime patterns.
+        let patterns = culture.calendar.patterns;
+        // Extend supported set of patterns
+        ensurePatterns(culture.calendar);
+        // Handle extended set of formats
+        let output = Object(_formatting__WEBPACK_IMPORTED_MODULE_2__["findDateFormat"])(value, format, culture.name);
+        if (output.format.length === 1)
+            format = patterns[output.format];
+        else
+            format = output.format;
+        // need to revisit when globalization is enabled
+        if (!culture) {
+            culture = this.getCurrentCulture();
+        }
+        return Globalize.format(output.value, format, culture);
+    }
+    /** Formats the date using custom format expression */
+    function formatDateCustom(value, format, culture) {
+        let result;
+        let literals = [];
+        format = formattingEncoder.preserveLiterals(format, literals);
+        if (format.indexOf("F") > -1) {
+            // F is not supported so we need to replace the F with f based on the milliseconds
+            // Replace all sequences of F longer than 3 with "FFF"
+            format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "FFFF", "FFF");
+            // Based on milliseconds update the format to use fff
+            let milliseconds = value.getMilliseconds();
+            if (milliseconds % 10 >= 1) {
+                format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "FFF", "fff");
+            }
+            format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "FFF", "FF");
+            if ((milliseconds % 100) / 10 >= 1) {
+                format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "FF", "ff");
+            }
+            format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "FF", "F");
+            if ((milliseconds % 1000) / 100 >= 1) {
+                format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "F", "f");
+            }
+            format = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["replaceAll"](format, "F", "");
+            if (format === "" || format === "%")
+                return "";
+        }
+        format = processCustomDateTimeFormat(format);
+        result = Globalize.format(value, format, culture);
+        result = localize(result, culture.calendar);
+        result = formattingEncoder.restoreLiterals(result, literals, false);
+        return result;
+    }
+    /** Translates unsupported .NET custom format expressions to the custom expressions supported by JQuery.Globalize */
+    function processCustomDateTimeFormat(format) {
+        if (format === _currentCachedFormat) {
+            return _currentCachedProcessedFormat;
+        }
+        _currentCachedFormat = format;
+        format = Object(_formatting__WEBPACK_IMPORTED_MODULE_2__["fixDateTimeFormat"])(format);
+        _currentCachedProcessedFormat = format;
+        return format;
+    }
+    /** Localizes the time separator symbol */
+    function localize(value, dictionary) {
+        let timeSeparator = dictionary[":"];
+        if (timeSeparator === ":") {
+            return value;
+        }
+        let result = "";
+        let count = value.length;
+        for (let i = 0; i < count; i++) {
+            let char = value.charAt(i);
+            switch (char) {
+                case ":":
+                    result += timeSeparator;
+                    break;
+                default:
+                    result += char;
+                    break;
+            }
+        }
+        return result;
+    }
+    function ensurePatterns(calendar) {
+        let patterns = calendar.patterns;
+        if (patterns["g"] === undefined) {
+            patterns["g"] = patterns["f"].replace(patterns["D"], patterns["d"]); // Generic: Short date, short time
+            patterns["G"] = patterns["F"].replace(patterns["D"], patterns["d"]); // Generic: Short date, long time
+        }
+    }
+})(dateTimeFormat || (dateTimeFormat = {}));
+/**
+ * NumberFormat module contains the static methods for formatting the numbers.
+ * It extends the JQuery.Globalize functionality to support complete set of .NET
+ * formatting expressions for numeric types including custom formats.
+ */
+var numberFormat;
+(function (numberFormat) {
+    const NonScientificFormatRegex = /^\{.+\}.*/;
+    const NumericalPlaceHolderRegex = /\{.+\}/;
+    const ScientificFormatRegex = /e[+-]*[0#]+/i;
+    const StandardFormatRegex = /^[a-z]\d{0,2}$/i; // a letter + up to 2 digits for precision specifier
+    const TrailingZerosRegex = /0+$/;
+    const DecimalFormatRegex = /\.([0#]*)/g;
+    const NumericFormatRegex = /[0#,\.]+[0,#]*/g;
+    // (?=...) is a positive lookahead assertion. The RE is asking for the last digit placeholder, [0#],
+    // which is followed by non-digit placeholders and the end of string, [^0#]*$. But it only matches
+    // the last digit placeholder, not anything that follows because the positive lookahead isn"t included
+    // in the match - it is only a condition.
+    const LastNumericPlaceholderRegex = /([0#])(?=[^0#]*$)/;
+    const DecimalFormatCharacter = ".";
+    numberFormat.NumberFormatComponentsDelimeter = ";";
+    function getNonScientificFormatWithPrecision(baseFormat, numericFormat) {
+        if (!numericFormat || baseFormat === undefined)
+            return baseFormat;
+        let newFormat = "{0:" + numericFormat + "}";
+        return baseFormat.replace("{0}", newFormat);
+    }
+    function getNumericFormat(value, baseFormat) {
+        if (baseFormat == null)
+            return baseFormat;
+        if (hasFormatComponents(baseFormat)) {
+            let { positive, negative, zero } = numberFormat.getComponents(baseFormat);
+            if (value > 0)
+                return getNumericFormatFromComponent(value, positive);
+            else if (value === 0)
+                return getNumericFormatFromComponent(value, zero);
+            return getNumericFormatFromComponent(value, negative);
+        }
+        return getNumericFormatFromComponent(value, baseFormat);
+    }
+    numberFormat.getNumericFormat = getNumericFormat;
+    function getNumericFormatFromComponent(value, format) {
+        let match = RegExpExtensions.run(NumericFormatRegex, format);
+        if (match)
+            return match[0];
+        return format;
+    }
+    function addDecimalsToFormat(baseFormat, decimals, trailingZeros) {
+        if (decimals == null)
+            return baseFormat;
+        // Default format string
+        if (baseFormat == null)
+            baseFormat = ZeroPlaceholder;
+        if (hasFormatComponents(baseFormat)) {
+            let { positive, negative, zero } = numberFormat.getComponents(baseFormat);
+            let formats = [positive, negative, zero];
+            for (let i = 0; i < formats.length; i++) {
+                // Update format in formats array
+                formats[i] = addDecimalsToFormatComponent(formats[i], decimals, trailingZeros);
+            }
+            return formats.join(numberFormat.NumberFormatComponentsDelimeter);
+        }
+        return addDecimalsToFormatComponent(baseFormat, decimals, trailingZeros);
+    }
+    numberFormat.addDecimalsToFormat = addDecimalsToFormat;
+    function addDecimalsToFormatComponent(format, decimals, trailingZeros) {
+        decimals = Math.abs(decimals);
+        if (decimals >= 0) {
+            let literals = [];
+            format = formattingEncoder.preserveLiterals(format, literals);
+            let placeholder = trailingZeros ? ZeroPlaceholder : DigitPlaceholder;
+            let decimalPlaceholders = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"](placeholder, Math.abs(decimals));
+            let match = RegExpExtensions.run(DecimalFormatRegex, format);
+            if (match) {
+                let beforeDecimal = format.substr(0, match.index);
+                let formatDecimal = format.substr(match.index + 1, match[1].length);
+                let afterDecimal = format.substr(match.index + match[0].length);
+                if (trailingZeros)
+                    // Use explicit decimals argument as placeholders
+                    formatDecimal = decimalPlaceholders;
+                else {
+                    let decimalChange = decimalPlaceholders.length - formatDecimal.length;
+                    if (decimalChange > 0)
+                        // Append decimalPlaceholders to existing decimal portion of format string
+                        formatDecimal = formatDecimal + decimalPlaceholders.slice(-decimalChange);
+                    else if (decimalChange < 0)
+                        // Remove decimals from formatDecimal
+                        formatDecimal = formatDecimal.slice(0, decimalChange);
+                }
+                if (formatDecimal.length > 0)
+                    formatDecimal = DecimalFormatCharacter + formatDecimal;
+                format = beforeDecimal + formatDecimal + afterDecimal;
+            }
+            else if (decimalPlaceholders.length > 0) {
+                // Replace last numeric placeholder with decimal portion
+                format = format.replace(LastNumericPlaceholderRegex, "$1" + DecimalFormatCharacter + decimalPlaceholders);
+            }
+            if (literals.length !== 0)
+                format = formattingEncoder.restoreLiterals(format, literals);
+        }
+        return format;
+    }
+    function hasFormatComponents(format) {
+        return formattingEncoder.removeLiterals(format).indexOf(numberFormat.NumberFormatComponentsDelimeter) !== -1;
+    }
+    numberFormat.hasFormatComponents = hasFormatComponents;
+    function getComponents(format) {
+        let signFormat = {
+            hasNegative: false,
+            positive: format,
+            negative: format,
+            zero: format,
+        };
+        // escape literals so semi-colon in a literal isn't interpreted as a delimiter
+        // NOTE: OK to use the literals extracted here for all three components before since the literals are indexed.
+        // For example, "'pos-lit';'neg-lit'" will get preserved as "\uE000;\uE001" and the literal array will be
+        // ['pos-lit', 'neg-lit']. When the negative components is restored, its \uE001 will select the second
+        // literal.
+        let literals = [];
+        format = formattingEncoder.preserveLiterals(format, literals);
+        let signSpecificFormats = format.split(numberFormat.NumberFormatComponentsDelimeter);
+        let formatCount = signSpecificFormats.length;
+        if (formatCount > 1) {
+            if (literals.length !== 0)
+                signSpecificFormats = signSpecificFormats.map((signSpecificFormat) => formattingEncoder.restoreLiterals(signSpecificFormat, literals));
+            signFormat.hasNegative = true;
+            signFormat.positive = signFormat.zero = signSpecificFormats[0];
+            signFormat.negative = signSpecificFormats[1];
+            if (formatCount > 2)
+                signFormat.zero = signSpecificFormats[2];
+        }
+        return signFormat;
+    }
+    numberFormat.getComponents = getComponents;
+    let _lastCustomFormatMeta;
+    /** Evaluates if the value can be formatted using the NumberFormat */
+    function canFormat(value) {
+        let result = typeof (value) === "number";
+        return result;
+    }
+    numberFormat.canFormat = canFormat;
+    function isStandardFormat(format) {
+        return StandardFormatRegex.test(format);
+    }
+    numberFormat.isStandardFormat = isStandardFormat;
+    /** Formats the number using specified format expression and culture */
+    function format(value, format, culture) {
+        format = format || "G";
+        try {
+            if (isStandardFormat(format))
+                return formatNumberStandard(value, format, culture);
+            return formatNumberCustom(value, format, culture);
+        }
+        catch (e) {
+            return Globalize.format(value, undefined, culture);
+        }
+    }
+    numberFormat.format = format;
+    /** Performs a custom format with a value override.  Typically used for custom formats showing scaled values. */
+    function formatWithCustomOverride(value, format, nonScientificOverrideFormat, culture) {
+        return formatNumberCustom(value, format, culture, nonScientificOverrideFormat);
+    }
+    numberFormat.formatWithCustomOverride = formatWithCustomOverride;
+    /** Formats the number using standard format expression */
+    function formatNumberStandard(value, format, culture) {
+        let result;
+        let precision = (format.length > 1 ? parseInt(format.substr(1, format.length - 1), 10) : undefined);
+        let numberFormatInfo = Globalize.enUSCulture.numberFormat;
+        let formatChar = format.charAt(0);
+        switch (formatChar) {
+            case "e":
+            case "E":
+                if (precision === undefined) {
+                    precision = 6;
+                }
+                let mantissaDecimalDigits = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"]("0", precision);
+                format = "0." + mantissaDecimalDigits + formatChar + "+000";
+                result = formatNumberCustom(value, format, culture);
+                break;
+            case "f":
+            case "F":
+                result = precision !== undefined ? value.toFixed(precision) : value.toFixed(numberFormatInfo.decimals);
+                result = localize(result, numberFormatInfo);
+                break;
+            case "g":
+            case "G":
+                let abs = Math.abs(value);
+                if (abs === 0 || (1E-4 <= abs && abs < 1E15)) {
+                    // For the range of 0.0001 to 1,000,000,000,000,000 - use the normal form
+                    result = precision !== undefined ? value.toPrecision(precision) : value.toString();
+                }
+                else {
+                    // Otherwise use exponential
+                    // Assert that value is a number and fall back on returning value if it is not
+                    if (typeof (value) !== "number")
+                        return String(value);
+                    result = precision !== undefined ? value.toExponential(precision) : value.toExponential();
+                    result = result.replace("e", "E");
+                }
+                result = localize(result, numberFormatInfo);
+                break;
+            case "r":
+            case "R":
+                result = value.toString();
+                result = localize(result, numberFormatInfo);
+                break;
+            case "x":
+            case "X":
+                result = value.toString(16);
+                if (formatChar === "X") {
+                    result = result.toUpperCase();
+                }
+                if (precision !== undefined) {
+                    let actualPrecision = result.length;
+                    let isNegative = value < 0;
+                    if (isNegative) {
+                        actualPrecision--;
+                    }
+                    let paddingZerosCount = precision - actualPrecision;
+                    let paddingZeros = undefined;
+                    if (paddingZerosCount > 0) {
+                        paddingZeros = _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"]("0", paddingZerosCount);
+                    }
+                    if (isNegative) {
+                        result = "-" + paddingZeros + result.substr(1);
+                    }
+                    else {
+                        result = paddingZeros + result;
+                    }
+                }
+                result = localize(result, numberFormatInfo);
+                break;
+            default:
+                result = Globalize.format(value, format, culture);
+        }
+        return result;
+    }
+    /** Formats the number using custom format expression */
+    function formatNumberCustom(value, format, culture, nonScientificOverrideFormat) {
+        let result;
+        let numberFormatInfo = {
+            negativeInfinity: "",
+            positiveInfinity: "",
+            pattern: ["-n"],
+            decimals: 2,
+            ",": ",",
+            ".": ".",
+            groupSizes: [3],
+            "+": "+",
+            "-": "-",
+            percent: {
+                pattern: ["-n %", "n %"],
+                decimals: 2,
+                groupSizes: [3],
+                ",": ",",
+                ".": ".",
+                symbol: "%"
+            },
+            currency: {
+                pattern: ["($n)", "$n"],
+                decimals: 2,
+                groupSizes: [3],
+                ",": ",",
+                ".": ".",
+                symbol: "$"
+            }
+        };
+        if (isFinite(value)) {
+            // Split format by positive[;negative;zero] pattern
+            let formatComponents = getComponents(format);
+            // Pick a format based on the sign of value
+            if (value > 0) {
+                format = formatComponents.positive;
+            }
+            else if (value === 0) {
+                format = formatComponents.zero;
+            }
+            else {
+                format = formatComponents.negative;
+            }
+            // Normalize value if we have an explicit negative format
+            if (formatComponents.hasNegative)
+                value = Math.abs(value);
+            // Get format metadata
+            let formatMeta = getCustomFormatMetadata(format, true /*calculatePrecision*/);
+            // Preserve literals and escaped chars
+            let literals = [];
+            if (formatMeta.hasLiterals) {
+                format = formattingEncoder.preserveLiterals(format, literals);
+            }
+            // Scientific format
+            if (formatMeta.hasE && !nonScientificOverrideFormat) {
+                let scientificMatch = RegExpExtensions.run(ScientificFormatRegex, format);
+                if (scientificMatch) {
+                    // Case 2.1. Scientific custom format
+                    let formatM = format.substr(0, scientificMatch.index);
+                    let formatE = format.substr(scientificMatch.index + 2); // E(+|-)
+                    let precision = getCustomFormatPrecision(formatM, formatMeta);
+                    let scale = getCustomFormatScale(formatM, formatMeta);
+                    if (scale !== 1) {
+                        value = value * scale;
+                    }
+                    // Assert that value is a number and fall back on returning value if it is not
+                    if (typeof (value) !== "number")
+                        return String(value);
+                    let s = value.toExponential(precision);
+                    let indexOfE = s.indexOf("e");
+                    let mantissa = s.substr(0, indexOfE);
+                    let exp = s.substr(indexOfE + 1);
+                    let resultM = fuseNumberWithCustomFormat(mantissa, formatM, numberFormatInfo);
+                    let resultE = fuseNumberWithCustomFormat(exp, formatE, numberFormatInfo);
+                    if (resultE.charAt(0) === "+" && scientificMatch[0].charAt(1) !== "+") {
+                        resultE = resultE.substr(1);
+                    }
+                    let e = scientificMatch[0].charAt(0);
+                    result = resultM + e + resultE;
+                }
+            }
+            // Non scientific format
+            if (result === undefined) {
+                let valueFormatted;
+                let isValueGlobalized = false;
+                let precision = getCustomFormatPrecision(format, formatMeta);
+                let scale = getCustomFormatScale(format, formatMeta);
+                if (scale !== 1)
+                    value = value * scale;
+                // Rounding
+                value = parseFloat(toNonScientific(value, precision));
+                if (!isFinite(value)) {
+                    // very large and small finite values can become infinite by parseFloat(toNonScientific())
+                    return Globalize.format(value, undefined);
+                }
+                if (nonScientificOverrideFormat) {
+                    // Get numeric format from format string
+                    let numericFormat = numberFormat.getNumericFormat(value, format);
+                    // Add separators and decimalFormat to nonScientificFormat
+                    nonScientificOverrideFormat = getNonScientificFormatWithPrecision(nonScientificOverrideFormat, numericFormat);
+                    // Format the value
+                    valueFormatted = formattingService.format(nonScientificOverrideFormat, [value], culture.name);
+                    isValueGlobalized = true;
+                }
+                else
+                    valueFormatted = toNonScientific(value, precision);
+                result = fuseNumberWithCustomFormat(valueFormatted, format, numberFormatInfo, nonScientificOverrideFormat, isValueGlobalized);
+            }
+            if (formatMeta.hasLiterals) {
+                result = formattingEncoder.restoreLiterals(result, literals, false);
+            }
+            _lastCustomFormatMeta = formatMeta;
+        }
+        else {
+            return Globalize.format(value, undefined);
+        }
+        return result;
+    }
+    /** Returns string with the fixed point respresentation of the number */
+    function toNonScientific(value, precision) {
+        let result = "";
+        let precisionZeros = 0;
+        // Double precision numbers support actual 15-16 decimal digits of precision.
+        if (precision > 16) {
+            precisionZeros = precision - 16;
+            precision = 16;
+        }
+        let digitsBeforeDecimalPoint = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__["double"].log10(Math.abs(value));
+        if (digitsBeforeDecimalPoint < 16) {
+            if (digitsBeforeDecimalPoint > 0) {
+                let maxPrecision = 16 - digitsBeforeDecimalPoint;
+                if (precision > maxPrecision) {
+                    precisionZeros += precision - maxPrecision;
+                    precision = maxPrecision;
+                }
+            }
+            result = value.toFixed(precision);
+        }
+        else if (digitsBeforeDecimalPoint === 16) {
+            result = value.toFixed(0);
+            precisionZeros += precision;
+            if (precisionZeros > 0) {
+                result += ".";
+            }
+        }
+        else { // digitsBeforeDecimalPoint > 16
+            // Different browsers have different implementations of the toFixed().
+            // In IE it returns fixed format no matter what's the number. In FF and Chrome the method returns exponential format for numbers greater than 1E21.
+            // So we need to check for range and convert the to exponential with the max precision.
+            // Then we convert exponential string to fixed by removing the dot and padding with "power" zeros.
+            // Assert that value is a number and fall back on returning value if it is not
+            if (typeof (value) !== "number")
+                return String(value);
+            result = value.toExponential(15);
+            let indexOfE = result.indexOf("e");
+            if (indexOfE > 0) {
+                let indexOfDot = result.indexOf(".");
+                let mantissa = result.substr(0, indexOfE);
+                let exp = result.substr(indexOfE + 1);
+                let powerZeros = parseInt(exp, 10) - (mantissa.length - indexOfDot - 1);
+                result = mantissa.replace(".", "") + _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"]("0", powerZeros);
+                if (precision > 0) {
+                    result = result + "." + _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"]("0", precision);
+                }
+            }
+        }
+        if (precisionZeros > 0) {
+            result = result + _stringExtensions__WEBPACK_IMPORTED_MODULE_1__["repeat"]("0", precisionZeros);
+        }
+        return result;
+    }
+    /**
+     * Returns the formatMetadata of the format
+     * When calculating precision and scale, if format string of
+     * positive[;negative;zero] => positive format will be used
+     * @param (required) format - format string
+     * @param (optional) calculatePrecision - calculate precision of positive format
+     * @param (optional) calculateScale - calculate scale of positive format
+     */
+    function getCustomFormatMetadata(format, calculatePrecision, calculateScale, calculatePartsPerScale) {
+        if (_lastCustomFormatMeta !== undefined && format === _lastCustomFormatMeta.format) {
+            return _lastCustomFormatMeta;
+        }
+        let literals = [];
+        let escaped = formattingEncoder.preserveLiterals(format, literals);
+        let result = {
+            format: format,
+            hasLiterals: literals.length !== 0,
+            hasE: false,
+            hasCommas: false,
+            hasDots: false,
+            hasPercent: false,
+            hasPermile: false,
+            precision: undefined,
+            scale: undefined,
+            partsPerScale: undefined,
+        };
+        for (let i = 0, length = escaped.length; i < length; i++) {
+            let c = escaped.charAt(i);
+            switch (c) {
+                case "e":
+                case "E":
+                    result.hasE = true;
+                    break;
+                case ",":
+                    result.hasCommas = true;
+                    break;
+                case ".":
+                    result.hasDots = true;
+                    break;
+                case "%":
+                    result.hasPercent = true;
+                    break;
+                case "\u2030": // ‰
+                    result.hasPermile = true;
+                    break;
+            }
+        }
+        // Use positive format for calculating these values
+        let formatComponents = getComponents(format);
+        if (calculatePrecision)
+            result.precision = getCustomFormatPrecision(formatComponents.positive, result);
+        if (calculatePartsPerScale)
+            result.partsPerScale = getCustomFormatPartsPerScale(formatComponents.positive, result);
+        if (calculateScale)
+            result.scale = getCustomFormatScale(formatComponents.positive, result);
+        return result;
+    }
+    numberFormat.getCustomFormatMetadata = getCustomFormatMetadata;
+    /** Returns the decimal precision of format based on the number of # and 0 chars after the decimal point
+      * Important: The input format string needs to be split to the appropriate pos/neg/zero portion to work correctly */
+    function getCustomFormatPrecision(format, formatMeta) {
+        if (formatMeta.precision > -1) {
+            return formatMeta.precision;
+        }
+        let result = 0;
+        if (formatMeta.hasDots) {
+            if (formatMeta.hasLiterals) {
+                format = formattingEncoder.removeLiterals(format);
+            }
+            let dotIndex = format.indexOf(".");
+            if (dotIndex > -1) {
+                let count = format.length;
+                for (let i = dotIndex; i < count; i++) {
+                    let char = format.charAt(i);
+                    if (char.match(NumericPlaceholderRegex))
+                        result++;
+                    // 0.00E+0 :: Break before counting 0 in
+                    // exponential portion of format string
+                    if (char === ExponentialFormatChar)
+                        break;
+                }
+                result = Math.min(19, result);
+            }
+        }
+        formatMeta.precision = result;
+        return result;
+    }
+    function getCustomFormatPartsPerScale(format, formatMeta) {
+        if (formatMeta.partsPerScale != null)
+            return formatMeta.partsPerScale;
+        let result = 1;
+        if (formatMeta.hasPercent && format.indexOf("%") > -1) {
+            result = result * 100;
+        }
+        if (formatMeta.hasPermile && format.indexOf(/* ‰ */ "\u2030") > -1) {
+            result = result * 1000;
+        }
+        formatMeta.partsPerScale = result;
+        return result;
+    }
+    /** Returns the scale factor of the format based on the "%" and scaling "," chars in the format */
+    function getCustomFormatScale(format, formatMeta) {
+        if (formatMeta.scale > -1) {
+            return formatMeta.scale;
+        }
+        let result = getCustomFormatPartsPerScale(format, formatMeta);
+        if (formatMeta.hasCommas) {
+            let dotIndex = format.indexOf(".");
+            if (dotIndex === -1) {
+                dotIndex = format.length;
+            }
+            for (let i = dotIndex - 1; i > -1; i--) {
+                let char = format.charAt(i);
+                if (char === ",") {
+                    result = result / 1000;
+                }
+                else {
+                    break;
+                }
+            }
+        }
+        formatMeta.scale = result;
+        return result;
+    }
+    function fuseNumberWithCustomFormat(value, format, numberFormatInfo, nonScientificOverrideFormat, isValueGlobalized) {
+        let suppressModifyValue = !!nonScientificOverrideFormat;
+        let formatParts = format.split(".", 2);
+        if (formatParts.length === 2) {
+            let wholeFormat = formatParts[0];
+            let fractionFormat = formatParts[1];
+            let displayUnit = "";
+            // Remove display unit from value before splitting on "." as localized display units sometimes end with "."
+            if (nonScientificOverrideFormat) {
+                displayUnit = nonScientificOverrideFormat.replace(NumericalPlaceHolderRegex, "");
+                value = value.replace(displayUnit, "");
+            }
+            let globalizedDecimalSeparator = numberFormatInfo["."];
+            let decimalSeparator = isValueGlobalized ? globalizedDecimalSeparator : ".";
+            let valueParts = value.split(decimalSeparator, 2);
+            let wholeValue = valueParts.length === 1 ? valueParts[0] + displayUnit : valueParts[0];
+            let fractionValue = valueParts.length === 2 ? valueParts[1] + displayUnit : "";
+            fractionValue = fractionValue.replace(TrailingZerosRegex, "");
+            let wholeFormattedValue = fuseNumberWithCustomFormatLeft(wholeValue, wholeFormat, numberFormatInfo, suppressModifyValue);
+            let fractionFormattedValue = fuseNumberWithCustomFormatRight(fractionValue, fractionFormat, suppressModifyValue);
+            if (fractionFormattedValue.fmtOnly || fractionFormattedValue.value === "")
+                return wholeFormattedValue + fractionFormattedValue.value;
+            return wholeFormattedValue + globalizedDecimalSeparator + fractionFormattedValue.value;
+        }
+        return fuseNumberWithCustomFormatLeft(value, format, numberFormatInfo, suppressModifyValue);
+    }
+    function fuseNumberWithCustomFormatLeft(value, format, numberFormatInfo, suppressModifyValue) {
+        let groupSymbolIndex = format.indexOf(",");
+        let enableGroups = groupSymbolIndex > -1 && groupSymbolIndex < Math.max(format.lastIndexOf("0"), format.lastIndexOf("#")) && numberFormatInfo[","];
+        let groupDigitCount = 0;
+        let groupIndex = 0;
+        let groupSizes = numberFormatInfo.groupSizes || [3];
+        let groupSize = groupSizes[0];
+        let groupSeparator = numberFormatInfo[","];
+        let sign = "";
+        let firstChar = value.charAt(0);
+        if (firstChar === "+" || firstChar === "-") {
+            sign = numberFormatInfo[firstChar];
+            value = value.substr(1);
+        }
+        let isZero = value === "0";
+        let result = "";
+        let leftBuffer = "";
+        let vi = value.length - 1;
+        let fmtOnly = true;
+        // Iterate through format chars and replace 0 and # with the digits from the value string
+        for (let fi = format.length - 1; fi > -1; fi--) {
+            let formatChar = format.charAt(fi);
+            switch (formatChar) {
+                case ZeroPlaceholder:
+                case DigitPlaceholder:
+                    fmtOnly = false;
+                    if (leftBuffer !== "") {
+                        result = leftBuffer + result;
+                        leftBuffer = "";
+                    }
+                    if (!suppressModifyValue) {
+                        if (vi > -1 || formatChar === ZeroPlaceholder) {
+                            if (enableGroups) {
+                                // If the groups are enabled we'll need to keep track of the current group index and periodically insert group separator,
+                                if (groupDigitCount === groupSize) {
+                                    result = groupSeparator + result;
+                                    groupIndex++;
+                                    if (groupIndex < groupSizes.length) {
+                                        groupSize = groupSizes[groupIndex];
+                                    }
+                                    groupDigitCount = 1;
+                                }
+                                else {
+                                    groupDigitCount++;
+                                }
+                            }
+                        }
+                        if (vi > -1) {
+                            if (isZero && formatChar === DigitPlaceholder) {
+                                // Special case - if we need to format a zero value and the # symbol is used - we don't copy it into the result)
+                            }
+                            else {
+                                result = value.charAt(vi) + result;
+                            }
+                            vi--;
+                        }
+                        else if (formatChar !== DigitPlaceholder) {
+                            result = formatChar + result;
+                        }
+                    }
+                    break;
+                case ",":
+                    // We should skip all the , chars
+                    break;
+                default:
+                    leftBuffer = formatChar + leftBuffer;
+                    break;
+            }
+        }
+        // If the value didn't fit into the number of zeros provided in the format then we should insert the missing part of the value into the result
+        if (!suppressModifyValue) {
+            if (vi > -1 && result !== "") {
+                if (enableGroups) {
+                    while (vi > -1) {
+                        if (groupDigitCount === groupSize) {
+                            result = groupSeparator + result;
+                            groupIndex++;
+                            if (groupIndex < groupSizes.length) {
+                                groupSize = groupSizes[groupIndex];
+                            }
+                            groupDigitCount = 1;
+                        }
+                        else {
+                            groupDigitCount++;
+                        }
+                        result = value.charAt(vi) + result;
+                        vi--;
+                    }
+                }
+                else {
+                    result = value.substr(0, vi + 1) + result;
+                }
+            }
+            // Insert sign in front of the leftBuffer and result
+            return sign + leftBuffer + result;
+        }
+        if (fmtOnly)
+            // If the format doesn't specify any digits to be displayed, then just return the format we've parsed up until now.
+            return sign + leftBuffer + result;
+        return sign + leftBuffer + value + result;
+    }
+    function fuseNumberWithCustomFormatRight(value, format, suppressModifyValue) {
+        let vi = 0;
+        let fCount = format.length;
+        let vCount = value.length;
+        if (suppressModifyValue) {
+            let lastChar = format.charAt(fCount - 1);
+            if (!lastChar.match(NumericPlaceholderRegex))
+                return {
+                    value: value + lastChar,
+                    fmtOnly: value === "",
+                };
+            return {
+                value: value,
+                fmtOnly: value === "",
+            };
+        }
+        let result = "", fmtOnly = true;
+        for (let fi = 0; fi < fCount; fi++) {
+            let formatChar = format.charAt(fi);
+            if (vi < vCount) {
+                switch (formatChar) {
+                    case ZeroPlaceholder:
+                    case DigitPlaceholder:
+                        result += value[vi++];
+                        fmtOnly = false;
+                        break;
+                    default:
+                        result += formatChar;
+                }
+            }
+            else {
+                if (formatChar !== DigitPlaceholder) {
+                    result += formatChar;
+                    fmtOnly = fmtOnly && (formatChar !== ZeroPlaceholder);
+                }
+            }
+        }
+        return {
+            value: result,
+            fmtOnly: fmtOnly,
+        };
+    }
+    function localize(value, dictionary) {
+        let plus = dictionary["+"];
+        let minus = dictionary["-"];
+        let dot = dictionary["."];
+        let comma = dictionary[","];
+        if (plus === "+" && minus === "-" && dot === "." && comma === ",") {
+            return value;
+        }
+        let count = value.length;
+        let result = "";
+        for (let i = 0; i < count; i++) {
+            let char = value.charAt(i);
+            switch (char) {
+                case "+":
+                    result = result + plus;
+                    break;
+                case "-":
+                    result = result + minus;
+                    break;
+                case ".":
+                    result = result + dot;
+                    break;
+                case ",":
+                    result = result + comma;
+                    break;
+                default:
+                    result = result + char;
+                    break;
+            }
+        }
+        return result;
+    }
+})(numberFormat || (numberFormat = {}));
+/** DateTimeScaleFormatInfo is used to calculate and keep the Date formats used for different units supported by the DateTimeScaleModel */
+class DateTimeScaleFormatInfo {
+    // Constructor
+    /**
+     * Creates new instance of the DateTimeScaleFormatInfo class.
+     * @param culture - culture which calendar info is going to be used to derive the formats.
+     */
+    constructor(culture) {
+        let calendar = culture.calendar;
+        let patterns = calendar.patterns;
+        let monthAbbreviations = calendar["months"]["namesAbbr"];
+        let cultureHasMonthAbbr = monthAbbreviations && monthAbbreviations[0];
+        let yearMonthPattern = patterns["Y"];
+        let monthDayPattern = patterns["M"];
+        let fullPattern = patterns["f"];
+        let longTimePattern = patterns["T"];
+        let shortTimePattern = patterns["t"];
+        let separator = fullPattern.indexOf(",") > -1 ? ", " : " ";
+        let hasYearSymbol = yearMonthPattern.indexOf("yyyy'") === 0 && yearMonthPattern.length > 6 && yearMonthPattern[6] === "\'";
+        this.YearPattern = hasYearSymbol ? yearMonthPattern.substr(0, 7) : "yyyy";
+        let yearPos = fullPattern.indexOf("yy");
+        let monthPos = fullPattern.indexOf("MMMM");
+        this.MonthPattern = cultureHasMonthAbbr && monthPos > -1 ? (yearPos > monthPos ? "MMM yyyy" : "yyyy MMM") : yearMonthPattern;
+        this.DayPattern = cultureHasMonthAbbr ? monthDayPattern.replace("MMMM", "MMM") : monthDayPattern;
+        let minutePos = fullPattern.indexOf("mm");
+        let pmPos = fullPattern.indexOf("tt");
+        let shortHourPattern = pmPos > -1 ? shortTimePattern.replace(":mm ", "") : shortTimePattern;
+        this.HourPattern = yearPos < minutePos ? this.DayPattern + separator + shortHourPattern : shortHourPattern + separator + this.DayPattern;
+        this.MinutePattern = shortTimePattern;
+        this.SecondPattern = longTimePattern;
+        this.MillisecondPattern = longTimePattern.replace("ss", "ss.fff");
+        // Special cases
+        switch (culture.name) {
+            case "fi-FI":
+                this.DayPattern = this.DayPattern.replace("'ta'", ""); // Fix for finish 'ta' suffix for month names.
+                this.HourPattern = this.HourPattern.replace("'ta'", "");
+                break;
+        }
+    }
+    // Methods
+    /**
+     * Returns the format string of the provided DateTimeUnit.
+     * @param unit - date or time unit
+     */
+    getFormatString(unit) {
+        switch (unit) {
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Year:
+                return this.YearPattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Month:
+                return this.MonthPattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Week:
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Day:
+                return this.DayPattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Hour:
+                return this.HourPattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Minute:
+                return this.MinutePattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Second:
+                return this.SecondPattern;
+            case _iFormattingService__WEBPACK_IMPORTED_MODULE_3__["DateTimeUnit"].Millisecond:
+                return this.MillisecondPattern;
+        }
+    }
+}
+const formattingService = new FormattingService();
+//# sourceMappingURL=formattingService.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/iFormattingService.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/iFormattingService.js ***!
+  \********************************************************************************************************/
+/*! exports provided: DateTimeUnit */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DateTimeUnit", function() { return DateTimeUnit; });
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+/** Enumeration of DateTimeUnits */
+var DateTimeUnit;
+(function (DateTimeUnit) {
+    DateTimeUnit[DateTimeUnit["Year"] = 0] = "Year";
+    DateTimeUnit[DateTimeUnit["Month"] = 1] = "Month";
+    DateTimeUnit[DateTimeUnit["Week"] = 2] = "Week";
+    DateTimeUnit[DateTimeUnit["Day"] = 3] = "Day";
+    DateTimeUnit[DateTimeUnit["Hour"] = 4] = "Hour";
+    DateTimeUnit[DateTimeUnit["Minute"] = 5] = "Minute";
+    DateTimeUnit[DateTimeUnit["Second"] = 6] = "Second";
+    DateTimeUnit[DateTimeUnit["Millisecond"] = 7] = "Millisecond";
+})(DateTimeUnit || (DateTimeUnit = {}));
+//# sourceMappingURL=iFormattingService.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/index.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/index.js ***!
+  \*************************************************************************/
+/*! exports provided: formatting, valueFormatter, stringExtensions, textMeasurementService, textUtil, wordBreaker, dateUtils, displayUnitSystem, dateTimeSequence, displayUnitSystemType, formattingService, font, familyInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _formatting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formatting */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formatting.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "formatting", function() { return _formatting__WEBPACK_IMPORTED_MODULE_0__; });
+/* harmony import */ var _valueFormatter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./valueFormatter */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/valueFormatter.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "valueFormatter", function() { return _valueFormatter__WEBPACK_IMPORTED_MODULE_1__; });
+/* harmony import */ var _stringExtensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stringExtensions */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/stringExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "stringExtensions", function() { return _stringExtensions__WEBPACK_IMPORTED_MODULE_2__; });
+/* harmony import */ var _textMeasurementService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./textMeasurementService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/textMeasurementService.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "textMeasurementService", function() { return _textMeasurementService__WEBPACK_IMPORTED_MODULE_3__; });
+/* harmony import */ var _font_family__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./font/family */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/font/family.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "font", function() { return _font_family__WEBPACK_IMPORTED_MODULE_4__; });
+/* harmony import */ var _font_familyInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./font/familyInfo */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/font/familyInfo.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "familyInfo", function() { return _font_familyInfo__WEBPACK_IMPORTED_MODULE_5__; });
+/* harmony import */ var _textUtil__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./textUtil */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/textUtil.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "textUtil", function() { return _textUtil__WEBPACK_IMPORTED_MODULE_6__; });
+/* harmony import */ var _date_dateUtils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./date/dateUtils */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateUtils.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dateUtils", function() { return _date_dateUtils__WEBPACK_IMPORTED_MODULE_7__; });
+/* harmony import */ var _date_dateTimeSequence__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./date/dateTimeSequence */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateTimeSequence.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "dateTimeSequence", function() { return _date_dateTimeSequence__WEBPACK_IMPORTED_MODULE_8__; });
+/* harmony import */ var _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./displayUnitSystem/displayUnitSystem */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystem.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "displayUnitSystem", function() { return _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_9__; });
+/* harmony import */ var _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./displayUnitSystem/displayUnitSystemType */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystemType.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "displayUnitSystemType", function() { return _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_10__; });
+/* harmony import */ var _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./formattingService/formattingService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/formattingService.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "formattingService", function() { return _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_11__; });
+/* harmony import */ var _wordBreaker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./wordBreaker */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/wordBreaker.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "wordBreaker", function() { return _wordBreaker__WEBPACK_IMPORTED_MODULE_12__; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/number/numberFormatter.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/number/numberFormatter.js ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NumberFormatter; });
+class NumberFormatter {
+    static expandNumber(number_, precision, formatInfo) {
+        let groupSizes = formatInfo.groupSizes, curSize = groupSizes[0], curGroupIndex = 1, factor = Math.pow(10, precision), rounded = Math.round(number_ * factor) / factor;
+        if (!isFinite(rounded)) {
+            rounded = number_;
+        }
+        number_ = rounded;
+        let numberString = number_ + "", right = "", split = numberString.split(/e/i), exponent = split.length > 1 ? parseInt(split[1], 10) : 0;
+        numberString = split[0];
+        split = numberString.split(".");
+        numberString = split[0];
+        right = split.length > 1 ? split[1] : "";
+        let l;
+        if (exponent > 0) {
+            right = NumberFormatter.zeroPad(right, exponent, false);
+            numberString += right.slice(0, exponent);
+            right = right.substr(exponent);
+        }
+        else if (exponent < 0) {
+            exponent = -exponent;
+            numberString = NumberFormatter.zeroPad(numberString, exponent + 1);
+            right = numberString.slice(-exponent, numberString.length) + right;
+            numberString = numberString.slice(0, -exponent);
+        }
+        if (precision > 0) {
+            right = formatInfo["."] +
+                ((right.length > precision) ? right.slice(0, precision) : NumberFormatter.zeroPad(right, precision));
+        }
+        else {
+            right = "";
+        }
+        let stringIndex = numberString.length - 1, sep = formatInfo[","], ret = "";
+        while (stringIndex >= 0) {
+            if (curSize === 0 || curSize > stringIndex) {
+                return numberString.slice(0, stringIndex + 1) + (ret.length ? (sep + ret + right) : right);
+            }
+            ret = numberString.slice(stringIndex - curSize + 1, stringIndex + 1) + (ret.length ? (sep + ret) : "");
+            stringIndex -= curSize;
+            if (curGroupIndex < groupSizes.length) {
+                curSize = groupSizes[curGroupIndex];
+                curGroupIndex++;
+            }
+        }
+        return numberString.slice(0, stringIndex + 1) + sep + ret + right;
+    }
+    static zeroPad(str, count, left) {
+        let l;
+        for (l = str.length; l < count; l += 1) {
+            str = (left ? ("0" + str) : (str + "0"));
+        }
+        return str;
+    }
+    static formatNumber(value, format, culture) {
+        if (!format || format === "i") {
+            return culture.name.length ? value.toLocaleString() : value.toString();
+        }
+        format = format || "D";
+        let nf = NumberFormatter.numberFormat, number_ = Math.abs(value), precision = -1, pattern;
+        if (format.length > 1)
+            precision = parseInt(format.slice(1), 10);
+        let current = format.charAt(0).toUpperCase(), formatInfo;
+        switch (current) {
+            case "D":
+                pattern = "n";
+                if (precision !== -1) {
+                    number_ = NumberFormatter.zeroPad("" + number_, precision, true);
+                }
+                if (value < 0)
+                    number_ = -number_;
+                break;
+            case "N":
+                formatInfo = nf;
+            // fall through
+            case "C":
+                formatInfo = formatInfo || nf.currency;
+            // fall through
+            case "P":
+                formatInfo = formatInfo || nf.percent;
+                pattern = value < 0 ? formatInfo.pattern[0] : (formatInfo.pattern[1] || "n");
+                if (precision === -1)
+                    precision = formatInfo.decimals;
+                number_ = NumberFormatter.expandNumber(number_ * (current === "P" ? 100 : 1), precision, formatInfo);
+                break;
+            default:
+                throw "Bad number format specifier: " + current;
+        }
+        let patternParts = /n|\$|-|%/g, ret = "";
+        for (;;) {
+            let index = patternParts.lastIndex, ar = patternParts.exec(pattern);
+            ret += pattern.slice(index, ar ? ar.index : pattern.length);
+            if (!ar) {
+                break;
+            }
+            switch (ar[0]) {
+                case "n":
+                    ret += number_;
+                    break;
+                case "$":
+                    ret += nf.currency.symbl;
+                    break;
+                case "-":
+                    // don't make 0 negative
+                    if (/[1-9]/.test(number_.toString())) {
+                        ret += nf["-"];
+                    }
+                    break;
+                case "%":
+                    ret += nf.percent.symbl;
+                    break;
+            }
+        }
+        return ret;
+    }
+}
+//# sourceMappingURL=numberFormatter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/storageService/ephemeralStorageService.js":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/storageService/ephemeralStorageService.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: EphemeralStorageService, ephemeralStorageService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EphemeralStorageService", function() { return EphemeralStorageService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ephemeralStorageService", function() { return ephemeralStorageService; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+class EphemeralStorageService {
+    constructor(clearCacheInterval) {
+        this.cache = {};
+        this.clearCacheInterval = (clearCacheInterval != null)
+            ? clearCacheInterval
+            : EphemeralStorageService.defaultClearCacheInterval;
+        this.clearCache();
+    }
+    getData(key) {
+        return this.cache[key];
+    }
+    setData(key, data) {
+        this.cache[key] = data;
+        if (this.clearCacheTimerId == null) {
+            this.clearCacheTimerId = setTimeout(() => this.clearCache(), this.clearCacheInterval);
+        }
+    }
+    clearCache() {
+        this.cache = {};
+        this.clearCacheTimerId = undefined;
+    }
+}
+EphemeralStorageService.defaultClearCacheInterval = (1000 * 60 * 60 * 24); // 1 day
+const ephemeralStorageService = new EphemeralStorageService();
+//# sourceMappingURL=ephemeralStorageService.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/stringExtensions.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/stringExtensions.js ***!
+  \************************************************************************************/
+/*! exports provided: endsWith, format, equalIgnoreCase, startsWithIgnoreCase, startsWith, contains, containsIgnoreCase, normalizeCase, stringToArrayBuffer, isNullOrEmpty, isNullOrUndefinedOrWhiteSpaceString, containsWhitespace, isWhitespace, trimTrailingWhitespace, trimWhitespace, getLengthDifference, repeat, replaceAll, ensureUniqueNames, findUniqueName, constructNameFromList, escapeStringForRegex, normalizeFileName, stringifyAsPrettyJSON, deriveClsCompliantName, stripTagDelimiters */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endsWith", function() { return endsWith; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "format", function() { return format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "equalIgnoreCase", function() { return equalIgnoreCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startsWithIgnoreCase", function() { return startsWithIgnoreCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startsWith", function() { return startsWith; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contains", function() { return contains; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "containsIgnoreCase", function() { return containsIgnoreCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "normalizeCase", function() { return normalizeCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stringToArrayBuffer", function() { return stringToArrayBuffer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNullOrEmpty", function() { return isNullOrEmpty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNullOrUndefinedOrWhiteSpaceString", function() { return isNullOrUndefinedOrWhiteSpaceString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "containsWhitespace", function() { return containsWhitespace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isWhitespace", function() { return isWhitespace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trimTrailingWhitespace", function() { return trimTrailingWhitespace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trimWhitespace", function() { return trimWhitespace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLengthDifference", function() { return getLengthDifference; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "repeat", function() { return repeat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "replaceAll", function() { return replaceAll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ensureUniqueNames", function() { return ensureUniqueNames; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "findUniqueName", function() { return findUniqueName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "constructNameFromList", function() { return constructNameFromList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "escapeStringForRegex", function() { return escapeStringForRegex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "normalizeFileName", function() { return normalizeFileName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stringifyAsPrettyJSON", function() { return stringifyAsPrettyJSON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deriveClsCompliantName", function() { return deriveClsCompliantName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stripTagDelimiters", function() { return stripTagDelimiters; });
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+const HtmlTagRegex = new RegExp("[<>]", "g");
+/**
+ * Checks if a string ends with a sub-string.
+ */
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+function format(...args) {
+    let s = args[0];
+    if (isNullOrUndefinedOrWhiteSpaceString(s))
+        return s;
+    for (let i = 0; i < args.length - 1; i++) {
+        let reg = new RegExp("\\{" + i + "\\}", "gm");
+        s = s.replace(reg, args[i + 1]);
+    }
+    return s;
+}
+/**
+ * Compares two strings for equality, ignoring case.
+ */
+function equalIgnoreCase(a, b) {
+    return normalizeCase(a) === normalizeCase(b);
+}
+function startsWithIgnoreCase(a, b) {
+    let normalizedSearchString = normalizeCase(b);
+    return normalizeCase(a).indexOf(normalizedSearchString) === 0;
+}
+function startsWith(a, b) {
+    return a.indexOf(b) === 0;
+}
+/** Determines whether a string contains a specified substring (by case-sensitive comparison). */
+function contains(source, substring) {
+    if (source == null)
+        return false;
+    return source.indexOf(substring) !== -1;
+}
+/** Determines whether a string contains a specified substring (while ignoring case). */
+function containsIgnoreCase(source, substring) {
+    if (source == null)
+        return false;
+    return contains(normalizeCase(source), normalizeCase(substring));
+}
+/**
+ * Normalizes case for a string.
+ * Used by equalIgnoreCase method.
+ */
+function normalizeCase(value) {
+    return value.toUpperCase();
+}
+/**
+ * Receives a string and returns an ArrayBuffer of its characters.
+ * @return An ArrayBuffer of the string's characters.
+ * If the string is empty or null or undefined - returns null.
+ */
+function stringToArrayBuffer(str) {
+    if (isNullOrEmpty(str)) {
+        return null;
+    }
+    let buffer = new ArrayBuffer(str.length);
+    let bufferView = new Uint8Array(buffer);
+    for (let i = 0, strLen = str.length; i < strLen; i++) {
+        bufferView[i] = str.charCodeAt(i);
+    }
+    return bufferView;
+}
+/**
+ * Is string null or empty or undefined?
+ * @return True if the value is null or undefined or empty string,
+ * otherwise false.
+ */
+function isNullOrEmpty(value) {
+    return (value == null) || (value.length === 0);
+}
+/**
+ * Returns true if the string is null, undefined, empty, or only includes white spaces.
+ * @return True if the str is null, undefined, empty, or only includes white spaces,
+ * otherwise false.
+ */
+function isNullOrUndefinedOrWhiteSpaceString(str) {
+    return isNullOrEmpty(str) || isNullOrEmpty(str.trim());
+}
+/**
+ * Returns a value indicating whether the str contains any whitespace.
+ */
+function containsWhitespace(str) {
+    let expr = /\s/;
+    return expr.test(str);
+}
+/**
+ * Returns a value indicating whether the str is a whitespace string.
+ */
+function isWhitespace(str) {
+    return str.trim() === "";
+}
+/**
+ * Returns the string with any trailing whitespace from str removed.
+ */
+function trimTrailingWhitespace(str) {
+    return str.replace(/\s+$/, "");
+}
+/**
+ * Returns the string with any leading and trailing whitespace from str removed.
+ */
+function trimWhitespace(str) {
+    return str.replace(/^\s+/, "").replace(/\s+$/, "");
+}
+/**
+ * Returns length difference between the two provided strings.
+ */
+function getLengthDifference(left, right) {
+    return Math.abs(left.length - right.length);
+}
+/**
+ * Repeat char or string several times.
+ * @param char The string to repeat.
+ * @param count How many times to repeat the string.
+ */
+function repeat(char, count) {
+    let result = "";
+    for (let i = 0; i < count; i++) {
+        result += char;
+    }
+    return result;
+}
+/**
+ * Replace all the occurrences of the textToFind in the text with the textToReplace.
+ * @param text The original string.
+ * @param textToFind Text to find in the original string.
+ * @param textToReplace New text replacing the textToFind.
+ */
+function replaceAll(text, textToFind, textToReplace) {
+    if (!textToFind)
+        return text;
+    let pattern = escapeStringForRegex(textToFind);
+    return text.replace(new RegExp(pattern, "gi"), textToReplace);
+}
+function ensureUniqueNames(names) {
+    let usedNames = {};
+    // Make sure we are giving fair chance for all columns to stay with their original name
+    // First we fill the used names map to contain all the original unique names from the list.
+    for (let name of names) {
+        usedNames[name] = false;
+    }
+    let uniqueNames = [];
+    // Now we go over all names and find a unique name for each
+    for (let name of names) {
+        let uniqueName = name;
+        // If the (original) column name is already taken lets try to find another name
+        if (usedNames[uniqueName]) {
+            let counter = 0;
+            // Find a name that is not already in the map
+            while (usedNames[uniqueName] !== undefined) {
+                uniqueName = name + "." + (++counter);
+            }
+        }
+        uniqueNames.push(uniqueName);
+        usedNames[uniqueName] = true;
+    }
+    return uniqueNames;
+}
+/**
+ * Returns a name that is not specified in the values.
+ */
+function findUniqueName(usedNames, baseName) {
+    // Find a unique name
+    let i = 0, uniqueName = baseName;
+    while (usedNames[uniqueName]) {
+        uniqueName = baseName + (++i);
+    }
+    return uniqueName;
+}
+function constructNameFromList(list, separator, maxCharacter) {
+    let labels = [];
+    let exceeded;
+    let length = 0;
+    for (let item of list) {
+        if (length + item.length > maxCharacter && labels.length > 0) {
+            exceeded = true;
+            break;
+        }
+        labels.push(item);
+        length += item.length;
+    }
+    let separatorWithSpace = " " + separator + " ";
+    let name = labels.join(separatorWithSpace);
+    if (exceeded)
+        name += separatorWithSpace + "...";
+    return name;
+}
+function escapeStringForRegex(s) {
+    return s.replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, "\\$1");
+}
+/**
+ * Remove file name reserved characters <>:"/\|?* from input string.
+ */
+function normalizeFileName(fileName) {
+    return fileName.replace(/[\<\>\:"\/\\\|\?*]/g, "");
+}
+/**
+ * Similar to JSON.stringify, but strips away escape sequences so that the resulting
+ * string is human-readable (and parsable by JSON formatting/validating tools).
+ */
+function stringifyAsPrettyJSON(object) {
+    // let specialCharacterRemover = (key: string, value: string) => value.replace(/[^\w\s]/gi, "");
+    return JSON.stringify(object /*, specialCharacterRemover*/);
+}
+/**
+ * Derive a CLS-compliant name from a specified string.  If no allowed characters are present, return a fallback string instead.
+ * TODO (6708134): this should have a fully Unicode-aware implementation
+ */
+function deriveClsCompliantName(input, fallback) {
+    let result = input.replace(/^[^A-Za-z]*/g, "").replace(/[ :\.\/\\\-\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000]/g, "_").replace(/[\W]/g, "");
+    return result.length > 0 ? result : fallback;
+}
+/** Performs cheap sanitization by stripping away HTML tag (<>) characters. */
+function stripTagDelimiters(s) {
+    return s.replace(HtmlTagRegex, "");
+}
+//# sourceMappingURL=stringExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/textMeasurementService.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/textMeasurementService.js ***!
+  \******************************************************************************************/
+/*! exports provided: textMeasurementService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "textMeasurementService", function() { return textMeasurementService; });
+/* harmony import */ var powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! powerbi-visuals-utils-typeutils */ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js");
+/* harmony import */ var _wordBreaker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./wordBreaker */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/wordBreaker.js");
+/* harmony import */ var _storageService_ephemeralStorageService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./storageService/ephemeralStorageService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/storageService/ephemeralStorageService.js");
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+// powerbi.extensibility.utils.type
+
+// powerbi.extensibility.utils.formatting
+
+
+var textMeasurementService;
+(function (textMeasurementService) {
+    const ellipsis = "...";
+    let spanElement;
+    let svgTextElement;
+    let canvasCtx;
+    let fallbackFontFamily;
+    /**
+     * Idempotent function for adding the elements to the DOM.
+     */
+    function ensureDOM() {
+        if (spanElement) {
+            return;
+        }
+        spanElement = document.createElement("span");
+        document.body.appendChild(spanElement);
+        // The style hides the svg element from the canvas, preventing canvas from scrolling down to show svg black square.
+        const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svgElement.setAttribute("height", "0");
+        svgElement.setAttribute("width", "0");
+        svgElement.setAttribute("position", "absolute");
+        svgTextElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        svgElement.appendChild(svgTextElement);
+        document.body.appendChild(svgElement);
+        let canvasElement = document.createElement("canvas");
+        canvasCtx = canvasElement.getContext("2d");
+        let style = window.getComputedStyle(svgTextElement);
+        if (style) {
+            fallbackFontFamily = style.fontFamily;
+        }
+        else {
+            fallbackFontFamily = "";
+        }
+    }
+    /**
+     * Removes spanElement from DOM.
+     */
+    function removeSpanElement() {
+        if (spanElement && spanElement.remove) {
+            spanElement.remove();
+        }
+        spanElement = null;
+    }
+    textMeasurementService.removeSpanElement = removeSpanElement;
+    /**
+     * This method measures the width of the text with the given SVG text properties.
+     * @param textProperties The text properties to use for text measurement.
+     * @param text The text to measure.
+     */
+    function measureSvgTextWidth(textProperties, text) {
+        ensureDOM();
+        canvasCtx.font =
+            (textProperties.fontStyle || "") + " " +
+                (textProperties.fontVariant || "") + " " +
+                (textProperties.fontWeight || "") + " " +
+                textProperties.fontSize + " " +
+                (textProperties.fontFamily || fallbackFontFamily);
+        return canvasCtx.measureText(text || textProperties.text).width;
+    }
+    textMeasurementService.measureSvgTextWidth = measureSvgTextWidth;
+    /**
+     * This method return the rect with the given SVG text properties.
+     * @param textProperties The text properties to use for text measurement.
+     * @param text The text to measure.
+     */
+    function measureSvgTextRect(textProperties, text) {
+        ensureDOM();
+        // Removes DOM elements faster than innerHTML
+        while (svgTextElement.firstChild) {
+            svgTextElement.removeChild(svgTextElement.firstChild);
+        }
+        svgTextElement.setAttribute("style", null);
+        svgTextElement.style.visibility = "hidden";
+        svgTextElement.style.fontFamily = textProperties.fontFamily || fallbackFontFamily;
+        svgTextElement.style.fontVariant = textProperties.fontVariant;
+        svgTextElement.style.fontSize = textProperties.fontSize;
+        svgTextElement.style.fontWeight = textProperties.fontWeight;
+        svgTextElement.style.fontStyle = textProperties.fontStyle;
+        svgTextElement.style.whiteSpace = textProperties.whiteSpace || "nowrap";
+        svgTextElement.appendChild(document.createTextNode(text || textProperties.text));
+        // We're expecting the browser to give a synchronous measurement here
+        // We're using SVGTextElement because it works across all browsers
+        return svgTextElement.getBBox();
+    }
+    textMeasurementService.measureSvgTextRect = measureSvgTextRect;
+    /**
+     * This method measures the height of the text with the given SVG text properties.
+     * @param textProperties The text properties to use for text measurement.
+     * @param text The text to measure.
+     */
+    function measureSvgTextHeight(textProperties, text) {
+        return measureSvgTextRect(textProperties, text).height;
+    }
+    textMeasurementService.measureSvgTextHeight = measureSvgTextHeight;
+    /**
+     * This method returns the text Rect with the given SVG text properties.
+     * Does NOT return text width; obliterates text value
+     * @param {TextProperties} textProperties - The text properties to use for text measurement
+     */
+    function estimateSvgTextRect(textProperties) {
+        let propertiesKey = textProperties.fontFamily + textProperties.fontSize;
+        let rect = _storageService_ephemeralStorageService__WEBPACK_IMPORTED_MODULE_2__["ephemeralStorageService"].getData(propertiesKey);
+        if (rect == null) {
+            // To estimate we check the height of a particular character, once it is cached, subsequent
+            // calls should always get the height from the cache (regardless of the text).
+            let estimatedTextProperties = {
+                fontFamily: textProperties.fontFamily,
+                fontSize: textProperties.fontSize,
+                text: "M",
+            };
+            rect = textMeasurementService.measureSvgTextRect(estimatedTextProperties);
+            // NOTE: In some cases (disconnected/hidden DOM) we may provide incorrect measurement results (zero sized bounding-box), so
+            // we only store values in the cache if we are confident they are correct.
+            if (rect.height > 0)
+                _storageService_ephemeralStorageService__WEBPACK_IMPORTED_MODULE_2__["ephemeralStorageService"].setData(propertiesKey, rect);
+        }
+        return rect;
+    }
+    /**
+     * This method returns the text Rect with the given SVG text properties.
+     * @param {TextProperties} textProperties - The text properties to use for text measurement
+     */
+    function estimateSvgTextBaselineDelta(textProperties) {
+        let rect = estimateSvgTextRect(textProperties);
+        return rect.y + rect.height;
+    }
+    textMeasurementService.estimateSvgTextBaselineDelta = estimateSvgTextBaselineDelta;
+    /**
+     * This method estimates the height of the text with the given SVG text properties.
+     * @param {TextProperties} textProperties - The text properties to use for text measurement
+     */
+    function estimateSvgTextHeight(textProperties, tightFightForNumeric = false) {
+        let height = estimateSvgTextRect(textProperties).height;
+        // TODO: replace it with new baseline calculation
+        if (tightFightForNumeric)
+            height *= 0.7;
+        return height;
+    }
+    textMeasurementService.estimateSvgTextHeight = estimateSvgTextHeight;
+    /**
+     * This method measures the width of the svgElement.
+     * @param svgElement The SVGTextElement to be measured.
+     */
+    function measureSvgTextElementWidth(svgElement) {
+        return measureSvgTextWidth(getSvgMeasurementProperties(svgElement));
+    }
+    textMeasurementService.measureSvgTextElementWidth = measureSvgTextElementWidth;
+    /**
+     * This method fetches the text measurement properties of the given DOM element.
+     * @param element The selector for the DOM Element.
+     */
+    function getMeasurementProperties(element) {
+        const style = window.getComputedStyle(element);
+        return {
+            text: element.value || element.textContent,
+            fontFamily: style.fontFamily,
+            fontSize: style.fontSize,
+            fontWeight: style.fontWeight,
+            fontStyle: style.fontStyle,
+            fontVariant: style.fontVariant,
+            whiteSpace: style.whiteSpace
+        };
+    }
+    textMeasurementService.getMeasurementProperties = getMeasurementProperties;
+    /**
+     * This method fetches the text measurement properties of the given SVG text element.
+     * @param element The SVGTextElement to be measured.
+     */
+    function getSvgMeasurementProperties(element) {
+        let style = window.getComputedStyle(element);
+        if (style) {
+            return {
+                text: element.textContent,
+                fontFamily: style.fontFamily,
+                fontSize: style.fontSize,
+                fontWeight: style.fontWeight,
+                fontStyle: style.fontStyle,
+                fontVariant: style.fontVariant,
+                whiteSpace: style.whiteSpace
+            };
+        }
+        else {
+            return {
+                text: element.textContent,
+                fontFamily: "",
+                fontSize: "0",
+            };
+        }
+    }
+    textMeasurementService.getSvgMeasurementProperties = getSvgMeasurementProperties;
+    /**
+     * This method returns the width of a div element.
+     * @param element The div element.
+     */
+    function getDivElementWidth(element) {
+        const style = window.getComputedStyle(element);
+        if (style)
+            return style.width;
+        else
+            return "0";
+    }
+    textMeasurementService.getDivElementWidth = getDivElementWidth;
+    /**
+     * Compares labels text size to the available size and renders ellipses when the available size is smaller.
+     * @param textProperties The text properties (including text content) to use for text measurement.
+     * @param maxWidth The maximum width available for rendering the text.
+     */
+    function getTailoredTextOrDefault(textProperties, maxWidth) {
+        ensureDOM();
+        let strLength = textProperties.text.length;
+        if (strLength === 0) {
+            return textProperties.text;
+        }
+        let width = measureSvgTextWidth(textProperties);
+        if (width < maxWidth) {
+            return textProperties.text;
+        }
+        // Create a copy of the textProperties so we don't modify the one that's passed in.
+        let copiedTextProperties = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__["prototype"].inherit(textProperties);
+        // Take the properties and apply them to svgTextElement
+        // Then, do the binary search to figure out the substring we want
+        // Set the substring on textElement argument
+        let text = copiedTextProperties.text = ellipsis + copiedTextProperties.text;
+        let min = 1;
+        let max = text.length;
+        let i = ellipsis.length;
+        while (min <= max) {
+            // num | 0 prefered to Math.floor(num) for performance benefits
+            i = (min + max) / 2 | 0;
+            copiedTextProperties.text = text.substr(0, i);
+            width = measureSvgTextWidth(copiedTextProperties);
+            if (maxWidth > width) {
+                min = i + 1;
+            }
+            else if (maxWidth < width) {
+                max = i - 1;
+            }
+            else {
+                break;
+            }
+        }
+        // Since the search algorithm almost never finds an exact match,
+        // it will pick one of the closest two, which could result in a
+        // value bigger with than 'maxWidth' thus we need to go back by
+        // one to guarantee a smaller width than 'maxWidth'.
+        copiedTextProperties.text = text.substr(0, i);
+        width = measureSvgTextWidth(copiedTextProperties);
+        if (width > maxWidth) {
+            i--;
+        }
+        return text.substr(ellipsis.length, i - ellipsis.length) + ellipsis;
+    }
+    textMeasurementService.getTailoredTextOrDefault = getTailoredTextOrDefault;
+    /**
+     * Compares labels text size to the available size and renders ellipses when the available size is smaller.
+     * @param textElement The SVGTextElement containing the text to render.
+     * @param maxWidth The maximum width available for rendering the text.
+     */
+    function svgEllipsis(textElement, maxWidth) {
+        let properties = getSvgMeasurementProperties(textElement);
+        let originalText = properties.text;
+        let tailoredText = getTailoredTextOrDefault(properties, maxWidth);
+        if (originalText !== tailoredText) {
+            textElement.textContent = tailoredText;
+        }
+    }
+    textMeasurementService.svgEllipsis = svgEllipsis;
+    /**
+     * Word break textContent of <text> SVG element into <tspan>s
+     * Each tspan will be the height of a single line of text
+     * @param textElement - the SVGTextElement containing the text to wrap
+     * @param maxWidth - the maximum width available
+     * @param maxHeight - the maximum height available (defaults to single line)
+     * @param linePadding - (optional) padding to add to line height
+     */
+    function wordBreak(textElement, maxWidth, maxHeight, linePadding = 0) {
+        let properties = getSvgMeasurementProperties(textElement);
+        let height = estimateSvgTextHeight(properties) + linePadding;
+        let maxNumLines = Math.max(1, Math.floor(maxHeight / height));
+        // Save y of parent textElement to apply as first tspan dy
+        let firstDY = textElement ? textElement.getAttribute("y") : null;
+        // Store and clear text content
+        let labelText = textElement ? textElement.textContent : null;
+        textElement.textContent = null;
+        // Append a tspan for each word broken section
+        let words = _wordBreaker__WEBPACK_IMPORTED_MODULE_1__["splitByWidth"](labelText, properties, measureSvgTextWidth, maxWidth, maxNumLines);
+        const fragment = document.createDocumentFragment();
+        for (let i = 0, ilen = words.length; i < ilen; i++) {
+            const dy = i === 0 ? firstDY : height;
+            properties.text = words[i];
+            const textElement = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+            textElement.setAttribute("x", "0");
+            textElement.setAttribute("dy", dy ? dy.toString() : null);
+            textElement.appendChild(document.createTextNode(getTailoredTextOrDefault(properties, maxWidth)));
+            fragment.appendChild(textElement);
+        }
+        textElement.appendChild(fragment);
+    }
+    textMeasurementService.wordBreak = wordBreak;
+    /**
+     * Word break textContent of span element into <span>s
+     * Each span will be the height of a single line of text
+     * @param textElement - the element containing the text to wrap
+     * @param maxWidth - the maximum width available
+     * @param maxHeight - the maximum height available (defaults to single line)
+     * @param linePadding - (optional) padding to add to line height
+     */
+    function wordBreakOverflowingText(textElement, maxWidth, maxHeight, linePadding = 0) {
+        const properties = getSvgMeasurementProperties(textElement);
+        let height = estimateSvgTextHeight(properties) + linePadding;
+        let maxNumLines = Math.max(1, Math.floor(maxHeight / height));
+        // Store and clear text content
+        const labelText = textElement.textContent;
+        textElement.textContent = null;
+        // Append a span for each word broken section
+        const words = _wordBreaker__WEBPACK_IMPORTED_MODULE_1__["splitByWidth"](labelText, properties, measureSvgTextWidth, maxWidth, maxNumLines);
+        const fragment = document.createDocumentFragment();
+        for (let i = 0; i < words.length; i++) {
+            const span = document.createElement("span");
+            span.classList.add("overflowingText");
+            span.style.overflow = "hidden";
+            span.style.whiteSpace = "nowrap";
+            span.style.textOverflow = "ellipsis";
+            span.style.display = "block";
+            span.style.width = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_0__["pixelConverter"].toString(maxWidth);
+            span.appendChild(document.createTextNode(words[i]));
+            span.appendChild(document.createTextNode(getTailoredTextOrDefault(properties, maxWidth)));
+            fragment.appendChild(span);
+        }
+        textElement.appendChild(fragment);
+    }
+    textMeasurementService.wordBreakOverflowingText = wordBreakOverflowingText;
+})(textMeasurementService || (textMeasurementService = {}));
+//# sourceMappingURL=textMeasurementService.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/textUtil.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/textUtil.js ***!
+  \****************************************************************************/
+/*! exports provided: removeBreakingSpaces, removeEllipses, replaceSpaceWithNBSP */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeBreakingSpaces", function() { return removeBreakingSpaces; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeEllipses", function() { return removeEllipses; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "replaceSpaceWithNBSP", function() { return replaceSpaceWithNBSP; });
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+/**
+ * Contains functions/constants to aid in text manupilation.
+ */
+/**
+ * Remove breaking spaces from given string and replace by none breaking space (&nbsp).
+ */
+function removeBreakingSpaces(str) {
+    return str.toString().replace(new RegExp(" ", "g"), "&nbsp");
+}
+/**
+ * Remove ellipses from a given string
+ */
+function removeEllipses(str) {
+    return str.replace(/(…)|(\.\.\.)/g, "");
+}
+/**
+* Replace every whitespace (0x20) with Non-Breaking Space (0xA0)
+    * @param {string} txt String to replace White spaces
+    * @returns Text after replcing white spaces
+    */
+function replaceSpaceWithNBSP(txt) {
+    if (txt != null) {
+        return txt.replace(/ /g, "\xA0");
+    }
+}
+//# sourceMappingURL=textUtil.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/valueFormatter.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/valueFormatter.js ***!
+  \**********************************************************************************/
+/*! exports provided: valueFormatter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "valueFormatter", function() { return valueFormatter; });
+/* harmony import */ var _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./displayUnitSystem/displayUnitSystem */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystem.js");
+/* harmony import */ var _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayUnitSystem/displayUnitSystemType */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/displayUnitSystem/displayUnitSystemType.js");
+/* harmony import */ var _stringExtensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stringExtensions */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/stringExtensions.js");
+/* harmony import */ var _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./formattingService/formattingService */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/formattingService/formattingService.js");
+/* harmony import */ var _date_dateTimeSequence__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./date/dateTimeSequence */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/date/dateTimeSequence.js");
+/* harmony import */ var powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! powerbi-visuals-utils-typeutils */ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js");
+/* harmony import */ var powerbi_visuals_utils_dataviewutils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! powerbi-visuals-utils-dataviewutils */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js");
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+
+
+
+
+
+
+
+var DataViewObjects = powerbi_visuals_utils_dataviewutils__WEBPACK_IMPORTED_MODULE_6__["dataViewObjects"].DataViewObjects;
+// powerbi.extensibility.utils.type
+var ValueType = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_5__["valueType"].ValueType;
+var PrimitiveType = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_5__["valueType"].PrimitiveType;
+var valueFormatter;
+(function (valueFormatter) {
+    var StringExtensions = _stringExtensions__WEBPACK_IMPORTED_MODULE_2__;
+    const BeautifiedFormat = {
+        "0.00 %;-0.00 %;0.00 %": "Percentage",
+        "0.0 %;-0.0 %;0.0 %": "Percentage1",
+    };
+    valueFormatter.DefaultIntegerFormat = "g";
+    valueFormatter.DefaultNumericFormat = "#,0.00";
+    valueFormatter.DefaultDateFormat = "d";
+    const defaultLocalizedStrings = {
+        "NullValue": "(Blank)",
+        "BooleanTrue": "True",
+        "BooleanFalse": "False",
+        "NaNValue": "NaN",
+        "InfinityValue": "+Infinity",
+        "NegativeInfinityValue": "-Infinity",
+        "RestatementComma": "{0}, {1}",
+        "RestatementCompoundAnd": "{0} and {1}",
+        "RestatementCompoundOr": "{0} or {1}",
+        "DisplayUnitSystem_EAuto_Title": "Auto",
+        "DisplayUnitSystem_E0_Title": "None",
+        "DisplayUnitSystem_E3_LabelFormat": "{0}K",
+        "DisplayUnitSystem_E3_Title": "Thousands",
+        "DisplayUnitSystem_E6_LabelFormat": "{0}M",
+        "DisplayUnitSystem_E6_Title": "Millions",
+        "DisplayUnitSystem_E9_LabelFormat": "{0}bn",
+        "DisplayUnitSystem_E9_Title": "Billions",
+        "DisplayUnitSystem_E12_LabelFormat": "{0}T",
+        "DisplayUnitSystem_E12_Title": "Trillions",
+        "Percentage": "#,0.##%",
+        "Percentage1": "#,0.#%",
+        "TableTotalLabel": "Total",
+        "Tooltip_HighlightedValueDisplayName": "Highlighted",
+        "Funnel_PercentOfFirst": "Percent of first",
+        "Funnel_PercentOfPrevious": "Percent of previous",
+        "Funnel_PercentOfFirst_Highlight": "Percent of first (highlighted)",
+        "Funnel_PercentOfPrevious_Highlight": "Percent of previous (highlighted)",
+        // Geotagging strings
+        "GeotaggingString_Continent": "continent",
+        "GeotaggingString_Continents": "continents",
+        "GeotaggingString_Country": "country",
+        "GeotaggingString_Countries": "countries",
+        "GeotaggingString_State": "state",
+        "GeotaggingString_States": "states",
+        "GeotaggingString_City": "city",
+        "GeotaggingString_Cities": "cities",
+        "GeotaggingString_Town": "town",
+        "GeotaggingString_Towns": "towns",
+        "GeotaggingString_Province": "province",
+        "GeotaggingString_Provinces": "provinces",
+        "GeotaggingString_County": "county",
+        "GeotaggingString_Counties": "counties",
+        "GeotaggingString_Village": "village",
+        "GeotaggingString_Villages": "villages",
+        "GeotaggingString_Post": "post",
+        "GeotaggingString_Zip": "zip",
+        "GeotaggingString_Code": "code",
+        "GeotaggingString_Place": "place",
+        "GeotaggingString_Places": "places",
+        "GeotaggingString_Address": "address",
+        "GeotaggingString_Addresses": "addresses",
+        "GeotaggingString_Street": "street",
+        "GeotaggingString_Streets": "streets",
+        "GeotaggingString_Longitude": "longitude",
+        "GeotaggingString_Longitude_Short": "lon",
+        "GeotaggingString_Longitude_Short2": "long",
+        "GeotaggingString_Latitude": "latitude",
+        "GeotaggingString_Latitude_Short": "lat",
+        "GeotaggingString_PostalCode": "postal code",
+        "GeotaggingString_PostalCodes": "postal codes",
+        "GeotaggingString_ZipCode": "zip code",
+        "GeotaggingString_ZipCodes": "zip codes",
+        "GeotaggingString_Territory": "territory",
+        "GeotaggingString_Territories": "territories",
+    };
+    function beautify(format) {
+        let key = BeautifiedFormat[format];
+        if (key)
+            return defaultLocalizedStrings[key] || format;
+        return format;
+    }
+    function describeUnit(exponent) {
+        let exponentLookup = (exponent === -1) ? "Auto" : exponent.toString();
+        let title = defaultLocalizedStrings["DisplayUnitSystem_E" + exponentLookup + "_Title"];
+        let format = (exponent <= 0) ? "{0}" : defaultLocalizedStrings["DisplayUnitSystem_E" + exponentLookup + "_LabelFormat"];
+        if (title || format)
+            return { title: title, format: format };
+    }
+    function getLocalizedString(stringId) {
+        return defaultLocalizedStrings[stringId];
+    }
+    valueFormatter.getLocalizedString = getLocalizedString;
+    // NOTE: Define default locale options, but these can be overriden by setLocaleOptions.
+    let localizationOptions = {
+        nullValue: defaultLocalizedStrings["NullValue"],
+        trueValue: defaultLocalizedStrings["BooleanTrue"],
+        falseValue: defaultLocalizedStrings["BooleanFalse"],
+        NaN: defaultLocalizedStrings["NaNValue"],
+        infinity: defaultLocalizedStrings["InfinityValue"],
+        negativeInfinity: defaultLocalizedStrings["NegativeInfinityValue"],
+        beautify: format => beautify(format),
+        describe: exponent => describeUnit(exponent),
+        restatementComma: defaultLocalizedStrings["RestatementComma"],
+        restatementCompoundAnd: defaultLocalizedStrings["RestatementCompoundAnd"],
+        restatementCompoundOr: defaultLocalizedStrings["RestatementCompoundOr"],
+    };
+    const MaxScaledDecimalPlaces = 2;
+    const MaxValueForDisplayUnitRounding = 1000;
+    const MinIntegerValueForDisplayUnits = 10000;
+    const MinPrecisionForDisplayUnits = 2;
+    const DateTimeMetadataColumn = {
+        displayName: "",
+        type: ValueType.fromPrimitiveTypeAndCategory(PrimitiveType.DateTime),
+    };
+    function getFormatMetadata(format) {
+        return _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__["numberFormat"].getCustomFormatMetadata(format);
+    }
+    valueFormatter.getFormatMetadata = getFormatMetadata;
+    function setLocaleOptions(options) {
+        localizationOptions = options;
+        _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["DefaultDisplayUnitSystem"].reset();
+        _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["WholeUnitsDisplayUnitSystem"].reset();
+    }
+    valueFormatter.setLocaleOptions = setLocaleOptions;
+    function createDefaultFormatter(formatString, allowFormatBeautification, cultureSelector) {
+        const formatBeautified = allowFormatBeautification
+            ? localizationOptions.beautify(formatString)
+            : formatString;
+        return {
+            format: function (value) {
+                if (value == null) {
+                    return localizationOptions.nullValue;
+                }
+                return formatCore({
+                    value,
+                    cultureSelector,
+                    format: formatBeautified
+                });
+            }
+        };
+    }
+    valueFormatter.createDefaultFormatter = createDefaultFormatter;
+    /** Creates an IValueFormatter to be used for a range of values. */
+    function create(options) {
+        const format = !!options.allowFormatBeautification
+            ? localizationOptions.beautify(options.format)
+            : options.format;
+        const { cultureSelector } = options;
+        if (shouldUseNumericDisplayUnits(options)) {
+            let displayUnitSystem = createDisplayUnitSystem(options.displayUnitSystemType);
+            let singleValueFormattingMode = !!options.formatSingleValues;
+            displayUnitSystem.update(Math.max(Math.abs(options.value || 0), Math.abs(options.value2 || 0)));
+            let forcePrecision = options.precision != null;
+            let decimals;
+            if (forcePrecision)
+                decimals = -options.precision;
+            else if (displayUnitSystem.displayUnit && displayUnitSystem.displayUnit.value > 1)
+                decimals = -MaxScaledDecimalPlaces;
+            return {
+                format: function (value) {
+                    let formattedValue = getStringFormat(value, true /*nullsAreBlank*/);
+                    if (!StringExtensions.isNullOrUndefinedOrWhiteSpaceString(formattedValue)) {
+                        return formattedValue;
+                    }
+                    // Round to Double.DEFAULT_PRECISION
+                    if (value
+                        && !displayUnitSystem.isScalingUnit()
+                        && Math.abs(value) < MaxValueForDisplayUnitRounding
+                        && !forcePrecision) {
+                        value = powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_5__["double"].roundToPrecision(value);
+                    }
+                    return singleValueFormattingMode
+                        ? displayUnitSystem.formatSingleValue(value, format, decimals, forcePrecision, cultureSelector)
+                        : displayUnitSystem.format(value, format, decimals, forcePrecision, cultureSelector);
+                },
+                displayUnit: displayUnitSystem.displayUnit,
+                options: options
+            };
+        }
+        if (shouldUseDateUnits(options.value, options.value2, options.tickCount)) {
+            const unit = _date_dateTimeSequence__WEBPACK_IMPORTED_MODULE_4__["DateTimeSequence"].getIntervalUnit(options.value /* minDate */, options.value2 /* maxDate */, options.tickCount);
+            return {
+                format: function (value) {
+                    if (value == null) {
+                        return localizationOptions.nullValue;
+                    }
+                    let formatString = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__["formattingService"].dateFormatString(unit);
+                    return formatCore({
+                        value,
+                        cultureSelector,
+                        format: formatString,
+                    });
+                },
+                options: options
+            };
+        }
+        return createDefaultFormatter(format, false, cultureSelector);
+    }
+    valueFormatter.create = create;
+    function format(value, format, allowFormatBeautification, cultureSelector) {
+        if (value == null) {
+            return localizationOptions.nullValue;
+        }
+        const formatString = !!allowFormatBeautification
+            ? localizationOptions.beautify(format)
+            : format;
+        return formatCore({
+            value,
+            cultureSelector,
+            format: formatString
+        });
+    }
+    valueFormatter.format = format;
+    /**
+     * Value formatting function to handle variant measures.
+     * For a Date/Time value within a non-date/time field, it's formatted with the default date/time formatString instead of as a number
+     * @param {any} value Value to be formatted
+     * @param {DataViewMetadataColumn} column Field which the value belongs to
+     * @param {DataViewObjectPropertyIdentifier} formatStringProp formatString Property ID
+     * @param {boolean} nullsAreBlank? Whether to show "(Blank)" instead of empty string for null values
+     * @returns Formatted value
+     */
+    function formatVariantMeasureValue(value, column, formatStringProp, nullsAreBlank, cultureSelector) {
+        // If column type is not datetime, but the value is of time datetime,
+        // then use the default date format string
+        if (!(column && column.type && column.type.dateTime) && value instanceof Date) {
+            const valueFormat = getFormatString(DateTimeMetadataColumn, null, false);
+            return formatCore({
+                value,
+                nullsAreBlank,
+                cultureSelector,
+                format: valueFormat
+            });
+        }
+        else {
+            const valueFormat = getFormatString(column, formatStringProp);
+            return formatCore({
+                value,
+                nullsAreBlank,
+                cultureSelector,
+                format: valueFormat
+            });
+        }
+    }
+    valueFormatter.formatVariantMeasureValue = formatVariantMeasureValue;
+    function createDisplayUnitSystem(displayUnitSystemType) {
+        if (displayUnitSystemType == null)
+            return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["DefaultDisplayUnitSystem"](localizationOptions.describe);
+        switch (displayUnitSystemType) {
+            case _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_1__["DisplayUnitSystemType"].Default:
+                return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["DefaultDisplayUnitSystem"](localizationOptions.describe);
+            case _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_1__["DisplayUnitSystemType"].WholeUnits:
+                return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["WholeUnitsDisplayUnitSystem"](localizationOptions.describe);
+            case _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_1__["DisplayUnitSystemType"].Verbose:
+                return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["NoDisplayUnitSystem"]();
+            case _displayUnitSystem_displayUnitSystemType__WEBPACK_IMPORTED_MODULE_1__["DisplayUnitSystemType"].DataLabels:
+                return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["DataLabelsDisplayUnitSystem"](localizationOptions.describe);
+            default:
+                return new _displayUnitSystem_displayUnitSystem__WEBPACK_IMPORTED_MODULE_0__["DefaultDisplayUnitSystem"](localizationOptions.describe);
+        }
+    }
+    valueFormatter.createDisplayUnitSystem = createDisplayUnitSystem;
+    function shouldUseNumericDisplayUnits(options) {
+        let value = options.value;
+        let value2 = options.value2;
+        let format = options.format;
+        // For singleValue visuals like card, gauge we don't want to roundoff data to the nearest thousands so format the whole number / integers below 10K to not use display units
+        if (options.formatSingleValues && format) {
+            if (Math.abs(value) < MinIntegerValueForDisplayUnits) {
+                let isCustomFormat = !_formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__["numberFormat"].isStandardFormat(format);
+                if (isCustomFormat) {
+                    let precision = _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__["numberFormat"].getCustomFormatMetadata(format, true /*calculatePrecision*/).precision;
+                    if (precision < MinPrecisionForDisplayUnits)
+                        return false;
+                }
+                else if (powerbi_visuals_utils_typeutils__WEBPACK_IMPORTED_MODULE_5__["double"].isInteger(value))
+                    return false;
+            }
+        }
+        if ((typeof value === "number") || (typeof value2 === "number")) {
+            return true;
+        }
+    }
+    function shouldUseDateUnits(value, value2, tickCount) {
+        // must check both value and value2 because we'll need to get an interval for date units
+        return (value instanceof Date) && (value2 instanceof Date) && (tickCount !== undefined && tickCount !== null);
+    }
+    /*
+        * Get the column format. Order of precendence is:
+        *  1. Column format
+        *  2. Default PowerView policy for column type
+        */
+    function getFormatString(column, formatStringProperty, suppressTypeFallback) {
+        if (column) {
+            if (formatStringProperty) {
+                let propertyValue = DataViewObjects.getValue(column.objects, formatStringProperty);
+                if (propertyValue)
+                    return propertyValue;
+            }
+            if (!suppressTypeFallback) {
+                let columnType = column.type;
+                if (columnType) {
+                    if (columnType.dateTime)
+                        return valueFormatter.DefaultDateFormat;
+                    if (columnType.integer) {
+                        if (columnType.temporal && columnType.temporal.year)
+                            return "0";
+                        return valueFormatter.DefaultIntegerFormat;
+                    }
+                    if (columnType.numeric)
+                        return valueFormatter.DefaultNumericFormat;
+                }
+            }
+        }
+    }
+    valueFormatter.getFormatString = getFormatString;
+    function getFormatStringByColumn(column, suppressTypeFallback) {
+        if (column) {
+            if (column.format) {
+                return column.format;
+            }
+            if (!suppressTypeFallback) {
+                let columnType = column.type;
+                if (columnType) {
+                    if (columnType.dateTime) {
+                        return valueFormatter.DefaultDateFormat;
+                    }
+                    if (columnType.integer) {
+                        if (columnType.temporal && columnType.temporal.year) {
+                            return "0";
+                        }
+                        return valueFormatter.DefaultIntegerFormat;
+                    }
+                    if (columnType.numeric) {
+                        return valueFormatter.DefaultNumericFormat;
+                    }
+                }
+            }
+        }
+        return undefined;
+    }
+    valueFormatter.getFormatStringByColumn = getFormatStringByColumn;
+    function formatListCompound(strings, conjunction) {
+        let result;
+        if (!strings) {
+            return null;
+        }
+        let length = strings.length;
+        if (length > 0) {
+            result = strings[0];
+            let lastIndex = length - 1;
+            for (let i = 1, len = lastIndex; i < len; i++) {
+                let value = strings[i];
+                result = StringExtensions.format(localizationOptions.restatementComma, result, value);
+            }
+            if (length > 1) {
+                let value = strings[lastIndex];
+                result = StringExtensions.format(conjunction, result, value);
+            }
+        }
+        else {
+            result = null;
+        }
+        return result;
+    }
+    /** The returned string will look like 'A, B, ..., and C'  */
+    function formatListAnd(strings) {
+        return formatListCompound(strings, localizationOptions.restatementCompoundAnd);
+    }
+    valueFormatter.formatListAnd = formatListAnd;
+    /** The returned string will look like 'A, B, ..., or C' */
+    function formatListOr(strings) {
+        return formatListCompound(strings, localizationOptions.restatementCompoundOr);
+    }
+    valueFormatter.formatListOr = formatListOr;
+    function formatCore(options) {
+        const { value, format, nullsAreBlank, cultureSelector } = options;
+        let formattedValue = getStringFormat(value, nullsAreBlank ? nullsAreBlank : false);
+        if (!StringExtensions.isNullOrUndefinedOrWhiteSpaceString(formattedValue)) {
+            return formattedValue;
+        }
+        return _formattingService_formattingService__WEBPACK_IMPORTED_MODULE_3__["formattingService"].formatValue(value, format, cultureSelector);
+    }
+    function getStringFormat(value, nullsAreBlank) {
+        if (value == null && nullsAreBlank) {
+            return localizationOptions.nullValue;
+        }
+        if (value === true) {
+            return localizationOptions.trueValue;
+        }
+        if (value === false) {
+            return localizationOptions.falseValue;
+        }
+        if (typeof value === "number" && isNaN(value)) {
+            return localizationOptions.NaN;
+        }
+        if (value === Number.NEGATIVE_INFINITY) {
+            return localizationOptions.negativeInfinity;
+        }
+        if (value === Number.POSITIVE_INFINITY) {
+            return localizationOptions.infinity;
+        }
+        return "";
+    }
+    function getDisplayUnits(displayUnitSystemType) {
+        let displayUnitSystem = createDisplayUnitSystem(displayUnitSystemType);
+        return displayUnitSystem.units;
+    }
+    valueFormatter.getDisplayUnits = getDisplayUnits;
+})(valueFormatter || (valueFormatter = {}));
+//# sourceMappingURL=valueFormatter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-formattingutils/lib/wordBreaker.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-formattingutils/lib/wordBreaker.js ***!
+  \*******************************************************************************/
+/*! exports provided: find, hasBreakers, wordCount, getMaxWordWidth, splitByWidth */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "find", function() { return find; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasBreakers", function() { return hasBreakers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wordCount", function() { return wordCount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMaxWordWidth", function() { return getMaxWordWidth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "splitByWidth", function() { return splitByWidth; });
+const SPACE = " ";
+const BREAKERS_REGEX = /[\s\n]+/g;
+function search(index, content, backward) {
+    if (backward) {
+        for (let i = index - 1; i > -1; i--) {
+            if (hasBreakers(content[i]))
+                return i + 1;
+        }
+    }
+    else {
+        for (let i = index, ilen = content.length; i < ilen; i++) {
+            if (hasBreakers(content[i]))
+                return i;
+        }
+    }
+    return backward ? 0 : content.length;
+}
+/**
+ * Find the word nearest the cursor specified within content
+ * @param index - point within content to search forward/backward from
+ * @param content - string to search
+*/
+function find(index, content) {
+    let result = { start: 0, end: 0 };
+    if (content.length === 0) {
+        return result;
+    }
+    result.start = search(index, content, true);
+    result.end = search(index, content, false);
+    return result;
+}
+/**
+ * Test for presence of breakers within content
+ * @param content - string to test
+*/
+function hasBreakers(content) {
+    BREAKERS_REGEX.lastIndex = 0;
+    return BREAKERS_REGEX.test(content);
+}
+/**
+ * Count the number of pieces when broken by BREAKERS_REGEX
+ * ~2.7x faster than WordBreaker.split(content).length
+ * @param content - string to break and count
+*/
+function wordCount(content) {
+    let count = 1;
+    BREAKERS_REGEX.lastIndex = 0;
+    BREAKERS_REGEX.exec(content);
+    while (BREAKERS_REGEX.lastIndex !== 0) {
+        count++;
+        BREAKERS_REGEX.exec(content);
+    }
+    return count;
+}
+function getMaxWordWidth(content, textWidthMeasurer, properties) {
+    let words = split(content);
+    let maxWidth = 0;
+    for (let w of words) {
+        properties.text = w;
+        maxWidth = Math.max(maxWidth, textWidthMeasurer(properties));
+    }
+    return maxWidth;
+}
+function split(content) {
+    return content.split(BREAKERS_REGEX);
+}
+function getWidth(content, properties, textWidthMeasurer) {
+    properties.text = content;
+    return textWidthMeasurer(properties);
+}
+function truncate(content, properties, truncator, maxWidth) {
+    properties.text = content;
+    return truncator(properties, maxWidth);
+}
+/**
+ * Split content by breakers (words) and greedy fit as many words
+ * into each index in the result based on max width and number of lines
+ * e.g. Each index in result corresponds to a line of content
+ *      when used by AxisHelper.LabelLayoutStrategy.wordBreak
+ * @param content - string to split
+ * @param properties - text properties to be used by @param:textWidthMeasurer
+ * @param textWidthMeasurer - function to calculate width of given text content
+ * @param maxWidth - maximum allowed width of text content in each result
+ * @param maxNumLines - maximum number of results we will allow, valid values must be greater than 0
+ * @param truncator - (optional) if specified, used as a function to truncate content to a given width
+*/
+function splitByWidth(content, properties, textWidthMeasurer, maxWidth, maxNumLines, truncator) {
+    // Default truncator returns string as-is
+    truncator = truncator ? truncator : (properties, maxWidth) => properties.text;
+    let result = [];
+    let words = split(content);
+    let usedWidth = 0;
+    let wordsInLine = [];
+    for (let word of words) {
+        // Last line? Just add whatever is left
+        if ((maxNumLines > 0) && (result.length >= maxNumLines - 1)) {
+            wordsInLine.push(word);
+            continue;
+        }
+        // Determine width if we add this word
+        // Account for SPACE we will add when joining...
+        let wordWidth = wordsInLine.length === 0
+            ? getWidth(word, properties, textWidthMeasurer)
+            : getWidth(SPACE + word, properties, textWidthMeasurer);
+        // If width would exceed max width,
+        // then push used words and start new split result
+        if (usedWidth + wordWidth > maxWidth) {
+            // Word alone exceeds max width, just add it.
+            if (wordsInLine.length === 0) {
+                result.push(truncate(word, properties, truncator, maxWidth));
+                usedWidth = 0;
+                wordsInLine = [];
+                continue;
+            }
+            result.push(truncate(wordsInLine.join(SPACE), properties, truncator, maxWidth));
+            usedWidth = 0;
+            wordsInLine = [];
+        }
+        // ...otherwise, add word and continue
+        wordsInLine.push(word);
+        usedWidth += wordWidth;
+    }
+    // Push remaining words onto result (if any)
+    if (wordsInLine && wordsInLine.length) {
+        result.push(truncate(wordsInLine.join(SPACE), properties, truncator, maxWidth));
+    }
+    return result;
+}
+//# sourceMappingURL=wordBreaker.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/double.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/double.js ***!
+  \********************************************************************/
+/*! exports provided: MIN_VALUE, MAX_VALUE, MIN_EXP, MAX_EXP, EPSILON, DEFAULT_PRECISION, DEFAULT_PRECISION_IN_DECIMAL_DIGITS, LOG_E_10, POSITIVE_POWERS, NEGATIVE_POWERS, pow10, log10, getPrecision, equalWithPrecision, lessWithPrecision, lessOrEqualWithPrecision, greaterWithPrecision, greaterOrEqualWithPrecision, floorWithPrecision, ceilWithPrecision, floorToPrecision, ceilToPrecision, roundToPrecision, ensureInRange, round, project, removeDecimalNoise, isInteger, toIncrement, detectPrecision */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MIN_VALUE", function() { return MIN_VALUE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAX_VALUE", function() { return MAX_VALUE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MIN_EXP", function() { return MIN_EXP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAX_EXP", function() { return MAX_EXP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EPSILON", function() { return EPSILON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEFAULT_PRECISION", function() { return DEFAULT_PRECISION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEFAULT_PRECISION_IN_DECIMAL_DIGITS", function() { return DEFAULT_PRECISION_IN_DECIMAL_DIGITS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOG_E_10", function() { return LOG_E_10; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POSITIVE_POWERS", function() { return POSITIVE_POWERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NEGATIVE_POWERS", function() { return NEGATIVE_POWERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pow10", function() { return pow10; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "log10", function() { return log10; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPrecision", function() { return getPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "equalWithPrecision", function() { return equalWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lessWithPrecision", function() { return lessWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lessOrEqualWithPrecision", function() { return lessOrEqualWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greaterWithPrecision", function() { return greaterWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greaterOrEqualWithPrecision", function() { return greaterOrEqualWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "floorWithPrecision", function() { return floorWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ceilWithPrecision", function() { return ceilWithPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "floorToPrecision", function() { return floorToPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ceilToPrecision", function() { return ceilToPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "roundToPrecision", function() { return roundToPrecision; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ensureInRange", function() { return ensureInRange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "round", function() { return round; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "project", function() { return project; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeDecimalNoise", function() { return removeDecimalNoise; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isInteger", function() { return isInteger; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toIncrement", function() { return toIncrement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectPrecision", function() { return detectPrecision; });
+/*
+*  Power BI Visualizations
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+/**
+ * Module Double contains a set of constants and precision based utility methods
+ * for dealing with doubles and their decimal garbage in the javascript.
+ */
+// Constants.
+const MIN_VALUE = -Number.MAX_VALUE;
+const MAX_VALUE = Number.MAX_VALUE;
+const MIN_EXP = -308;
+const MAX_EXP = 308;
+const EPSILON = 1E-323;
+const DEFAULT_PRECISION = 0.0001;
+const DEFAULT_PRECISION_IN_DECIMAL_DIGITS = 12;
+const LOG_E_10 = Math.log(10);
+const POSITIVE_POWERS = [
+    1E0, 1E1, 1E2, 1E3, 1E4, 1E5, 1E6, 1E7, 1E8, 1E9, 1E10, 1E11, 1E12, 1E13, 1E14, 1E15, 1E16, 1E17, 1E18, 1E19, 1E20, 1E21, 1E22, 1E23, 1E24, 1E25, 1E26, 1E27, 1E28, 1E29, 1E30, 1E31, 1E32, 1E33, 1E34, 1E35, 1E36, 1E37, 1E38, 1E39, 1E40, 1E41, 1E42, 1E43, 1E44, 1E45, 1E46, 1E47, 1E48, 1E49, 1E50, 1E51, 1E52, 1E53, 1E54, 1E55, 1E56, 1E57, 1E58, 1E59, 1E60, 1E61, 1E62, 1E63, 1E64, 1E65, 1E66, 1E67, 1E68, 1E69, 1E70, 1E71, 1E72, 1E73, 1E74, 1E75, 1E76, 1E77, 1E78, 1E79, 1E80, 1E81, 1E82, 1E83, 1E84, 1E85, 1E86, 1E87, 1E88, 1E89, 1E90, 1E91, 1E92, 1E93, 1E94, 1E95, 1E96, 1E97, 1E98, 1E99,
+    1E100, 1E101, 1E102, 1E103, 1E104, 1E105, 1E106, 1E107, 1E108, 1E109, 1E110, 1E111, 1E112, 1E113, 1E114, 1E115, 1E116, 1E117, 1E118, 1E119, 1E120, 1E121, 1E122, 1E123, 1E124, 1E125, 1E126, 1E127, 1E128, 1E129, 1E130, 1E131, 1E132, 1E133, 1E134, 1E135, 1E136, 1E137, 1E138, 1E139, 1E140, 1E141, 1E142, 1E143, 1E144, 1E145, 1E146, 1E147, 1E148, 1E149, 1E150, 1E151, 1E152, 1E153, 1E154, 1E155, 1E156, 1E157, 1E158, 1E159, 1E160, 1E161, 1E162, 1E163, 1E164, 1E165, 1E166, 1E167, 1E168, 1E169, 1E170, 1E171, 1E172, 1E173, 1E174, 1E175, 1E176, 1E177, 1E178, 1E179, 1E180, 1E181, 1E182, 1E183, 1E184, 1E185, 1E186, 1E187, 1E188, 1E189, 1E190, 1E191, 1E192, 1E193, 1E194, 1E195, 1E196, 1E197, 1E198, 1E199,
+    1E200, 1E201, 1E202, 1E203, 1E204, 1E205, 1E206, 1E207, 1E208, 1E209, 1E210, 1E211, 1E212, 1E213, 1E214, 1E215, 1E216, 1E217, 1E218, 1E219, 1E220, 1E221, 1E222, 1E223, 1E224, 1E225, 1E226, 1E227, 1E228, 1E229, 1E230, 1E231, 1E232, 1E233, 1E234, 1E235, 1E236, 1E237, 1E238, 1E239, 1E240, 1E241, 1E242, 1E243, 1E244, 1E245, 1E246, 1E247, 1E248, 1E249, 1E250, 1E251, 1E252, 1E253, 1E254, 1E255, 1E256, 1E257, 1E258, 1E259, 1E260, 1E261, 1E262, 1E263, 1E264, 1E265, 1E266, 1E267, 1E268, 1E269, 1E270, 1E271, 1E272, 1E273, 1E274, 1E275, 1E276, 1E277, 1E278, 1E279, 1E280, 1E281, 1E282, 1E283, 1E284, 1E285, 1E286, 1E287, 1E288, 1E289, 1E290, 1E291, 1E292, 1E293, 1E294, 1E295, 1E296, 1E297, 1E298, 1E299,
+    1E300, 1E301, 1E302, 1E303, 1E304, 1E305, 1E306, 1E307, 1E308
+];
+const NEGATIVE_POWERS = [
+    1E0, 1E-1, 1E-2, 1E-3, 1E-4, 1E-5, 1E-6, 1E-7, 1E-8, 1E-9, 1E-10, 1E-11, 1E-12, 1E-13, 1E-14, 1E-15, 1E-16, 1E-17, 1E-18, 1E-19, 1E-20, 1E-21, 1E-22, 1E-23, 1E-24, 1E-25, 1E-26, 1E-27, 1E-28, 1E-29, 1E-30, 1E-31, 1E-32, 1E-33, 1E-34, 1E-35, 1E-36, 1E-37, 1E-38, 1E-39, 1E-40, 1E-41, 1E-42, 1E-43, 1E-44, 1E-45, 1E-46, 1E-47, 1E-48, 1E-49, 1E-50, 1E-51, 1E-52, 1E-53, 1E-54, 1E-55, 1E-56, 1E-57, 1E-58, 1E-59, 1E-60, 1E-61, 1E-62, 1E-63, 1E-64, 1E-65, 1E-66, 1E-67, 1E-68, 1E-69, 1E-70, 1E-71, 1E-72, 1E-73, 1E-74, 1E-75, 1E-76, 1E-77, 1E-78, 1E-79, 1E-80, 1E-81, 1E-82, 1E-83, 1E-84, 1E-85, 1E-86, 1E-87, 1E-88, 1E-89, 1E-90, 1E-91, 1E-92, 1E-93, 1E-94, 1E-95, 1E-96, 1E-97, 1E-98, 1E-99,
+    1E-100, 1E-101, 1E-102, 1E-103, 1E-104, 1E-105, 1E-106, 1E-107, 1E-108, 1E-109, 1E-110, 1E-111, 1E-112, 1E-113, 1E-114, 1E-115, 1E-116, 1E-117, 1E-118, 1E-119, 1E-120, 1E-121, 1E-122, 1E-123, 1E-124, 1E-125, 1E-126, 1E-127, 1E-128, 1E-129, 1E-130, 1E-131, 1E-132, 1E-133, 1E-134, 1E-135, 1E-136, 1E-137, 1E-138, 1E-139, 1E-140, 1E-141, 1E-142, 1E-143, 1E-144, 1E-145, 1E-146, 1E-147, 1E-148, 1E-149, 1E-150, 1E-151, 1E-152, 1E-153, 1E-154, 1E-155, 1E-156, 1E-157, 1E-158, 1E-159, 1E-160, 1E-161, 1E-162, 1E-163, 1E-164, 1E-165, 1E-166, 1E-167, 1E-168, 1E-169, 1E-170, 1E-171, 1E-172, 1E-173, 1E-174, 1E-175, 1E-176, 1E-177, 1E-178, 1E-179, 1E-180, 1E-181, 1E-182, 1E-183, 1E-184, 1E-185, 1E-186, 1E-187, 1E-188, 1E-189, 1E-190, 1E-191, 1E-192, 1E-193, 1E-194, 1E-195, 1E-196, 1E-197, 1E-198, 1E-199,
+    1E-200, 1E-201, 1E-202, 1E-203, 1E-204, 1E-205, 1E-206, 1E-207, 1E-208, 1E-209, 1E-210, 1E-211, 1E-212, 1E-213, 1E-214, 1E-215, 1E-216, 1E-217, 1E-218, 1E-219, 1E-220, 1E-221, 1E-222, 1E-223, 1E-224, 1E-225, 1E-226, 1E-227, 1E-228, 1E-229, 1E-230, 1E-231, 1E-232, 1E-233, 1E-234, 1E-235, 1E-236, 1E-237, 1E-238, 1E-239, 1E-240, 1E-241, 1E-242, 1E-243, 1E-244, 1E-245, 1E-246, 1E-247, 1E-248, 1E-249, 1E-250, 1E-251, 1E-252, 1E-253, 1E-254, 1E-255, 1E-256, 1E-257, 1E-258, 1E-259, 1E-260, 1E-261, 1E-262, 1E-263, 1E-264, 1E-265, 1E-266, 1E-267, 1E-268, 1E-269, 1E-270, 1E-271, 1E-272, 1E-273, 1E-274, 1E-275, 1E-276, 1E-277, 1E-278, 1E-279, 1E-280, 1E-281, 1E-282, 1E-283, 1E-284, 1E-285, 1E-286, 1E-287, 1E-288, 1E-289, 1E-290, 1E-291, 1E-292, 1E-293, 1E-294, 1E-295, 1E-296, 1E-297, 1E-298, 1E-299,
+    1E-300, 1E-301, 1E-302, 1E-303, 1E-304, 1E-305, 1E-306, 1E-307, 1E-308, 1E-309, 1E-310, 1E-311, 1E-312, 1E-313, 1E-314, 1E-315, 1E-316, 1E-317, 1E-318, 1E-319, 1E-320, 1E-321, 1E-322, 1E-323, 1E-324
+];
+/**
+ * Returns powers of 10.
+ * Unlike the Math.pow this function produces no decimal garbage.
+ * @param exp Exponent.
+ */
+function pow10(exp) {
+    // Positive & zero
+    if (exp >= 0) {
+        if (exp < POSITIVE_POWERS.length) {
+            return POSITIVE_POWERS[exp];
+        }
+        else {
+            return Infinity;
+        }
+    }
+    // Negative
+    exp = -exp;
+    if (exp > 0 && exp < NEGATIVE_POWERS.length) { // if exp==int.MIN_VALUE then changing the sign will overflow and keep the number negative - we need to check for exp > 0 to filter out this corner case
+        return NEGATIVE_POWERS[exp];
+    }
+    else {
+        return 0;
+    }
+}
+/**
+ * Returns the 10 base logarithm of the number.
+ * Unlike Math.log function this produces integer results with no decimal garbage.
+ * @param val Positive value or zero.
+ */
+function log10(val) {
+    // Fast Log10() algorithm
+    if (val > 1 && val < 1E16) {
+        if (val < 1E8) {
+            if (val < 1E4) {
+                if (val < 1E2) {
+                    if (val < 1E1) {
+                        return 0;
+                    }
+                    else {
+                        return 1;
+                    }
+                }
+                else {
+                    if (val < 1E3) {
+                        return 2;
+                    }
+                    else {
+                        return 3;
+                    }
+                }
+            }
+            else {
+                if (val < 1E6) {
+                    if (val < 1E5) {
+                        return 4;
+                    }
+                    else {
+                        return 5;
+                    }
+                }
+                else {
+                    if (val < 1E7) {
+                        return 6;
+                    }
+                    else {
+                        return 7;
+                    }
+                }
+            }
+        }
+        else {
+            if (val < 1E12) {
+                if (val < 1E10) {
+                    if (val < 1E9) {
+                        return 8;
+                    }
+                    else {
+                        return 9;
+                    }
+                }
+                else {
+                    if (val < 1E11) {
+                        return 10;
+                    }
+                    else {
+                        return 11;
+                    }
+                }
+            }
+            else {
+                if (val < 1E14) {
+                    if (val < 1E13) {
+                        return 12;
+                    }
+                    else {
+                        return 13;
+                    }
+                }
+                else {
+                    if (val < 1E15) {
+                        return 14;
+                    }
+                    else {
+                        return 15;
+                    }
+                }
+            }
+        }
+    }
+    if (val > 1E-16 && val < 1) {
+        if (val < 1E-8) {
+            if (val < 1E-12) {
+                if (val < 1E-14) {
+                    if (val < 1E-15) {
+                        return -16;
+                    }
+                    else {
+                        return -15;
+                    }
+                }
+                else {
+                    if (val < 1E-13) {
+                        return -14;
+                    }
+                    else {
+                        return -13;
+                    }
+                }
+            }
+            else {
+                if (val < 1E-10) {
+                    if (val < 1E-11) {
+                        return -12;
+                    }
+                    else {
+                        return -11;
+                    }
+                }
+                else {
+                    if (val < 1E-9) {
+                        return -10;
+                    }
+                    else {
+                        return -9;
+                    }
+                }
+            }
+        }
+        else {
+            if (val < 1E-4) {
+                if (val < 1E-6) {
+                    if (val < 1E-7) {
+                        return -8;
+                    }
+                    else {
+                        return -7;
+                    }
+                }
+                else {
+                    if (val < 1E-5) {
+                        return -6;
+                    }
+                    else {
+                        return -5;
+                    }
+                }
+            }
+            else {
+                if (val < 1E-2) {
+                    if (val < 1E-3) {
+                        return -4;
+                    }
+                    else {
+                        return -3;
+                    }
+                }
+                else {
+                    if (val < 1E-1) {
+                        return -2;
+                    }
+                    else {
+                        return -1;
+                    }
+                }
+            }
+        }
+    }
+    // JS Math provides only natural log function so we need to calc the 10 base logarithm:
+    // logb(x) = logk(x)/logk(b);
+    let log10 = Math.log(val) / LOG_E_10;
+    return floorWithPrecision(log10);
+}
+/**
+ * Returns a power of 10 representing precision of the number based on the number of meaningful decimal digits.
+ * For example the precision of 56,263.3767 with the 6 meaningful decimal digit is 0.1.
+ * @param x Value.
+ * @param decimalDigits How many decimal digits are meaningfull.
+ */
+function getPrecision(x, decimalDigits) {
+    if (decimalDigits === undefined) {
+        decimalDigits = DEFAULT_PRECISION_IN_DECIMAL_DIGITS;
+    }
+    if (!x || !isFinite(x)) {
+        return undefined;
+    }
+    let exp = log10(Math.abs(x));
+    if (exp < MIN_EXP) {
+        return 0;
+    }
+    let precisionExp = Math.max(exp - decimalDigits, -NEGATIVE_POWERS.length + 1);
+    return pow10(precisionExp);
+}
+/**
+ * Checks if a delta between 2 numbers is less than provided precision.
+ * @param x One value.
+ * @param y Another value.
+ * @param precision Precision value.
+ */
+function equalWithPrecision(x, y, precision) {
+    precision = detectPrecision(precision, x, y);
+    return x === y || Math.abs(x - y) < precision;
+}
+/**
+ * Checks if a first value is less than another taking
+ * into account the loose precision based equality.
+ * @param x One value.
+ * @param y Another value.
+ * @param precision Precision value.
+ */
+function lessWithPrecision(x, y, precision) {
+    precision = detectPrecision(precision, x, y);
+    return x < y && Math.abs(x - y) > precision;
+}
+/**
+ * Checks if a first value is less or equal than another taking
+ * into account the loose precision based equality.
+ * @param x One value.
+ * @param y Another value.
+ * @param precision Precision value.
+ */
+function lessOrEqualWithPrecision(x, y, precision) {
+    precision = detectPrecision(precision, x, y);
+    return x < y || Math.abs(x - y) < precision;
+}
+/**
+ * Checks if a first value is greater than another taking
+ * into account the loose precision based equality.
+ * @param x One value.
+ * @param y Another value.
+ * @param precision Precision value.
+ */
+function greaterWithPrecision(x, y, precision) {
+    precision = detectPrecision(precision, x, y);
+    return x > y && Math.abs(x - y) > precision;
+}
+/**
+ * Checks if a first value is greater or equal to another taking
+ * into account the loose precision based equality.
+ * @param x One value.
+ * @param y Another value.
+ * @param precision Precision value.
+ */
+function greaterOrEqualWithPrecision(x, y, precision) {
+    precision = detectPrecision(precision, x, y);
+    return x > y || Math.abs(x - y) < precision;
+}
+/**
+ * Floors the number unless it's withing the precision distance from the higher int.
+ * @param x One value.
+ * @param precision Precision value.
+ */
+function floorWithPrecision(x, precision) {
+    precision = precision != null ? precision : DEFAULT_PRECISION;
+    let roundX = Math.round(x);
+    if (Math.abs(x - roundX) < precision) {
+        return roundX;
+    }
+    else {
+        return Math.floor(x);
+    }
+}
+/**
+ * Ceils the number unless it's withing the precision distance from the lower int.
+ * @param x One value.
+ * @param precision Precision value.
+ */
+function ceilWithPrecision(x, precision) {
+    precision = detectPrecision(precision, DEFAULT_PRECISION);
+    let roundX = Math.round(x);
+    if (Math.abs(x - roundX) < precision) {
+        return roundX;
+    }
+    else {
+        return Math.ceil(x);
+    }
+}
+/**
+ * Floors the number to the provided precision.
+ * For example 234,578 floored to 1,000 precision is 234,000.
+ * @param x One value.
+ * @param precision Precision value.
+ */
+function floorToPrecision(x, precision) {
+    precision = detectPrecision(precision, DEFAULT_PRECISION);
+    if (precision === 0 || x === 0) {
+        return x;
+    }
+    // Precision must be a Power of 10
+    return Math.floor(x / precision) * precision;
+}
+/**
+ * Ceils the number to the provided precision.
+ * For example 234,578 floored to 1,000 precision is 235,000.
+ * @param x One value.
+ * @param precision Precision value.
+ */
+function ceilToPrecision(x, precision) {
+    precision = detectPrecision(precision, DEFAULT_PRECISION);
+    if (precision === 0 || x === 0) {
+        return x;
+    }
+    // Precision must be a Power of 10
+    return Math.ceil(x / precision) * precision;
+}
+/**
+ * Rounds the number to the provided precision.
+ * For example 234,578 floored to 1,000 precision is 235,000.
+ * @param x One value.
+ * @param precision Precision value.
+ */
+function roundToPrecision(x, precision) {
+    precision = detectPrecision(precision, DEFAULT_PRECISION);
+    if (precision === 0 || x === 0) {
+        return x;
+    }
+    // Precision must be a Power of 10
+    let result = Math.round(x / precision) * precision;
+    let decimalDigits = Math.round(log10(Math.abs(x)) - log10(precision)) + 1;
+    if (decimalDigits > 0 && decimalDigits < 16) {
+        result = parseFloat(result.toPrecision(decimalDigits));
+    }
+    return result;
+}
+/**
+ * Returns the value making sure that it's restricted to the provided range.
+ * @param x One value.
+ * @param min Range min boundary.
+ * @param max Range max boundary.
+ */
+function ensureInRange(x, min, max) {
+    if (x === undefined || x === null) {
+        return x;
+    }
+    if (x < min) {
+        return min;
+    }
+    if (x > max) {
+        return max;
+    }
+    return x;
+}
+/**
+ * Rounds the value - this method is actually faster than Math.round - used in the graphics utils.
+ * @param x Value to round.
+ */
+function round(x) {
+    return (0.5 + x) << 0;
+}
+/**
+ * Projects the value from the source range into the target range.
+ * @param value Value to project.
+ * @param fromMin Minimum of the source range.
+ * @param toMin Minimum of the target range.
+ * @param toMax Maximum of the target range.
+ */
+function project(value, fromMin, fromSize, toMin, toSize) {
+    if (fromSize === 0 || toSize === 0) {
+        if (fromMin <= value && value <= fromMin + fromSize) {
+            return toMin;
+        }
+        else {
+            return NaN;
+        }
+    }
+    let relativeX = (value - fromMin) / fromSize;
+    let projectedX = toMin + relativeX * toSize;
+    return projectedX;
+}
+/**
+ * Removes decimal noise.
+ * @param value Value to be processed.
+ */
+function removeDecimalNoise(value) {
+    return roundToPrecision(value, getPrecision(value));
+}
+/**
+ * Checks whether the number is integer.
+ * @param value Value to be checked.
+ */
+function isInteger(value) {
+    return value !== null && value % 1 === 0;
+}
+/**
+ * Dividing by increment will give us count of increments
+ * Round out the rough edges into even integer
+ * Multiply back by increment to get rounded value
+ * e.g. Rounder.toIncrement(0.647291, 0.05) => 0.65
+ * @param value - value to round to nearest increment
+ * @param increment - smallest increment to round toward
+ */
+function toIncrement(value, increment) {
+    return Math.round(value / increment) * increment;
+}
+/**
+ * Overrides the given precision with defaults if necessary. Exported only for tests
+ *
+ * precision defined returns precision
+ * x defined with y undefined returns twelve digits of precision based on x
+ * x defined but zero with y defined; returns twelve digits of precision based on y
+ * x and y defined retursn twelve digits of precision based on the minimum of the two
+ * if no applicable precision is found based on those (such as x and y being zero), the default precision is used
+ */
+function detectPrecision(precision, x, y) {
+    if (precision !== undefined) {
+        return precision;
+    }
+    let calculatedPrecision;
+    if (!y) {
+        calculatedPrecision = getPrecision(x);
+    }
+    else if (!x) {
+        calculatedPrecision = getPrecision(y);
+    }
+    else {
+        calculatedPrecision = getPrecision(Math.min(Math.abs(x), Math.abs(y)));
+    }
+    return calculatedPrecision || DEFAULT_PRECISION;
+}
+//# sourceMappingURL=double.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/arrayExtensions.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/arrayExtensions.js ***!
+  \****************************************************************************************/
+/*! exports provided: ArrayExtensions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrayExtensions", function() { return ArrayExtensions; });
+var ArrayExtensions;
+(function (ArrayExtensions) {
+    /**
+     * Returns items that exist in target and other.
+     */
+    function intersect(target, other) {
+        let result = [];
+        for (let i = target.length - 1; i >= 0; --i) {
+            if (other.indexOf(target[i]) !== -1) {
+                result.push(target[i]);
+            }
+        }
+        return result;
+    }
+    ArrayExtensions.intersect = intersect;
+    /**
+     * Return elements exists in target but not exists in other.
+     */
+    function diff(target, other) {
+        let result = [];
+        for (let i = target.length - 1; i >= 0; --i) {
+            let value = target[i];
+            if (other.indexOf(value) === -1) {
+                result.push(value);
+            }
+        }
+        return result;
+    }
+    ArrayExtensions.diff = diff;
+    /**
+     * Return an array with only the distinct items in the source.
+     */
+    function distinct(source) {
+        let result = [];
+        for (let i = 0, len = source.length; i < len; i++) {
+            let value = source[i];
+            if (result.indexOf(value) === -1) {
+                result.push(value);
+            }
+        }
+        return result;
+    }
+    ArrayExtensions.distinct = distinct;
+    /**
+     * Pushes content of source onto target,
+     * for parts of course that do not already exist in target.
+     */
+    function union(target, source) {
+        for (let i = 0, len = source.length; i < len; ++i) {
+            unionSingle(target, source[i]);
+        }
+    }
+    ArrayExtensions.union = union;
+    /**
+     * Pushes value onto target, if value does not already exist in target.
+     */
+    function unionSingle(target, value) {
+        if (target.indexOf(value) < 0) {
+            target.push(value);
+        }
+    }
+    ArrayExtensions.unionSingle = unionSingle;
+    /**
+     * Returns an array with a range of items from source,
+     * including the startIndex & endIndex.
+     */
+    function range(source, startIndex, endIndex) {
+        let result = [];
+        for (let i = startIndex; i <= endIndex; ++i) {
+            result.push(source[i]);
+        }
+        return result;
+    }
+    ArrayExtensions.range = range;
+    /**
+     * Returns an array that includes items from source, up to the specified count.
+     */
+    function take(source, count) {
+        let result = [];
+        for (let i = 0; i < count; ++i) {
+            result.push(source[i]);
+        }
+        return result;
+    }
+    ArrayExtensions.take = take;
+    function copy(source) {
+        return take(source, source.length);
+    }
+    ArrayExtensions.copy = copy;
+    /**
+      * Returns a value indicating whether the arrays have the same values in the same sequence.
+      */
+    function sequenceEqual(left, right, comparison) {
+        // Normalize falsy to null
+        if (!left) {
+            left = null;
+        }
+        if (!right) {
+            right = null;
+        }
+        // T can be same as U, and it is possible for left and right to be the same array object...
+        if (left === right) {
+            return true;
+        }
+        if (!!left !== !!right) {
+            return false;
+        }
+        let len = left.length;
+        if (len !== right.length) {
+            return false;
+        }
+        let i = 0;
+        while (i < len && comparison(left[i], right[i])) {
+            ++i;
+        }
+        return i === len;
+    }
+    ArrayExtensions.sequenceEqual = sequenceEqual;
+    /**
+     * Returns null if the specified array is empty.
+     * Otherwise returns the specified array.
+     */
+    function emptyToNull(array) {
+        if (array && array.length === 0) {
+            return null;
+        }
+        return array;
+    }
+    ArrayExtensions.emptyToNull = emptyToNull;
+    function indexOf(array, predicate) {
+        for (let i = 0, len = array.length; i < len; ++i) {
+            if (predicate(array[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    ArrayExtensions.indexOf = indexOf;
+    /**
+     * Returns a copy of the array rotated by the specified offset.
+     */
+    function rotate(array, offset) {
+        if (offset === 0)
+            return array.slice();
+        let rotated = array.slice(offset);
+        Array.prototype.push.apply(rotated, array.slice(0, offset));
+        return rotated;
+    }
+    ArrayExtensions.rotate = rotate;
+    function createWithId() {
+        return extendWithId([]);
+    }
+    ArrayExtensions.createWithId = createWithId;
+    function extendWithId(array) {
+        let extended = array;
+        extended.withId = withId;
+        return extended;
+    }
+    ArrayExtensions.extendWithId = extendWithId;
+    /**
+     * Finds and returns the first item with a matching ID.
+     */
+    function findWithId(array, id) {
+        for (let i = 0, len = array.length; i < len; i++) {
+            let item = array[i];
+            if (item.id === id)
+                return item;
+        }
+    }
+    ArrayExtensions.findWithId = findWithId;
+    function withId(id) {
+        return ArrayExtensions.findWithId(this, id);
+    }
+    function createWithName() {
+        return extendWithName([]);
+    }
+    ArrayExtensions.createWithName = createWithName;
+    function extendWithName(array) {
+        let extended = array;
+        extended.withName = withName;
+        return extended;
+    }
+    ArrayExtensions.extendWithName = extendWithName;
+    function findItemWithName(array, name) {
+        let index = indexWithName(array, name);
+        if (index >= 0)
+            return array[index];
+    }
+    ArrayExtensions.findItemWithName = findItemWithName;
+    function indexWithName(array, name) {
+        for (let i = 0, len = array.length; i < len; i++) {
+            let item = array[i];
+            if (item.name === name)
+                return i;
+        }
+        return -1;
+    }
+    ArrayExtensions.indexWithName = indexWithName;
+    /**
+     * Inserts a number in sorted order into a list of numbers already in sorted order.
+     * @returns True if the item was added, false if it already existed.
+     */
+    function insertSorted(list, value) {
+        let len = list.length;
+        // NOTE: iterate backwards because incoming values tend to be sorted already.
+        for (let i = len - 1; i >= 0; i--) {
+            let diff = list[i] - value;
+            if (diff === 0)
+                return false;
+            if (diff > 0)
+                continue;
+            // diff < 0
+            list.splice(i + 1, 0, value);
+            return true;
+        }
+        list.unshift(value);
+        return true;
+    }
+    ArrayExtensions.insertSorted = insertSorted;
+    /**
+     * Removes the first occurrence of a value from a list if it exists.
+     * @returns True if the value was removed, false if it did not exist in the list.
+     */
+    function removeFirst(list, value) {
+        let index = list.indexOf(value);
+        if (index < 0)
+            return false;
+        list.splice(index, 1);
+        return true;
+    }
+    ArrayExtensions.removeFirst = removeFirst;
+    /**
+     * Finds and returns the first item with a matching name.
+     */
+    function withName(name) {
+        let array = this;
+        return findItemWithName(array, name);
+    }
+    /**
+     * Deletes all items from the array.
+     */
+    function clear(array) {
+        if (!array)
+            return;
+        while (array.length > 0)
+            array.pop();
+    }
+    ArrayExtensions.clear = clear;
+    function isUndefinedOrEmpty(array) {
+        if (!array || array.length === 0) {
+            return true;
+        }
+        return false;
+    }
+    ArrayExtensions.isUndefinedOrEmpty = isUndefinedOrEmpty;
+    function swap(array, firstIndex, secondIndex) {
+        let temp = array[firstIndex];
+        array[firstIndex] = array[secondIndex];
+        array[secondIndex] = temp;
+    }
+    ArrayExtensions.swap = swap;
+    function isInArray(array, lookupItem, compareCallback) {
+        return array.some(item => compareCallback(item, lookupItem));
+    }
+    ArrayExtensions.isInArray = isInArray;
+    /** Checks if the given object is an Array, and looking all the way up the prototype chain. */
+    function isArrayOrInheritedArray(obj) {
+        let nextPrototype = obj;
+        while (nextPrototype != null) {
+            if (Array.isArray(nextPrototype))
+                return true;
+            nextPrototype = Object.getPrototypeOf(nextPrototype);
+        }
+        return false;
+    }
+    ArrayExtensions.isArrayOrInheritedArray = isArrayOrInheritedArray;
+    /**
+     * Returns true if the specified values array is sorted in an order as determined by the specified compareFunction.
+     */
+    function isSorted(values, compareFunction) {
+        let ilen = values.length;
+        if (ilen >= 2) {
+            for (let i = 1; i < ilen; i++) {
+                if (compareFunction(values[i - 1], values[i]) > 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    ArrayExtensions.isSorted = isSorted;
+    /**
+     * Returns true if the specified number values array is sorted in ascending order
+     * (or descending order if the specified descendingOrder is truthy).
+     */
+    function isSortedNumeric(values, descendingOrder) {
+        let compareFunction = descendingOrder ?
+            (a, b) => b - a :
+            (a, b) => a - b;
+        return isSorted(values, compareFunction);
+    }
+    ArrayExtensions.isSortedNumeric = isSortedNumeric;
+    /**
+     * Ensures that the given T || T[] is in array form, either returning the array or
+     * converting single items into an array of length one.
+     */
+    function ensureArray(value) {
+        if (Array.isArray(value)) {
+            return value;
+        }
+        return [value];
+    }
+    ArrayExtensions.ensureArray = ensureArray;
+})(ArrayExtensions || (ArrayExtensions = {}));
+//# sourceMappingURL=arrayExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/enumExtensions.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/enumExtensions.js ***!
+  \***************************************************************************************/
+/*! exports provided: EnumExtensions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnumExtensions", function() { return EnumExtensions; });
+/* harmony import */ var _double__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../double */ "./node_modules/powerbi-visuals-utils-typeutils/lib/double.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// NOTE: this file includes standalone utilities that should have no dependencies on external libraries, including jQuery.
+
+/**
+ * Extensions for Enumerations.
+ */
+var EnumExtensions;
+(function (EnumExtensions) {
+    /**
+     * Gets a value indicating whether the value has the bit flags set.
+     */
+    function hasFlag(value, flag) {
+        return (value & flag) === flag;
+    }
+    EnumExtensions.hasFlag = hasFlag;
+    /**
+     * Sets a value of a flag without modifying any other flags.
+     */
+    function setFlag(value, flag) {
+        return value |= flag;
+    }
+    EnumExtensions.setFlag = setFlag;
+    /**
+     * Resets a value of a flag without modifying any other flags.
+     */
+    function resetFlag(value, flag) {
+        return value &= ~flag;
+    }
+    EnumExtensions.resetFlag = resetFlag;
+    /**
+     * According to the TypeScript Handbook, this is safe to do.
+     */
+    function toString(enumType, value) {
+        return enumType[value];
+    }
+    EnumExtensions.toString = toString;
+    /**
+     * Returns the number of 1's in the specified value that is a set of binary bit flags.
+     */
+    function getBitCount(value) {
+        if (!_double__WEBPACK_IMPORTED_MODULE_0__["isInteger"](value))
+            return 0;
+        let bitCount = 0;
+        let shiftingValue = value;
+        while (shiftingValue !== 0) {
+            if ((shiftingValue & 1) === 1) {
+                bitCount++;
+            }
+            shiftingValue = shiftingValue >>> 1;
+        }
+        return bitCount;
+    }
+    EnumExtensions.getBitCount = getBitCount;
+})(EnumExtensions || (EnumExtensions = {}));
+//# sourceMappingURL=enumExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/logicExtensions.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/logicExtensions.js ***!
+  \****************************************************************************************/
+/*! exports provided: LogicExtensions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogicExtensions", function() { return LogicExtensions; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// NOTE: this file includes standalone utilities that should have no dependencies on external libraries, including jQuery.
+var LogicExtensions;
+(function (LogicExtensions) {
+    function XOR(a, b) {
+        return (a || b) && !(a && b);
+    }
+    LogicExtensions.XOR = XOR;
+})(LogicExtensions || (LogicExtensions = {}));
+//# sourceMappingURL=logicExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/regExpExtensions.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/regExpExtensions.js ***!
+  \*****************************************************************************************/
+/*! exports provided: RegExpExtensions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegExpExtensions", function() { return RegExpExtensions; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// NOTE: this file includes standalone utilities that should have no dependencies on external libraries, including jQuery.
+var RegExpExtensions;
+(function (RegExpExtensions) {
+    /**
+     * Runs exec on regex starting from 0 index
+     * This is the expected behavior but RegExp actually remember
+     * the last index they stopped at (found match at) and will
+     * return unexpected results when run in sequence.
+     * @param regex - regular expression object
+     * @param value - string to search wiht regex
+     * @param start - index within value to start regex
+     */
+    function run(regex, value, start) {
+        regex.lastIndex = start || 0;
+        return regex.exec(value);
+    }
+    RegExpExtensions.run = run;
+})(RegExpExtensions || (RegExpExtensions = {}));
+//# sourceMappingURL=regExpExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/stringExtensions.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/stringExtensions.js ***!
+  \*****************************************************************************************/
+/*! exports provided: StringExtensions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StringExtensions", function() { return StringExtensions; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+/**
+ * Extensions to String class.
+ */
+var StringExtensions;
+(function (StringExtensions) {
+    /**
+     * Checks if a string ends with a sub-string.
+     */
+    function endsWith(str, suffix) {
+        return str.indexOf(suffix, str.length - suffix.length) !== -1;
+    }
+    StringExtensions.endsWith = endsWith;
+})(StringExtensions || (StringExtensions = {}));
+//# sourceMappingURL=stringExtensions.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/index.js ***!
+  \*******************************************************************/
+/*! exports provided: arrayExtensions, enumExtensions, logicExtensions, regExpExtensions, stringExtensions, numericSequence, numericSequenceRange, double, jsonComparer, pixelConverter, prototype, textSizeDefaults, valueType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _extensions_arrayExtensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extensions/arrayExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/arrayExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "arrayExtensions", function() { return _extensions_arrayExtensions__WEBPACK_IMPORTED_MODULE_0__; });
+/* harmony import */ var _extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./extensions/enumExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/enumExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "enumExtensions", function() { return _extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_1__; });
+/* harmony import */ var _extensions_logicExtensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extensions/logicExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/logicExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "logicExtensions", function() { return _extensions_logicExtensions__WEBPACK_IMPORTED_MODULE_2__; });
+/* harmony import */ var _extensions_regExpExtensions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./extensions/regExpExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/regExpExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "regExpExtensions", function() { return _extensions_regExpExtensions__WEBPACK_IMPORTED_MODULE_3__; });
+/* harmony import */ var _extensions_stringExtensions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./extensions/stringExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/stringExtensions.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "stringExtensions", function() { return _extensions_stringExtensions__WEBPACK_IMPORTED_MODULE_4__; });
+/* harmony import */ var _numericSequence_numericSequence__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./numericSequence/numericSequence */ "./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequence.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "numericSequence", function() { return _numericSequence_numericSequence__WEBPACK_IMPORTED_MODULE_5__; });
+/* harmony import */ var _numericSequence_numericSequenceRange__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./numericSequence/numericSequenceRange */ "./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequenceRange.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "numericSequenceRange", function() { return _numericSequence_numericSequenceRange__WEBPACK_IMPORTED_MODULE_6__; });
+/* harmony import */ var _double__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./double */ "./node_modules/powerbi-visuals-utils-typeutils/lib/double.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "double", function() { return _double__WEBPACK_IMPORTED_MODULE_7__; });
+/* harmony import */ var _jsonComparer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./jsonComparer */ "./node_modules/powerbi-visuals-utils-typeutils/lib/jsonComparer.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "jsonComparer", function() { return _jsonComparer__WEBPACK_IMPORTED_MODULE_8__; });
+/* harmony import */ var _pixelConverter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pixelConverter */ "./node_modules/powerbi-visuals-utils-typeutils/lib/pixelConverter.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "pixelConverter", function() { return _pixelConverter__WEBPACK_IMPORTED_MODULE_9__; });
+/* harmony import */ var _prototype__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./prototype */ "./node_modules/powerbi-visuals-utils-typeutils/lib/prototype.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "prototype", function() { return _prototype__WEBPACK_IMPORTED_MODULE_10__; });
+/* harmony import */ var _textSizeDefaults__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./textSizeDefaults */ "./node_modules/powerbi-visuals-utils-typeutils/lib/textSizeDefaults.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "textSizeDefaults", function() { return _textSizeDefaults__WEBPACK_IMPORTED_MODULE_11__; });
+/* harmony import */ var _valueType__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./valueType */ "./node_modules/powerbi-visuals-utils-typeutils/lib/valueType.js");
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "valueType", function() { return _valueType__WEBPACK_IMPORTED_MODULE_12__; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/jsonComparer.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/jsonComparer.js ***!
+  \**************************************************************************/
+/*! exports provided: equals */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "equals", function() { return equals; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// NOTE: this file includes standalone utilities that should have no dependencies on external libraries, including jQuery.
+/**
+ * Performs JSON-style comparison of two objects.
+ */
+function equals(x, y) {
+    if (x === y)
+        return true;
+    return JSON.stringify(x) === JSON.stringify(y);
+}
+//# sourceMappingURL=jsonComparer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequence.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequence.js ***!
+  \*********************************************************************************************/
+/*! exports provided: NumericSequence */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NumericSequence", function() { return NumericSequence; });
+/* harmony import */ var _double__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../double */ "./node_modules/powerbi-visuals-utils-typeutils/lib/double.js");
+/* harmony import */ var _numericSequenceRange__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./numericSequenceRange */ "./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequenceRange.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+
+class NumericSequence {
+    static calculate(range, expectedCount, maxAllowedMargin, minPower, useZeroRefPoint, steps) {
+        let result = new NumericSequence();
+        if (expectedCount === undefined)
+            expectedCount = 10;
+        else
+            expectedCount = _double__WEBPACK_IMPORTED_MODULE_0__["ensureInRange"](expectedCount, NumericSequence.MIN_COUNT, NumericSequence.MAX_COUNT);
+        if (minPower === undefined)
+            minPower = _double__WEBPACK_IMPORTED_MODULE_0__["MIN_EXP"];
+        if (useZeroRefPoint === undefined)
+            useZeroRefPoint = false;
+        if (maxAllowedMargin === undefined)
+            maxAllowedMargin = 1;
+        if (steps === undefined)
+            steps = [1, 2, 5];
+        // Handle single stop case
+        if (range.forcedSingleStop) {
+            result.interval = range.getSize();
+            result.intervalOffset = result.interval - (range.forcedSingleStop - range.min);
+            result.min = range.min;
+            result.max = range.max;
+            result.sequence = [range.forcedSingleStop];
+            return result;
+        }
+        let interval = 0;
+        let min = 0;
+        let max = 9;
+        let canExtendMin = maxAllowedMargin > 0 && !range.hasFixedMin;
+        let canExtendMax = maxAllowedMargin > 0 && !range.hasFixedMax;
+        let size = range.getSize();
+        let exp = _double__WEBPACK_IMPORTED_MODULE_0__["log10"](size);
+        // Account for Exp of steps
+        let stepExp = _double__WEBPACK_IMPORTED_MODULE_0__["log10"](steps[0]);
+        exp = exp - stepExp;
+        // Account for MaxCount
+        let expectedCountExp = _double__WEBPACK_IMPORTED_MODULE_0__["log10"](expectedCount);
+        exp = exp - expectedCountExp;
+        // Account for MinPower
+        exp = Math.max(exp, minPower - stepExp + 1);
+        let count = undefined;
+        // Create array of "good looking" numbers
+        if (interval !== 0) {
+            // If explicit interval is defined - use it instead of the steps array.
+            let power = _double__WEBPACK_IMPORTED_MODULE_0__["pow10"](exp);
+            let roundMin = _double__WEBPACK_IMPORTED_MODULE_0__["floorToPrecision"](range.min, power);
+            let roundMax = _double__WEBPACK_IMPORTED_MODULE_0__["ceilToPrecision"](range.max, power);
+            let roundRange = _numericSequenceRange__WEBPACK_IMPORTED_MODULE_1__["NumericSequenceRange"].calculateFixedRange(roundMin, roundMax);
+            roundRange.shrinkByStep(range, interval);
+            min = roundRange.min;
+            max = roundRange.max;
+            count = Math.floor(roundRange.getSize() / interval);
+        }
+        else {
+            // No interval defined -> find optimal interval
+            let dexp;
+            for (dexp = 0; dexp < 3; dexp++) {
+                let e = exp + dexp;
+                let power = _double__WEBPACK_IMPORTED_MODULE_0__["pow10"](e);
+                let roundMin = _double__WEBPACK_IMPORTED_MODULE_0__["floorToPrecision"](range.min, power);
+                let roundMax = _double__WEBPACK_IMPORTED_MODULE_0__["ceilToPrecision"](range.max, power);
+                // Go throught the steps array looking for the smallest step that produces the right interval count.
+                let stepsCount = steps.length;
+                let stepPower = _double__WEBPACK_IMPORTED_MODULE_0__["pow10"](e - 1);
+                for (let i = 0; i < stepsCount; i++) {
+                    let step = steps[i] * stepPower;
+                    let roundRange = _numericSequenceRange__WEBPACK_IMPORTED_MODULE_1__["NumericSequenceRange"].calculateFixedRange(roundMin, roundMax, useZeroRefPoint);
+                    roundRange.shrinkByStep(range, step);
+                    // If the range is based on Data we might need to extend it to provide nice data margins.
+                    if (canExtendMin && range.min === roundRange.min && maxAllowedMargin >= 1)
+                        roundRange.min -= step;
+                    if (canExtendMax && range.max === roundRange.max && maxAllowedMargin >= 1)
+                        roundRange.max += step;
+                    // Count the intervals
+                    count = _double__WEBPACK_IMPORTED_MODULE_0__["ceilWithPrecision"](roundRange.getSize() / step, _double__WEBPACK_IMPORTED_MODULE_0__["DEFAULT_PRECISION"]);
+                    if (count <= expectedCount || (dexp === 2 && i === stepsCount - 1) || (expectedCount === 1 && count === 2 && (step > range.getSize() || (range.min < 0 && range.max > 0 && step * 2 >= range.getSize())))) {
+                        interval = step;
+                        min = roundRange.min;
+                        max = roundRange.max;
+                        break;
+                    }
+                }
+                // Increase the scale power until the interval is found
+                if (interval !== 0)
+                    break;
+            }
+        }
+        // Avoid extreme count cases (>1000 ticks)
+        if (count > expectedCount * 32 || count > NumericSequence.MAX_COUNT) {
+            count = Math.min(expectedCount * 32, NumericSequence.MAX_COUNT);
+            interval = (max - min) / count;
+        }
+        result.min = min;
+        result.max = max;
+        result.interval = interval;
+        result.intervalOffset = min - range.min;
+        result.maxAllowedMargin = maxAllowedMargin;
+        result.canExtendMin = canExtendMin;
+        result.canExtendMax = canExtendMax;
+        // Fill in the Sequence
+        let precision = _double__WEBPACK_IMPORTED_MODULE_0__["getPrecision"](interval, 0);
+        result.precision = precision;
+        let sequence = [];
+        let x = _double__WEBPACK_IMPORTED_MODULE_0__["roundToPrecision"](min, precision);
+        sequence.push(x);
+        for (let i = 0; i < count; i++) {
+            x = _double__WEBPACK_IMPORTED_MODULE_0__["roundToPrecision"](x + interval, precision);
+            sequence.push(x);
+        }
+        result.sequence = sequence;
+        result.trimMinMax(range.min, range.max);
+        return result;
+    }
+    /**
+     * Calculates the sequence of int numbers which are mapped to the multiples of the units grid.
+     * @min - The minimum of the range.
+     * @max - The maximum of the range.
+     * @maxCount - The max count of intervals.
+     * @steps - array of intervals.
+     */
+    static calculateUnits(min, max, maxCount, steps) {
+        // Initialization actions
+        maxCount = _double__WEBPACK_IMPORTED_MODULE_0__["ensureInRange"](maxCount, NumericSequence.MIN_COUNT, NumericSequence.MAX_COUNT);
+        if (min === max) {
+            max = min + 1;
+        }
+        let stepCount = 0;
+        let step = 0;
+        // Calculate step
+        for (let i = 0; i < steps.length; i++) {
+            step = steps[i];
+            let maxStepCount = _double__WEBPACK_IMPORTED_MODULE_0__["ceilWithPrecision"](max / step);
+            let minStepCount = _double__WEBPACK_IMPORTED_MODULE_0__["floorWithPrecision"](min / step);
+            stepCount = maxStepCount - minStepCount;
+            if (stepCount <= maxCount) {
+                break;
+            }
+        }
+        // Calculate the offset
+        let offset = -min;
+        offset = offset % step;
+        // Create sequence
+        let result = new NumericSequence();
+        result.sequence = [];
+        for (let x = min + offset;; x += step) {
+            result.sequence.push(x);
+            if (x >= max)
+                break;
+        }
+        result.interval = step;
+        result.intervalOffset = offset;
+        result.min = result.sequence[0];
+        result.max = result.sequence[result.sequence.length - 1];
+        return result;
+    }
+    trimMinMax(min, max) {
+        let minMargin = (min - this.min) / this.interval;
+        let maxMargin = (this.max - max) / this.interval;
+        let marginPrecision = 0.001;
+        if (!this.canExtendMin || (minMargin > this.maxAllowedMargin && minMargin > marginPrecision)) {
+            this.min = min;
+        }
+        if (!this.canExtendMax || (maxMargin > this.maxAllowedMargin && maxMargin > marginPrecision)) {
+            this.max = max;
+        }
+    }
+}
+NumericSequence.MIN_COUNT = 1;
+NumericSequence.MAX_COUNT = 1000;
+//# sourceMappingURL=numericSequence.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequenceRange.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/numericSequence/numericSequenceRange.js ***!
+  \**************************************************************************************************/
+/*! exports provided: NumericSequenceRange, ValueUtil */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NumericSequenceRange", function() { return NumericSequenceRange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValueUtil", function() { return ValueUtil; });
+/* harmony import */ var _double__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../double */ "./node_modules/powerbi-visuals-utils-typeutils/lib/double.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+class NumericSequenceRange {
+    _ensureIncludeZero() {
+        if (this.includeZero) {
+            // fixed min and max has higher priority than includeZero
+            if (this.min > 0 && !this.hasFixedMin) {
+                this.min = 0;
+            }
+            if (this.max < 0 && !this.hasFixedMax) {
+                this.max = 0;
+            }
+        }
+    }
+    _ensureNotEmpty() {
+        if (this.min === this.max) {
+            if (!this.min) {
+                this.min = 0;
+                this.max = NumericSequenceRange.DEFAULT_MAX;
+                this.hasFixedMin = true;
+                this.hasFixedMax = true;
+            }
+            else {
+                // We are dealing with a single data value (includeZero is not set)
+                // In order to fix the range we need to extend it in both directions by half of the interval.
+                // Interval is calculated based on the number:
+                // 1. Integers below 10,000 are extended by 0.5: so the [2006-2006] empty range is extended to [2005.5-2006.5] range and the ForsedSingleStop=2006
+                // 2. Other numbers are extended by half of their power: [700,001-700,001] => [650,001-750,001] and the ForsedSingleStop=null as we want the intervals to be calculated to cover the range.
+                let value = this.min;
+                let exp = _double__WEBPACK_IMPORTED_MODULE_0__["log10"](Math.abs(value));
+                let step;
+                if (exp >= 0 && exp < 4) {
+                    step = 0.5;
+                    this.forcedSingleStop = value;
+                }
+                else {
+                    step = _double__WEBPACK_IMPORTED_MODULE_0__["pow10"](exp) / 2;
+                    this.forcedSingleStop = null;
+                }
+                this.min = value - step;
+                this.max = value + step;
+            }
+        }
+    }
+    _ensureDirection() {
+        if (this.min > this.max) {
+            let temp = this.min;
+            this.min = this.max;
+            this.max = temp;
+        }
+    }
+    getSize() {
+        return this.max - this.min;
+    }
+    shrinkByStep(range, step) {
+        let oldCount = this.min / step;
+        let newCount = range.min / step;
+        let deltaCount = Math.floor(newCount - oldCount);
+        this.min += deltaCount * step;
+        oldCount = this.max / step;
+        newCount = range.max / step;
+        deltaCount = Math.ceil(newCount - oldCount);
+        this.max += deltaCount * step;
+    }
+    static calculate(dataMin, dataMax, fixedMin, fixedMax, includeZero) {
+        let result = new NumericSequenceRange();
+        result.includeZero = includeZero ? true : false;
+        result.hasDataRange = ValueUtil.hasValue(dataMin) && ValueUtil.hasValue(dataMax);
+        result.hasFixedMin = ValueUtil.hasValue(fixedMin);
+        result.hasFixedMax = ValueUtil.hasValue(fixedMax);
+        dataMin = _double__WEBPACK_IMPORTED_MODULE_0__["ensureInRange"](dataMin, NumericSequenceRange.MIN_SUPPORTED_DOUBLE, NumericSequenceRange.MAX_SUPPORTED_DOUBLE);
+        dataMax = _double__WEBPACK_IMPORTED_MODULE_0__["ensureInRange"](dataMax, NumericSequenceRange.MIN_SUPPORTED_DOUBLE, NumericSequenceRange.MAX_SUPPORTED_DOUBLE);
+        // Calculate the range using the min, max, dataRange
+        if (result.hasFixedMin && result.hasFixedMax) {
+            result.min = fixedMin;
+            result.max = fixedMax;
+        }
+        else if (result.hasFixedMin) {
+            result.min = fixedMin;
+            result.max = dataMax > fixedMin ? dataMax : fixedMin;
+        }
+        else if (result.hasFixedMax) {
+            result.min = dataMin < fixedMax ? dataMin : fixedMax;
+            result.max = fixedMax;
+        }
+        else if (result.hasDataRange) {
+            result.min = dataMin;
+            result.max = dataMax;
+        }
+        else {
+            result.min = 0;
+            result.max = 0;
+        }
+        result._ensureIncludeZero();
+        result._ensureNotEmpty();
+        result._ensureDirection();
+        if (result.min === 0) {
+            result.hasFixedMin = true; // If the range starts from zero we should prevent extending the intervals into the negative range
+        }
+        else if (result.max === 0) {
+            result.hasFixedMax = true; // If the range ends at zero we should prevent extending the intervals into the positive range
+        }
+        return result;
+    }
+    static calculateDataRange(dataMin, dataMax, includeZero) {
+        if (!ValueUtil.hasValue(dataMin) || !ValueUtil.hasValue(dataMax)) {
+            return NumericSequenceRange.calculateFixedRange(0, NumericSequenceRange.DEFAULT_MAX);
+        }
+        else {
+            return NumericSequenceRange.calculate(dataMin, dataMax, null, null, includeZero);
+        }
+    }
+    static calculateFixedRange(fixedMin, fixedMax, includeZero) {
+        let result = new NumericSequenceRange();
+        result.hasDataRange = false;
+        result.includeZero = includeZero;
+        result.min = fixedMin;
+        result.max = fixedMax;
+        result._ensureIncludeZero();
+        result._ensureNotEmpty();
+        result._ensureDirection();
+        result.hasFixedMin = true;
+        result.hasFixedMax = true;
+        return result;
+    }
+}
+NumericSequenceRange.DEFAULT_MAX = 10;
+NumericSequenceRange.MIN_SUPPORTED_DOUBLE = -1E307;
+NumericSequenceRange.MAX_SUPPORTED_DOUBLE = 1E307;
+/** Note: Exported for testability */
+var ValueUtil;
+(function (ValueUtil) {
+    function hasValue(value) {
+        return value !== undefined && value !== null;
+    }
+    ValueUtil.hasValue = hasValue;
+})(ValueUtil || (ValueUtil = {}));
+//# sourceMappingURL=numericSequenceRange.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/pixelConverter.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/pixelConverter.js ***!
+  \****************************************************************************/
+/*! exports provided: toString, fromPoint, fromPointToPixel, toPoint */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toString", function() { return toString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromPoint", function() { return fromPoint; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromPointToPixel", function() { return fromPointToPixel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toPoint", function() { return toPoint; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+const PxPtRatio = 4 / 3;
+const PixelString = "px";
+/**
+ * Appends 'px' to the end of number value for use as pixel string in styles
+ */
+function toString(px) {
+    return px + PixelString;
+}
+/**
+ * Converts point value (pt) to pixels
+ * Returns a string for font-size property
+ * e.g. fromPoint(8) => '24px'
+ */
+function fromPoint(pt) {
+    return toString(fromPointToPixel(pt));
+}
+/**
+ * Converts point value (pt) to pixels
+ * Returns a number for font-size property
+ * e.g. fromPoint(8) => 24px
+ */
+function fromPointToPixel(pt) {
+    return (PxPtRatio * pt);
+}
+/**
+ * Converts pixel value (px) to pt
+ * e.g. toPoint(24) => 8
+ */
+function toPoint(px) {
+    return px / PxPtRatio;
+}
+//# sourceMappingURL=pixelConverter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/prototype.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/prototype.js ***!
+  \***********************************************************************/
+/*! exports provided: inherit, inheritSingle, overrideArray */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inherit", function() { return inherit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inheritSingle", function() { return inheritSingle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "overrideArray", function() { return overrideArray; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+/**
+ * Returns a new object with the provided obj as its prototype.
+ */
+function inherit(obj, extension) {
+    function wrapCtor() { }
+    wrapCtor.prototype = obj;
+    let inherited = new wrapCtor();
+    if (extension)
+        extension(inherited);
+    return inherited;
+}
+/**
+ * Returns a new object with the provided obj as its prototype
+ * if, and only if, the prototype has not been previously set
+ */
+function inheritSingle(obj) {
+    let proto = Object.getPrototypeOf(obj);
+    if (proto === Object.prototype || proto === Array.prototype)
+        obj = inherit(obj);
+    return obj;
+}
+/**
+ * Uses the provided callback function to selectively replace contents in the provided array.
+ * @return A new array with those values overriden
+ * or undefined if no overrides are necessary.
+ */
+function overrideArray(prototype, override) {
+    if (!prototype)
+        return;
+    let overwritten;
+    for (let i = 0, len = prototype.length; i < len; i++) {
+        let value = override(prototype[i]);
+        if (value) {
+            if (!overwritten)
+                overwritten = inherit(prototype);
+            overwritten[i] = value;
+        }
+    }
+    return overwritten;
+}
+//# sourceMappingURL=prototype.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/textSizeDefaults.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/textSizeDefaults.js ***!
+  \******************************************************************************/
+/*! exports provided: TextSizeMin, TextSizeMax, getScale */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextSizeMin", function() { return TextSizeMin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextSizeMax", function() { return TextSizeMax; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getScale", function() { return getScale; });
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// NOTE: this file includes standalone utilities that should have no dependencies on external libraries, including jQuery.
+/**
+ * Values are in terms of 'pt'
+ * Convert to pixels using PixelConverter.fromPoint
+ */
+/**
+ * Stored in terms of 'pt'
+ * Convert to pixels using PixelConverter.fromPoint
+ */
+const TextSizeMin = 8;
+/**
+ * Stored in terms of 'pt'
+ * Convert to pixels using PixelConverter.fromPoint
+ */
+const TextSizeMax = 40;
+const TextSizeRange = TextSizeMax - TextSizeMin;
+/**
+ * Returns the percentage of this value relative to the TextSizeMax
+ * @param textSize - should be given in terms of 'pt'
+ */
+function getScale(textSize) {
+    return (textSize - TextSizeMin) / TextSizeRange;
+}
+//# sourceMappingURL=textSizeDefaults.js.map
+
+/***/ }),
+
+/***/ "./node_modules/powerbi-visuals-utils-typeutils/lib/valueType.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/powerbi-visuals-utils-typeutils/lib/valueType.js ***!
+  \***********************************************************************/
+/*! exports provided: ValueType, ScriptType, TemporalType, GeographyType, MiscellaneousType, FormattingType, PrimitiveType, ExtendedType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValueType", function() { return ValueType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScriptType", function() { return ScriptType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TemporalType", function() { return TemporalType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeographyType", function() { return GeographyType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiscellaneousType", function() { return MiscellaneousType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattingType", function() { return FormattingType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrimitiveType", function() { return PrimitiveType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExtendedType", function() { return ExtendedType; });
+/* harmony import */ var _extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extensions/enumExtensions */ "./node_modules/powerbi-visuals-utils-typeutils/lib/extensions/enumExtensions.js");
+/* harmony import */ var _jsonComparer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jsonComparer */ "./node_modules/powerbi-visuals-utils-typeutils/lib/jsonComparer.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+// powerbi.extensibility.utils.type
+
+
+/** Describes a data value type, including a primitive type and extended type if any (derived from data category). */
+class ValueType {
+    /** Do not call the ValueType constructor directly. Use the ValueType.fromXXX methods. */
+    constructor(underlyingType, category, enumType, variantTypes) {
+        this.underlyingType = underlyingType;
+        this.category = category;
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Temporal)) {
+            this.temporalType = new TemporalType(underlyingType);
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Geography)) {
+            this.geographyType = new GeographyType(underlyingType);
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Miscellaneous)) {
+            this.miscType = new MiscellaneousType(underlyingType);
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Formatting)) {
+            this.formattingType = new FormattingType(underlyingType);
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Enumeration)) {
+            this.enumType = enumType;
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Scripting)) {
+            this.scriptingType = new ScriptType(underlyingType);
+        }
+        if (_extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(underlyingType, ExtendedType.Variant)) {
+            this.variationTypes = variantTypes;
+        }
+    }
+    /** Creates or retrieves a ValueType object based on the specified ValueTypeDescriptor. */
+    static fromDescriptor(descriptor) {
+        descriptor = descriptor || {};
+        // Simplified primitive types
+        if (descriptor.text)
+            return ValueType.fromExtendedType(ExtendedType.Text);
+        if (descriptor.integer)
+            return ValueType.fromExtendedType(ExtendedType.Integer);
+        if (descriptor.numeric)
+            return ValueType.fromExtendedType(ExtendedType.Double);
+        if (descriptor.bool)
+            return ValueType.fromExtendedType(ExtendedType.Boolean);
+        if (descriptor.dateTime)
+            return ValueType.fromExtendedType(ExtendedType.DateTime);
+        if (descriptor.duration)
+            return ValueType.fromExtendedType(ExtendedType.Duration);
+        if (descriptor.binary)
+            return ValueType.fromExtendedType(ExtendedType.Binary);
+        if (descriptor.none)
+            return ValueType.fromExtendedType(ExtendedType.None);
+        // Extended types
+        if (descriptor.scripting) {
+            if (descriptor.scripting.source)
+                return ValueType.fromExtendedType(ExtendedType.ScriptSource);
+        }
+        if (descriptor.enumeration)
+            return ValueType.fromEnum(descriptor.enumeration);
+        if (descriptor.temporal) {
+            if (descriptor.temporal.year)
+                return ValueType.fromExtendedType(ExtendedType.Years_Integer);
+            if (descriptor.temporal.quarter)
+                return ValueType.fromExtendedType(ExtendedType.Quarters_Integer);
+            if (descriptor.temporal.month)
+                return ValueType.fromExtendedType(ExtendedType.Months_Integer);
+            if (descriptor.temporal.day)
+                return ValueType.fromExtendedType(ExtendedType.DayOfMonth_Integer);
+            if (descriptor.temporal.paddedDateTableDate)
+                return ValueType.fromExtendedType(ExtendedType.PaddedDateTableDates);
+        }
+        if (descriptor.geography) {
+            if (descriptor.geography.address)
+                return ValueType.fromExtendedType(ExtendedType.Address);
+            if (descriptor.geography.city)
+                return ValueType.fromExtendedType(ExtendedType.City);
+            if (descriptor.geography.continent)
+                return ValueType.fromExtendedType(ExtendedType.Continent);
+            if (descriptor.geography.country)
+                return ValueType.fromExtendedType(ExtendedType.Country);
+            if (descriptor.geography.county)
+                return ValueType.fromExtendedType(ExtendedType.County);
+            if (descriptor.geography.region)
+                return ValueType.fromExtendedType(ExtendedType.Region);
+            if (descriptor.geography.postalCode)
+                return ValueType.fromExtendedType(ExtendedType.PostalCode_Text);
+            if (descriptor.geography.stateOrProvince)
+                return ValueType.fromExtendedType(ExtendedType.StateOrProvince);
+            if (descriptor.geography.place)
+                return ValueType.fromExtendedType(ExtendedType.Place);
+            if (descriptor.geography.latitude)
+                return ValueType.fromExtendedType(ExtendedType.Latitude_Double);
+            if (descriptor.geography.longitude)
+                return ValueType.fromExtendedType(ExtendedType.Longitude_Double);
+        }
+        if (descriptor.misc) {
+            if (descriptor.misc.image)
+                return ValueType.fromExtendedType(ExtendedType.Image);
+            if (descriptor.misc.imageUrl)
+                return ValueType.fromExtendedType(ExtendedType.ImageUrl);
+            if (descriptor.misc.webUrl)
+                return ValueType.fromExtendedType(ExtendedType.WebUrl);
+            if (descriptor.misc.barcode)
+                return ValueType.fromExtendedType(ExtendedType.Barcode_Text);
+        }
+        if (descriptor.formatting) {
+            if (descriptor.formatting.color)
+                return ValueType.fromExtendedType(ExtendedType.Color);
+            if (descriptor.formatting.formatString)
+                return ValueType.fromExtendedType(ExtendedType.FormatString);
+            if (descriptor.formatting.alignment)
+                return ValueType.fromExtendedType(ExtendedType.Alignment);
+            if (descriptor.formatting.labelDisplayUnits)
+                return ValueType.fromExtendedType(ExtendedType.LabelDisplayUnits);
+            if (descriptor.formatting.fontSize)
+                return ValueType.fromExtendedType(ExtendedType.FontSize);
+            if (descriptor.formatting.labelDensity)
+                return ValueType.fromExtendedType(ExtendedType.LabelDensity);
+        }
+        if (descriptor.extendedType) {
+            return ValueType.fromExtendedType(descriptor.extendedType);
+        }
+        if (descriptor.operations) {
+            if (descriptor.operations.searchEnabled)
+                return ValueType.fromExtendedType(ExtendedType.SearchEnabled);
+        }
+        if (descriptor.variant) {
+            let variantTypes = descriptor.variant.map((variantType) => ValueType.fromDescriptor(variantType));
+            return ValueType.fromVariant(variantTypes);
+        }
+        return ValueType.fromExtendedType(ExtendedType.Null);
+    }
+    /** Advanced: Generally use fromDescriptor instead. Creates or retrieves a ValueType object for the specified ExtendedType. */
+    static fromExtendedType(extendedType) {
+        extendedType = extendedType || ExtendedType.Null;
+        let primitiveType = getPrimitiveType(extendedType), category = getCategoryFromExtendedType(extendedType);
+        return ValueType.fromPrimitiveTypeAndCategory(primitiveType, category);
+    }
+    /** Creates or retrieves a ValueType object for the specified PrimitiveType and data category. */
+    static fromPrimitiveTypeAndCategory(primitiveType, category) {
+        primitiveType = primitiveType || PrimitiveType.Null;
+        category = category || null;
+        let id = primitiveType.toString();
+        if (category)
+            id += "|" + category;
+        return ValueType.typeCache[id] || (ValueType.typeCache[id] = new ValueType(toExtendedType(primitiveType, category), category));
+    }
+    /** Creates a ValueType to describe the given IEnumType. */
+    static fromEnum(enumType) {
+        return new ValueType(ExtendedType.Enumeration, null, enumType);
+    }
+    /** Creates a ValueType to describe the given Variant type. */
+    static fromVariant(variantTypes) {
+        return new ValueType(ExtendedType.Variant, /* category */ null, /* enumType */ null, variantTypes);
+    }
+    /** Determines if the specified type is compatible from at least one of the otherTypes. */
+    static isCompatibleTo(typeDescriptor, otherTypes) {
+        let valueType = ValueType.fromDescriptor(typeDescriptor);
+        for (let otherType of otherTypes) {
+            let otherValueType = ValueType.fromDescriptor(otherType);
+            if (otherValueType.isCompatibleFrom(valueType))
+                return true;
+        }
+        return false;
+    }
+    /** Determines if the instance ValueType is convertable from the 'other' ValueType. */
+    isCompatibleFrom(other) {
+        let otherPrimitiveType = other.primitiveType;
+        if (this === other ||
+            this.primitiveType === otherPrimitiveType ||
+            otherPrimitiveType === PrimitiveType.Null ||
+            // Return true if both types are numbers
+            (this.numeric && other.numeric))
+            return true;
+        return false;
+    }
+    /**
+     * Determines if the instance ValueType is equal to the 'other' ValueType
+     * @param {ValueType} other the other ValueType to check equality against
+     * @returns True if the instance ValueType is equal to the 'other' ValueType
+     */
+    equals(other) {
+        return _jsonComparer__WEBPACK_IMPORTED_MODULE_1__["equals"](this, other);
+    }
+    /** Gets the exact primitive type of this ValueType. */
+    get primitiveType() {
+        return getPrimitiveType(this.underlyingType);
+    }
+    /** Gets the exact extended type of this ValueType. */
+    get extendedType() {
+        return this.underlyingType;
+    }
+    /** Gets the data category string (if any) for this ValueType. */
+    get categoryString() {
+        return this.category;
+    }
+    // Simplified primitive types
+    /** Indicates whether the type represents text values. */
+    get text() {
+        return this.primitiveType === PrimitiveType.Text;
+    }
+    /** Indicates whether the type represents any numeric value. */
+    get numeric() {
+        return _extensions_enumExtensions__WEBPACK_IMPORTED_MODULE_0__["EnumExtensions"].hasFlag(this.underlyingType, ExtendedType.Numeric);
+    }
+    /** Indicates whether the type represents integer numeric values. */
+    get integer() {
+        return this.primitiveType === PrimitiveType.Integer;
+    }
+    /** Indicates whether the type represents Boolean values. */
+    get bool() {
+        return this.primitiveType === PrimitiveType.Boolean;
+    }
+    /** Indicates whether the type represents any date/time values. */
+    get dateTime() {
+        return this.primitiveType === PrimitiveType.DateTime ||
+            this.primitiveType === PrimitiveType.Date ||
+            this.primitiveType === PrimitiveType.Time;
+    }
+    /** Indicates whether the type represents duration values. */
+    get duration() {
+        return this.primitiveType === PrimitiveType.Duration;
+    }
+    /** Indicates whether the type represents binary values. */
+    get binary() {
+        return this.primitiveType === PrimitiveType.Binary;
+    }
+    /** Indicates whether the type represents none values. */
+    get none() {
+        return this.primitiveType === PrimitiveType.None;
+    }
+    // Extended types
+    /** Returns an object describing temporal values represented by the type, if it represents a temporal type. */
+    get temporal() {
+        return this.temporalType;
+    }
+    /** Returns an object describing geographic values represented by the type, if it represents a geographic type. */
+    get geography() {
+        return this.geographyType;
+    }
+    /** Returns an object describing the specific values represented by the type, if it represents a miscellaneous extended type. */
+    get misc() {
+        return this.miscType;
+    }
+    /** Returns an object describing the formatting values represented by the type, if it represents a formatting type. */
+    get formatting() {
+        return this.formattingType;
+    }
+    /** Returns an object describing the enum values represented by the type, if it represents an enumeration type. */
+    get enumeration() {
+        return this.enumType;
+    }
+    get scripting() {
+        return this.scriptingType;
+    }
+    /** Returns an array describing the variant values represented by the type, if it represents an Variant type. */
+    get variant() {
+        return this.variationTypes;
+    }
+}
+ValueType.typeCache = {};
+class ScriptType {
+    constructor(underlyingType) {
+        this.underlyingType = underlyingType;
+    }
+    get source() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.ScriptSource);
+    }
+}
+class TemporalType {
+    constructor(underlyingType) {
+        this.underlyingType = underlyingType;
+    }
+    get year() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Years);
+    }
+    get quarter() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Quarters);
+    }
+    get month() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Months);
+    }
+    get day() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.DayOfMonth);
+    }
+    get paddedDateTableDate() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.PaddedDateTableDates);
+    }
+}
+class GeographyType {
+    constructor(underlyingType) {
+        this.underlyingType = underlyingType;
+    }
+    get address() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Address);
+    }
+    get city() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.City);
+    }
+    get continent() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Continent);
+    }
+    get country() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Country);
+    }
+    get county() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.County);
+    }
+    get region() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Region);
+    }
+    get postalCode() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.PostalCode);
+    }
+    get stateOrProvince() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.StateOrProvince);
+    }
+    get place() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Place);
+    }
+    get latitude() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Latitude);
+    }
+    get longitude() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Longitude);
+    }
+}
+class MiscellaneousType {
+    constructor(underlyingType) {
+        this.underlyingType = underlyingType;
+    }
+    get image() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Image);
+    }
+    get imageUrl() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.ImageUrl);
+    }
+    get webUrl() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.WebUrl);
+    }
+    get barcode() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Barcode);
+    }
+}
+class FormattingType {
+    constructor(underlyingType) {
+        this.underlyingType = underlyingType;
+    }
+    get color() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Color);
+    }
+    get formatString() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.FormatString);
+    }
+    get alignment() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.Alignment);
+    }
+    get labelDisplayUnits() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.LabelDisplayUnits);
+    }
+    get fontSize() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.FontSize);
+    }
+    get labelDensity() {
+        return matchesExtendedTypeWithAnyPrimitive(this.underlyingType, ExtendedType.LabelDensity);
+    }
+}
+/** Defines primitive value types. Must be consistent with types defined by server conceptual schema. */
+var PrimitiveType;
+(function (PrimitiveType) {
+    PrimitiveType[PrimitiveType["Null"] = 0] = "Null";
+    PrimitiveType[PrimitiveType["Text"] = 1] = "Text";
+    PrimitiveType[PrimitiveType["Decimal"] = 2] = "Decimal";
+    PrimitiveType[PrimitiveType["Double"] = 3] = "Double";
+    PrimitiveType[PrimitiveType["Integer"] = 4] = "Integer";
+    PrimitiveType[PrimitiveType["Boolean"] = 5] = "Boolean";
+    PrimitiveType[PrimitiveType["Date"] = 6] = "Date";
+    PrimitiveType[PrimitiveType["DateTime"] = 7] = "DateTime";
+    PrimitiveType[PrimitiveType["DateTimeZone"] = 8] = "DateTimeZone";
+    PrimitiveType[PrimitiveType["Time"] = 9] = "Time";
+    PrimitiveType[PrimitiveType["Duration"] = 10] = "Duration";
+    PrimitiveType[PrimitiveType["Binary"] = 11] = "Binary";
+    PrimitiveType[PrimitiveType["None"] = 12] = "None";
+    PrimitiveType[PrimitiveType["Variant"] = 13] = "Variant";
+})(PrimitiveType || (PrimitiveType = {}));
+var PrimitiveTypeStrings;
+(function (PrimitiveTypeStrings) {
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Null"] = 0] = "Null";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Text"] = 1] = "Text";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Decimal"] = 2] = "Decimal";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Double"] = 3] = "Double";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Integer"] = 4] = "Integer";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Boolean"] = 5] = "Boolean";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Date"] = 6] = "Date";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["DateTime"] = 7] = "DateTime";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["DateTimeZone"] = 8] = "DateTimeZone";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Time"] = 9] = "Time";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Duration"] = 10] = "Duration";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Binary"] = 11] = "Binary";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["None"] = 12] = "None";
+    PrimitiveTypeStrings[PrimitiveTypeStrings["Variant"] = 13] = "Variant";
+})(PrimitiveTypeStrings || (PrimitiveTypeStrings = {}));
+/** Defines extended value types, which include primitive types and known data categories constrained to expected primitive types. */
+var ExtendedType;
+(function (ExtendedType) {
+    // Flags (1 << 8-15 range [0xFF00])
+    // Important: Enum members must be declared before they are used in TypeScript.
+    ExtendedType[ExtendedType["Numeric"] = 256] = "Numeric";
+    ExtendedType[ExtendedType["Temporal"] = 512] = "Temporal";
+    ExtendedType[ExtendedType["Geography"] = 1024] = "Geography";
+    ExtendedType[ExtendedType["Miscellaneous"] = 2048] = "Miscellaneous";
+    ExtendedType[ExtendedType["Formatting"] = 4096] = "Formatting";
+    ExtendedType[ExtendedType["Scripting"] = 8192] = "Scripting";
+    // Primitive types (0-255 range [0xFF] | flags)
+    // The member names and base values must match those in PrimitiveType.
+    ExtendedType[ExtendedType["Null"] = 0] = "Null";
+    ExtendedType[ExtendedType["Text"] = 1] = "Text";
+    ExtendedType[ExtendedType["Decimal"] = 258] = "Decimal";
+    ExtendedType[ExtendedType["Double"] = 259] = "Double";
+    ExtendedType[ExtendedType["Integer"] = 260] = "Integer";
+    ExtendedType[ExtendedType["Boolean"] = 5] = "Boolean";
+    ExtendedType[ExtendedType["Date"] = 518] = "Date";
+    ExtendedType[ExtendedType["DateTime"] = 519] = "DateTime";
+    ExtendedType[ExtendedType["DateTimeZone"] = 520] = "DateTimeZone";
+    ExtendedType[ExtendedType["Time"] = 521] = "Time";
+    ExtendedType[ExtendedType["Duration"] = 10] = "Duration";
+    ExtendedType[ExtendedType["Binary"] = 11] = "Binary";
+    ExtendedType[ExtendedType["None"] = 12] = "None";
+    ExtendedType[ExtendedType["Variant"] = 13] = "Variant";
+    // Extended types (0-32767 << 16 range [0xFFFF0000] | corresponding primitive type | flags)
+    // Temporal
+    ExtendedType[ExtendedType["Years"] = 66048] = "Years";
+    ExtendedType[ExtendedType["Years_Text"] = 66049] = "Years_Text";
+    ExtendedType[ExtendedType["Years_Integer"] = 66308] = "Years_Integer";
+    ExtendedType[ExtendedType["Years_Date"] = 66054] = "Years_Date";
+    ExtendedType[ExtendedType["Years_DateTime"] = 66055] = "Years_DateTime";
+    ExtendedType[ExtendedType["Months"] = 131584] = "Months";
+    ExtendedType[ExtendedType["Months_Text"] = 131585] = "Months_Text";
+    ExtendedType[ExtendedType["Months_Integer"] = 131844] = "Months_Integer";
+    ExtendedType[ExtendedType["Months_Date"] = 131590] = "Months_Date";
+    ExtendedType[ExtendedType["Months_DateTime"] = 131591] = "Months_DateTime";
+    ExtendedType[ExtendedType["PaddedDateTableDates"] = 197127] = "PaddedDateTableDates";
+    ExtendedType[ExtendedType["Quarters"] = 262656] = "Quarters";
+    ExtendedType[ExtendedType["Quarters_Text"] = 262657] = "Quarters_Text";
+    ExtendedType[ExtendedType["Quarters_Integer"] = 262916] = "Quarters_Integer";
+    ExtendedType[ExtendedType["Quarters_Date"] = 262662] = "Quarters_Date";
+    ExtendedType[ExtendedType["Quarters_DateTime"] = 262663] = "Quarters_DateTime";
+    ExtendedType[ExtendedType["DayOfMonth"] = 328192] = "DayOfMonth";
+    ExtendedType[ExtendedType["DayOfMonth_Text"] = 328193] = "DayOfMonth_Text";
+    ExtendedType[ExtendedType["DayOfMonth_Integer"] = 328452] = "DayOfMonth_Integer";
+    ExtendedType[ExtendedType["DayOfMonth_Date"] = 328198] = "DayOfMonth_Date";
+    ExtendedType[ExtendedType["DayOfMonth_DateTime"] = 328199] = "DayOfMonth_DateTime";
+    // Geography
+    ExtendedType[ExtendedType["Address"] = 6554625] = "Address";
+    ExtendedType[ExtendedType["City"] = 6620161] = "City";
+    ExtendedType[ExtendedType["Continent"] = 6685697] = "Continent";
+    ExtendedType[ExtendedType["Country"] = 6751233] = "Country";
+    ExtendedType[ExtendedType["County"] = 6816769] = "County";
+    ExtendedType[ExtendedType["Region"] = 6882305] = "Region";
+    ExtendedType[ExtendedType["PostalCode"] = 6947840] = "PostalCode";
+    ExtendedType[ExtendedType["PostalCode_Text"] = 6947841] = "PostalCode_Text";
+    ExtendedType[ExtendedType["PostalCode_Integer"] = 6948100] = "PostalCode_Integer";
+    ExtendedType[ExtendedType["StateOrProvince"] = 7013377] = "StateOrProvince";
+    ExtendedType[ExtendedType["Place"] = 7078913] = "Place";
+    ExtendedType[ExtendedType["Latitude"] = 7144448] = "Latitude";
+    ExtendedType[ExtendedType["Latitude_Decimal"] = 7144706] = "Latitude_Decimal";
+    ExtendedType[ExtendedType["Latitude_Double"] = 7144707] = "Latitude_Double";
+    ExtendedType[ExtendedType["Longitude"] = 7209984] = "Longitude";
+    ExtendedType[ExtendedType["Longitude_Decimal"] = 7210242] = "Longitude_Decimal";
+    ExtendedType[ExtendedType["Longitude_Double"] = 7210243] = "Longitude_Double";
+    // Miscellaneous
+    ExtendedType[ExtendedType["Image"] = 13109259] = "Image";
+    ExtendedType[ExtendedType["ImageUrl"] = 13174785] = "ImageUrl";
+    ExtendedType[ExtendedType["WebUrl"] = 13240321] = "WebUrl";
+    ExtendedType[ExtendedType["Barcode"] = 13305856] = "Barcode";
+    ExtendedType[ExtendedType["Barcode_Text"] = 13305857] = "Barcode_Text";
+    ExtendedType[ExtendedType["Barcode_Integer"] = 13306116] = "Barcode_Integer";
+    // Formatting
+    ExtendedType[ExtendedType["Color"] = 19664897] = "Color";
+    ExtendedType[ExtendedType["FormatString"] = 19730433] = "FormatString";
+    ExtendedType[ExtendedType["Alignment"] = 20058113] = "Alignment";
+    ExtendedType[ExtendedType["LabelDisplayUnits"] = 20123649] = "LabelDisplayUnits";
+    ExtendedType[ExtendedType["FontSize"] = 20189443] = "FontSize";
+    ExtendedType[ExtendedType["LabelDensity"] = 20254979] = "LabelDensity";
+    // Enumeration
+    ExtendedType[ExtendedType["Enumeration"] = 26214401] = "Enumeration";
+    // Scripting
+    ExtendedType[ExtendedType["ScriptSource"] = 32776193] = "ScriptSource";
+    // NOTE: To avoid confusion, underscores should be used only to delimit primitive type variants of an extended type
+    // (e.g. Year_Integer or Latitude_Double above)
+    // Operations
+    ExtendedType[ExtendedType["SearchEnabled"] = 65541] = "SearchEnabled";
+})(ExtendedType || (ExtendedType = {}));
+var ExtendedTypeStrings;
+(function (ExtendedTypeStrings) {
+    ExtendedTypeStrings[ExtendedTypeStrings["Numeric"] = 256] = "Numeric";
+    ExtendedTypeStrings[ExtendedTypeStrings["Temporal"] = 512] = "Temporal";
+    ExtendedTypeStrings[ExtendedTypeStrings["Geography"] = 1024] = "Geography";
+    ExtendedTypeStrings[ExtendedTypeStrings["Miscellaneous"] = 2048] = "Miscellaneous";
+    ExtendedTypeStrings[ExtendedTypeStrings["Formatting"] = 4096] = "Formatting";
+    ExtendedTypeStrings[ExtendedTypeStrings["Scripting"] = 8192] = "Scripting";
+    ExtendedTypeStrings[ExtendedTypeStrings["Null"] = 0] = "Null";
+    ExtendedTypeStrings[ExtendedTypeStrings["Text"] = 1] = "Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["Decimal"] = 258] = "Decimal";
+    ExtendedTypeStrings[ExtendedTypeStrings["Double"] = 259] = "Double";
+    ExtendedTypeStrings[ExtendedTypeStrings["Integer"] = 260] = "Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["Boolean"] = 5] = "Boolean";
+    ExtendedTypeStrings[ExtendedTypeStrings["Date"] = 518] = "Date";
+    ExtendedTypeStrings[ExtendedTypeStrings["DateTime"] = 519] = "DateTime";
+    ExtendedTypeStrings[ExtendedTypeStrings["DateTimeZone"] = 520] = "DateTimeZone";
+    ExtendedTypeStrings[ExtendedTypeStrings["Time"] = 521] = "Time";
+    ExtendedTypeStrings[ExtendedTypeStrings["Duration"] = 10] = "Duration";
+    ExtendedTypeStrings[ExtendedTypeStrings["Binary"] = 11] = "Binary";
+    ExtendedTypeStrings[ExtendedTypeStrings["None"] = 12] = "None";
+    ExtendedTypeStrings[ExtendedTypeStrings["Variant"] = 13] = "Variant";
+    ExtendedTypeStrings[ExtendedTypeStrings["Years"] = 66048] = "Years";
+    ExtendedTypeStrings[ExtendedTypeStrings["Years_Text"] = 66049] = "Years_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["Years_Integer"] = 66308] = "Years_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["Years_Date"] = 66054] = "Years_Date";
+    ExtendedTypeStrings[ExtendedTypeStrings["Years_DateTime"] = 66055] = "Years_DateTime";
+    ExtendedTypeStrings[ExtendedTypeStrings["Months"] = 131584] = "Months";
+    ExtendedTypeStrings[ExtendedTypeStrings["Months_Text"] = 131585] = "Months_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["Months_Integer"] = 131844] = "Months_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["Months_Date"] = 131590] = "Months_Date";
+    ExtendedTypeStrings[ExtendedTypeStrings["Months_DateTime"] = 131591] = "Months_DateTime";
+    ExtendedTypeStrings[ExtendedTypeStrings["PaddedDateTableDates"] = 197127] = "PaddedDateTableDates";
+    ExtendedTypeStrings[ExtendedTypeStrings["Quarters"] = 262656] = "Quarters";
+    ExtendedTypeStrings[ExtendedTypeStrings["Quarters_Text"] = 262657] = "Quarters_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["Quarters_Integer"] = 262916] = "Quarters_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["Quarters_Date"] = 262662] = "Quarters_Date";
+    ExtendedTypeStrings[ExtendedTypeStrings["Quarters_DateTime"] = 262663] = "Quarters_DateTime";
+    ExtendedTypeStrings[ExtendedTypeStrings["DayOfMonth"] = 328192] = "DayOfMonth";
+    ExtendedTypeStrings[ExtendedTypeStrings["DayOfMonth_Text"] = 328193] = "DayOfMonth_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["DayOfMonth_Integer"] = 328452] = "DayOfMonth_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["DayOfMonth_Date"] = 328198] = "DayOfMonth_Date";
+    ExtendedTypeStrings[ExtendedTypeStrings["DayOfMonth_DateTime"] = 328199] = "DayOfMonth_DateTime";
+    ExtendedTypeStrings[ExtendedTypeStrings["Address"] = 6554625] = "Address";
+    ExtendedTypeStrings[ExtendedTypeStrings["City"] = 6620161] = "City";
+    ExtendedTypeStrings[ExtendedTypeStrings["Continent"] = 6685697] = "Continent";
+    ExtendedTypeStrings[ExtendedTypeStrings["Country"] = 6751233] = "Country";
+    ExtendedTypeStrings[ExtendedTypeStrings["County"] = 6816769] = "County";
+    ExtendedTypeStrings[ExtendedTypeStrings["Region"] = 6882305] = "Region";
+    ExtendedTypeStrings[ExtendedTypeStrings["PostalCode"] = 6947840] = "PostalCode";
+    ExtendedTypeStrings[ExtendedTypeStrings["PostalCode_Text"] = 6947841] = "PostalCode_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["PostalCode_Integer"] = 6948100] = "PostalCode_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["StateOrProvince"] = 7013377] = "StateOrProvince";
+    ExtendedTypeStrings[ExtendedTypeStrings["Place"] = 7078913] = "Place";
+    ExtendedTypeStrings[ExtendedTypeStrings["Latitude"] = 7144448] = "Latitude";
+    ExtendedTypeStrings[ExtendedTypeStrings["Latitude_Decimal"] = 7144706] = "Latitude_Decimal";
+    ExtendedTypeStrings[ExtendedTypeStrings["Latitude_Double"] = 7144707] = "Latitude_Double";
+    ExtendedTypeStrings[ExtendedTypeStrings["Longitude"] = 7209984] = "Longitude";
+    ExtendedTypeStrings[ExtendedTypeStrings["Longitude_Decimal"] = 7210242] = "Longitude_Decimal";
+    ExtendedTypeStrings[ExtendedTypeStrings["Longitude_Double"] = 7210243] = "Longitude_Double";
+    ExtendedTypeStrings[ExtendedTypeStrings["Image"] = 13109259] = "Image";
+    ExtendedTypeStrings[ExtendedTypeStrings["ImageUrl"] = 13174785] = "ImageUrl";
+    ExtendedTypeStrings[ExtendedTypeStrings["WebUrl"] = 13240321] = "WebUrl";
+    ExtendedTypeStrings[ExtendedTypeStrings["Barcode"] = 13305856] = "Barcode";
+    ExtendedTypeStrings[ExtendedTypeStrings["Barcode_Text"] = 13305857] = "Barcode_Text";
+    ExtendedTypeStrings[ExtendedTypeStrings["Barcode_Integer"] = 13306116] = "Barcode_Integer";
+    ExtendedTypeStrings[ExtendedTypeStrings["Color"] = 19664897] = "Color";
+    ExtendedTypeStrings[ExtendedTypeStrings["FormatString"] = 19730433] = "FormatString";
+    ExtendedTypeStrings[ExtendedTypeStrings["Alignment"] = 20058113] = "Alignment";
+    ExtendedTypeStrings[ExtendedTypeStrings["LabelDisplayUnits"] = 20123649] = "LabelDisplayUnits";
+    ExtendedTypeStrings[ExtendedTypeStrings["FontSize"] = 20189443] = "FontSize";
+    ExtendedTypeStrings[ExtendedTypeStrings["LabelDensity"] = 20254979] = "LabelDensity";
+    ExtendedTypeStrings[ExtendedTypeStrings["Enumeration"] = 26214401] = "Enumeration";
+    ExtendedTypeStrings[ExtendedTypeStrings["ScriptSource"] = 32776193] = "ScriptSource";
+    ExtendedTypeStrings[ExtendedTypeStrings["SearchEnabled"] = 65541] = "SearchEnabled";
+})(ExtendedTypeStrings || (ExtendedTypeStrings = {}));
+const PrimitiveTypeMask = 0xFF;
+const PrimitiveTypeWithFlagsMask = 0xFFFF;
+const PrimitiveTypeFlagsExcludedMask = 0xFFFF0000;
+function getPrimitiveType(extendedType) {
+    return extendedType & PrimitiveTypeMask;
+}
+function isPrimitiveType(extendedType) {
+    return (extendedType & PrimitiveTypeWithFlagsMask) === extendedType;
+}
+function getCategoryFromExtendedType(extendedType) {
+    if (isPrimitiveType(extendedType))
+        return null;
+    let category = ExtendedTypeStrings[extendedType];
+    if (category) {
+        // Check for ExtendedType declaration without a primitive type.
+        // If exists, use it as category (e.g. Longitude rather than Longitude_Double)
+        // Otherwise use the ExtendedType declaration with a primitive type (e.g. Address)
+        let delimIdx = category.lastIndexOf("_");
+        if (delimIdx > 0) {
+            let baseCategory = category.slice(0, delimIdx);
+            if (ExtendedTypeStrings[baseCategory]) {
+                category = baseCategory;
+            }
+        }
+    }
+    return category || null;
+}
+function toExtendedType(primitiveType, category) {
+    let primitiveString = PrimitiveTypeStrings[primitiveType];
+    let t = ExtendedTypeStrings[primitiveString];
+    if (t == null) {
+        t = ExtendedType.Null;
+    }
+    if (primitiveType && category) {
+        let categoryType = ExtendedTypeStrings[category];
+        if (categoryType) {
+            let categoryPrimitiveType = getPrimitiveType(categoryType);
+            if (categoryPrimitiveType === PrimitiveType.Null) {
+                // Category supports multiple primitive types, check if requested primitive type is supported
+                // (note: important to use t here rather than primitiveType as it may include primitive type flags)
+                categoryType = t | categoryType;
+                if (ExtendedTypeStrings[categoryType]) {
+                    t = categoryType;
+                }
+            }
+            else if (categoryPrimitiveType === primitiveType) {
+                // Primitive type matches the single supported type for the category
+                t = categoryType;
+            }
+        }
+    }
+    return t;
+}
+function matchesExtendedTypeWithAnyPrimitive(a, b) {
+    return (a & PrimitiveTypeFlagsExcludedMask) === (b & PrimitiveTypeFlagsExcludedMask);
+}
+//# sourceMappingURL=valueType.js.map
+
+/***/ }),
+
+/***/ "./src/settings.ts":
+/*!*************************!*\
+  !*** ./src/settings.ts ***!
+  \*************************/
+/*! exports provided: ExternalLinkVisualSettings, LinkGeneralSettings, LinkImageSettings, LinkTitleSettings, LinkContentSettings, LinkBottomSettings */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExternalLinkVisualSettings", function() { return ExternalLinkVisualSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkGeneralSettings", function() { return LinkGeneralSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkImageSettings", function() { return LinkImageSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkTitleSettings", function() { return LinkTitleSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkContentSettings", function() { return LinkContentSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkBottomSettings", function() { return LinkBottomSettings; });
+/* harmony import */ var powerbi_visuals_utils_dataviewutils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! powerbi-visuals-utils-dataviewutils */ "./node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js");
+/*
+ *  Power BI Visualizations
+ *
+ *  Copyright (c) Microsoft Corporation
+ *  All rights reserved.
+ *  MIT License
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the ""Software""), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
+
+var DataViewObjectsParser = powerbi_visuals_utils_dataviewutils__WEBPACK_IMPORTED_MODULE_0__["dataViewObjectsParser"].DataViewObjectsParser;
+class ExternalLinkVisualSettings extends DataViewObjectsParser {
+    constructor() {
+        super(...arguments);
+        this.linkGeneralSettings = new LinkGeneralSettings();
+        this.linkImageSettings = new LinkImageSettings();
+        this.linkTitleSettings = new LinkTitleSettings();
+        this.linkContentSettings = new LinkContentSettings();
+        this.linkBottomSettings = new LinkBottomSettings();
+    }
+}
+class LinkGeneralSettings {
+    constructor() {
+        this.borderColor = "#F2F2F2";
+        this.borderHoverColor = "black";
+        // public enableAnimation: boolean = false;
+        // public animationDuration: number = 100;
+    }
+}
+class LinkImageSettings {
+    constructor() {
+        this.show = false;
+        this.imageURL = "https://www.w3schools.com/w3css/img_lights.jpg";
+    }
+}
+class LinkTitleSettings {
+    constructor() {
+        this.link = "";
+        this.linkTitle = "";
+        this.linkTitleColor = "black";
+        this.linkTitleHoverColor = "blue";
+        this.linkHoverTitle = "";
+    }
+}
+class LinkContentSettings {
+    constructor() {
+        this.show = false;
+        this.linkContent = "";
+        this.linkContentColor = "black";
+    }
+}
+class LinkBottomSettings {
+    constructor() {
+        this.show = true;
+        this.linkBottomText = "Go to Report";
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/visual.ts":
+/*!***********************!*\
+  !*** ./src/visual.ts ***!
+  \***********************/
+/*! exports provided: ExternalLinkVisual */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExternalLinkVisual", function() { return ExternalLinkVisual; });
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3-selection */ "./node_modules/d3-selection/src/index.js");
+/* harmony import */ var powerbi_visuals_utils_formattingutils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! powerbi-visuals-utils-formattingutils */ "./node_modules/powerbi-visuals-utils-formattingutils/lib/index.js");
+/* harmony import */ var d3_transition__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3-transition */ "./node_modules/d3-transition/src/index.js");
+/* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./settings */ "./src/settings.ts");
+/*
+*  Power BI Visual CLI
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+
+
+
+
+
+class ExternalLinkVisual {
+    constructor(options) {
+        this.target = options.element;
+        this.host = options.host;
+    }
+    update(options) {
+        this.linkVisualSettings = ExternalLinkVisual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        let linkGeneralSettings = this.linkVisualSettings.linkGeneralSettings;
+        let linkImageSettings = this.linkVisualSettings.linkImageSettings;
+        let linkTitleSettings = this.linkVisualSettings.linkTitleSettings;
+        let linkContentSettings = this.linkVisualSettings.linkContentSettings;
+        let linkBottomSettings = this.linkVisualSettings.linkBottomSettings;
+        let linkTitle = "";
+        try {
+            if (this.rootElement) {
+                this.rootElement.remove();
+            }
+            if (powerbi_visuals_utils_formattingutils__WEBPACK_IMPORTED_MODULE_1__["stringExtensions"].isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.linkHoverTitle)) {
+                if (powerbi_visuals_utils_formattingutils__WEBPACK_IMPORTED_MODULE_1__["stringExtensions"].isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.link)) {
+                    linkTitle = "Click here to go to nowhere";
+                }
+                else {
+                    linkTitle = "Click here to go to " + linkTitleSettings.link;
+                }
+            }
+            else {
+                linkTitle = linkTitleSettings.linkHoverTitle;
+            }
+            this.rootElement = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(this.target).append("div")
+                .classed("rootElement", true)
+                .attr("title", linkTitle)
+                .style("height", "100%")
+                .style("width", "100%")
+                .style("border", linkGeneralSettings.borderColor)
+                .style("border-style", "solid")
+                .style("border-width", "3px")
+                .style("box-sizing", "border-box");
+            if (linkImageSettings.show) {
+                this.topContentElement = this.rootElement.append("img")
+                    .attr("src", linkImageSettings.imageURL)
+                    .style("width", "100%");
+            }
+            this.middleContentElement = this.rootElement.append("div")
+                .style("padding", "20px")
+                .style("margin", 0)
+                .style("max-width", "100%")
+                .style("left", "0px");
+            this.middleContentElement.append("h2")
+                .style("text-align", "start")
+                .style("margin", 0)
+                .text(linkTitleSettings.linkTitle);
+            if (linkContentSettings.show) {
+                this.middleContentElement.append("p")
+                    .text(linkContentSettings.linkContent);
+            }
+            if (linkBottomSettings.show) {
+                this.bottomContentElement = this.rootElement.append("div")
+                    .classed("bottomLink", true)
+                    .style("position", "absolute")
+                    .style("bottom", "0")
+                    .style("left", "0")
+                    .style("width", "100%")
+                    .style("max-width", "100%");
+                this.bottomContentElement.append("p")
+                    .attr("id", "bottomText")
+                    .style("border-top", linkGeneralSettings.borderColor)
+                    .style("border-top-style", "solid")
+                    .style("border-top-width", "3px")
+                    .style("padding-left", "20px")
+                    .style("padding-top", "10px")
+                    .text(linkBottomSettings.linkBottomText)
+                    .append("span")
+                    .style("margin-left", "5px")
+                    .text("🡭");
+            }
+            this.rootElement.on("mouseover", (data, i, elements) => {
+                Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i])
+                    .style("border", linkGeneralSettings.borderHoverColor)
+                    .style("border-style", "solid")
+                    .style("border-width", "3px");
+                this.bottomContentElement
+                    .select("#bottomText")
+                    .style("border-top", linkGeneralSettings.borderHoverColor)
+                    .style("border-top-style", "solid")
+                    .style("border-top-width", "3px");
+            })
+                .on("mouseout", (data, i, elements) => {
+                Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i])
+                    .style("border", linkGeneralSettings.borderColor)
+                    .style("border-style", "solid")
+                    .style("border-width", "3px");
+                this.bottomContentElement
+                    .select("#bottomText")
+                    .style("border-top", linkGeneralSettings.borderColor)
+                    .style("border-top-style", "solid")
+                    .style("border-top-width", "3px");
+            })
+                .on("click", () => {
+                if (!powerbi_visuals_utils_formattingutils__WEBPACK_IMPORTED_MODULE_1__["stringExtensions"].isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.link)) {
+                    this.host.launchUrl(linkTitleSettings.link);
+                }
+            });
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+    static parseSettings(dataView) {
+        return _settings__WEBPACK_IMPORTED_MODULE_3__["ExternalLinkVisualSettings"].parse(dataView);
+    }
+    /**
+     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
+     * objects and properties you want to expose to the users in the property pane.
+     *
+     */
+    enumerateObjectInstances(options) {
+        return _settings__WEBPACK_IMPORTED_MODULE_3__["ExternalLinkVisualSettings"].enumerateObjectInstances(this.linkVisualSettings || _settings__WEBPACK_IMPORTED_MODULE_3__["ExternalLinkVisualSettings"].getDefault(), options);
+    }
+}
+
+
+/***/ }),
+
+/***/ 0:
+/*!***********************************************!*\
+  !*** multi ./.tmp/precompile/visualPlugin.ts ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! C:\Users\bjadav\Power BI Custom Visuals\externalLink\.tmp\precompile\visualPlugin.ts */"./.tmp/precompile/visualPlugin.ts");
+
+
+/***/ }),
+
+/***/ "powerbi-visuals-api":
+/*!***********************!*\
+  !*** external "null" ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = null;
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=visual.js.map

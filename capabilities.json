@@ -61,8 +61,8 @@
                 }
             }
         },
-        "linkContentSettings": {
-            "displayName": "Link Content Settings",
+        "linkTitleSettings": {
+            "displayName": "Link Title Settings",
             "properties": {
                 "link": {
                     "displayName": "External Link",
@@ -76,13 +76,38 @@
                         "text": true
                     }
                 },
+                "linkTitleColor": {
+                    "displayName": "Link Title Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "linkTitleHoverColor": {
+                    "displayName": "Link Title Hover Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
                 "linkHoverTitle": {
                     "displayName": "Link Hover Title",
                     "type": {
                         "text": true
                     }
-                },
-                "showLinkContent": {
+                }
+            }
+        },
+        "linkContentSettings": {
+            "displayName": "Link Content Settings",
+            "properties": {
+                "show": {
                     "displayName": "Show Link Content",
                     "type": {
                         "bool": true
@@ -92,6 +117,16 @@
                     "displayName": "Link Content Text",
                     "type": {
                         "text": true
+                    }
+                },
+                "linkContentColor": {
+                    "displayName": "Link Title Hover Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
                     }
                 }
             }
