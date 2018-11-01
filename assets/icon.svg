@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="20"
+   viewBox="0 0 5.2916666 5.2916668"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="icon.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect821"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect817"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.839192"
+     inkscape:cx="6.560851"
+     inkscape:cy="9.6170888"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-291.7083)">
+    <rect
+       style="opacity:1;fill:#666666;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:7.0999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect851"
+       width="5.3620949"
+       height="5.3119817"
+       x="0"
+       y="291.68799"
+       inkscape:export-filename="C:\Users\bjadav\Power BI Custom Visuals\externalLink\assets\icon_2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1.5367998,288.48075 c -0.8516684,-0.039 -1.7032301,-0.0779 -2.1712367,0.0695 -0.4680067,0.14745 -0.5514917,0.48139 -0.409464,0.70987 0.1420278,0.22848 0.5095231,0.35098 0.9994867,0.40385 0.4899635,0.0529 1.1026286,0.0362 1.7148487,0.0195"
+       id="path815"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect817"
+       inkscape:original-d="m -1.5367998,288.48075 c -0.8516578,-0.0392 -1.7032178,-0.0782 -2.555765,-0.11694 -0.083292,0.33396 -0.1667779,0.6679 -0.250565,1.00226 0.3677639,0.12223 0.7352581,0.24473 1.1024867,0.36749 0.6125847,-0.017 1.2252499,-0.0337 1.837478,-0.0501"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -2.6726955,289.14892 c 0.5014049,-0.0167 1.0025353,-0.0334 1.3395092,0.0637 0.33697393,0.0971 0.52021886,0.32047 0.5397899,0.56534 0.019571,0.24487 -0.11961332,0.51767 -0.5738078,0.65981 -0.4541944,0.14215 -1.2217011,0.15327 -1.9903693,0.16441"
+       id="path819"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect821"
+       inkscape:original-d="m -2.6726955,289.14892 c 0.5013952,-0.017 1.0025256,-0.0337 1.5033913,-0.0501 0.17278204,0.21121 0.35662404,0.43405 0.53453914,0.65147 -0.1389566,0.27261 -0.2781414,0.54541 -0.41760884,0.81851 -0.7690282,0.0109 -1.5365352,0.022 -2.3051996,0.0334" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.15792489px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07894813"
+       x="344.99673"
+       y="-0.76772684"
+       id="text831"
+       transform="matrix(0,0.84919539,-1.1775853,0,0,0)"
+       inkscape:export-filename="C:\Users\bjadav\Power BI Custom Visuals\externalLink\assets\icon_2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan829"
+         x="344.99673"
+         y="-0.76772684"
+         style="stroke-width:0.07894813">U</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.15792489px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07894813"
+       x="-348.02655"
+       y="3.8380311"
+       id="text831-8"
+       transform="matrix(0,-0.84919539,1.1775853,0,0,0)"
+       inkscape:export-filename="C:\Users\bjadav\Power BI Custom Visuals\externalLink\assets\icon_2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan829-9"
+         x="-348.02655"
+         y="3.8380311"
+         style="stroke-width:0.07894813">U</tspan></text>
+  </g>
+</svg>

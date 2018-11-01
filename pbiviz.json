@@ -1,0 +1,24 @@
+{
+    "visual": {
+        "name": "externalLink",
+        "displayName": "External Link",
+        "guid": "externalLinkC315CFE8D1E9496582BCD9F3B9E20D91",
+        "visualClassName": "ExternalLinkVisual",
+        "version": "1.0.0",
+        "description": "Redirects on external links on click.",
+        "supportUrl": "bhaveshjadav.in",
+        "gitHubUrl": "github.com/bhavesh-jadav"
+    },
+    "apiVersion": "2.1.0",
+    "author": {
+        "name": "Bhavesh Jadav",
+        "email": "bhavesh.jadav@outlook.com"
+    },
+    "assets": {
+        "icon": "assets/icon_2.png"
+    },
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": "dependencies.json",
+    "stringResources": []
+}

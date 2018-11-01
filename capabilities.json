@@ -1,0 +1,124 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "linkGeneralSettings": {
+            "displayName": "Link General Settings",
+            "properties": {
+                "borderColor": {
+                    "displayName": "Link Border Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "borderHoverColor": {
+                    "displayName": "Link Border Hover Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "enableAnimation": {
+                    "displayName": "Enable Animation",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "animationDuration": {
+                    "displayName": "animationDuration",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "linkImageSettings": {
+            "displayName": "Link Image Settings",
+            "properties": {
+                "show": {
+                    "displayName": "Show Link Image",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "imageURL": {
+                    "displayName": "Link Image URL",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "linkContentSettings": {
+            "displayName": "Link Content Settings",
+            "properties": {
+                "link": {
+                    "displayName": "External Link",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "linkTitle": {
+                    "displayName": "Link Title",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "linkHoverTitle": {
+                    "displayName": "Link Hover Title",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "showLinkContent": {
+                    "displayName": "Show Link Content",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "linkContent": {
+                    "displayName": "Link Content Text",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "linkBottomSettings": {
+            "displayName": "Link Bottom Settings",
+            "properties": {
+                "show": {
+                    "displayName": "Show Link Bottom",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "linkBottomText": {
+                    "displayName": "Link Bottom Text",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "single": {
+                "role": "measure"
+            }
+        }
+    ]
+}
