@@ -10,6 +10,7 @@ export declare class ExternalLinkVisualSettings extends DataViewObjectsParser {
 export declare class LinkGeneralSettings {
     borderColor: string;
     borderHoverColor: string;
+    backgroundColor: string;
 }
 export declare class LinkImageSettings {
     show: boolean;

@@ -87,7 +87,8 @@ export class ExternalLinkVisual implements IVisual {
                 .style("border", linkGeneralSettings.borderColor)
                 .style("border-style", "solid")
                 .style("border-width", "3px")
-                .style("box-sizing", "border-box");
+                .style("box-sizing", "border-box")
+                .style("background-color", linkGeneralSettings.backgroundColor);
 
             if (linkImageSettings.show) {
                 this.topContentElement = this.rootElement.append("img")

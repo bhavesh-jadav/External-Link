@@ -30,6 +30,16 @@
                         }
                     }
                 },
+                "backgroundColor": {
+                    "displayName": "Link Border Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
                 "enableAnimation": {
                     "displayName": "Enable Animation",
                     "type": {

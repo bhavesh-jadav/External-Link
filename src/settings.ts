@@ -41,6 +41,7 @@ export class ExternalLinkVisualSettings extends DataViewObjectsParser {
 export class LinkGeneralSettings {
     public borderColor: string = "#F2F2F2";
     public borderHoverColor: string = "black";
+    public backgroundColor: string = null;
     // public enableAnimation: boolean = false;
     // public animationDuration: number = 100;
 }

@@ -12837,6 +12837,7 @@ class LinkGeneralSettings {
     constructor() {
         this.borderColor = "#F2F2F2";
         this.borderHoverColor = "black";
+        this.backgroundColor = null;
         // public enableAnimation: boolean = false;
         // public animationDuration: number = 100;
     }
@@ -12953,7 +12954,8 @@ class ExternalLinkVisual {
                 .style("border", linkGeneralSettings.borderColor)
                 .style("border-style", "solid")
                 .style("border-width", "3px")
-                .style("box-sizing", "border-box");
+                .style("box-sizing", "border-box")
+                .style("background-color", linkGeneralSettings.backgroundColor);
             if (linkImageSettings.show) {
                 this.topContentElement = this.rootElement.append("img")
                     .attr("src", linkImageSettings.imageURL)
