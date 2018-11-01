@@ -102,6 +102,8 @@ export class ExternalLinkVisual implements IVisual {
                 .style("left", "0px");
 
             this.middleContentElement.append("h2")
+                .attr("id", "linkTitle")
+                .style("color", linkTitleSettings.linkTitleColor)
                 .style("text-align", "start")
                 .style("margin", 0)
                 .text(linkTitleSettings.linkTitle);
@@ -135,10 +137,14 @@ export class ExternalLinkVisual implements IVisual {
 
             this.rootElement.on("mouseover", (data, i, elements) => {
 
-                select(elements[i])
-                    .style("border", linkGeneralSettings.borderHoverColor)
+                let ele = select(elements[i]);
+
+                ele.style("border", linkGeneralSettings.borderHoverColor)
                     .style("border-style", "solid")
                     .style("border-width", "3px");
+
+                ele.select("#linkTitle")
+                    .style("color", linkTitleSettings.linkTitleHoverColor);
 
                 this.bottomContentElement
                     .select("#bottomText")
@@ -148,10 +154,15 @@ export class ExternalLinkVisual implements IVisual {
 
             })
             .on("mouseout", (data, i, elements) => {
-                select(elements[i])
-                    .style("border", linkGeneralSettings.borderColor)
+
+                let ele = select(elements[i]);
+
+                ele.style("border", linkGeneralSettings.borderColor)
                     .style("border-style", "solid")
                     .style("border-width", "3px");
+
+                ele.select("#linkTitle")
+                    .style("color", linkTitleSettings.linkTitleColor);
 
                 this.bottomContentElement
                     .select("#bottomText")

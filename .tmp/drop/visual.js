@@ -12965,6 +12965,8 @@ class ExternalLinkVisual {
                 .style("max-width", "100%")
                 .style("left", "0px");
             this.middleContentElement.append("h2")
+                .attr("id", "linkTitle")
+                .style("color", linkTitleSettings.linkTitleColor)
                 .style("text-align", "start")
                 .style("margin", 0)
                 .text(linkTitleSettings.linkTitle);
@@ -12993,10 +12995,12 @@ class ExternalLinkVisual {
                     .text("🡭");
             }
             this.rootElement.on("mouseover", (data, i, elements) => {
-                Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i])
-                    .style("border", linkGeneralSettings.borderHoverColor)
+                let ele = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i]);
+                ele.style("border", linkGeneralSettings.borderHoverColor)
                     .style("border-style", "solid")
                     .style("border-width", "3px");
+                ele.select("#linkTitle")
+                    .style("color", linkTitleSettings.linkTitleHoverColor);
                 this.bottomContentElement
                     .select("#bottomText")
                     .style("border-top", linkGeneralSettings.borderHoverColor)
@@ -13004,10 +13008,12 @@ class ExternalLinkVisual {
                     .style("border-top-width", "3px");
             })
                 .on("mouseout", (data, i, elements) => {
-                Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i])
-                    .style("border", linkGeneralSettings.borderColor)
+                let ele = Object(d3_selection__WEBPACK_IMPORTED_MODULE_0__["select"])(elements[i]);
+                ele.style("border", linkGeneralSettings.borderColor)
                     .style("border-style", "solid")
                     .style("border-width", "3px");
+                ele.select("#linkTitle")
+                    .style("color", linkTitleSettings.linkTitleColor);
                 this.bottomContentElement
                     .select("#bottomText")
                     .style("border-top", linkGeneralSettings.borderColor)
