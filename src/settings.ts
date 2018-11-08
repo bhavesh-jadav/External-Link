@@ -64,6 +64,7 @@ export class LinkContentSettings {
     public show: boolean = false;
     public linkContent: string = "";
     public linkContentColor: string = "black";
+    public linkContentAlignment: string = "left";
 }
 
 export class LinkBottomSettings {

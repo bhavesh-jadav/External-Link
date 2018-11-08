@@ -146,6 +146,14 @@
                             }
                         }
                     }
+                },
+                "linkContentAlignment": {
+                    "displayName": "Alignment",
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
                 }
             }
         },

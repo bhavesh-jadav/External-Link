@@ -111,6 +111,7 @@ export class ExternalLinkVisual implements IVisual {
 
             if (linkContentSettings.show) {
                 this.middleContentElement.append("p")
+                    .style("text-align", linkContentSettings.linkContentAlignment)
                     .text(linkContentSettings.linkContent);
             }
 
