@@ -176,8 +176,6 @@ export class ExternalLinkVisual implements IVisual {
                     this.host.launchUrl(linkTitleSettings.link);
                 }
             });
-
-
         } catch (error) {
             console.log(error);
         }

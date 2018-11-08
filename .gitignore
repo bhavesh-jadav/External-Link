@@ -9,6 +9,7 @@
 package-lock.json
 webpack.statistics.html
 dist
+.tmp
 
 ### Node ###
 # Logs

@@ -165,5 +165,6 @@
                 "role": "measure"
             }
         }
-    ]
+    ],
+    "suppressDefaultTitle": true
 }
