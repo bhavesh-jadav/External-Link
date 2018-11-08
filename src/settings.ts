@@ -69,6 +69,7 @@ export class LinkContentSettings {
 
 export class LinkBottomSettings {
     public show: boolean = true;
-    public linkBottomText = "Go to Report";
+    public linkBottomText: string = "Go to Report";
+    public linkBottomAlignment: string = "left";
 }
 

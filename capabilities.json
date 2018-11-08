@@ -171,6 +171,14 @@
                     "type": {
                         "text": true
                     }
+                },
+                "linkBottomAlignment": {
+                    "displayName": "Alignment",
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
                 }
             }
         }

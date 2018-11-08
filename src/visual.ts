@@ -130,11 +130,10 @@ export class ExternalLinkVisual implements IVisual {
                     .style("border-top-style", "solid")
                     .style("border-top-width", "3px")
                     .style("padding-left", "20px")
+                    .style("padding-right", "20px")
                     .style("padding-top", "10px")
-                    .text(linkBottomSettings.linkBottomText)
-                    .append("span")
-                    .style("margin-left", "5px")
-                    .text("🡭");
+                    .style("text-align", linkBottomSettings.linkBottomAlignment)
+                    .text(linkBottomSettings.linkBottomText + " 🡭");
             }
 
             this.rootElement.on("mouseover", (data, i, elements) => {
