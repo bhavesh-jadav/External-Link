@@ -62,7 +62,7 @@ export class ExternalLinkVisual implements IVisual {
         let linkTitleSettings = this.linkVisualSettings.linkTitleSettings;
         let linkContentSettings = this.linkVisualSettings.linkContentSettings;
         let linkBottomSettings = this.linkVisualSettings.linkBottomSettings;
-        let linkTitle = "";
+        let linkHoverTitle = "";
 
         try {
             if (this.rootElement) {
@@ -71,17 +71,17 @@ export class ExternalLinkVisual implements IVisual {
 
             if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.linkHoverTitle)) {
                 if (StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkTitleSettings.link)) {
-                    linkTitle = "Click here to go to nowhere";
+                    linkHoverTitle = "Click here to go to nowhere";
                 } else {
-                    linkTitle = "Click here to go to " + linkTitleSettings.link;
+                    linkHoverTitle = "Click here to go to " + linkTitleSettings.link;
                 }
             } else {
-                linkTitle = linkTitleSettings.linkHoverTitle;
+                linkHoverTitle = linkTitleSettings.linkHoverTitle;
             }
 
             this.rootElement = select(this.target).append("div")
                 .classed("rootElement", true)
-                .attr("title", linkTitle)
+                .attr("title", linkHoverTitle)
                 .style("height", "100%")
                 .style("width", "100%")
                 .style("border", linkGeneralSettings.borderColor)
@@ -105,7 +105,7 @@ export class ExternalLinkVisual implements IVisual {
             this.middleContentElement.append("h2")
                 .attr("id", "linkTitle")
                 .style("color", linkTitleSettings.linkTitleColor)
-                .style("text-align", "start")
+                .style("text-align", linkTitleSettings.linkTitleAlignment)
                 .style("margin", 0)
                 .text(linkTitleSettings.linkTitle);
 

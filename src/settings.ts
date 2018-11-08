@@ -57,6 +57,7 @@ export class LinkTitleSettings {
     public linkTitleColor: string = "black";
     public linkTitleHoverColor: string = "blue";
     public linkHoverTitle: string = "";
+    public linkTitleAlignment: string = "left";
 }
 
 export class LinkContentSettings {

@@ -111,6 +111,14 @@
                     "type": {
                         "text": true
                     }
+                },
+                "linkTitleAlignment": {
+                    "displayName": "Alignment",
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
                 }
             }
         },
