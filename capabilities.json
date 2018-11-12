@@ -31,7 +31,7 @@
                     }
                 },
                 "backgroundColor": {
-                    "displayName": "Link Border Color",
+                    "displayName": "Background Color",
                     "type": {
                         "fill": {
                             "solid": {
