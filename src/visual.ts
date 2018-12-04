@@ -55,6 +55,8 @@ export class ExternalLinkVisual implements IVisual {
     }
 
     public update(options: VisualUpdateOptions) {
+
+        let imageURLFromData = options.dataViews[0].single.value;
         this.linkVisualSettings = ExternalLinkVisual.parseSettings(options && options.dataViews && options.dataViews[0]);
 
         let linkGeneralSettings = this.linkVisualSettings.linkGeneralSettings;
@@ -92,7 +94,7 @@ export class ExternalLinkVisual implements IVisual {
 
             if (linkImageSettings.show) {
                 this.topContentElement = this.rootElement.append("img")
-                    .attr("src", linkImageSettings.imageURL)
+                    .attr("src",  (!StringExtensions.isNullOrUndefinedOrWhiteSpaceString(linkImageSettings.imageURL) ? linkImageSettings.imageURL : imageURLFromData as string))
                     .style("width", "100%");
             }
 
