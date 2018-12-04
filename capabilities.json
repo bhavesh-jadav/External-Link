@@ -1,9 +1,10 @@
 {
     "dataRoles": [
         {
-            "displayName": "Measure Data",
-            "name": "measure",
-            "kind": "Measure"
+            "displayName": "Image Link",
+            "name": "imageLink",
+            "kind": "Measure",
+            "description": "Image links if have in data source put it here."
         }
     ],
     "objects": {
@@ -67,7 +68,8 @@
                     "displayName": "Link Image URL",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 }
             }
         },
@@ -78,13 +80,15 @@
                     "displayName": "External Link",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 },
                 "linkTitle": {
                     "displayName": "Link Title",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 },
                 "linkTitleColor": {
                     "displayName": "Link Title Color",
@@ -110,7 +114,8 @@
                     "displayName": "Link Hover Title",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 },
                 "linkTitleAlignment": {
                     "displayName": "Alignment",
@@ -135,10 +140,11 @@
                     "displayName": "Link Content Text",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 },
                 "linkContentColor": {
-                    "displayName": "Link Title Hover Color",
+                    "displayName": "Link Content Color",
                     "type": {
                         "fill": {
                             "solid": {
@@ -170,7 +176,8 @@
                     "displayName": "Link Bottom Text",
                     "type": {
                         "text": true
-                    }
+                    },
+                    "suppressFormatPainterCopy": true
                 },
                 "linkBottomAlignment": {
                     "displayName": "Alignment",
@@ -186,7 +193,7 @@
     "dataViewMappings": [
         {
             "single": {
-                "role": "measure"
+                "role": "imageLink"
             }
         }
     ],
