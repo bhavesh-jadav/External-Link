@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "author": {"name":"Bhavesh Jadav","email":"bhavesh.jadav@outlook.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/externalLinkC315CFE8D1E9496582BCD9F3B9E20D91.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"externalLink","displayName":"External Link","guid":"externalLinkC315CFE8D1E9496582BCD9F3B9E20D91","visualClassName":"ExternalLinkVisual","version":"1.0.0","description":"Redirects on external links on click.","supportUrl":"bhaveshjadav.in","gitHubUrl":"github.com/bhavesh-jadav"},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
